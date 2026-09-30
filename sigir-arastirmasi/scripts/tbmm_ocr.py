@@ -19,7 +19,10 @@ def sayfa_ocr(png):
     return r.stdout
 
 
-def pdf_isle(url, hedef, gecici):
+def hazirla(is_):
+    """PDF'i indirir ve sayfaları PNG'ye çizer (OCR işçileriyle eşzamanlı çalışır)."""
+    hedef, url, etiket = is_
+    gecici = tempfile.mkdtemp(prefix="tbmm_")
     pdf = os.path.join(gecici, "x.pdf")
     with S.get(url, stream=True, timeout=1800) as r, open(pdf, "wb") as f:
         for parca in r.iter_content(1 << 20):
@@ -30,35 +33,61 @@ def pdf_isle(url, hedef, gecici):
         png = os.path.join(gecici, f"p{i:05d}.png")
         p.get_pixmap(dpi=250, colorspace=pymupdf.csGRAY).save(png)
         pngler.append(png)
-    with cf.ThreadPoolExecutor(4) as ex:
-        metinler = list(ex.map(sayfa_ocr, pngler))
+    doc.close()
     os.remove(pdf)
-    open(hedef, "w", encoding="utf-8").write("\f".join(metinler))
-    return len(pngler)
+    return is_, gecici, pngler
 
 
 def main():
+    """Boru hattı: sonraki PDF arka planda indirilip çizilirken OCR işçileri iki PDF'in
+    sayfalarını birlikte işler; CPU indirme ve PDF sonu beklemelerinde boşta kalmaz."""
+    import shutil
+    from collections import deque
     items = {it["handle"]: it for it in json.load(open(sys.argv[1]))}
     out = sys.argv[2]
+    isler = []
     for h in sys.argv[3:]:
         it = items[h]
         klasor = os.path.join(out, h.replace("/", "_"))
         os.makedirs(klasor, exist_ok=True)
-        bundles = S.get(f"{API}/core/items/{it['uuid']}/bundles", timeout=120).json()["_embedded"]["bundles"]
-        for bu in bundles:
-            if bu["name"] != "ORIGINAL":
-                continue
-            bs = S.get(bu["_links"]["bitstreams"]["href"] + "?size=1000", timeout=120).json()["_embedded"]["bitstreams"]
-            for b in bs:
-                hedef = os.path.join(klasor, b["name"] + ".txt")
-                if os.path.exists(hedef):
+        try:
+            bundles = S.get(f"{API}/core/items/{it['uuid']}/bundles", timeout=120).json()["_embedded"]["bundles"]
+            for bu in bundles:
+                if bu["name"] != "ORIGINAL":
                     continue
-                with tempfile.TemporaryDirectory() as g:
-                    try:
-                        n = pdf_isle(b["_links"]["content"]["href"], hedef, g)
-                        print(h, it["name"][:40], b["name"], n, "sayfa", flush=True)
-                    except Exception as e:  # noqa: BLE001
-                        print(h, b["name"], "HATA", e, flush=True)
+                bs = S.get(bu["_links"]["bitstreams"]["href"] + "?size=1000", timeout=120).json()["_embedded"]["bitstreams"]
+                for b in bs:
+                    hedef = os.path.join(klasor, b["name"] + ".txt")
+                    if not os.path.exists(hedef):
+                        isler.append((hedef, b["_links"]["content"]["href"], f"{h} {it['name'][:40]} {b['name']}"))
+        except Exception as e:  # noqa: BLE001
+            print(h, "LİSTE HATASI", e, flush=True)
+    kalan = iter(isler)
+    with cf.ThreadPoolExecutor(4) as havuz, cf.ThreadPoolExecutor(2) as hazirlik:
+        hazir, aktif = deque(), deque()
+
+        def ileri():
+            is_ = next(kalan, None)
+            if is_:
+                hazir.append(hazirlik.submit(hazirla, is_))
+
+        ileri(), ileri()
+        while hazir or aktif:
+            if hazir and len(aktif) < 2:
+                f = hazir.popleft()
+                ileri()
+                try:
+                    is_, gecici, pngler = f.result()
+                except Exception as e:  # noqa: BLE001  (sonraki koşuda yeniden denenir)
+                    print("HATA", e, flush=True)
+                    continue
+                aktif.append((is_, gecici, [havuz.submit(sayfa_ocr, p) for p in pngler]))
+                continue
+            (hedef, _, etiket), gecici, futs = aktif.popleft()
+            metinler = [f.result() for f in futs]
+            open(hedef, "w", encoding="utf-8").write("\f".join(metinler))
+            shutil.rmtree(gecici, ignore_errors=True)
+            print(etiket, len(metinler), "sayfa", flush=True)
 
 
 if __name__ == "__main__":

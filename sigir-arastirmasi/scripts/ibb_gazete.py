@@ -130,10 +130,33 @@ def _ocr_sayfa(png):
     return r.stdout
 
 
+def _hazirla(is_):
+    """PDF'i indirir ve sayfaları PNG'ye çizer (OCR işçileriyle eşzamanlı çalışır)."""
+    hedef, eser, tarih, sayi, url = is_
+    tmp = tempfile.mkdtemp(prefix="ibb_")
+    pdf = os.path.join(tmp, "s.pdf")
+    open(pdf, "wb").write(_al(url))
+    doc = pymupdf.open(pdf)
+    pngler = []
+    for i, p in enumerate(doc):
+        png = os.path.join(tmp, f"{i:03d}.png")
+        p.get_pixmap(dpi=250, colorspace=pymupdf.csGRAY).save(png)
+        pngler.append(png)
+    doc.close()
+    os.remove(pdf)
+    return is_, tmp, pngler
+
+
 def ocr(liste_yolu, bas, bit, dizin, isci=4, pencereler=None):
     """bas/bit tek bir aralık verir; pencereler [(bas, bit), ...] verilirse bunlardan herhangi
-    birine düşen sayılar işlenir."""
+    birine düşen sayılar işlenir.
+
+    Boru hattı: sonraki sayılar arka planda indirilip çizilirken OCR işçileri iki sayının
+    sayfalarını birlikte işler; böylece indirme ve sayfa sonu beklemelerinde CPU boşta kalmaz."""
+    import shutil
+    from collections import deque
     araliklar = pencereler or [(bas, bit)]
+    isler = []
     for satir in open(liste_yolu, encoding="utf-8"):
         d, eser, sayi, tarih, url = satir.rstrip("\n").split("\t")[:5]
         if not tarih or not url or not any(b <= tarih <= s for b, s in araliklar):
@@ -141,23 +164,34 @@ def ocr(liste_yolu, bas, bit, dizin, isci=4, pencereler=None):
         hedef_dizin = os.path.join(dizin, re.sub(r"\W+", "_", eser).strip("_"))
         os.makedirs(hedef_dizin, exist_ok=True)
         hedef = os.path.join(hedef_dizin, f"{tarih}_{sayi or d}.txt")
-        if os.path.exists(hedef):
-            continue
-        with tempfile.TemporaryDirectory() as tmp:
-            pdf = os.path.join(tmp, "s.pdf")
-            open(pdf, "wb").write(_al(url))
-            doc = pymupdf.open(pdf)
-            pngler = []
-            for i, p in enumerate(doc):
-                png = os.path.join(tmp, f"{i:03d}.png")
-                p.get_pixmap(dpi=250, colorspace=pymupdf.csGRAY).save(png)
-                pngler.append(png)
-            doc.close()
-            os.remove(pdf)
-            with ThreadPoolExecutor(isci) as ex:
-                metin = list(ex.map(_ocr_sayfa, pngler))
-        open(hedef, "w", encoding="utf-8").write("\f".join(metin))
-        print(eser, tarih, sayi, len(metin), "sayfa", flush=True)
+        if not os.path.exists(hedef):
+            isler.append((hedef, eser, tarih, sayi, url))
+    kalan = iter(isler)
+    with ThreadPoolExecutor(isci) as havuz, ThreadPoolExecutor(2) as hazirlik:
+        hazir, aktif = deque(), deque()
+
+        def ileri():
+            is_ = next(kalan, None)
+            if is_:
+                hazir.append(hazirlik.submit(_hazirla, is_))
+
+        ileri(), ileri()
+        while hazir or aktif:
+            if hazir and len(aktif) < 2:
+                f = hazir.popleft()
+                ileri()
+                try:
+                    is_, tmp, pngler = f.result()
+                except Exception as e:  # indirme/çizim hatası: sayı atlanır, sonraki koşuda yeniden denenir
+                    print("HATA", e, flush=True)
+                    continue
+                aktif.append((is_, tmp, [havuz.submit(_ocr_sayfa, p) for p in pngler]))
+                continue
+            (hedef, eser, tarih, sayi, _), tmp, futs = aktif.popleft()
+            metin = [f.result() for f in futs]
+            open(hedef, "w", encoding="utf-8").write("\f".join(metin))
+            shutil.rmtree(tmp, ignore_errors=True)
+            print(eser, tarih, sayi, len(metin), "sayfa", flush=True)
 
 
 if __name__ == "__main__":
