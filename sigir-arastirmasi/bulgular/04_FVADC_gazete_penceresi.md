@@ -5,7 +5,7 @@
 - **Kaynak:** İBB Atatürk Kitaplığı dijital süreli yayın koleksiyonu (açık erişim, `katalog.ibb.gov.tr/yordam`). Yedi İstanbul gündelik gazetesi: *Cumhuriyet*, *Tan*, *Akşam*, *Kurun/Vakit*, *Son Posta*, *Yeni Sabah*, *Haber Akşam Postası*. Pencerede gazete başına yaklaşık 103 sayı, toplam yaklaşık 720 sayı.
 - **Yöntem:** PDF'ler (metin katmanı yok) 250 dpi gri tonlamayla tesseract `tur` ile OCR'landı (`scripts/ibb_gazete.py`). Metinler tezaurus v1.0 ile tarandı (`scripts/tara.py`). Puanı ≥6 olan sayfalar tek tek okundu.
 - **Katalog tarih hatası:** İBB kataloğunda gazetelerin Kasım 1938 sayıları dosya adlarında "Nisan 1938" olarak kayıtlı. Örneğin *Cumhuriyet* 5202–5226 numaralı sayıların gerçek tarihi 6–30 Kasım 1938. Tarihler sayı numarasından yeniden hesaplandı (`scripts/ibb_tarih_duzelt.py`) ve OCR metnindeki gazete başlığından doğrulanacak.
-- **Durum:** *Cumhuriyet* 1 Aralık 1938 – 28 Şubat 1939 bitti (87 sayı; 252 sayfa puan ≥3, 55 sayfa puan ≥6). *Tan* sürüyor. 15–30 Kasım sayıları ile öteki beş gazete sırada.
+- **Durum:** *Cumhuriyet* bitti (103 sayı; 15 Kasım 1938 – 28 Şubat 1939). *Tan*'ın 71 sayısı bitti (15 Kasım – 29 Ocak); kalanı ile *Akşam*, *Kurun/Vakit*, *Son Posta*, *Yeni Sabah* ve *Haber* OCR kuyruğunda.
 - *Ulus* (Ankara) bu koleksiyonda yok; Gaste Arşivi oturumunda taranacak.
 
 ## *Cumhuriyet*: öne çıkan haberler
@@ -44,6 +44,21 @@
 | 1938-12-22 | 7 | **"Kongrenin Çalışma Mevzuları"**: 11 komisyon ve gündemleri | S0–S3 | Hayvan Yemi Komisyonu: "tabii ve suni çayırlar, yemlik bakliyat". Hayvanat Komisyonu: "mücadele, suni ve tabii tohumlama, hayvan mahsullerinin kıymetlendirilmesi… atçılık, sığırcılık, davarcılık, kümes hayvanları, tavşan" |
 | 1938-12-22 | 7 | "Büyük Ziraat Kongresinden Köylü Neler Bekliyor?" dizisi: bir sütçünün sözleri | S0 | Köylü inek sütünü şehre götüremiyor; aracılar köyden 10 kuruşa alıp suyla çoğaltarak şehirde 25 kuruşa satıyor. Dizi kongre öncesi dilekleri topluyor; bütün bölümleri ayrıca taranacak |
 | 1938-12-22 | 1, 8 | "Ziraat Kongresi Hazırlıkları": inşaatı süren bir devlet çiftliği | S1 | Çiftlik "bin hayvan ile çalışmıya" başlayacak, sayı beş bine çıkarılacak; damızlık tavşan şubesi. Milli Sanayi Birliği'nin kongre raporları (deri, yün, süt, süt tozu) |
+
+## Ek: *Cumhuriyet* 15–30 Kasım 1938 ve *Tan* 15 Kasım – 29 Ocak (ikinci parti)
+
+| Tarih | Gazete, sayfa | Başlık / konu | Strand | Not |
+|---|---|---|---|---|
+| 1938-11-19 | *Tan* 9 | Kongre duyurusu: Ziraat Vekâleti'nin dört yıllık programı | S0 | "Türkiye Birinci Köy ve Ziraat Kalkınma Kongresi, ilkkânunun başlarında Ankara'da toplanacaktır" |
+| 1938-11-22, 26, 30 | *Cumhuriyet* 10, 10, 11 | **Pendik Bakteriyoloji Enstitüsü**'nün dana alım ilanı | **S3, S1** | Aşı üretimi için 70 dana: "Yerli Dana, yerli Kırım, yerli **Montafon**, yerli **Simental** danası". Laboratuvar, ırkları adıyla ayırıyor ve "yerli Montafon" kategorisi kullanıyor |
+| 1938-12-27 | *Tan* 7 | Okur dilekleri: "Büyük Ziraat Kongresinden köylü neler bekliyor?" | S1, **S2** | "Çift hayvanlarının ıslahında daha titiz davranmalıdır." Köy sürüleri bağ ve bahçe arasında otlatılıyor; otlak mıntıkasını muhtar ve ihtiyar heyeti mevsime göre belirlemeli. Köy tüzel kişiliğine ait mer'a otlakiyesinin artırmaya konması. Arazilerin "yüzde doksanı münazaalı" |
+| 1938-12-28 | *Tan* 1, 6 | Celal Bayar'ın açış nutku (tam metin) | S0 | — |
+| 1938-12-29 | *Tan* 6 | **"Ziraat Kongresinde İkinci Gün: Köylünün Dilekleri ve İstekleri Tesbit Edildi"** | **S4**, S1, S3 | Hayvan komisyonu dilekleri: yetiştiricilere taksitle tuz; **"hayvanların bilhassa kışın yağmur ve çamurdan korunması için ağıl kanunumuzun tadilile köylüyü kolaylıkla ağıl sahibi olmasının temini"**; tiftik sergileri. Hastalık komisyonu: sağlık zabıtası derslerinin polis enstitüsü ve jandarma mekteplerinde okutulması. Mevzuat komisyonu: Toprak Kanunu, topraksız köylüye toprak |
+| 1939-01-03 | *Tan* 8 | "Hayvan cinslerini ıslah için Çukurova'da iyi tedbirler alınıyor" | **S1**, S3 | Çukurova Harası ve Mercimek aygır deposu (85.000 dönüm) "at, inek ve öküz neslinin ıslah ve teksiri" ile uğraşıyor. Amaç "Çukurovada tereddi etmiş hayvanların neslinin ıslahı". Müessese baytarları ovadaki hayvanlarda "yeni bazı hastalıkların mevcudiyetini" buldu |
+| 1939-01-17 | *Tan* 8 | "Şap hastalığı kalmadı" (İzmir) | S3 | Dahilî kordon bazı şartlarla kaldırıldı; ihracat ve hayvan pazarı hâlâ yasak (bkz. *Cumhuriyet* 14 Aralık) |
+| 1939-01-18 | *Tan* 3 | Nasreddin Hoca fıkrası: keçi ve ineği odaya almak | **S4** | "Odanın yanındaki ahırda" duran keçi ve inek odaya alınınca ev daralıyor, ahıra geri konunca "ferah ferah oturuyoruz". Fıkra fiyatlar üzerine bir yazıda kullanılıyor; ahır–oda bitişikliği gündelik mizah dilinde |
+| 1939-01-21 | *Tan* 2 | DZİK ile toptancı kasaplar (kıvırcık, dağlıç, sığır, kuzu) anlaştı | S0 | *Cumhuriyet* 20 Ocak ve 8 Şubat ile birlikte okunmalı |
+| 1939-01-23 | *Tan* 8 | **Ziraat Vekâleti faaliyet raporu** ("Raporun esaslarını aşağıda veriyoruz") | **S2, S3, S1** | "Geçen sene bilhassa merkezi Anadolu vilâyetlerinde kışa hayvanlar **yem ve ahır bakımından hazırlıksız** girdiğinden… 1,5 milyon koyun ve keçi zayiatı olmuştu." Şap Ankara–Konya demiryolunun batısında görülüyor; "bilhassa **aşiretler ve kontroldan kaçan süreklerle** intikal etmiştir". Baharda şarbon, verem, at firengisi, uyuz ve kene mücadelesi; hayvan sağlık kanunundaki "ihbara bağlı… 29 hastalık". Sultansuyu, Çifteler, Çukurova ve Konya haralarından yetiştiricilere 18 aygır, **40 boğa**; 27.580 aşım; 90.000 koyuna suni, 30.000 koyuna tabii tohumlama |
 
 Tam liste (puan ≥3, 252 sayfa, OCR bağlam parçalarıyla) bütün gazeteler bitince `fvadc_gazete_isabetleri.csv` olarak eklenecek. Gürültü örnekleri: tefrika romanlarda "yabani öküz", "su aygırı", "boğa(z)"; ilan ve tarihî yazılar.
 
