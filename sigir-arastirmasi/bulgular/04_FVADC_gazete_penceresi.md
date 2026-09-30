@@ -5,7 +5,7 @@
 - **Kaynak:** İBB Atatürk Kitaplığı dijital süreli yayın koleksiyonu (açık erişim, `katalog.ibb.gov.tr/yordam`). Yedi İstanbul gündelik gazetesi: *Cumhuriyet*, *Tan*, *Akşam*, *Kurun/Vakit*, *Son Posta*, *Yeni Sabah*, *Haber Akşam Postası*. Pencerede gazete başına yaklaşık 103 sayı, toplam yaklaşık 720 sayı.
 - **Yöntem:** PDF'ler (metin katmanı yok) 250 dpi gri tonlamayla tesseract `tur` ile OCR'landı (`scripts/ibb_gazete.py`). Metinler tezaurus v1.0 ile tarandı (`scripts/tara.py`). Puanı ≥6 olan sayfalar tek tek okundu.
 - **Katalog tarih hatası:** İBB kataloğunda gazetelerin Kasım 1938 sayıları dosya adlarında "Nisan 1938" olarak kayıtlı. Örneğin *Cumhuriyet* 5202–5226 numaralı sayıların gerçek tarihi 6–30 Kasım 1938. Tarihler sayı numarasından yeniden hesaplandı (`scripts/ibb_tarih_duzelt.py`) ve OCR metnindeki gazete başlığından doğrulanacak.
-- **Durum:** *Cumhuriyet* bitti (103 sayı; 15 Kasım 1938 – 28 Şubat 1939). *Tan*'ın 71 sayısı bitti (15 Kasım – 29 Ocak); kalanı ile *Akşam*, *Kurun/Vakit*, *Son Posta*, *Yeni Sabah* ve *Haber* OCR kuyruğunda.
+- **Durum:** *Cumhuriyet* (103 sayı) ve *Tan* (102 sayı) bitti. *Akşam*'ın 65 sayısı bitti. *Kurun/Vakit*, *Son Posta*, *Yeni Sabah* ve *Haber* OCR kuyruğunda.
 - *Ulus* (Ankara) bu koleksiyonda yok; Gaste Arşivi oturumunda taranacak.
 
 ## *Cumhuriyet*: öne çıkan haberler
@@ -59,6 +59,19 @@
 | 1939-01-18 | *Tan* 3 | Nasreddin Hoca fıkrası: keçi ve ineği odaya almak | **S4** | "Odanın yanındaki ahırda" duran keçi ve inek odaya alınınca ev daralıyor, ahıra geri konunca "ferah ferah oturuyoruz". Fıkra fiyatlar üzerine bir yazıda kullanılıyor; ahır–oda bitişikliği gündelik mizah dilinde |
 | 1939-01-21 | *Tan* 2 | DZİK ile toptancı kasaplar (kıvırcık, dağlıç, sığır, kuzu) anlaştı | S0 | *Cumhuriyet* 20 Ocak ve 8 Şubat ile birlikte okunmalı |
 | 1939-01-23 | *Tan* 8 | **Ziraat Vekâleti faaliyet raporu** ("Raporun esaslarını aşağıda veriyoruz") | **S2, S3, S1** | "Geçen sene bilhassa merkezi Anadolu vilâyetlerinde kışa hayvanlar **yem ve ahır bakımından hazırlıksız** girdiğinden… 1,5 milyon koyun ve keçi zayiatı olmuştu." Şap Ankara–Konya demiryolunun batısında görülüyor; "bilhassa **aşiretler ve kontroldan kaçan süreklerle** intikal etmiştir". Baharda şarbon, verem, at firengisi, uyuz ve kene mücadelesi; hayvan sağlık kanunundaki "ihbara bağlı… 29 hastalık". Sultansuyu, Çifteler, Çukurova ve Konya haralarından yetiştiricilere 18 aygır, **40 boğa**; 27.580 aşım; 90.000 koyuna suni, 30.000 koyuna tabii tohumlama |
+
+## Ek: *Akşam* (Aralık 1938 – Ocak 1939) ve *Tan* Şubat 1939 (üçüncü parti)
+
+| Tarih | Gazete, sayfa | Başlık / konu | Strand | Not |
+|---|---|---|---|---|
+| 1938-12-14 | *Akşam* 11 | "Et fiatini ucuzlatmak için tedbir alınıyor" | S0 | Devlet Ziraat Kurumu'nun İstanbul'da hayvan alıp mezbahada kestirmesi "bir inhisar mahiyetinde değildir" |
+| 1938-12-17 | *Akşam* 2 | **Türkiye–Yunanistan ticaret anlaşması ve "baytari anlaşma"** | **S3**, S0 | "Canlı hayvan ihracatımızdaki hayvan ağırlığı iki yüz yirmi beşten iki yüz yetmiş beş kiloya çıkarılmıştır." Baytari anlaşma Atina'da Ziraat Nezareti'nde imzalandı. TBMM'deki 15 Aralık 1938 tarihli Yunanistan veteriner mukavelenamesiyle aynı (rapor 01) |
+| 1938-12-24 | *Akşam* 9 | "Köy ve Ziraat Kongresi salı günü açılıyor" | S0 | Ankara telefon haberi |
+| 1938-12-30 | *Akşam* 3 | **"İki köy manzarası — Köy ve ziraat kalkınması kongresi münasebetile"** (Akşamdan Akşama köşesi) | **S4**, S0 | Çolakoğulları'nın 170 köyü, yarıcılık ve "yarı mülkiyet". Bir yarıcı "sayvan"ı: bacası yok, duman tavandaki delikten çıkıyor; **"Bir öküz, bir eşek, dört çocuk ve bir karı koca, bu altı metre murabbaı toprak zeminli yerde yatıyorlar."** İnsanlar mısır ekmeği yiyor, hayvanlar mısır sapı. Neden devletten toprak almadıklarına cevap: "Kuru toprakla olur mu, efendi?… Hayvan lâzım; âlet lâzım…" |
+| 1939-01-15 | *Akşam* 1 | "Et fiatleri yükseldi: karaman 40, dağlıç 43, sığır 35 kuruşa" | S0 | DZİK ve celepler belediyeye başvurdu; hayvan borsası fiyatları artışı doğruladı; narh yükseltildi |
+| 1939-02-08 | *Tan* 10 | **"Yediğimiz Etin Hikâyesi"** (dizi) | S0, **S2** | Toptancılar ve mezbaha kabzımalları fiyatı tutmak için hayvanları mezbahadan uzakta tutuyor. Sürüler Karadeniz'deki Malus burnundan Çiftealan, Akpınar, Kısrakalan, Pirinççiköy ve Belgrad ormanları–Istranca dağlarına kadar uzanan köylerin **mer'alarında** gezdiriliyor. Anadolu ve Rumeli'den gelen hayvanlar yolda zayıflayıp kilo kaybediyor. Dizinin bütün bölümleri toplanacak |
+| 1939-02-25 | *Tan* 6 | "Pazarcık'taki göçebe halk yerleştirilecek" (Gaziantep) | S3 | Göçebelerin iskânı |
+| 1939-02-05 | *Tan* 2 | Osmanlı hayvan vergileri tarihi | S0 | "Ağnam adeti resmi… ağıl resmi, çit parası, otlak–yaylak–kışlak resimleri" |
 
 Tam liste (puan ≥3, 252 sayfa, OCR bağlam parçalarıyla) bütün gazeteler bitince `fvadc_gazete_isabetleri.csv` olarak eklenecek. Gürültü örnekleri: tefrika romanlarda "yabani öküz", "su aygırı", "boğa(z)"; ilan ve tarihî yazılar.
 
