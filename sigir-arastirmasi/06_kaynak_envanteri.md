@@ -115,3 +115,34 @@ Yıl aralıkları için not: Aşağıdaki yayın yılları bellekten verilmişti
 | Institut International d'Agriculture (Roma) | Hayvan hastalıkları ve hayvancılık istatistikleri | `?` |
 | FAO (1945–) | Türkiye hayvancılık misyonları, sığır vebası raporları | `✓` (FAO belge deposu erişilebilir) |
 | Türk Diplomatik Arşivi | Türkiye–Gürcistan (Sovyet) sınırı veteriner sözleşmeleri | `✓` ([çalışma](https://avesis.erdogan.edu.tr/yayin/f2e45539-e549-40fe-822a-345f6b178a73/veterinary-contract-on-health-animal-diseases-and-turkish-georgian-border-in-turkish-diplomatic-archive-documents)) |
+
+## Tur 2 eki: İBB Atatürk Kitaplığı dijital süreli yayınları (açık erişim)
+
+Katalog: `https://katalog.ibb.gov.tr/yordam/` (Tür: e-Süreli Sayı). Her sayı tek bir PDF; dosya adında tarih var (ör. `00336_04937_1938M0209_…pdf` = *Cumhuriyet* 4937, 9 Şubat 1938). PDF'lerde metin katmanı yok. Tesseract (tur, 250 dpi) ile *Cumhuriyet* sayfası yaklaşık 9 saniyede ve iyi kaliteyle okunuyor. Araçlar: `scripts/ibb_kapsam.py` (kapsam), `scripts/ibb_gazete.py` (liste, indirme, OCR).
+
+Eser Adı alanında ölçülen e-sayı sayıları (1923–1950):
+
+| Başlık | e-sayı | Yıllar (yaklaşık tam yıllar kalın) |
+|---|---|---|
+| *Cumhuriyet* | 6.143 | 1924–1943; **1925–30, 1934–42 neredeyse tam**; 1931 yok |
+| *Tan* (1935 öncesi *Milliyet*) | 5.506 | *Milliyet* **1926–29**, 1930 kısmi, **1932–35**; *Tan* **1935–42**, 1943 kısmi |
+| *Akşam* | 5.158 | 1923–24, 1932–34, **1935–40** (bazı yıllar mükerrer kayıtlı olabilir) |
+| *Vakit* / *Kurun* | 3.499 | 1923–24, 1930, 1932, **1933–40** |
+| *İkdâm* / *Yeni İkdam* | 2.947 | **1923–25**, 1928–29, 1939–43 |
+| *Son Posta* | 2.500 | 1932–33, **1935–40** |
+| *Haber Akşam Postası* | 2.176 | **1935–40** |
+| *Son Saat* | 1.706 | **1925–29** |
+| *Hâkimiyet-i Milliyye* | 964 | 1923–28 (kısmi) |
+| *Yeni Sabah* | 957 | **1938 (Mart'tan) – 1940** |
+| *Zaman* | 916 | 1934–36 |
+| *Tanin* | 807 | **1923–25** |
+| *Vatan* | 787 | 1923–25 |
+| *Tevhid-i Efkâr* | 769 | **1923–24** |
+| *Servet-i Fünûn / Uyanış* | 738 | 1926–44 (haftalık) |
+| *Yeni Adam* | 601 | 1934–50 (haftalık) |
+| *Akbaba*, *Karagöz* | ~300 | mizah |
+| *Ayın Tarihi* | 136 | 1926–40 |
+| *Ülkü* | 94 | 1933–41 |
+| *Türk Baytarlar Cemiyeti Mecmuası* | 9 | 1930–33 |
+
+*Ulus*, *Son Telgraf*, *Yeni Asır* ve *Yedigün* bu koleksiyonda bulunamadı. 1941 sonrası kapsam hızla azalıyor; 1944–1950 günlük basın için Gaste Arşivi gerekli olmaya devam ediyor.

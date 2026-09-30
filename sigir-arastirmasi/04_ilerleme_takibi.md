@@ -27,6 +27,8 @@
 | OCR kuyruğu (öncelik 2) | [~] | 49 kaydın 5'i bitti: Berkes, *Doğuş*, *Karacadağ*, *Erzurum*, *Derme* (kısmen). Arka planda sürüyor |
 | Gaste Arşivi hazırlığı (öncelik 1) | [x] hazır | `08_gaste_sorgu_plani.md` ve 907 satırlık `08_gaste_sorgu_listesi.csv`. FVADC açılış tarihi web kaynağından 27 Aralık 1938 (Celal Bayar) olarak alındı; kongre yayınlarından doğrulanacak |
 | Gaste Arşivi taraması | [ ] | Kullanıcının Chrome bağlantısı bekleniyor |
+| Faz 7: Milletler Cemiyeti (öncelik 7) | [x] LNTS | LONTAD tarayıcı doğrulaması istiyor. Onun yerine LNTS cilt 13–205 (1923–1946, 193 cilt) treaties.un.org'dan indirildi ve tam metin tarandı. Türkiye 1935 Cenevre'deki üç veteriner sözleşmesini 20 Şubat 1935'te imzalamış, 19 Mart 1941'de onaylamış. İki taraflı veteriner sözleşmeleri LNTS'de kayıtlı değil (rapor 01) |
+| **Yeni kaynak: İBB Atatürk Kitaplığı e-süreli yayınları** | [~] keşif | katalog.ibb.gov.tr/yordam'da 151.012 dijital süreli yayın sayısı var: 120.807 gazete, 30.205 dergi; 1923–1943 arası her yıl 1.000–3.700 sayı. PDF'ler açık erişimli ama metin katmanı yok (OCR gerekiyor). *Türk Baytarlar Cemiyeti Mecmuası* 1930–33 (9 sayı) burada çevrimiçi. Başlık bazında kapsam ölçümü sürüyor (`scripts/ibb_kapsam.py`). Günlük gazete boşluğunu kısmen kapatabilir |
 
 ## Tur 2 için öncelik sırası
 
@@ -62,3 +64,6 @@
 | Papers Past web arayüzü | ✗ Incapsula (API üzerinden erişildi) |
 | Milli Kütüphane, Hakkı Tarık Us, tarihigazete.com | ✗ yanıt yok (yurt dışı erişim engeli olabilir) |
 | SALT Araştırma, İÜ Nadir Eserler | ✗ 403 |
+| LONTAD (archives.ungeneva.org) | ✗ tarayıcı doğrulaması ("Verifying your browser") |
+| LNTS PDF'leri (treaties.un.org/doc/Publication/UNTS/LON/) | ✓ açık; metin katmanı iyi |
+| İBB Atatürk Kitaplığı Yordam kataloğu ve e-süreli PDF'leri | ✓ açık; PDF'ler görüntü, OCR gerekiyor |

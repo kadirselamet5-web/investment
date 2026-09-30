@@ -2,6 +2,13 @@
 
 Bu dosya, kullanıcının Claude in Chrome ile oturum açılmış **Gaste Arşivi**'ne bağladığı oturumda çalıştırılacak sorguların planıdır. Sorguların tam listesi ve takip sütunları `08_gaste_sorgu_listesi.csv` dosyasında; liste `scripts/gaste_sorgu_uret.py` ile üretildi (terim ya da olay eklemek için betik düzenlenip yeniden çalıştırılır).
 
+## 0. Tur 2 güncellemesi: İBB ile örtüşme
+
+İBB Atatürk Kitaplığı'nın açık dijital koleksiyonu (bkz. `06_kaynak_envanteri.md`, Tur 2 eki) *Cumhuriyet*, *Tan/Milliyet*, *Akşam*, *Vakit/Kurun*, *Son Posta*, *Haber* ve *Yeni Sabah*'ın 1923–1942 sayılarını içeriyor. Bu yüzden:
+
+- **Blok A (FVADC penceresi)** İBB PDF'leri üzerinden OCR ile yapılıyor (`scripts/ibb_gazete.py`; 15 Kasım 1938 – 28 Şubat 1939; 7 gazete). Gaste Arşivi'nde bu blok yalnızca *Ulus* için ve karşılaştırma için çalıştırılacak.
+- **Blok B ve C** için İBB'de bulunan gazete ve yıllar yerel OCR ile taranabilir. Gaste Arşivi öncelikle **İBB'de olmayanlara** ayrılır: *Ulus* (1934–50), 1943–1950 bütün gazeteler, *Yeni Asır*, *Son Telgraf*, taşra gazeteleri.
+
 ## 1. Oturum protokolü
 
 1. **Envanter (ilk 15 dakika):** Gaste Arşivi'ndeki gazeteler ve yıl aralıkları listelenir, `06_kaynak_envanteri.md`'ye işlenir. Özellikle şunlar kontrol edilir:

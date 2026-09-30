@@ -15,6 +15,7 @@ Doktora tezinin dört araştırma strandı için Türkçe ve İngilizce gazete i
 | `bulgular/01_TBMM_tutanak_bulgulari.md` | TBMM tutanakları 1923–1950: strand bazında 77 kilit görüşme ve veteriner sözleşmeleri dizisi |
 | `bulgular/02_dergi_ve_basin_bulgulari.md` | Dergiler, *Ayın Tarihi*, *Düstur*, halkevi dergileri, *Beyoğlu*; öne çıkan kayıtlar ve göz taraması listesi |
 | `bulgular/03_ingilizce_basin_bulgulari.md` | Papers Past (Yeni Zelanda) taraması |
+| `bulgular/04_FVADC_gazete_penceresi.md` | FVADC penceresi (15 Kasım 1938 – 28 Şubat 1939): İBB Atatürk Kitaplığı'ndaki 7 İstanbul gazetesinin OCR taraması (ara rapor) |
 | `bulgular/atbm_makale_listesi.csv` | *Askerî Tıbbî Baytarî Mecmuası* 1929–1937 makale başlıkları ve yazarları (sezgisel çıkarım, strand etiketli) |
 | `bulgular/*.csv` | Tam isabet kayıtları: tutanak sayfaları ve kümeleri, dergi parçaları, OCR'lı dergiler, Fransızca basın |
 | `scripts/` | İndirme, OCR, tarama ve puanlama betikleri (tekrar çalıştırılabilir) |

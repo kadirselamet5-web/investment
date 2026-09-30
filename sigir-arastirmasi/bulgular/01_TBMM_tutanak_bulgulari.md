@@ -126,6 +126,9 @@
 | Yunanistan | 15 Aralık 1938 | 15 Mayıs – 5 Haziran 1939 (1/23) | 1935 tarihli üç uluslararası veteriner sözleşmesine dayanıyor; 1 Mart 1950'de 1. maddesi değiştirildi |
 | Suriye (Fransız mandası) | 1940 | 10 Haziran 1940 | Mukavelenameye ekli 5 numaralı "baytarî rejim" protokolü |
 | Irak | 1940–41 | 14 Nisan 1941 (1/564) | Geçiş noktaları, sıhhat şahadetnamesi örnekleri |
+| **Çok taraflı: 1935 Cenevre veteriner sözleşmeleri** (Milletler Cemiyeti) | Cenevre, 20 Şubat 1935; Türkiye adına Cemal Hüsnü Taray | İcra Vekilleri Heyeti'nin 1 Şubat 1936 tarih ve 3969 sayılı kararıyla imzası uygun bulundu. TBMM'de Hariciye Encümeni mazbatası 21 Nisan 1937 (1/712); görüşme **11 Haziran 1937**, Dönem 5, Cilt 19, Birleşim 74, PDF s. 119–142 ([PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d05/c019/tbmm05019074.pdf)). Esbab-ı mucibe, 17 Ekim 1927 Cenevre ithalat–ihracat konferansının nihai senedine dayanıyor. Onay belgesinin Milletler Cemiyeti'ne tevdii: **19 Mart 1941** (LNTS) | Üç sözleşme: (1) bulaşıcı hayvan hastalıklarıyla mücadele (LNTS No. 4310, cilt 186, s. 173 vd.); (2) hayvan, et ve hayvansal ürün transiti (No. 4486, cilt 193, s. 41 vd.); (3) hayvansal ürün ihracatı ve ithalatı (No. 4487, cilt 193, s. 61 vd.). Onay kayıtları: cilt 200, s. 553 ve 579. Kaynak: Milletler Cemiyeti Antlaşmalar Dizisi (treaties.un.org), Tur 2 taraması |
+
+LNTS 1923–1946 (cilt 13–205) tam metin taraması (Tur 2): Türkiye'nin iki taraflı veteriner sözleşmelerinin hiçbiri Milletler Cemiyeti'ne kaydettirilmemiş. Yalnızca çok taraflı 1935 sözleşmelerine imza ve onay kaydı var. Türkiye'yi ilgilendiren öteki kayıtlı metinler: Lozan'daki "sanitary matters" bildirisi (No. 915, 1923), Trakya sınırı sözleşmesi (No. 703), Türkiye–Irak sınır antlaşması (No. 1511, 1926) ve Pythion–Svilengrad demiryolu tüzüğü (No. 4543, 1937).
 
 ## Tez için öne çıkan gözlemler
 

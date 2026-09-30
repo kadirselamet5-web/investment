@@ -5,7 +5,7 @@
 | Derlem | Kapsam | Yöntem | Sonuç dosyası |
 |---|---|---|---|
 | TBMM Kütüphanesi Açık Erişim | 1923–1950 tarihli 658 kayıt (dergi, gazete, resmî yayın). Bunların 168'inde kurumun OCR metni vardı | OCR metinleri indirilip tezaurus v1.0 ile 3.000 karakterlik parçalar halinde tarandı | `dergi_isabetleri.csv` |
-| TBMM Açık Erişim, OCR'ı olmayan Latin harfli kayıtlar | 49 öncelikli kayıt (halkevi dergileri, yerel gazeteler, Berkes) | PDF'ler indirilip tesseract (Türkçe) ile OCR'landı. **Devam ediyor:** şu ana kadar Berkes, *Doğuş* (Kars) ve *Karacadağ* (Diyarbakır) bitti | `dergi_isabetleri_ocr.csv` |
+| TBMM Açık Erişim, OCR'ı olmayan Latin harfli kayıtlar | 49 öncelikli kayıt (halkevi dergileri, yerel gazeteler, Berkes) | PDF'ler indirilip tesseract (Türkçe) ile OCR'landı. **Devam ediyor:** şu ana kadar Berkes, *Doğuş* (Kars), *Karacadağ* (Diyarbakır), *Erzurum* ve *Derme* (Malatya) bitti; *Eskişehir Halkevi* sürüyor | `dergi_isabetleri_ocr.csv` |
 | Internet Archive | 1.101 kayıt (Türkçe, 1923–1950; *Ülkü* serileri, halkevi dergileri, *Askerî Tıbbî Baytarî Mecmuası*, *Kadro* vb.) | `_djvu.txt` OCR metinleri | `dergi_isabetleri.csv` |
 | *Beyoğlu* (Fransızca İstanbul gazetesi, 1939–1944) ve *La Turquie Kemaliste* | TBMM Açık Erişim | Fransızca terimlerle ayrı tarama | `beyoglu_fransizca_isabetler.csv` |
 
@@ -83,6 +83,21 @@ Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4086) 
   - **S1 (1939):** "Bu kara sığırların da ıslahı lazımdır."
   - Diyarbakır'ın sığır ve deri ihracatı (1939). TBMM [11543/4315](https://acikerisim.tbmm.gov.tr/handle/11543/4315).
 - ***Doğuş* (Kars Halkevi, 1938–39; tesseract OCR):** Kars'ta hayvancılık; İran koyunları, Gürcü koyunları, sığırlar ([11543/4291](https://acikerisim.tbmm.gov.tr/handle/11543/4291)).
+- ***Derme* (Malatya Halkevi, 1937–46; tesseract OCR, Tur 2)** ([11543/3966](https://acikerisim.tbmm.gov.tr/handle/11543/3966)):
+  - **"Malatya sığırcılığı ne âlemde"** (sayı 5, 1937; PDF s. 7–10; yazar içindekilerde OCR bozuk: "… Malkoç"), **S0, S1, S3**.
+    - İlde 57.295 erkek, 51.080 dişi, toplam 108.375 sığır; "aşağı yukarı 8 kişiye bir öküz" düşüyor, çift öküzü olmayan köylü hesabı yapılıyor.
+    - "Muhtelif kanların karma karışık bir surette damızlıkta kullanılması" yüzünden renk ve yapı karmaşası; "bütün dünya gelişi güzel hayvan yetiştirmekten vaz geçmiştir".
+    - Arapkir, Besni, Adıyaman, Kâhta ve Darende sığırları karşılaştırılıyor.
+    - Şap "köylünün sabanını yüzüstü bırakan" bir afet. Bazı "görgüsüz fen adamları" şapa önem vermiyor. Şarbon ve yanıkara için aşı.
+  - Malatya atçılığının ıslahı: yonca, zootekni merkezi, aygır muayenesi (sayı 4, 1937; s. 11–12), **S1**.
+  - Köy çocuğunun eğitimi: "öküzleri sulamak, hayvan yemlemek ve altlarındaki gübreleri temizlemek" (sayı 8, 1938; s. 21, 24), **S4** (ahır emeği).
+  - Halk inanışları: ilk süt sağımına giden kadınların soğan dikmesi, koç katımında koçun üstüne kız çocuğu bindirilmesi (sayı 11, 1939; s. 23), **S1 ve S4** (üremeye ilişkin halk pratiği).
+  - Sivas–Malatya yolundaki bir köyün tasviri: "duman ve tezek kokuları" klişesine karşı yeni köy (sayı 18, 1946; s. 19), **S4**.
+- ***Erzurum* (Halkevi kültür dergisi, 1944–46; tesseract OCR, Tur 2)** ([11543/4274](https://acikerisim.tbmm.gov.tr/handle/11543/4274)):
+  - **"Yakacak sıkıntısı"** (sayı 2, 1944; s. 18): Erzurum'da köylü ve şehirli halk kış boyunca "hayvan gübrelerini harcayarak tezek yakıyor". Gözler tezek dumanından kanlanıyor, gübresiz kalan tarlalar zayıf ürün veriyor. **S4 ve S2** (tezek, yakacak ve gübre çatışması).
+  - Halk şiiri "Güz destanı": kışlık erzak listesi (tezek, peynir, yağ) ve "ahırda hayvan beslemek" (sayı 8–9, 1946; s. 31), **S4**.
+  - Erzurum ağzı sözlüğü: "celep davarı", "çobannıh" vb. (sayı 11, 1946; s. 16), **S0**.
+  - Mikroplar üzerine halk sağlığı yazısı: sığır vebası ve şap (sayı 6, 1945; s. 17–19), **S3**.
 - ***Burdur Halkevi Dergisi* (1941), S4:** Köy odası şiiri: "Sağında bir ahır, solda samanlık" ([11543/3939](https://acikerisim.tbmm.gov.tr/handle/11543/3939)).
 - ***Uludağ* (Bursa Halkevi):** Merinos koyunculuğu ve Karacabey (1935); Karacabey sel felaketi (1940).
 
