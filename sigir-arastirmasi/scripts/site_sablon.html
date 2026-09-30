@@ -9,20 +9,20 @@
 <style>
 :root{
   --bg:#f7f6f2;--panel:#ffffff;--ink:#1f2328;--muted:#5d646d;--line:#e3e0d8;--accent:#8a4b1f;--accent-soft:#f3e7dc;
-  --s0:#5b6b7f;--s1:#2f7d4f;--s2:#b7791f;--s3:#b23a3a;--s4:#6b4ea0;
+  --s0:#2a78d6;--s1:#eb6834;--s2:#1baf7a;--s3:#eda100;--s4:#e87ba4;--seri:#2a78d6;
   --ok:#2f7d4f;--run:#b7791f;--todo:#5b6b7f;--block:#b23a3a;--user:#6b4ea0;
   --radius:10px;--shadow:0 1px 2px rgba(0,0,0,.05);
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#15171a;--panel:#1d2024;--ink:#e6e3dc;--muted:#a3a8ae;--line:#30343a;--accent:#e0a36f;--accent-soft:#3a2c21;
-    --s0:#93a3b8;--s1:#6cc190;--s2:#e3b25a;--s3:#ec7c7c;--s4:#b39ae6;
+    --s0:#3987e5;--s1:#d95926;--s2:#199e70;--s3:#c98500;--s4:#d55181;--seri:#3987e5;
     --ok:#6cc190;--run:#e3b25a;--todo:#93a3b8;--block:#ec7c7c;--user:#b39ae6;--shadow:none;
   }
 }
 :root[data-theme="dark"]{
   --bg:#15171a;--panel:#1d2024;--ink:#e6e3dc;--muted:#a3a8ae;--line:#30343a;--accent:#e0a36f;--accent-soft:#3a2c21;
-  --s0:#93a3b8;--s1:#6cc190;--s2:#e3b25a;--s3:#ec7c7c;--s4:#b39ae6;
+  --s0:#3987e5;--s1:#d95926;--s2:#199e70;--s3:#c98500;--s4:#d55181;--seri:#3987e5;
   --ok:#6cc190;--run:#e3b25a;--todo:#93a3b8;--block:#ec7c7c;--user:#b39ae6;--shadow:none;
 }
 *{box-sizing:border-box}
@@ -49,7 +49,7 @@ h3{font-size:16px;margin:22px 0 8px}
 .bar>i{display:block;height:100%;background:var(--accent)}
 .satir{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .cip{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
-.cip.S0{border-color:var(--s0);color:var(--s0)}.cip.S1{border-color:var(--s1);color:var(--s1)}.cip.S2{border-color:var(--s2);color:var(--s2)}.cip.S3{border-color:var(--s3);color:var(--s3)}.cip.S4{border-color:var(--s4);color:var(--s4)}
+.cip.S0,.cip.S1,.cip.S2,.cip.S3,.cip.S4{color:var(--ink)}.cip.S0::before,.cip.S1::before,.cip.S2::before,.cip.S3::before,.cip.S4::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:0}.cip.S0::before{background:var(--s0)}.cip.S1::before{background:var(--s1)}.cip.S2::before{background:var(--s2)}.cip.S3::before{background:var(--s3)}.cip.S4::before{background:var(--s4)}
 .cip.sec{background:var(--accent-soft);color:var(--ink);border-color:var(--accent)}
 button.cip{cursor:pointer;background:none;font:inherit;font-size:12px}
 .durum{font-size:12px;font-weight:600;padding:2px 8px;border-radius:6px;color:#fff}
@@ -76,6 +76,26 @@ input[type=search]{min-width:220px}
 .zc{border-left:3px solid var(--line);margin-left:6px;padding:4px 0 4px 14px;position:relative}
 .zc::before{content:"";position:absolute;left:-7px;top:10px;width:11px;height:11px;border-radius:50%;background:var(--muted)}
 .zc.meclis::before{background:var(--s0)}.zc.gazete::before{background:var(--accent)}.zc.dergi::before{background:var(--s1)}.zc.ingilizce::before{background:var(--s2)}.zc.antlasma::before{background:var(--s3)}.zc.program::before{background:transparent;border:2px solid var(--muted)}
+
+.okuyucu{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;z-index:50;align-items:center;justify-content:center;padding:16px}
+.okuyucu.acik{display:flex}
+.okuyucu .pencere{background:var(--panel);color:var(--ink);border-radius:var(--radius);max-width:900px;width:100%;max-height:92vh;display:flex;flex-direction:column;box-shadow:0 10px 40px rgba(0,0,0,.3)}
+.okuyucu .bas{padding:12px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:flex-start}
+.okuyucu .bas h3{margin:0;font-size:16px;flex:1}
+.okuyucu .govde{padding:14px 18px;overflow:auto;white-space:pre-wrap;font:14px/1.6 Georgia,"Times New Roman",serif}
+.okuyucu .ayak{padding:10px 16px;border-top:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.okuyucu mark{background:#f6d58a;color:#1f2328;border-radius:2px}
+.okuyucu .sayfabas{font:600 12px system-ui,sans-serif;color:var(--muted);margin:14px 0 4px;border-top:1px dashed var(--line);padding-top:8px}
+button.oku{border:1px solid var(--accent);color:var(--accent);background:none;border-radius:6px;padding:1px 8px;cursor:pointer;font-size:12px}
+.kc{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-bottom:10px}
+.kc .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:10px 12px}
+.kc .panel h4{margin:0 0 4px;font-size:13px}
+.kc svg{display:block;width:100%;height:auto;overflow:visible}
+.kc .cubuk{fill:var(--seri)}
+.kc .cubuk:hover,.kc .cubuk.aktif{opacity:.75}
+.kc .eksen{stroke:var(--line)}
+.kc text{fill:var(--muted);font-size:10px}
+.ipucu{position:fixed;pointer-events:none;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:12px;box-shadow:0 2px 8px rgba(0,0,0,.15);display:none;z-index:60}
 #agkutu{width:100%;height:620px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
 .ag-duzen{display:grid;grid-template-columns:1fr 300px;gap:12px}
 @media (max-width:900px){
@@ -111,6 +131,8 @@ input[type=search]{min-width:220px}
   <a href="#kaynaklar">Kaynaklar</a>
   <div class="tema">Tema: <select id="tema"><option value="">Sistem</option><option value="light">Açık</option><option value="dark">Koyu</option></select></div>
 </nav>
+<div class="okuyucu" id="okuyucu"><div class="pencere"><div class="bas"><h3 id="okbaslik"></h3><button class="cip" id="okkapat">Kapat ✕</button></div><div class="kucuk muted" id="okust" style="padding:0 16px"></div><div class="govde" id="okgovde"></div><div class="ayak"><button class="cip" id="okonce">‹ Önceki</button><span class="kucuk" id="oksay"></span><button class="cip" id="oksonra">Sonraki ›</button><span style="flex:1"></span><a id="okpdf" target="_blank" rel="noopener">PDF'te aç</a></div></div></div>
+<div class="ipucu" id="ipucu"></div>
 <main>
 <section id="genel"></section>
 <section id="program"></section>
@@ -149,6 +171,37 @@ function altSekme(el, sekmeler, anahtar){
   ac(sekmeler.some(s=>s[0]===secili)?secili:sekmeler[0][0]);
 }
 
+
+/* ---------------- Metin okuyucu (metin/<grup>.js dosyaları istek üzerine yüklenir) */
+const METIN={}, YUKLU={};
+window.__metin=(g,v)=>{Object.assign(METIN,v); YUKLU[g]=true;};
+function metinGetir(anahtar){
+  const g=(V.metin_dizin||{})[anahtar]; if(!g) return Promise.resolve(null);
+  if(YUKLU[g]) return Promise.resolve(METIN[anahtar]);
+  return new Promise(res=>{const s=document.createElement("script"); s.src="metin/"+g+".js"; s.onload=()=>res(METIN[anahtar]); s.onerror=()=>res(null); document.head.appendChild(s);});
+}
+const VURGU=/(s[ıi1l]?[gğ][ıi1l]r|inek|[öo]k[üu]z|bo[gğ]a|dana|d[üu]ve|buza[gğ][ıi]|manda|hayvan|baytar|veteriner|yem|yonca|mer['’]?a|otlak|ah[ıi]r|tezek|[şs]ap\b|veba|[şs]arbon|damızlık|damizlik|[ıi]slah|hara\b|s[üu]t|mezbaha|celep|a[şs][ıi]\b|serum|karantina|zootekni|g[üu]bre|kongre)/gi;
+function vurgula(s){return esc(s).replace(VURGU,m=>`<mark>${m}</mark>`)}
+function oku(baslik, anahtarlar, pdf, ust){
+  anahtarlar=(anahtarlar||[]).filter(Boolean); const ok=$("#okuyucu"); let i=0;
+  $("#okbaslik").textContent=baslik||""; $("#okust").textContent=ust||"";
+  const pl=$("#okpdf"); if(pdf){pl.href=pdf;pl.style.display=""} else pl.style.display="none";
+  async function goster(){
+    $("#okgovde").innerHTML='<span class="muted">Yükleniyor…</span>';
+    const k=anahtarlar[i]; const m=await metinGetir(k);
+    const etiket=k?k.split(":").slice(-1)[0]:"";
+    $("#okgovde").innerHTML=m?`<div class="sayfabas">${esc(k.startsWith("d:")?"Metin birimi (3000 karakter)":"Sayfa "+etiket)}</div>${vurgula(m)}`:'<span class="muted">Bu kayıt için sitede metin yok; PDF bağlantısını kullanın.</span>';
+    $("#oksay").textContent=anahtarlar.length>1?`${i+1} / ${anahtarlar.length}`:""; $("#okonce").style.visibility=i>0?"visible":"hidden"; $("#oksonra").style.visibility=i<anahtarlar.length-1?"visible":"hidden";
+    $("#okgovde").scrollTop=0;
+  }
+  $("#okonce").onclick=()=>{if(i>0){i--;goster()}}; $("#oksonra").onclick=()=>{if(i<anahtarlar.length-1){i++;goster()}};
+  ok.classList.add("acik"); goster();
+}
+document.addEventListener("click",e=>{const b=e.target.closest("button.oku[data-kayit]"); if(!b)return; const k=V.one_cikan.find(x=>x.id===b.dataset.kayit); if(k) oku(k.baslik,k.m,(k.link[0]||{}).url,`${k.tarih||k.yil||""} · ${k.gazete||""} · ${k.rapor}`);});
+$("#okkapat").onclick=()=>$("#okuyucu").classList.remove("acik");
+$("#okuyucu").onclick=e=>{if(e.target.id==="okuyucu")$("#okuyucu").classList.remove("acik")};
+document.addEventListener("keydown",e=>{if(e.key==="Escape")$("#okuyucu").classList.remove("acik")});
+
 /* ---------------- Genel bakış */
 function genel(el){
   const o=V.olcum;
@@ -157,6 +210,7 @@ function genel(el){
   const tur={}; V.one_cikan.forEach(k=>tur[k.tur]=(tur[k.tur]||0)+1);
   const son=V.one_cikan.filter(k=>k.tur==="gazete").slice(-8).reverse();
   el.innerHTML=`<h2>Genel bakış</h2>
+  <div class="kart kucuk"><b>Nasıl kullanılır.</b> Strand bazında ara analiz için <a href="#raporlar" onclick="ls.set('sekme_rapor','r05')">Sentez</a>; tek tek okunmuş kayıtlar için <a href="#bulgular">Öne çıkan kayıtlar</a>; bütün isabet listeleri için <a href="#veri">Veri tabanı</a> (her satırda <i>Oku</i> düğmesi tam metni site içinde açar, <i>PDF</i> bağlantısı kaynağın ilgili sayfasına gider); yıllara göre yoğunluk ve olaylar için <a href="#zaman">Zaman çizelgeleri</a>; kişiler, kurumlar ve yayınlar için <a href="#uzman">Uzmanlık ağı</a>. Metinlerdeki çekirdek terimler sarıyla vurgulanır. OCR metinlerinde okuma hataları olabilir; alıntı yapmadan önce PDF'ten kontrol edin.</div>
   <div class="izgara">${kpi.map(([a,s])=>`<div class="kart kpi"><div class="sayi">${esc(s)}</div><div class="ad">${a}</div></div>`).join("")}</div>
   <h3>OCR ve tarama ilerlemesi</h3>
   <div class="kart">${(V.ocr||[]).map(x=>`<div style="margin:6px 0"><div class="satir kucuk"><b style="flex:1">${esc(x.is)}</b><span class="muted">${x.bitti} / ${x.hedef}</span></div><div class="bar"><i style="width:${Math.round(100*x.bitti/Math.max(x.hedef,1))}%"></i></div></div>`).join("")||'<span class="muted">Bilgi yok</span>'}</div>
@@ -205,7 +259,7 @@ function kayitKarti(k){
   return `<div class="kart kayit" id="${k.id}"><div class="ust">${k.id} · ${esc(TUR[k.tur]||k.tur)}${k.gazete?` · <i>${esc(k.gazete)}</i>`:""} · ${esc(k.tarih||k.yil||"tarihsiz")} · ${esc(k.bolum)}</div>
   <h4>${esc(k.baslik)}</h4><div class="satir">${cipler(k.strand)}</div>
   <details><summary>Ayrıntı</summary><div class="kucuk" style="margin-top:6px">${esc(k.metin)}</div><div class="kucuk muted">Kaynak rapor: ${esc(k.rapor)}</div></details>
-  ${k.link&&k.link.length?`<div class="kucuk" style="margin-top:4px">${linkHtml(k.link)}</div>`:""}</div>`;
+  <div class="kucuk satir" style="margin-top:4px">${k.m&&k.m.length?`<button class="oku" data-kayit="${k.id}">Metni oku (${k.m.length} sayfa)</button>`:""}${k.link&&k.link.length?linkHtml(k.link):""}</div></div>`;
 }
 const bulguDurum={q:"",tur:"",str:[],y1:"",y2:"",sayfa:0};
 function bulgular(el){
@@ -232,7 +286,7 @@ function kayitaGit(id){ Object.assign(bulguDurum,{q:id,tur:"",str:[],y1:"",y2:""
 /* ---------------- Raporlar */
 function raporlar(el){
   el.innerHTML=`<h2>Raporlar ve ara analizler</h2><p class="muted kucuk">Her rapor, ilgili kaynağın taranma yöntemi, öne çıkan kayıtları, gözlemleri ve sınırlılıklarıyla birlikte.</p>`;
-  altSekme(el,[["r01","01 · TBMM tutanakları",g=>g.append(md(V.md.r01))],["r02","02 · Dergiler ve basın",g=>g.append(md(V.md.r02))],["r03","03 · İngilizce basın",g=>g.append(md(V.md.r03))],["r04","04 · FVADC gazete penceresi",g=>g.append(md(V.md.r04))]],"sekme_rapor");
+  altSekme(el,[["r05","Sentez · ara analiz",g=>g.append(md(V.md.r05))],["r01","01 · TBMM tutanakları",g=>g.append(md(V.md.r01))],["r02","02 · Dergiler ve basın",g=>g.append(md(V.md.r02))],["r03","03 · İngilizce basın",g=>g.append(md(V.md.r03))],["r04","04 · FVADC gazete penceresi",g=>g.append(md(V.md.r04))]],"sekme_rapor");
 }
 
 /* ---------------- Veri tabanı */
@@ -245,7 +299,9 @@ function buyukTablo(g, satirlar, sutunlar, opts){
     const l=satirlar.filter(r=>(!d.str||String(r[opts.str]).includes(d.str))&&(!d.puan||+r[opts.puan]>=+d.puan)&&(!q||r.join(" ").toLocaleLowerCase("tr").includes(q)));
     const N=50, ss=Math.ceil(l.length/N); d.sayfa=Math.min(d.sayfa,Math.max(ss-1,0));
     g.querySelector(".sayac").textContent=`${l.length} satır`;
-    g.querySelector("tbody").innerHTML=l.slice(d.sayfa*N,(d.sayfa+1)*N).map(r=>`<tr>${sutunlar.map(s=>`<td>${s.link?(r[s.i]?`<a href="${esc(r[s.i])}" target="_blank" rel="noopener">aç</a>`:""):esc(r[s.i])}</td>`).join("")}</tr>`).join("");
+    const gorunen=l.slice(d.sayfa*N,(d.sayfa+1)*N);
+    g.querySelector("tbody").innerHTML=gorunen.map((r,ri)=>`<tr>${sutunlar.map(s=>`<td>${s.metin?(r[s.i]?`<button class="oku" data-ri="${ri}">Oku</button>`:""):s.link?(r[s.i]?`<a href="${esc(r[s.i])}" target="_blank" rel="noopener">${s.pdf?"PDF":"aç"}</a>`:""):esc(r[s.i])}</td>`).join("")}</tr>`).join("");
+    g.querySelectorAll("tbody button.oku").forEach(b=>b.onclick=()=>{const r=gorunen[+b.dataset.ri]; const ms=sutunlar.find(s=>s.metin), ps=sutunlar.find(s=>s.pdf); oku(opts.baslik?opts.baslik(r):"", String(r[ms.i]).split("|"), ps?r[ps.i]:"", opts.ust?opts.ust(r):"")});
     const sf=g.querySelector(".sayfalama"); sf.innerHTML=ss>1?`<button class="cip">‹</button><span class="kucuk">${d.sayfa+1} / ${ss}</span><button class="cip">›</button>`:"";
     if(ss>1){const [a,b]=sf.querySelectorAll("button");a.onclick=()=>{d.sayfa=Math.max(0,d.sayfa-1);ciz()};b.onclick=()=>{d.sayfa=Math.min(ss-1,d.sayfa+1);ciz()}}
   }
@@ -255,20 +311,35 @@ function buyukTablo(g, satirlar, sutunlar, opts){
 function veri(el){
   const T=V.tablolar; el.innerHTML="<h2>Veri tabanı</h2>";
   altSekme(el,[
-    ["k",`Meclis görüşme kümeleri (${T.kumeler.length})`,g=>buyukTablo(g,T.kumeler,[{ad:"Tarih",i:0},{ad:"Kaynak",i:1},{ad:"PDF sayfa",i:2},{ad:"Puan",i:3},{ad:"Strand",i:4},{ad:"Terimler",i:5},{ad:"Gündem ipucu",i:6},{ad:"PDF",i:7,link:1}],{str:4,puan:3,aciklama:"TBMM tutanaklarında ardışık isabetli sayfalardan oluşan görüşme kümeleri (1923–1950). Puan: çekirdek terim 3, diğer 1, zayıf 0,3."})],
-    ["g",`Gazete sayfaları (${T.gazeteler.length})`,g=>buyukTablo(g,T.gazeteler,[{ad:"Gazete",i:0},{ad:"Tarih",i:1},{ad:"Sayı",i:2},{ad:"Sayfa",i:3},{ad:"Puan",i:4},{ad:"Strand",i:5},{ad:"Terimler",i:6},{ad:"Bağlam (OCR)",i:8},{ad:"PDF",i:7,link:1}],{str:5,puan:4,aciklama:"İBB Atatürk Kitaplığı gazetelerinin OCR taraması; puanı ≥3 sayfalar. OCR gürültülüdür, bağlamı PDF'ten kontrol edin."})],
-    ["d",`Dergi parçaları (${T.dergiler.length})`,g=>buyukTablo(g,T.dergiler,[{ad:"Platform",i:0},{ad:"Yayın",i:1},{ad:"Yıl",i:2},{ad:"Sayfa/parça",i:3},{ad:"Puan",i:4},{ad:"Strand",i:5},{ad:"Terimler",i:6},{ad:"Bağlam",i:8},{ad:"Kayıt",i:7,link:1}],{str:5,puan:4,aciklama:"TBMM Açık Erişim ve Internet Archive dergileri (ATBM, Ülkü, Ayın Tarihi, halkevi dergileri, Düstur…); puanı ≥3 parçalar."})],
-    ["o",`OCR'lanan dergiler (${T.ocr.length})`,g=>buyukTablo(g,T.ocr,[{ad:"Yayın",i:0},{ad:"Yıl",i:1},{ad:"Dosya",i:2},{ad:"PDF sayfa",i:3},{ad:"Puan",i:4},{ad:"Strand",i:5},{ad:"Terimler",i:6},{ad:"Bağlam",i:8},{ad:"Kayıt",i:7,link:1}],{str:5,puan:4,aciklama:"Metin katmanı olmayan halkevi dergileri ve monografiler (tesseract OCR)."})],
+    ["k",`Meclis görüşme kümeleri (${T.kumeler.length})`,g=>buyukTablo(g,T.kumeler,[{ad:"Tarih",i:0},{ad:"Kaynak",i:1},{ad:"PDF sayfa",i:2},{ad:"Puan",i:3},{ad:"Strand",i:4},{ad:"Terimler",i:5},{ad:"Gündem ipucu",i:6},{ad:"Metin",i:8,metin:1},{ad:"PDF",i:7,link:1,pdf:1}],{str:4,puan:3,baslik:r=>r[1],ust:r=>`${r[0]} · PDF sayfa ${r[2]} · puan ${r[3]} · ${r[5]}`,aciklama:"TBMM tutanaklarında ardışık isabetli sayfalardan oluşan görüşme kümeleri (1923–1950). Puan: çekirdek terim 3, diğer 1, zayıf 0,3. Puanı ≥6 kümelerin bütün sayfalarının metni sitede okunabilir; PDF bağlantısı ilgili sayfayı açar."})],
+    ["g",`Gazete sayfaları (${T.gazeteler.length})`,g=>buyukTablo(g,T.gazeteler,[{ad:"Gazete",i:0},{ad:"Tarih",i:1},{ad:"Sayı",i:2},{ad:"Sayfa",i:3},{ad:"Puan",i:4},{ad:"Strand",i:5},{ad:"Terimler",i:6},{ad:"Bağlam (OCR)",i:8},{ad:"Metin",i:9,metin:1},{ad:"PDF",i:7,link:1,pdf:1}],{str:5,puan:4,baslik:r=>`${r[0]}, ${r[1]}, sayfa ${r[3]}`,ust:r=>`Sayı ${r[2]} · puan ${r[4]} · ${r[6]} · OCR metni (tesseract), hatalar olabilir`,aciklama:"İBB Atatürk Kitaplığı gazetelerinin OCR taraması; puanı ≥3 sayfaların tam OCR metni sitede okunabilir. PDF bağlantısı ilgili sayfayı açar."})],
+    ["d",`Dergi parçaları (${T.dergiler.length})`,g=>buyukTablo(g,T.dergiler,[{ad:"Platform",i:0},{ad:"Yayın",i:1},{ad:"Yıl",i:2},{ad:"Parça",i:3},{ad:"Puan",i:4},{ad:"Strand",i:5},{ad:"Terimler",i:6},{ad:"Bağlam",i:8},{ad:"Konum",i:11},{ad:"Metin",i:9,metin:1},{ad:"PDF",i:10,link:1,pdf:1},{ad:"Kayıt",i:7,link:1}],{str:5,puan:4,baslik:r=>r[1],ust:r=>`${r[0]} · ${r[2]} · parça ${r[3]} · ${r[11]} · puan ${r[4]}`,aciklama:"TBMM Açık Erişim ve Internet Archive dergileri (ATBM, Ülkü, Ayın Tarihi, halkevi dergileri, Düstur…); puanı ≥3 parçalar. Puanı ≥6 parçaların metni (3000 karakterlik birim) sitede okunabilir. TBMM Açık Erişim metinlerinde sayfa ayırıcı olmadığından PDF belge düzeyinde açılır; 'Konum' metnin belgedeki yaklaşık yerini verir. Internet Archive'da ilgili dosyanın PDF'i açılır."})],
+    ["o",`OCR'lanan dergiler (${T.ocr.length})`,g=>buyukTablo(g,T.ocr,[{ad:"Yayın",i:0},{ad:"Yıl",i:1},{ad:"Dosya",i:2},{ad:"PDF sayfa",i:3},{ad:"Puan",i:4},{ad:"Strand",i:5},{ad:"Terimler",i:6},{ad:"Bağlam",i:8},{ad:"Metin",i:9,metin:1},{ad:"PDF",i:10,link:1,pdf:1},{ad:"Kayıt",i:7,link:1}],{str:5,puan:4,baslik:r=>`${r[0]} (${r[1]})`,ust:r=>`${r[2]} · PDF sayfa ${r[3]} · puan ${r[4]} · OCR metni`,aciklama:"Metin katmanı olmayan halkevi dergileri ve monografiler (tesseract OCR). Bütün isabetli sayfaların metni sitede okunabilir."})],
     ["a",`ATBM makaleleri (${T.atbm.length})`,g=>buyukTablo(g,T.atbm,[{ad:"Yıl",i:0},{ad:"Sayılar",i:1},{ad:"Başlık (ham)",i:2},{ad:"Yazar ve unvan (ham)",i:3},{ad:"Strand",i:4},{ad:"Terimler",i:5}],{str:4,aciklama:"Askerî Tıbbî Baytarî Mecmuası 1929–1937: sezgisel başlık ve yazar çıkarımı (OCR gürültülü; görüntüden doğrulanmalı). Kaynak: archive.org/details/askeri-tibbi-baytari-mecmuasi"})],
     ["b",`Beyoğlu, Fransızca (${T.beyoglu.length})`,g=>buyukTablo(g,T.beyoglu,[{ad:"Yayın",i:0},{ad:"Dosya",i:1},{ad:"Terimler",i:2},{ad:"Bağlam",i:3},{ad:"Kayıt",i:4,link:1}],{str:2,aciklama:"Beyoğlu gazetesi (1939–44), Fransızca terimlerle."})],
   ],"sekme_veri");
 }
 
+
+function yogunlukCiz(){
+  const Y=V.yogunluk; if(!Y) return; const yillar=Y.yillar, mx=Math.max(1,...Object.values(Y.seri).flatMap(o=>yillar.map(y=>o[y]||0)));
+  const W=300,H=110,sol=4,alt=18,ust=14, bw=(W-sol)/yillar.length; const ip=$("#ipucu");
+  const yol=(x,y,w,h)=>{const r=Math.min(4,w/2,h); return `M${x},${y+h}V${y+r}Q${x},${y} ${x+r},${y}H${x+w-r}Q${x+w},${y} ${x+w},${y+r}V${y+h}Z`};
+  $("#zkc").innerHTML=Object.keys(STR).map(s=>{const o=Y.seri[s]||{}; const top=yillar.reduce((a,y)=>a+(o[y]||0),0); const tepe=yillar.reduce((a,y)=>(o[y]||0)>(o[a]||0)?y:a,yillar[0]);
+    return `<div class="panel"><h4><span class="cip ${s}">${s}</span> ${STR[s]} <span class="muted" style="font-weight:400">· toplam ${top}, en yoğun ${tepe} (${o[tepe]||0})</span></h4><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${s} yıllara göre küme sayısı">
+    ${yillar.map((y,i)=>{const v=o[y]||0,h=(H-alt-ust)*v/mx,x=sol+i*bw+1,w=Math.max(1,bw-2); return v?`<path class="cubuk" data-s="${s}" data-y="${y}" data-v="${v}" d="${yol(x,H-alt-h,w,h)}"/><rect x="${sol+i*bw}" y="${ust}" width="${bw}" height="${H-alt-ust}" fill="transparent" data-s="${s}" data-y="${y}" data-v="${v}"/>`:""}).join("")}
+    <line class="eksen" x1="${sol}" x2="${W}" y1="${H-alt}" y2="${H-alt}"/>${yillar.filter(y=>y%5===0).map(y=>`<text x="${sol+(yillar.indexOf(y)+.5)*bw}" y="${H-5}" text-anchor="middle">${y}</text>`).join("")}<text x="${W}" y="${ust-3}" text-anchor="end">en çok ${mx}</text></svg></div>`}).join("");
+  $("#zkc").querySelectorAll("[data-v]").forEach(e=>{e.onmousemove=ev=>{ip.style.display="block";ip.style.left=(ev.clientX+12)+"px";ip.style.top=(ev.clientY-10)+"px";ip.innerHTML=`<b>${e.dataset.y}</b> · ${e.dataset.s} ${esc(STR[e.dataset.s])}: ${e.dataset.v} küme`}; e.onmouseleave=()=>ip.style.display="none"});
+  $("#zkctablo").innerHTML=`<table class="tbl"><thead><tr><th>Yıl</th>${Object.keys(STR).map(s=>`<th>${s}</th>`).join("")}</tr></thead><tbody>${yillar.map(y=>`<tr><td>${y}</td>${Object.keys(STR).map(s=>`<td>${(Y.seri[s]||{})[y]||0}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+}
 /* ---------------- Zaman çizelgeleri */
 const zamanDurum={g:"hepsi",tur:""};
 function zaman(el){
   el.innerHTML=`<h2>Zaman çizelgeleri</h2><p class="muted kucuk">Bütünsel çizelge bütün tarihli bulguları ve araştırma programının olay takvimini birleştirir; tematik çizelgeler strand'e göre süzer. Bir kayda tıklayınca ayrıntısı açılır.</p>
   <div class="alttab" id="zsek">${[["hepsi","Bütünsel"],...Object.keys(STR).map(s=>[s,`${s} · ${STR[s]}`])].map(([k,a])=>`<button data-k="${k}">${a}</button>`).join("")}</div>
+  <h3 style="margin-top:6px">Yoğunluk: yıllara göre meclis görüşme kümeleri</h3><p class="muted kucuk">Her panel bir strand; çubuk, o yıl TBMM tutanaklarında o strand'in terimlerinin geçtiği görüşme kümesi (puan ≥3) sayısı. Bir küme birden çok strand'e girebildiği için paneller toplanmaz. Paneller aynı ölçeği kullanır.</p>
+  <div class="kc" id="zkc"></div><details class="kucuk" style="margin-bottom:14px"><summary>Tablo görünümü</summary><div class="kaydir" id="zkctablo"></div></details>
+  <h3>Olaylar</h3>
   <div class="filtre"><select id="ztur"><option value="">Bütün kaynak türleri</option>${Object.entries(TUR).map(([k,v])=>`<option value="${k}">${v}</option>`).join("")}</select><span class="kucuk muted" id="zsay"></span></div><div id="zlist"></div>`;
   function ciz(){
     $("#zsek").querySelectorAll("button").forEach(b=>b.classList.toggle("sec",b.dataset.k===zamanDurum.g)); $("#ztur").value=zamanDurum.tur;
@@ -278,6 +349,7 @@ function zaman(el){
       h+=`<div class="zc ${z.tur}"><div class="kucuk muted">${esc(z.tarih||z.tarih_metin||"")} · ${esc(TUR[z.tur]||z.tur)} · ${cipler(z.strand)}</div><div>${z.id?`<a href="#bulgular" data-id="${z.id}">${esc(z.baslik)}</a>`:esc(z.baslik)}</div><div class="kucuk muted">${esc(z.kaynak)}</div></div>`});
     $("#zlist").innerHTML=h; $("#zlist").querySelectorAll("a[data-id]").forEach(a=>a.onclick=e=>{e.preventDefault();kayitaGit(a.dataset.id)});
   }
+  yogunlukCiz();
   $("#zsek").querySelectorAll("button").forEach(b=>b.onclick=()=>{zamanDurum.g=b.dataset.k;ciz()}); $("#ztur").onchange=e=>{zamanDurum.tur=e.target.value;ciz()};
   ciz();
 }

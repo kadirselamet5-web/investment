@@ -295,6 +295,24 @@ def uzman_verisi(atbm):
     return d
 
 
+def yogunluk(kume_satir):
+    """Yıllara göre strand başına meclis görüşme kümesi sayısı (puan >= 3)."""
+    seri = defaultdict(Counter)
+    for r in kume_satir:
+        if float(r["toplam_puan"] or 0) < 3:
+            continue
+        m = re.match(r"(\d{4})", r["tarih"])
+        if not m:
+            continue
+        y = int(m.group(1))
+        y = y + 584 if 1300 <= y < 1400 else y  # Rumi yıl
+        if not 1923 <= y <= 1950:
+            continue
+        for s in strandlar(r["strandlar"]):
+            seri[s][y] += 1
+    return {"yillar": list(range(1923, 1951)), "seri": {s: dict(c) for s, c in seri.items()}}
+
+
 def main():
     gazete_url, ocr_ilerleme, gazete_isabet = ibb_verisi()
 
@@ -329,23 +347,55 @@ def main():
                               "strand": ["S3"], "id": k["id"], "kaynak": k["rapor"]})
     zaman.sort(key=lambda z: (z["yil"] or 0, z["tarih"] or "9999"))
 
-    # büyük tablolar
-    def kume(r):
-        return {**r, "gundem_ipucu": kisalt(r["gundem_ipucu"])}
-    kumeler = tablo("bulgular/tbmm_tutanak_gorusme_kumeleri.csv",
-                    ["tarih", "kaynak", "pdf_sayfalar", "toplam_puan", "strandlar", "terimler", "gundem_ipucu", "pdf_url"], kume)
+    # büyük tablolar (metin anahtarı "m", doğrudan PDF bağlantısı "pdf")
+    from site_metin import Paket
+    pk = Paket(KOK, CALISMA)
+    kume_satir = list(csv.DictReader(open(os.path.join(KOK, "bulgular/tbmm_tutanak_gorusme_kumeleri.csv"), encoding="utf-8")))
+    kumeler, kume_pdf_anahtar = [], defaultdict(list)
+    for r in kume_satir:
+        anahtarlar, pdf = pk.tutanak(r)
+        kumeler.append([r["tarih"], r["kaynak"], r["pdf_sayfalar"], r["toplam_puan"], r["strandlar"], r["terimler"],
+                        kisalt(r["gundem_ipucu"]), pdf, "|".join(anahtarlar)])
+        if anahtarlar:
+            kume_pdf_anahtar[os.path.basename(r["pdf_url"])] += anahtarlar
+    dergiler = []
+    for r in csv.DictReader(open(os.path.join(KOK, "bulgular/dergi_isabetleri.csv"), encoding="utf-8")):
+        m, pdf, konum = pk.dergi(r)
+        dergiler.append([r["platform"], r["yayin"], r["yil"], r["sayfa_veya_parca"], r["puan"], r["strandlar"], r["terimler"],
+                         r["kayit_url"], kisalt(r["baglam"]), m, pdf, konum])
+    ocr = []
+    for r in csv.DictReader(open(os.path.join(KOK, "bulgular/dergi_isabetleri_ocr.csv"), encoding="utf-8")):
+        m, pdf = pk.ocr_dergi(r)
+        ocr.append([r["yayin"], r["yil"], r["dosya"], r["pdf_sayfa"], r["puan"], r["strandlar"], r["terimler"], r["kayit_url"],
+                    kisalt(r["baglam"]), m, pdf])
 
     def dergi(r):
         return {**r, "baglam": kisalt(r["baglam"])}
-    dergiler = tablo("bulgular/dergi_isabetleri.csv",
-                     ["platform", "yayin", "yil", "sayfa_veya_parca", "puan", "strandlar", "terimler", "kayit_url", "baglam"], dergi)
-    ocr = tablo("bulgular/dergi_isabetleri_ocr.csv",
-                ["yayin", "yil", "dosya", "pdf_sayfa", "puan", "strandlar", "terimler", "kayit_url", "baglam"], dergi)
     beyoglu = tablo("bulgular/beyoglu_fransizca_isabetler.csv",
                     ["yayin", "dosya(yil_sayi)", "terimler", "baglam", "handle_url"], dergi)
     atbm = tablo("bulgular/atbm_makale_listesi.csv", ["yil", "sayilar", "baslik", "yazar_ve_unvan_ham", "strandlar", "terimler"])
-    gazeteler = [[r["gazete"], r["tarih"], r["sayi"], r["sayfa"], r["puan"], r["strandlar"], r["terimler"], r["pdf_url"],
-                  kisalt(r["baglam"])] for r in gazete_isabet]
+    gazeteler, gazete_tarih_anahtar = [], defaultdict(list)
+    for r in gazete_isabet:
+        m, pdf = pk.gazete(r["gazete"], r["tarih"], r["sayi"], r["sayfa"], r["pdf_url"])
+        gazeteler.append([r["gazete"], r["tarih"], r["sayi"], r["sayfa"], r["puan"], r["strandlar"], r["terimler"], pdf,
+                          kisalt(r["baglam"]), m])
+        if m:
+            gazete_tarih_anahtar[(r["gazete"], r["tarih"])].append(m)
+    # öne çıkan kayıtlara metin anahtarları: meclis -> aynı PDF'in kümeleri; gazete -> aynı gün isabetli sayfalar
+    for k in one_cikan:
+        k["m"] = []
+        for l in k["link"]:
+            if "tbmm.gov.tr/tutanaklar" in l["url"]:
+                k["m"] += kume_pdf_anahtar.get(os.path.basename(l["url"].split("#")[0]), [])
+        if k["tur"] == "gazete" and k["tarih"]:
+            for g in k["gazete"].split("/"):
+                g = g.strip()
+                adaylar = gazete_tarih_anahtar.get((g, k["tarih"]), []) + gazete_tarih_anahtar.get(
+                    ({"Kurun": "Vakit", "Vakit": "Kurun"}.get(g, g), k["tarih"]), [])
+                sayfa = re.search(r"\b(\d{1,2})\b", k["metin"].split("|")[1] if "|" in k["metin"] else "")
+                k["m"] += [a for a in adaylar if not sayfa or a.endswith(":" + sayfa.group(1))] or adaylar
+        k["m"] = list(dict.fromkeys(k["m"]))[:40]
+    pk.kaydet()
     arama = list(csv.reader(open(os.path.join(KOK, "05_arama_gunlugu.csv"), encoding="utf-8")))
 
     # kişi–kurum ağı
@@ -393,8 +443,10 @@ def main():
             "gaste": oku("08_gaste_sorgu_plani.md"), "readme": oku("README.md"),
             "r01": oku("bulgular/01_TBMM_tutanak_bulgulari.md"), "r02": oku("bulgular/02_dergi_ve_basin_bulgulari.md"),
             "r03": oku("bulgular/03_ingilizce_basin_bulgulari.md"), "r04": oku("bulgular/04_FVADC_gazete_penceresi.md"),
+            "r05": oku("bulgular/05_sentez_ara_analiz.md"),
         },
-        "one_cikan": one_cikan, "zaman": zaman, "ag": ag, "uzman": uzman,
+        "yogunluk": yogunluk(kume_satir),
+        "one_cikan": one_cikan, "zaman": zaman, "ag": ag, "uzman": uzman, "metin_dizin": pk.dizin,
         "tablolar": {
             "kumeler": kumeler, "dergiler": dergiler, "ocr": ocr, "beyoglu": beyoglu, "atbm": atbm,
             "gazeteler": gazeteler, "arama": arama,
