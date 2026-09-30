@@ -8,6 +8,7 @@ Adımlar:
 Kullanım:
   python3 ibb_gazete.py liste "<Eser adı>" <yil1,yil2,...> <liste.tsv> [<bas YYYY-MM-DD> <bit YYYY-MM-DD>]
   python3 ibb_gazete.py ocr <liste.tsv> <baslangic YYYY-MM-DD> <bitis YYYY-MM-DD> <cikti_dizini> [--is 4]
+                            [--pencereler <dosya>]  (çoklu tarih penceresi; bas/bit yok sayılır)
 
 Tarih, PDF dosya adındaki 1938M0209 biçiminden okunur. İstekler arasında kısa bekleme yapılır.
 """
@@ -129,10 +130,13 @@ def _ocr_sayfa(png):
     return r.stdout
 
 
-def ocr(liste_yolu, bas, bit, dizin, isci=4):
+def ocr(liste_yolu, bas, bit, dizin, isci=4, pencereler=None):
+    """bas/bit tek bir aralık verir; pencereler [(bas, bit), ...] verilirse bunlardan herhangi
+    birine düşen sayılar işlenir."""
+    araliklar = pencereler or [(bas, bit)]
     for satir in open(liste_yolu, encoding="utf-8"):
         d, eser, sayi, tarih, url = satir.rstrip("\n").split("\t")[:5]
-        if not tarih or not (bas <= tarih <= bit) or not url:
+        if not tarih or not url or not any(b <= tarih <= s for b, s in araliklar):
             continue
         hedef_dizin = os.path.join(dizin, re.sub(r"\W+", "_", eser).strip("_"))
         os.makedirs(hedef_dizin, exist_ok=True)
@@ -162,4 +166,8 @@ if __name__ == "__main__":
         liste(sys.argv[2], [int(y) for y in sys.argv[3].split(",")], sys.argv[4], *pencere)
     elif sys.argv[1] == "ocr":
         isci = int(sys.argv[sys.argv.index("--is") + 1]) if "--is" in sys.argv else 4
-        ocr(sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], isci)
+        pencereler = None
+        if "--pencereler" in sys.argv:  # ibb_olay.py'nin yazdığı <liste>.pencereler dosyası
+            yol = sys.argv[sys.argv.index("--pencereler") + 1]
+            pencereler = [tuple(s.split("\t")[:2]) for s in open(yol, encoding="utf-8") if s.strip()]
+        ocr(sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], isci, pencereler)

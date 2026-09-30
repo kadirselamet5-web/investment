@@ -32,6 +32,19 @@
 | 1939-02-21 | 10 | Karacabey Harası hekimlik kadrosu ilanı | S1 | İlan |
 | 1939-02-24 | 10 | Kayseri Belediyesi mezbaha inşaatı eksiltmesi (100.471 lira) | S0 | İlan |
 
+## *Tan*: öne çıkan haberler (1–24 Aralık 1938; OCR sürüyor)
+
+| Tarih | Sayfa | Başlık / konu | Strand | Not |
+|---|---|---|---|---|
+| 1938-12-11 | 9 | **"Her Köye Boğa Alınıyor"** (Kayseri) | **S1** | "Her köy namına birer damızlık boğa alınması kalkınma programına ithal edilmiş, şimdiye kadar (195) boğa alınmıştır." İlde 552 köy var; kalan köylerin boğaları iki yılda alınacak, "boğasız köy kalmıyacaktır". Boğalar Kayseri'deki damızlık ineklerin cinsine uygun olarak "bilhassa Erzurum havalisinden getirtilmektedir" |
+| 1938-12-14 | 7, 9 | İnönü'nün Çerkeş'te köylülerle konuşmaları (Cumhuriyet 13 Aralık'ın *Tan* versiyonu, daha ayrıntılı) | S0 | Muhtar Mehmet Tarhan: 90 dönüm, 90 koyun, 100 keçi, "beş ineğim, dört öküzüm, mandam var", iki kısrak, iki merkep, "eski babadan kalma sapan". Bir başka köylünün 70–80 hayvanı ve bir çift öküzü var, ineği yok |
+| 1938-12-18 | 9 | **"Şap Hastalığı Görüldü"** (Bozüyük) | **S3** | İlçe baytarı ile vilayetten gönderilen iki baytar köylere çıktı. Kaza kordon altına alındı, hayvan giriş-çıkışı durduruldu, "hayvan pazarı da muvakkaten kaldırılmıştır" |
+| 1938-12-18 | 1, 8 | Kongre tebliği: 4 gün sürecek; yılbaşı gecesi resepsiyon | S0 | Anadolu Ajansı tebliği |
+| 1938-12-19 | 2 | Sincan'daki Romanya göçmenleri (bkz. *Cumhuriyet* 18 Aralık) | S1, S4 | Aynı AA haberi |
+| 1938-12-22 | 7 | **"Kongrenin Çalışma Mevzuları"**: 11 komisyon ve gündemleri | S0–S3 | Hayvan Yemi Komisyonu: "tabii ve suni çayırlar, yemlik bakliyat". Hayvanat Komisyonu: "mücadele, suni ve tabii tohumlama, hayvan mahsullerinin kıymetlendirilmesi… atçılık, sığırcılık, davarcılık, kümes hayvanları, tavşan" |
+| 1938-12-22 | 7 | "Büyük Ziraat Kongresinden Köylü Neler Bekliyor?" dizisi: bir sütçünün sözleri | S0 | Köylü inek sütünü şehre götüremiyor; aracılar köyden 10 kuruşa alıp suyla çoğaltarak şehirde 25 kuruşa satıyor. Dizi kongre öncesi dilekleri topluyor; bütün bölümleri ayrıca taranacak |
+| 1938-12-22 | 1, 8 | "Ziraat Kongresi Hazırlıkları": inşaatı süren bir devlet çiftliği | S1 | Çiftlik "bin hayvan ile çalışmıya" başlayacak, sayı beş bine çıkarılacak; damızlık tavşan şubesi. Milli Sanayi Birliği'nin kongre raporları (deri, yün, süt, süt tozu) |
+
 Tam liste (puan ≥3, 252 sayfa, OCR bağlam parçalarıyla) bütün gazeteler bitince `fvadc_gazete_isabetleri.csv` olarak eklenecek. Gürültü örnekleri: tefrika romanlarda "yabani öküz", "su aygırı", "boğa(z)"; ilan ve tarihî yazılar.
 
 ## Ara değerlendirme
