@@ -11,5 +11,10 @@ Doktora tezinin dört araştırma strandı için Türkçe ve İngilizce gazete i
 | `05_arama_gunlugu.csv` | Çalıştırılan her sorgunun kaydı (denetlenebilirlik için) |
 | `06_kaynak_envanteri.md` | Arşiv platformları ve süreli yayınlar, erişim durumu |
 | `07_tohum_bibliyografya.md` | Web aramasıyla yeri tespit edilen birincil ve ikincil kaynaklar |
+| `bulgular/01_TBMM_tutanak_bulgulari.md` | TBMM tutanakları 1923–1950: strand bazında 77 kilit görüşme ve veteriner sözleşmeleri dizisi |
+| `bulgular/02_dergi_ve_basin_bulgulari.md` | Dergiler, *Ayın Tarihi*, *Düstur*, halkevi dergileri, *Beyoğlu*; öne çıkan kayıtlar ve göz taraması listesi |
+| `bulgular/03_ingilizce_basin_bulgulari.md` | Papers Past (Yeni Zelanda) taraması |
+| `bulgular/*.csv` | Tam isabet kayıtları: tutanak sayfaları ve kümeleri, dergi parçaları, OCR'lı dergiler, Fransızca basın |
+| `scripts/` | İndirme, OCR, tarama ve puanlama betikleri (tekrar çalıştırılabilir) |
 
 Strand kodları: `S0` genel/FVADC · `S1` üreme ve ırk ıslahı · `S2` yem, açlık, metabolizma · `S3` hastalık, veteriner teşkilatı, sınır · `S4` ahır-ev ve birlikte yaşam.

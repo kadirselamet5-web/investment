@@ -1,2 +1,9 @@
 arama_id,tarih_yapildi,veritabani,kaynak,dilim,tarih_araligi,sorgu,varyantlar,sonuc_sayisi,ilgili_sayisi,kaydedilen_kayit_idleri,not
-A0001,,,,,,,,,,,
+A0001,2026-09-30,TBMM tutanak PDF (www5.tbmm.gov.tr),TBMM Zabıt Ceridesi/Tutanak Dergisi d02–d09y1,D1–D5,1923-08-11/1950-07,"tezaurus v1.0 (89 terim grubu, scripts/terimler.py)",OCR ı/i ş/s ğ/g ç/c ö/o ü/u sınıfları,13274 sayfa / 7052 küme,77 kilit görüşme (okundu: 643 küme),bulgular/tbmm_tutanak_*.csv,2575 Latin harfli birleşim dosyası; eski harfli asıllar hariç
+A0002,2026-09-30,TBMM Kütüphanesi Açık Erişim (DSpace API),658 kayıt (1923–1950),D1–D5,1923/1950,tezaurus v1.0,aynı,15688 parça (3000 kr),ilgili puan≥3: dergi_isabetleri.csv,bulgular/dergi_isabetleri.csv,168 kaydın OCR metni var; 490 kayıt OCR'sız
+A0003,2026-09-30,Internet Archive (advancedsearch + djvu.txt),1101 kayıt,D2–D5,1923/1950,tezaurus v1.0,aynı,20040 parça,ilgili puan≥3: dergi_isabetleri.csv,bulgular/dergi_isabetleri.csv,sözlük/ansiklopedi hariç tutuldu
+A0004,2026-09-30,TBMM Açık Erişim + tesseract OCR,Berkes 1942; Doğuş (Kars); Karacadağ (Diyarbakır),D3–D4,1938/1942,tezaurus v1.0,aynı,179 sayfa,okundu,bulgular/dergi_isabetleri_ocr.csv,OCR kuyruğu devam ediyor (46 kayıt kaldı)
+A0005,2026-09-30,TBMM Açık Erişim (Fransızca),Beyoğlu 1939–44; La Turquie Kemaliste 1934–41,D3–D4,1934/1944,"bétail, bovins, vache(s), bœuf(s), taureau(x), veaux, peste bovine, fièvre aphteuse, vétérinaire, épizootie, élevage, haras, Karacabey, zootechnie, fourrage, luzerne, pâturage, laiterie, abattoir, cheptel",OCR bozuk é/è,140,öne çıkanlar raporda,bulgular/beyoglu_fransizca_isabetler.csv,
+A0006,2026-09-30,DigitalNZ API (Papers Past),Yeni Zelanda gazeteleri,D1–D5,1923/1950,33 İngilizce sorgu (scripts/digitalnz_tara.py),—,2088 aday; 63 yakın eşleşme,14,bulgular/03_ingilizce_basin_bulgulari.md,1945 sonrası kapsam sınırlı
+A0007,2026-09-30,Gaste Arşivi / Chronicling America / HathiTrust,—,—,—,—,—,erişilemedi,—,—,Cloudflare; Gaste Arşivi abonelik
+A0008,2026-09-30,Tarım ve Orman Bakanlığı Kütüphanesi,FVADC yayınları (51 PDF),D3,1938,duyuru/5 listesi,—,51 künye,—,—,PDF indirme üye girişi istiyor
