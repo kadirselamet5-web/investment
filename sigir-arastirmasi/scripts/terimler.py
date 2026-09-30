@@ -134,3 +134,17 @@ def normalize(metin):
     metin = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", metin)  # satır sonu tireleme
     metin = re.sub(r"[ \t]*\n[ \t]*", " ", metin)
     return re.sub(r"[ \t]+", " ", metin)
+
+
+# --- Türkçe harfleri düşmüş OCR metinleri için "katlanmış" (ASCII) kip ---
+# 1935 sonu – 1937 tutanaklarında ü→"ii", ş→"§"/"sj", ı→i, ğ→g, ç→c, ö→o dönüşümleri görülüyor.
+_KATLA = str.maketrans({"ı": "i", "ğ": "g", "ş": "s", "ç": "c", "ö": "o", "ü": "u", "â": "a", "î": "i", "û": "u", "§": "s"})
+
+
+def katla(metin):
+    metin = normalize(metin)
+    metin = metin.replace("ii", "ü").replace("sj", "s")
+    return metin.translate(_KATLA)
+
+
+DERLENMIS_KATLI = [(e, s, re.compile(r.translate(_KATLA))) for e, s, r in TERIMLER]

@@ -18,6 +18,16 @@
 | 7 Uluslararası kurumlar | [ ] | Tutanaklarda Milletler Cemiyeti veteriner sözleşmelerine atıflar bulundu (Bulgaristan 1934, Yunanistan 1939). LONTAD taranmadı | — | — |
 | 8 Eğitim materyali ve edebiyat | [~] | *Muğla Halkevi Dergisi*'ndeki baytar öğütleri dizisi ve *6 Ok*'taki Köy Kanunu açıklamaları bulundu | — | `bulgular/02_…` |
 
+## Tur 2 (sürüyor, 2026-09-30)
+
+| İş | Durum | Sonuç |
+|---|---|---|
+| Tutanaklarda bozuk OCR turu (öncelik 3) | [x] | 1935 sonu–1937 arası 178 dosya katlanmış (ASCII) terimlerle yeniden tarandı: 744 → 902 sayfa. Birleştirilmiş toplam 13.432 sayfa, 7.130 küme. Yeni kayıtlar: 1936-11-13 muhacir ahır/samanlık (S4), 1937-06-12 Atatürk çiftlikleri (S1) |
+| ATBM içindekiler (öncelik 5) | [~] | 204 aday makale (`bulgular/atbm_makale_listesi.csv`) ve 1934–37 İÇİNDEKİLER blokları. Buradan 1934-06-18 "baytar/veteriner" TBMM tartışması bulundu. *Ülkü* içindekiler dökümü sırada |
+| OCR kuyruğu (öncelik 2) | [~] | 49 kaydın 5'i bitti: Berkes, *Doğuş*, *Karacadağ*, *Erzurum*, *Derme* (kısmen). Arka planda sürüyor |
+| Gaste Arşivi hazırlığı (öncelik 1) | [x] hazır | `08_gaste_sorgu_plani.md` ve 907 satırlık `08_gaste_sorgu_listesi.csv`. FVADC açılış tarihi web kaynağından 27 Aralık 1938 (Celal Bayar) olarak alındı; kongre yayınlarından doğrulanacak |
+| Gaste Arşivi taraması | [ ] | Kullanıcının Chrome bağlantısı bekleniyor |
+
 ## Tur 2 için öncelik sırası
 
 1. **Günlük gazeteler (en büyük boşluk).** İki yol var:

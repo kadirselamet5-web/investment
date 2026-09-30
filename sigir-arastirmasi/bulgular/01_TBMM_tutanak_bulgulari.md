@@ -4,8 +4,8 @@
 
 **Sonuç dosyaları:**
 
-- `tbmm_tutanak_sayfa_isabetleri.csv`: terim geçen 13.274 sayfanın tamamı (tarih, künye, PDF sayfası, puan, strand, terimler, bağlam, PDF bağlantısı).
-- `tbmm_tutanak_gorusme_kumeleri.csv`: ardışık sayfalar birleştirilerek elde edilen 7.052 görüşme kümesi; gündem ipucu ve PDF bağlantısıyla. Puanı yüksek olan (≥9) 643 küme tek tek okunmuştur.
+- `tbmm_tutanak_sayfa_isabetleri.csv`: terim geçen 13.432 sayfanın tamamı (tarih, künye, PDF sayfası, puan, strand, terimler, bağlam, PDF bağlantısı).
+- `tbmm_tutanak_gorusme_kumeleri.csv`: ardışık sayfalar birleştirilerek elde edilen 7.130 görüşme kümesi; gündem ipucu ve PDF bağlantısıyla. Puanı yüksek olan (≥9) 643 küme tek tek okunmuştur.
 
 **Puanlama:** Doğrudan sığır/büyükbaş terimleri 3, genel hayvancılık terimleri 1, idari ya da çok anlamlı terimler 0,3 puan. Aşağıdaki seçki okunarak belirlenmiştir; tam liste CSV dosyalarındadır.
 
@@ -50,6 +50,7 @@
 | 1949-06-04 | Devlet Üretme ve Yetiştirme Çiftlikleri Genel Müdürlüğü kanun tasarısı | Dönem 8, Cilt 20, Birleşim 101, s. 3-9 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d08/c020/tbmm08020101.pdf) |
 | 1950-01-06 | Kars Mebusu Esad Oktay'ın, Devlet Ziraat İşletmeleri Kurumunun Kars'taki çalışmalarına dair sorusu | Dönem 8, Cilt 23, Birleşim 26, s. 12-14 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d08/c023/tbmm08023026.pdf) |
 | 1950-07-10 | Seyhan Mebusu Sedat Barı'nın Çukurova Harası ile Reyhanlı ve Dörtyol devlet çiftliklerine dair sorusu | Dönem 9, Cilt 1, Birleşim 19, s. 43-47 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d09/c001/tbmm09001019.pdf) |
+| 1937-06-12 | Atatürk'ün Orman Çiftliği (Ankara) ile Yalova, Silifke, Dörtyol ve Tarsus çiftliklerini "bütün tesisat, hayvanat ve demirbaşlarıyla" Hazine'ye bağışlaması | Dönem 5, Cilt 19, Birleşim 75, s. 23-24 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d05/c019/tbmm05019075.pdf) |
 
 ## S2 — Hayvan açlığı, yem ve mera sistemi
 
@@ -83,6 +84,7 @@
 | 1932-06-16 | Eskişehir Mebusu Emin Bey'in, Baytar Süreyya Bey'in icat ettiği veba-i bakarî (sığır vebası) aşısına dair Ziraat Vekâletinden şifahi sualı | Dönem 4, Cilt 9, Birleşim 64, s. 1-7 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d04/c009/tbmm04009064.pdf) |
 | 1934-05-12 | Türkiye ile Bulgaristan arasında Ankara'da 22 Aralık 1933'te imzalanan baytarî mukavelenamenin tasdiki (1/911); esbab-ı mucibede Milletler Cemiyeti tavsiyelerine atıf | Dönem 4, Cilt 22, Birleşim 50, s. 13-26 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d04/c022/tbmm04022050.pdf) |
 | 1934-06-07 | İskân Kanunu lâyihası (1/335): aşiret, göçebe, mera, yaylak/kışlak hükümleri | Dönem 4, Cilt 23, Birleşim 65, s. 60-73 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d04/c023/tbmm04023065.pdf) |
+| 1934-06-18 | YZE Kanunu'na orman fakültesi eklenmesi ve **"baytar" yerine "veteriner"** kelimesi tartışması. Encümen, "baytar" adı nalbantlar gibi "bir takım sanat erbabına da verildiği" için değiştirmeyi önerdi. Yaşar Bey (Manisa): "usta nalbantlara … baytar diyorlar", bu yüzden baytar mektebine rağbet azalıyor. Rasih Bey (Antalya): "Biz beynelmilel değiliz." Ziraat Vekili Muhlis Bey: "veteriner" muvafık ama karar Dil Encümeni'nin. Sonuçta "baytar" kaldı; ATBM 1934, sayı 121 de bunu haber verdi (Tur 2) | Dönem 4, Cilt 23, Birleşim 70, PDF s. 15-17 ve 110-113 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d04/c023/tbmm04023070.pdf) |
 | 1935-10-21 | Baytarların vilâyet ve belediye baytarlıklarını birleştirebilmesine dair kanun lâyihası (1/123) | Dönem 5, Cilt 5, Birleşim 47, s. 35-39 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d05/c005/tbmm05005047.pdf) |
 | 1937-06-07 | Türkiye ile İran arasında akdedilen baytarî mukavelenin tasdiki (1/834) | Dönem 5, Cilt 19, Birleşim 72, s. 115-122 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d05/c019/tbmm05019072.pdf) |
 | 1937-06-09 | İran ile imzalanan anlaşmalar paketi: baytarî mukavele, hudut mıntıkasının emniyeti, iade-i mücrimin ve adli yardım mukaveleleri birlikte | Dönem 5, Cilt 19, Birleşim 73, s. 1-4 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d05/c019/tbmm05019073.pdf) |
@@ -112,6 +114,7 @@
 | 1929-04-15 | Mandıra ve Ağıllar Kanunu lâyihasının devamı | Dönem 3, Cilt 10, Birleşim 53, s. 1-4 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d03/c010/tbmm03010053.pdf) |
 | 1941-12-08 | Yozgat Mebusu Sırrı İçöz'ün, Ağıllar Kanunu'nun 1. maddesindeki sürenin uzatılması teklifi (2/47) | Dönem 6, Cilt 22, Birleşim 13, s. 7-7 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d06/c022/tbmm06022013.pdf) |
 | 1950-03-22 | Hayvan hırsızlığı suçunu işleyenlere verilecek cezaların artırılması hakkındaki kanun teklifi | Dönem 8, Cilt 25, Birleşim 70, s. 112-116 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d08/c025/tbmm08025070.pdf) |
+| 1936-11-13 | Yozgat Mebusu Emin Draman: mübadil Hristiyanlardan kalan evlere 11 yıl önce yerleştirilen 28 muhacir ailenin, sokağın karşı tarafındaki ahır ve samanlıklarının "evin müştemilatından sayılmadığı" gerekçesiyle geri istenmesi. Ahırın evden ayrı olması "gayet sıhhî bir iş" diye savunuluyor (Arzuhal Encümeni kararı, 4/23) | Dönem 5, Cilt 13, Birleşim 3, s. 10-14 | [PDF](https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d05/c013/tbmm05013003.pdf) |
 
 ## Tutanaklardan çıkan veteriner sözleşmeleri dizisi (S3)
 
@@ -133,6 +136,6 @@
 
 ## Sınırlılıklar
 
-- OCR hataları nedeniyle bazı geçişler kaçmış olabilir. Özellikle 1936–1938 metinlerinde Türkçe karakterler bozuk (ör. "Tiirkiye", "sigir"); bu yüzden OCR varyantlarıyla ikinci bir tur yapılmalı.
+- 1935 sonu – 1937 arasındaki 178 birleşim dosyasında OCR Türkçe harfleri düşürmüş (ü→"ii", ş→"§", "ın"→"m"). Bu dosyalar Tur 2'de metin ve terimler ASCII'ye katlanarak yeniden tarandı (`tara.py --katla`); 744 yerine 902 sayfa isabet verdi ve CSV'ler güncellendi. Katlanmış kipte "ahır" terimi Osmanlıca "ahir" (son) ile karışabilir.
 - Encümen mazbataları ve sıra sayıları tutanak dosyalarının içinde yer alıyor ve taramaya girdi. Ancak bazı dönemlerde ayrı basılan sıra sayıları eksik olabilir.
 - Gizli celse zabıtları ile Komisyon tutanakları taranmadı.

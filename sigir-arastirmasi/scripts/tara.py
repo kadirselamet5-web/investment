@@ -3,6 +3,7 @@
 Kullanım: python3 tara.py <metin_klasörü> <çıktı.csv> [--meta meta.tsv]
 - Klasördeki bütün .txt dosyaları (alt klasörler dahil) taranır; sayfa ayırıcı \\f.
 - meta.tsv (isteğe bağlı): dosya_adı(uzantısız) <TAB> kaynak <TAB> tarih
+- --katla: Türkçe harfleri düşmüş OCR için metin ve terimler ASCII'ye katlanır.
 - --parca N (isteğe bağlı): sayfa ayırıcısı olmayan metinler N karakterlik parçalara bölünür
   (sayfa sütunu bu durumda parça numarasıdır).
 - Çıktı: sayfa başına bir satır; eşleşen terimler, strandlar, bağlam parçaları.
@@ -11,7 +12,7 @@ import csv, os, re, sys
 from collections import OrderedDict
 
 sys.path.insert(0, os.path.dirname(__file__))
-from terimler import DERLENMIS, agirlik, normalize  # noqa: E402
+from terimler import DERLENMIS, DERLENMIS_KATLI, agirlik, katla, normalize  # noqa: E402
 
 TARIH = re.compile(r"\b(\d{1,2})\s*[-./]\s*(\d{1,2})\s*[-./]\s*(19[2-5]\d|13[34]\d)\b")
 
@@ -23,6 +24,8 @@ def ilk_tarih(metin):
 
 def main():
     kok, cikti = sys.argv[1], sys.argv[2]
+    katli = "--katla" in sys.argv
+    norm, terimler = (katla, DERLENMIS_KATLI) if katli else (normalize, DERLENMIS)
     parca = int(sys.argv[sys.argv.index("--parca") + 1]) if "--parca" in sys.argv else 0
     meta = {}
     if "--meta" in sys.argv:
@@ -42,9 +45,9 @@ def main():
             if parca:
                 sayfalar = [s[i:i + parca] for s in sayfalar for i in range(0, max(len(s), 1), parca)]
             for no, sayfa in enumerate(sayfalar, 1):
-                metin = normalize(sayfa)
+                metin = norm(sayfa)
                 bulunan = OrderedDict()
-                for etiket, strand, rx in DERLENMIS:
+                for etiket, strand, rx in terimler:
                     for m in rx.finditer(metin):
                         bulunan.setdefault((strand, etiket), []).append(m.start())
                 if not bulunan:

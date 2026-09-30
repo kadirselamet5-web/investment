@@ -25,6 +25,12 @@ Kaynak: [Internet Archive](https://archive.org/details/askeri-tibbi-baytari-mecm
 - **S2, silaj ve yem bilimi:** Silajda besin kaybı, Alman şartlarında mısır silajı verimi, kuru ot yapımının zorlukları, pancar posası (p2064–2071). Bilginin Alman kaynaklarından çevrilip uyarlandığını gösteriyor.
 - **S4, ahır ve hastalık:** "Sütlü inekleri kapalı ahırlarda bulundurmak" ile verem arasındaki ilişki (p2373). Ahır hıfzıssıhhası ve paratüberküloz (p765–767). Parazitlere karşı ahır dezenfeksiyonu ve gübrenin uzaklaştırılması (p2202). Köylerde gübrenin ve dışkının avlulara atılmasının yarattığı risk (p1639).
 - **Uzman ağları:** Ankara'da askerî ve sivil baytarların on beş günde bir konferans düzenlemesi; neşriyat heyetinde parazitolog Naki Cevat, zooteknist Nurettin, bakteriyolog Refik ve Sadık, zooteknist Selahattin (p1173). Zootekni Enstitüsü'nde verilen konferanslar, ör. Süreyya Tahsin'in antraks salgınları konferansı (p1512). Leipzig'den Prof. Dr. Sprehn'in Ankara Baytar Fakültesi parazitoloji profesörlüğüne atanması (p1950). Derginin 10. yıl fihristi (p1678) ve konu dizinleri (p2278, p2464, p2013), makale tam listesini çıkarmak için başlangıç noktası.
+- **Makale listesi (Tur 2):** 1929–1937 ciltlerinden "başlık + Yazan/rütbe/Dr. satırı" deseniyle 204 aday makale çıkarıldı. 40'ının başlığında strand terimi var: `atbm_makale_listesi.csv`. 1934–1937 sayılarının kapaklarındaki İÇİNDEKİLER blokları `atbm_fihrist_ham.txt`'de. OCR gürültüsü yüzünden liste eksik ve kısmen hatalı; başlıklar kullanılmadan önce IA görüntüsünden doğrulanmalı. Öne çıkanlar:
+  - Mehmet Azmi, "Tederrün ve etlerin sureti muayeneleri" (1933, sayı 114). Karaağaç Mezbahası'nda 1 Mayıs 1931 – 31 Mayıs 1932 arasında kesilen 22.669 yerli öküz, 2.072 yerli inek ve 115 ecnebi öküz ve inek istatistiği; "kaçak sığır eti" ve süt kontrolü.
+  - Osman Zeki, "Umumi harpta İngiliz ordusunun istihdam ettiği muhtelif at ırkları" (1932, sayı 113).
+  - A. Müfhat, "Fotozoometri" (1930): fotoğrafın ıslah ve teksir-i hayvanatta kullanımı.
+  - Zootekni Enstitüsü toplantı tutanakları (1933, sayı 114): "Türkiye'de dalak epidemileri ve mücadelesi".
+  - TBMM'de "veteriner" kelimesinin reddedilip "baytar"ın korunması haberi (1934, sayı 121; ilgili TBMM görüşmesi 18 Haziran 1934, bkz. rapor 01 §S3).
 - **At yetiştiriciliği karşılaştırması:** Uzunyayla aygır deposu ve suni tohumlamanın yayılması (1929 sonrası, p2244–2245).
 
 ## 2. *Ayın Tarihi* (Matbuat Umum Müdürlüğü aylık basın ve ajans derlemesi)
