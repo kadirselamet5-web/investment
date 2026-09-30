@@ -233,6 +233,68 @@ def md_tablo(metin, baslik_deseni):
     return sonuc
 
 
+def _katla(s):
+    s = (s or "").replace("İ", "i").replace("I", "ı").lower()
+    return s.translate(str.maketrans("çğıöşüâîû", "cgiosuaiu"))
+
+
+def uzman_verisi(atbm):
+    """11_uzmanlar.json + Tarım ve Orman kataloğu + ATBM: kişi kartları, yayın eşleştirmesi, aday uzmanlar."""
+    d = json.loads(oku("11_uzmanlar.json") or "{}")
+    if not d:
+        return {}
+    # katalog kayıtları (çalışma dizininde toplanıyor; kalıcı kopya bulgular/ altında)
+    kaynak = os.path.join(CALISMA, "uzman", "tok.jsonl")
+    kalici = os.path.join(KOK, "bulgular", "tok_katalog_1923_1950.jsonl")
+    if os.path.exists(kaynak):
+        open(kalici, "w", encoding="utf-8").write(open(kaynak, encoding="utf-8").read())
+    katalog = [json.loads(s) for s in open(kalici, encoding="utf-8")] if os.path.exists(kalici) else []
+
+    def yil(k):
+        m = re.search(r"(19[2-5]\d)", k.get("alanlar", {}).get("Published", ""))
+        return m.group(1) if m else ""
+
+    # kişi adlarından eşleştirme anahtarı: soyadı + ilk adın ilk harfi
+    anahtarlar = {}
+    for k in d["kisiler"]:
+        for ad in [k["ad"]] + k.get("diger_adlar", []):
+            p = [x for x in re.sub(r"\(.*?\)|Dr\.|Prof\.|Binbaşı|Bey", "", ad).split() if len(x) > 1]
+            if len(p) >= 2:
+                anahtarlar.setdefault((_katla(p[-1]), _katla(p[0])[0]), k["id"])
+    kisi_yayin = defaultdict(list)
+    yazar_say = Counter()
+    yazar_ornek = {}
+    for r in katalog:
+        for y in r.get("yazarlar", []):
+            if "," not in y:
+                continue  # kurumsal yazar
+            soy, ad = [x.strip(" .") for x in y.split(",", 1)]
+            kid = anahtarlar.get((_katla(soy.split()[-1]) if soy else "", _katla(ad)[:1]))
+            kayit = {"baslik": r.get("baslik", ""), "yil": yil(r), "yayin": r.get("alanlar", {}).get("Published", ""),
+                     "seri": r.get("alanlar", {}).get("Series", ""), "url": r.get("url", ""), "kaynak": "TOK"}
+            if kid:
+                if kayit["url"] not in {x["url"] for x in kisi_yayin[kid]}:
+                    kisi_yayin[kid].append(kayit)
+            else:
+                ad_tam = f"{ad} {soy}".strip()
+                yazar_say[ad_tam] += 1
+                yazar_ornek.setdefault(ad_tam, []).append(kayit)
+    # ATBM makaleleri: yazar satırında soyadı geçiyorsa
+    for r in atbm:
+        yazar = _katla(r[3])
+        for (soy, ilk), kid in anahtarlar.items():
+            if len(soy) > 3 and re.search(r"\b" + re.escape(soy) + r"\b", yazar):
+                kisi_yayin[kid].append({"baslik": r[2], "yil": r[0], "yayin": f"ATBM {r[1]}", "seri": "", "url":
+                                        "https://archive.org/details/askeri-tibbi-baytari-mecmuasi", "kaynak": "ATBM"})
+    for k in d["kisiler"]:
+        k["katalog_yayinlari"] = sorted(kisi_yayin.get(k["id"], []), key=lambda x: x["yil"])
+    aday = [{"ad": a, "sayi": n, "ornek": sorted(yazar_ornek[a], key=lambda x: x["yil"])[:8]}
+            for a, n in yazar_say.most_common(150)]
+    d["aday_uzmanlar"] = aday
+    d["katalog_kayit_sayisi"] = len(katalog)
+    return d
+
+
 def main():
     gazete_url, ocr_ilerleme, gazete_isabet = ibb_verisi()
 
@@ -308,6 +370,8 @@ def main():
                         "kayitlar": dugum_kayit[v["id"]]} for v in sozluk if dugum[v["id"]]],
           "kenarlar": [{"a": a, "b": b, "w": w} for (a, b), w in kenar.items()]}
 
+    uzman = uzman_verisi(atbm)
+
     # ilerleme tabloları
     ilerleme_md = oku("04_ilerleme_takibi.md")
     gorevler = json.loads(oku("09_gorevler.json"))
@@ -330,7 +394,7 @@ def main():
             "r01": oku("bulgular/01_TBMM_tutanak_bulgulari.md"), "r02": oku("bulgular/02_dergi_ve_basin_bulgulari.md"),
             "r03": oku("bulgular/03_ingilizce_basin_bulgulari.md"), "r04": oku("bulgular/04_FVADC_gazete_penceresi.md"),
         },
-        "one_cikan": one_cikan, "zaman": zaman, "ag": ag,
+        "one_cikan": one_cikan, "zaman": zaman, "ag": ag, "uzman": uzman,
         "tablolar": {
             "kumeler": kumeler, "dergiler": dergiler, "ocr": ocr, "beyoglu": beyoglu, "atbm": atbm,
             "gazeteler": gazeteler, "arama": arama,

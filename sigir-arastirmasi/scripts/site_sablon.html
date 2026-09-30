@@ -107,6 +107,7 @@ input[type=search]{min-width:220px}
   <a href="#veri">Veri tabanı</a>
   <a href="#zaman">Zaman çizelgeleri</a>
   <a href="#ag">Kişi–kurum ağı</a>
+  <a href="#uzman">Uzmanlık ağı</a>
   <a href="#kaynaklar">Kaynaklar</a>
   <div class="tema">Tema: <select id="tema"><option value="">Sistem</option><option value="light">Açık</option><option value="dark">Koyu</option></select></div>
 </nav>
@@ -120,6 +121,7 @@ input[type=search]{min-width:220px}
 <section id="veri"></section>
 <section id="zaman"></section>
 <section id="ag"></section>
+<section id="uzman"></section>
 <section id="kaynaklar"></section>
 </main>
 </div>
@@ -313,6 +315,65 @@ function ag(el){
   $("#agw").oninput=e=>{$("#agwv").textContent=e.target.value;ciz(+e.target.value)}; ciz(1);
 }
 
+
+/* ---------------- Uzmanlık ağı */
+function uzman(el){
+  const U=V.uzman||{}; if(!U.kisiler){el.innerHTML="<h2>Uzmanlık ağı</h2><p class='muted'>Veri yok.</p>";return}
+  const K=Object.fromEntries(U.kurumlar.map(k=>[k.id,k])); const P=Object.fromEntries(U.kisiler.map(k=>[k.id,k]));
+  const kurumAd=id=>K[id]?K[id].ad:id; const kaynakAd=s=>U.kaynaklar[s]?(U.kaynaklar[s].url?`<a href="${esc(U.kaynaklar[s].url)}" target="_blank" rel="noopener">${esc(U.kaynaklar[s].ad)}</a>`:esc(U.kaynaklar[s].ad)):esc(s);
+  const yil=g=>[g.bas,g.bit].filter(Boolean).join("–")||g.yil||"";
+  el.innerHTML=`<h2>Uzmanlık ağı</h2><p class="muted kucuk">1923–1950 arasında sığır, veteriner, zootekni, yem ve mera alanlarında çalışan uzmanlar: eğitimleri, görevleri, yayınları ve birbirleriyle ilişkileri. Veri: <code>11_uzmanlar.json</code> (biyografik kaynaklardan elle), yayınlar ayrıca Tarım ve Orman Bakanlığı Kütüphanesi kataloğundan (${U.katalog_kayit_sayisi||0} kayıt) ve ATBM'den otomatik eşleştirilir.</p>
+  <div class="izgara">${[["Kişi",U.kisiler.length],["Kurum",U.kurumlar.length],["Katalog kaydı",U.katalog_kayit_sayisi||0],["Aday uzman (katalog)",(U.aday_uzmanlar||[]).length]].map(([a,s])=>`<div class="kart kpi"><div class="sayi">${s}</div><div class="ad">${a}</div></div>`).join("")}</div>`;
+  function kart(k){
+    const eg=(k.egitim||[]).map(e=>`<li>${esc(kurumAd(e.kurum))}${e.yil?` (${esc(e.yil)})`:""}: ${esc(e.derece||"")}</li>`).join("");
+    const go=(k.gorevler||[]).map(g=>`<li><b>${esc(yil(g))}</b> ${esc(kurumAd(g.kurum))}: ${esc(g.gorev||"")}${g.not?` <span class="muted">(${esc(g.not)})</span>`:""}</li>`).join("");
+    const il=(k.iliskiler||[]).map(r=>`<li>${esc(r.tur)}: <a href="#" data-kisi="${esc(r.kisi)}">${esc(P[r.kisi]?P[r.kisi].ad:r.kisi)}</a>${r.not?` <span class="muted">(${esc(r.not)})</span>`:""}</li>`).join("");
+    const ya=(k.yayinlar||[]).map(y=>`<li>${esc(y)}</li>`).join("")+(k.katalog_yayinlari||[]).map(y=>`<li>${esc(y.yil)} <a href="${esc(y.url)}" target="_blank" rel="noopener">${esc(y.baslik||"(başlıksız)")}</a> <span class="muted kucuk">${esc(y.yayin)}${y.seri?" · "+esc(y.seri):""} · ${esc(y.kaynak)}</span></li>`).join("");
+    return `<div class="kart kayit" id="uz_${k.id}"><div class="ust">${esc(k.milliyet||"")} · ${esc([k.dogum,k.olum].filter(Boolean).join("–"))}${k.dogum_yeri?" · "+esc(k.dogum_yeri):""}</div><h4>${esc(k.ad)}</h4>
+      <div class="satir">${cipler(k.strand)}<span class="kucuk muted">${esc(k.alan||"")}</span></div>
+      <details ${U.kisiler.length<3?"open":""}><summary>Ayrıntı</summary>
+      ${eg?`<div class="kucuk"><b>Eğitim</b><ul>${eg}</ul></div>`:""}${go?`<div class="kucuk"><b>Görevler</b><ul>${go}</ul></div>`:""}
+      ${ya?`<div class="kucuk"><b>Yayınlar</b><ul>${ya}</ul></div>`:""}${il?`<div class="kucuk"><b>İlişkiler</b><ul>${il}</ul></div>`:""}
+      ${k.not?`<div class="kucuk muted">Not: ${esc(k.not)}</div>`:""}<div class="kucuk muted">Kaynak: ${(k.kaynak||[]).map(kaynakAd).join(" · ")}${k.url?` · <a href="${esc(k.url)}" target="_blank" rel="noopener">biyografi</a>`:""}</div></details></div>`;
+  }
+  const kisiAc=(g,id)=>{const d=g.querySelector("#uz_"+id); if(d){d.querySelector("details").open=true; d.scrollIntoView({behavior:"smooth",block:"center"})}};
+  altSekme(el,[
+    ["k","Kişiler",g=>{
+      const milliyetler=[...new Set(U.kisiler.map(k=>(k.milliyet||"").split(" ")[0]))].filter(Boolean);
+      g.innerHTML=`<div class="filtre"><input type="search" id="uzq" placeholder="Ara (ad, alan, kurum)"><select id="uzm"><option value="">Bütün milliyetler</option>${milliyetler.map(m=>`<option>${esc(m)}</option>`).join("")}</select><select id="uzs"><option value="">Bütün strandlar</option>${Object.keys(STR).map(s=>`<option>${s}</option>`).join("")}</select></div><div id="uzsay" class="muted kucuk"></div><div id="uzlist"></div>`;
+      const ciz=()=>{const q=$("#uzq").value.toLocaleLowerCase("tr"),m=$("#uzm").value,s=$("#uzs").value;
+        const l=U.kisiler.filter(k=>(!m||(k.milliyet||"").startsWith(m))&&(!s||(k.strand||[]).includes(s))&&(!q||JSON.stringify(k).toLocaleLowerCase("tr").includes(q)||(k.gorevler||[]).some(x=>kurumAd(x.kurum).toLocaleLowerCase("tr").includes(q))));
+        $("#uzsay").textContent=`${l.length} kişi`; $("#uzlist").innerHTML=l.map(kart).join("");
+        $("#uzlist").querySelectorAll("a[data-kisi]").forEach(a=>a.onclick=e=>{e.preventDefault();kisiAc(g,a.dataset.kisi)});};
+      $("#uzq").oninput=ciz; $("#uzm").onchange=ciz; $("#uzs").onchange=ciz; ciz();}],
+    ["g","Ağ grafiği",g=>{
+      g.innerHTML=`<p class="muted kucuk">Yuvarlak: kişi (renk milliyete göre); kare: kurum. Düz çizgi görev, kesikli çizgi eğitim, kalın renkli çizgi kişi–kişi ilişkisi. Bir düğüme tıklayın.</p><div class="ag-duzen"><div id="uzkutu" style="width:100%;height:640px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)"></div><div class="kart" id="uzpanel" style="max-height:640px;overflow:auto"><span class="muted kucuk">Bir düğüme tıklayın.</span></div></div>`;
+      if(!window.d3){g.querySelector("#uzkutu").innerHTML="<p class='muted'>d3 yüklenemedi.</p>";return}
+      const kutu=g.querySelector("#uzkutu"), W=kutu.clientWidth||800, H=640; const cs=getComputedStyle(document.documentElement);
+      const kisiler=U.kisiler.filter(k=>!k.id.endsWith("_diger"));
+      const kullanilan=new Set(); const links=[];
+      kisiler.forEach(k=>{(k.gorevler||[]).forEach(x=>{links.push({source:k.id,target:"k:"+x.kurum,t:"gorev"});kullanilan.add(x.kurum)});(k.egitim||[]).forEach(x=>{links.push({source:k.id,target:"k:"+x.kurum,t:"egitim"});kullanilan.add(x.kurum)});(k.iliskiler||[]).forEach(r=>{if(P[r.kisi]&&!r.kisi.endsWith("_diger"))links.push({source:k.id,target:r.kisi,t:"iliski"})})});
+      const nodes=[...kisiler.map(k=>({id:k.id,ad:k.ad,tip:"kisi",m:k.milliyet||"",d:k})),...[...kullanilan].map(id=>({id:"k:"+id,ad:kurumAd(id),tip:"kurum",d:K[id]||{id}}))];
+      const derece={}; links.forEach(l=>{derece[l.source]=(derece[l.source]||0)+1;derece[l.target]=(derece[l.target]||0)+1});
+      const renk=n=>n.tip==="kurum"?((n.d.ulke&&n.d.ulke!=="Türkiye")?cs.getPropertyValue("--s2"):cs.getPropertyValue("--s0")):(n.m.startsWith("Alman")?cs.getPropertyValue("--s3"):n.m.startsWith("Fransız")?cs.getPropertyValue("--s4"):cs.getPropertyValue("--accent"));
+      const svg=d3.select(kutu).append("svg").attr("width",W).attr("height",H).attr("viewBox",[0,0,W,H]); const gg=svg.append("g");
+      const zoom=d3.zoom().scaleExtent([.2,4]).on("zoom",e=>gg.attr("transform",e.transform)); svg.call(zoom);
+      const sim=d3.forceSimulation(nodes).force("link",d3.forceLink(links).id(d=>d.id).distance(l=>l.t==="iliski"?60:80)).force("charge",d3.forceManyBody().strength(-260)).force("x",d3.forceX(W/2).strength(.06)).force("y",d3.forceY(H/2).strength(.06)).force("col",d3.forceCollide(16));
+      const link=gg.append("g").selectAll("line").data(links).join("line").attr("stroke",l=>l.t==="iliski"?cs.getPropertyValue("--accent"):cs.getPropertyValue("--line")).attr("stroke-width",l=>l.t==="iliski"?2.5:1.2).attr("stroke-dasharray",l=>l.t==="egitim"?"4 3":null);
+      const node=gg.append("g").selectAll("g").data(nodes).join("g").style("cursor","pointer").call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.3).restart();d.fx=d.x;d.fy=d.y}).on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null}));
+      node.each(function(d){const s=d3.select(this), r=4+Math.sqrt(derece[d.id]||1)*2.4; if(d.tip==="kurum") s.append("rect").attr("x",-r).attr("y",-r).attr("width",2*r).attr("height",2*r).attr("fill",renk(d)); else s.append("circle").attr("r",r).attr("fill",renk(d)); s.append("text").text(d.ad.length>34?d.ad.slice(0,32)+"…":d.ad).attr("x",r+3).attr("y",4).attr("font-size",10.5).attr("fill",cs.getPropertyValue("--ink"))});
+      node.on("click",(e,d)=>{const p=g.querySelector("#uzpanel"); if(d.tip==="kisi"){p.innerHTML=kart(d.d);p.querySelector("details").open=true;} else {const ilgili=U.kisiler.filter(k=>(k.gorevler||[]).some(x=>"k:"+x.kurum===d.id)||(k.egitim||[]).some(x=>"k:"+x.kurum===d.id));p.innerHTML=`<h3 style="margin-top:0">${esc(d.ad)}</h3><div class="kucuk muted">${esc(d.d.tur||"")} · ${esc(d.d.yer||"")} ${esc(d.d.ulke||"")} ${esc(d.d.yillar||"")}</div><ul class="kucuk">${ilgili.map(k=>`<li><b>${esc(k.ad)}</b>: ${[...(k.gorevler||[]).filter(x=>"k:"+x.kurum===d.id).map(x=>`${yil(x)} ${x.gorev||""}`),...(k.egitim||[]).filter(x=>"k:"+x.kurum===d.id).map(x=>`eğitim ${x.yil||""} ${x.derece||""}`)].map(esc).join("; ")}</li>`).join("")}</ul>`}});
+      sim.on("tick",()=>{link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);node.attr("transform",d=>`translate(${d.x},${d.y})`)});
+      const sigdir=()=>{const b=gg.node().getBBox(); if(!b.width)return; const k=Math.min(2,.92*Math.min(W/b.width,H/b.height)); svg.transition().duration(400).call(zoom.transform,d3.zoomIdentity.translate(W/2-k*(b.x+b.width/2),H/2-k*(b.y+b.height/2)).scale(k))};
+      sim.on("end",sigdir); setTimeout(sigdir,1800);}],
+    ["u","Kurumlar",g=>{
+      g.innerHTML=`<div class="kaydir"><table class="tbl"><thead><tr><th>Kurum</th><th>Yer</th><th>Tür</th><th>Kişiler (görev / eğitim)</th></tr></thead><tbody>${U.kurumlar.map(k=>{const l=U.kisiler.filter(p=>(p.gorevler||[]).some(x=>x.kurum===k.id)||(p.egitim||[]).some(x=>x.kurum===k.id));return l.length?`<tr><td><b>${esc(k.ad)}</b> <span class="muted">${esc(k.yillar||"")}</span></td><td>${esc([k.yer,k.ulke].filter(Boolean).join(", "))}</td><td>${esc(k.tur)}</td><td>${l.map(p=>{const r=[...(p.gorevler||[]).filter(x=>x.kurum===k.id).map(x=>(yil(x)+" "+(x.gorev||"")).trim()),...(p.egitim||[]).filter(x=>x.kurum===k.id).map(x=>"eğitim "+(x.yil||""))];return `${esc(p.ad)} <span class="muted">(${esc(r.join("; "))})</span>`}).join("<br>")}</td></tr>`:""}).join("")}</tbody></table></div>`;}],
+    ["a",`Aday uzmanlar (${(U.aday_uzmanlar||[]).length})`,g=>{
+      g.innerHTML=`<p class="muted kucuk">Tarım ve Orman Bakanlığı Kütüphanesi kataloğunda 1923–1950 arasında yayını olan ama henüz ağa eklenmemiş yazarlar, yayın sayısına göre. Bunlar biyografik araştırma sırasında ağa eklenecek.</p><div class="kaydir"><table class="tbl"><thead><tr><th>Yazar</th><th>Yayın</th><th>Örnek yayınlar</th></tr></thead><tbody>${(U.aday_uzmanlar||[]).map(a=>`<tr><td><b>${esc(a.ad)}</b></td><td>${a.sayi}</td><td class="kucuk">${a.ornek.map(y=>`${esc(y.yil)} <a href="${esc(y.url)}" target="_blank" rel="noopener">${esc(y.baslik||"(başlıksız)")}</a>${y.seri?` <span class="muted">(${esc(y.seri)})</span>`:""}`).join("<br>")}</td></tr>`).join("")}</tbody></table></div>`;}],
+    ["s","Kaynaklar",g=>{g.innerHTML=`<ul>${Object.entries(U.kaynaklar).map(([k,v])=>`<li><b>${esc(k)}</b>: ${kaynakAd(k)}</li>`).join("")}</ul><p class="muted kucuk">${esc(U.aciklama)}</p>`;}],
+  ],"sekme_uzman");
+}
+
 /* ---------------- Kaynaklar */
 function kaynaklar(el){
   el.innerHTML="<h2>Kaynaklar</h2>";
@@ -322,7 +383,7 @@ function kaynaklar(el){
 }
 
 /* ---------------- yönlendirme */
-const BOLUM={genel,program,ilerleme,gorevler,bulgular,raporlar,veri,zaman,ag,kaynaklar};
+const BOLUM={genel,program,ilerleme,gorevler,bulgular,raporlar,veri,zaman,ag,uzman,kaynaklar};
 const cizildi={};
 function git(){
   const h=(location.hash||"#genel").slice(1); const k=BOLUM[h]?h:"genel";
