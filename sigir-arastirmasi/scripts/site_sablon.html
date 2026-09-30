@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sığır Asamblajı Araştırması</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+:root{
+  --bg:#f7f6f2;--panel:#ffffff;--ink:#1f2328;--muted:#5d646d;--line:#e3e0d8;--accent:#8a4b1f;--accent-soft:#f3e7dc;
+  --s0:#5b6b7f;--s1:#2f7d4f;--s2:#b7791f;--s3:#b23a3a;--s4:#6b4ea0;
+  --ok:#2f7d4f;--run:#b7791f;--todo:#5b6b7f;--block:#b23a3a;--user:#6b4ea0;
+  --radius:10px;--shadow:0 1px 2px rgba(0,0,0,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15171a;--panel:#1d2024;--ink:#e6e3dc;--muted:#a3a8ae;--line:#30343a;--accent:#e0a36f;--accent-soft:#3a2c21;
+    --s0:#93a3b8;--s1:#6cc190;--s2:#e3b25a;--s3:#ec7c7c;--s4:#b39ae6;
+    --ok:#6cc190;--run:#e3b25a;--todo:#93a3b8;--block:#ec7c7c;--user:#b39ae6;--shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15171a;--panel:#1d2024;--ink:#e6e3dc;--muted:#a3a8ae;--line:#30343a;--accent:#e0a36f;--accent-soft:#3a2c21;
+  --s0:#93a3b8;--s1:#6cc190;--s2:#e3b25a;--s3:#ec7c7c;--s4:#b39ae6;
+  --ok:#6cc190;--run:#e3b25a;--todo:#93a3b8;--block:#ec7c7c;--user:#b39ae6;--shadow:none;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+header{padding:18px 20px 10px;border-bottom:1px solid var(--line);background:var(--panel)}
+header h1{margin:0;font-size:20px}
+header .alt{color:var(--muted);font-size:13px}
+.duzen{display:flex;min-height:calc(100vh - 70px)}
+nav{width:220px;flex:none;border-right:1px solid var(--line);background:var(--panel);padding:10px 0;position:sticky;top:0;height:100vh;overflow:auto}
+nav a{display:block;padding:8px 18px;color:var(--ink);text-decoration:none;font-size:14px;border-left:3px solid transparent}
+nav a.aktif{border-left-color:var(--accent);background:var(--accent-soft);font-weight:600}
+nav .tema{margin:14px 18px;font-size:12px;color:var(--muted)}
+main{flex:1;min-width:0;padding:20px 24px 60px;max-width:1200px}
+section{display:none}
+section.aktif{display:block}
+h2{font-size:20px;margin:0 0 12px}
+h3{font-size:16px;margin:22px 0 8px}
+.kart{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);margin-bottom:12px}
+.izgara{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+.kpi .sayi{font-size:26px;font-weight:700}
+.kpi .ad{color:var(--muted);font-size:13px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--accent)}
+.satir{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.cip{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.cip.S0{border-color:var(--s0);color:var(--s0)}.cip.S1{border-color:var(--s1);color:var(--s1)}.cip.S2{border-color:var(--s2);color:var(--s2)}.cip.S3{border-color:var(--s3);color:var(--s3)}.cip.S4{border-color:var(--s4);color:var(--s4)}
+.cip.sec{background:var(--accent-soft);color:var(--ink);border-color:var(--accent)}
+button.cip{cursor:pointer;background:none;font:inherit;font-size:12px}
+.durum{font-size:12px;font-weight:600;padding:2px 8px;border-radius:6px;color:#fff}
+.d-bitti{background:var(--ok)}.d-suruyor{background:var(--run)}.d-sirada{background:var(--todo)}.d-engel{background:var(--block)}.d-kullanici{background:var(--user)}
+input,select{font:inherit;font-size:14px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink)}
+input[type=search]{min-width:220px}
+.filtre{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.muted{color:var(--muted)}
+.kucuk{font-size:13px}
+.md table,.tbl{border-collapse:collapse;width:100%;font-size:13.5px}
+.md th,.md td,.tbl th,.tbl td{border:1px solid var(--line);padding:5px 8px;vertical-align:top;text-align:left}
+.md th,.tbl th{background:var(--accent-soft)}
+.kaydir{overflow-x:auto;max-width:100%}
+.md{overflow-wrap:anywhere}
+.md h1{font-size:20px}.md h2{font-size:17px;margin-top:24px}.md h3{font-size:15px}
+.alttab{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.alttab button{border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:6px 12px;border-radius:8px;cursor:pointer;font:inherit;font-size:13.5px}
+.alttab button.sec{background:var(--accent);color:#fff;border-color:var(--accent)}
+.kayit h4{margin:2px 0 4px;font-size:15px}
+.kayit .ust{font-size:12.5px;color:var(--muted)}
+.kayit details summary{cursor:pointer;color:var(--muted);font-size:13px}
+.sayfalama{display:flex;gap:8px;align-items:center;margin:10px 0}
+.zc-yil{margin:18px 0 6px;font-weight:700;font-size:17px;border-bottom:2px solid var(--line)}
+.zc{border-left:3px solid var(--line);margin-left:6px;padding:4px 0 4px 14px;position:relative}
+.zc::before{content:"";position:absolute;left:-7px;top:10px;width:11px;height:11px;border-radius:50%;background:var(--muted)}
+.zc.meclis::before{background:var(--s0)}.zc.gazete::before{background:var(--accent)}.zc.dergi::before{background:var(--s1)}.zc.ingilizce::before{background:var(--s2)}.zc.antlasma::before{background:var(--s3)}.zc.program::before{background:transparent;border:2px solid var(--muted)}
+#agkutu{width:100%;height:620px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+.ag-duzen{display:grid;grid-template-columns:1fr 300px;gap:12px}
+@media (max-width:900px){
+  .duzen{display:block}
+  nav{position:static;width:auto;height:auto;display:flex;overflow-x:auto;border-right:0;border-bottom:1px solid var(--line);padding:0}
+  nav a{white-space:nowrap;border-left:0;border-bottom:3px solid transparent;padding:10px 12px}
+  nav a.aktif{border-bottom-color:var(--accent)}
+  nav .tema{display:none}
+  main{padding:16px}
+  .ag-duzen{grid-template-columns:1fr}
+  #agkutu{height:460px}
+  input[type=search]{min-width:0;width:100%}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Sığır Asamblajı (1923–1950): Araştırma Takibi</h1>
+  <div class="alt">FVADC 1938 · S1 ıslah ve üreme · S2 yem ve mera · S3 hastalık ve sınır · S4 ev–ahır · <span id="uretim"></span></div>
+</header>
+<div class="duzen">
+<nav id="nav">
+  <a href="#genel">Genel bakış</a>
+  <a href="#program">Araştırma programı</a>
+  <a href="#ilerleme">İlerleme ve eksikler</a>
+  <a href="#gorevler">Görevler</a>
+  <a href="#bulgular">Öne çıkan kayıtlar</a>
+  <a href="#raporlar">Raporlar ve ara analizler</a>
+  <a href="#veri">Veri tabanı</a>
+  <a href="#zaman">Zaman çizelgeleri</a>
+  <a href="#ag">Kişi–kurum ağı</a>
+  <a href="#kaynaklar">Kaynaklar</a>
+  <div class="tema">Tema: <select id="tema"><option value="">Sistem</option><option value="light">Açık</option><option value="dark">Koyu</option></select></div>
+</nav>
+<main>
+<section id="genel"></section>
+<section id="program"></section>
+<section id="ilerleme"></section>
+<section id="gorevler"></section>
+<section id="bulgular"></section>
+<section id="raporlar"></section>
+<section id="veri"></section>
+<section id="zaman"></section>
+<section id="ag"></section>
+<section id="kaynaklar"></section>
+</main>
+</div>
+<script>
+const V = /*__VERI__*/null;
+const STR = {S0:"Genel / çapraz",S1:"Islah ve üreme",S2:"Yem, açlık, mera",S3:"Hastalık, veteriner, sınır",S4:"Ev–ahır, birlikte yaşam"};
+const TUR = {meclis:"Meclis",dergi:"Dergi",gazete:"Gazete",ingilizce:"İngilizce basın",antlasma:"Antlaşma",program:"Program takvimi"};
+const $ = (s, e=document) => e.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ls = {get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}}, set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+function md(text){
+  if (window.marked){ const h = marked.parse(text||""); const d=document.createElement("div"); d.className="md"; d.innerHTML=h;
+    d.querySelectorAll("table").forEach(t=>{const w=document.createElement("div");w.className="kaydir";t.parentNode.insertBefore(w,t);w.appendChild(t)});
+    d.querySelectorAll("a").forEach(a=>a.target="_blank"); return d; }
+  const p=document.createElement("pre"); p.style.whiteSpace="pre-wrap"; p.textContent=text; return p;
+}
+const cipler = arr => (arr||[]).map(s=>`<span class="cip ${s}" title="${esc(STR[s])}">${s}</span>`).join(" ");
+const linkHtml = l => (l||[]).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.ad)}</a>`).join(" · ");
+function altSekme(el, sekmeler, anahtar){
+  const bar=document.createElement("div"); bar.className="alttab"; const govde=document.createElement("div");
+  el.append(bar, govde); const secili = ls.get(anahtar, sekmeler[0][0]);
+  function ac(k){ ls.set(anahtar,k); bar.querySelectorAll("button").forEach(b=>b.classList.toggle("sec",b.dataset.k===k));
+    govde.innerHTML=""; (sekmeler.find(s=>s[0]===k)||sekmeler[0])[2](govde); }
+  sekmeler.forEach(([k,ad])=>{const b=document.createElement("button");b.textContent=ad;b.dataset.k=k;b.onclick=()=>ac(k);bar.append(b)});
+  ac(sekmeler.some(s=>s[0]===secili)?secili:sekmeler[0][0]);
+}
+
+/* ---------------- Genel bakış */
+function genel(el){
+  const o=V.olcum;
+  const kpi=[["Öne çıkan kayıt",o.one_cikan],["Tutanak görüşme kümesi",o.tutanak_kume],["Tutanak isabetli sayfa",o.tutanak_sayfa],["Dergi parçası",o.dergi_parca],["Gazete sayfası (OCR)",o.gazete_sayfa],["ATBM makale adayı",o.atbm],["Arama günlüğü satırı",o.arama],["Görev",`${o.gorev_bitti} / ${o.gorev_toplam}`]];
+  const say={S0:0,S1:0,S2:0,S3:0,S4:0}; V.one_cikan.forEach(k=>k.strand.forEach(s=>say[s]++)); const mx=Math.max(...Object.values(say),1);
+  const tur={}; V.one_cikan.forEach(k=>tur[k.tur]=(tur[k.tur]||0)+1);
+  const son=V.one_cikan.filter(k=>k.tur==="gazete").slice(-8).reverse();
+  el.innerHTML=`<h2>Genel bakış</h2>
+  <div class="izgara">${kpi.map(([a,s])=>`<div class="kart kpi"><div class="sayi">${esc(s)}</div><div class="ad">${a}</div></div>`).join("")}</div>
+  <h3>OCR ve tarama ilerlemesi</h3>
+  <div class="kart">${(V.ocr||[]).map(x=>`<div style="margin:6px 0"><div class="satir kucuk"><b style="flex:1">${esc(x.is)}</b><span class="muted">${x.bitti} / ${x.hedef}</span></div><div class="bar"><i style="width:${Math.round(100*x.bitti/Math.max(x.hedef,1))}%"></i></div></div>`).join("")||'<span class="muted">Bilgi yok</span>'}</div>
+  <h3>Öne çıkan kayıtların strand dağılımı</h3>
+  <div class="kart">${Object.entries(say).map(([s,n])=>`<div class="satir" style="margin:4px 0"><span class="cip ${s}" style="width:34px;text-align:center">${s}</span><span class="kucuk" style="width:190px">${STR[s]}</span><div class="bar" style="flex:1"><i style="width:${100*n/mx}%;background:var(--${s.toLowerCase()})"></i></div><span class="kucuk" style="width:36px;text-align:right">${n}</span></div>`).join("")}
+  <div class="kucuk muted" style="margin-top:8px">Kaynak türüne göre: ${Object.entries(tur).map(([t,n])=>`${TUR[t]||t} ${n}`).join(" · ")}</div></div>
+  <h3>Son eklenen gazete bulguları</h3>
+  ${son.map(kayitKarti).join("")}`;
+}
+
+/* ---------------- Program */
+function program(el){
+  el.innerHTML="<h2>Araştırma programı</h2>";
+  altSekme(el,[["p","Program",g=>g.append(md(V.md.program))],["t","Anahtar kelime tezaurusu",g=>g.append(md(V.md.tezaurus))],["r","Proje özeti (README)",g=>g.append(md(V.md.readme))]],"sekme_program");
+}
+
+/* ---------------- İlerleme ve eksikler */
+function ilerleme(el){
+  el.innerHTML="<h2>İlerleme ve eksikler</h2>";
+  const eksik=V.gorevler.gorevler.filter(g=>["engel","kullanici","sirada","suruyor"].includes(g.durum));
+  const grup={kullanici:"Sizden beklenenler (erişim, giriş, göz taraması)",engel:"Erişim engelleri",suruyor:"Sürüyor",sirada:"Sırada"};
+  const k=document.createElement("div");
+  k.innerHTML=Object.entries(grup).map(([d,ad])=>{const l=eksik.filter(g=>g.durum===d); return l.length?`<div class="kart"><h3 style="margin-top:0"><span class="durum d-${d}">${V.gorevler.durumlar[d]}</span> ${ad}</h3><ul>${l.map(g=>`<li><b>${g.id}</b> ${esc(g.baslik)}${g.not?` <span class="muted">(${esc(g.not)})</span>`:""}</li>`).join("")}</ul></div>`:""}).join("");
+  el.append(k); const h=document.createElement("h3"); h.textContent="Ayrıntılı ilerleme dosyası (04_ilerleme_takibi.md)"; el.append(h, md(V.md.ilerleme));
+}
+
+/* ---------------- Görevler */
+function gorevler(el){
+  const notlar=ls.get("gorev_notlari",{});
+  el.innerHTML=`<h2>Görevler</h2><p class="muted kucuk">Durumlar Claude'un her güncellemede işlediği durumdur. "Benim takibim" kutusu ve not alanı yalnızca bu tarayıcıda saklanır.</p>
+  <div class="filtre"><select id="gdur"><option value="">Bütün durumlar</option>${Object.entries(V.gorevler.durumlar).map(([k,v])=>`<option value="${k}">${v}</option>`).join("")}</select>
+  <select id="gfaz"><option value="">Bütün fazlar</option>${[...new Set(V.gorevler.gorevler.map(g=>g.faz))].map(f=>`<option>${esc(f)}</option>`).join("")}</select></div><div id="glist"></div>`;
+  function ciz(){
+    const d=$("#gdur").value, f=$("#gfaz").value;
+    $("#glist").innerHTML=V.gorevler.gorevler.filter(g=>(!d||g.durum===d)&&(!f||g.faz===f)).map(g=>{const n=notlar[g.id]||{};return `<div class="kart"><div class="satir"><span class="durum d-${g.durum}">${V.gorevler.durumlar[g.durum]}</span><b>${g.id}</b><span class="cip">Faz ${esc(g.faz)}</span><span class="muted kucuk">${esc(g.sorumlu||"")}</span></div>
+      <div style="margin:6px 0">${esc(g.baslik)}</div>${g.not?`<div class="kucuk muted">Not: ${esc(g.not)}</div>`:""}${g.cikti?`<div class="kucuk">Çıktı: <code>${esc(g.cikti)}</code></div>`:""}
+      <div class="satir kucuk" style="margin-top:6px"><label><input type="checkbox" data-id="${g.id}" ${n.tamam?"checked":""}> Benim takibim: kontrol ettim</label><input data-not="${g.id}" placeholder="Kişisel not" value="${esc(n.not||"")}" style="flex:1;min-width:160px"></div></div>`}).join("");
+    $("#glist").querySelectorAll("input[type=checkbox]").forEach(c=>c.onchange=()=>{notlar[c.dataset.id]={...(notlar[c.dataset.id]||{}),tamam:c.checked};ls.set("gorev_notlari",notlar)});
+    $("#glist").querySelectorAll("input[data-not]").forEach(c=>c.onchange=()=>{notlar[c.dataset.not]={...(notlar[c.dataset.not]||{}),not:c.value};ls.set("gorev_notlari",notlar)});
+  }
+  $("#gdur").onchange=ciz; $("#gfaz").onchange=ciz; ciz();
+}
+
+/* ---------------- Öne çıkan kayıtlar */
+function kayitKarti(k){
+  return `<div class="kart kayit" id="${k.id}"><div class="ust">${k.id} · ${esc(TUR[k.tur]||k.tur)}${k.gazete?` · <i>${esc(k.gazete)}</i>`:""} · ${esc(k.tarih||k.yil||"tarihsiz")} · ${esc(k.bolum)}</div>
+  <h4>${esc(k.baslik)}</h4><div class="satir">${cipler(k.strand)}</div>
+  <details><summary>Ayrıntı</summary><div class="kucuk" style="margin-top:6px">${esc(k.metin)}</div><div class="kucuk muted">Kaynak rapor: ${esc(k.rapor)}</div></details>
+  ${k.link&&k.link.length?`<div class="kucuk" style="margin-top:4px">${linkHtml(k.link)}</div>`:""}</div>`;
+}
+const bulguDurum={q:"",tur:"",str:[],y1:"",y2:"",sayfa:0};
+function bulgular(el){
+  el.innerHTML=`<h2>Öne çıkan kayıtlar</h2><p class="muted kucuk">Raporlarda tek tek okunup seçilen kayıtlar: meclis görüşmeleri, gazete haberleri, dergi yazıları, İngilizce basın ve antlaşmalar. Tam isabet listeleri "Veri tabanı" bölümünde.</p>
+  <div class="filtre"><input type="search" id="bq" placeholder="Ara (başlık, metin, kimlik)"><select id="btur"><option value="">Bütün türler</option>${Object.entries(TUR).filter(([k])=>k!=="program").map(([k,v])=>`<option value="${k}">${v}</option>`).join("")}</select>
+  <input id="by1" placeholder="Yıl ≥" size="6"><input id="by2" placeholder="Yıl ≤" size="6"></div>
+  <div class="filtre" id="bstr">${Object.keys(STR).map(s=>`<button class="cip ${s}" data-s="${s}">${s} ${STR[s]}</button>`).join("")}</div><div id="bsay" class="muted kucuk"></div><div id="blist"></div><div class="sayfalama" id="bsf"></div>`;
+  const B=bulguDurum; $("#bq").value=B.q; $("#btur").value=B.tur; $("#by1").value=B.y1; $("#by2").value=B.y2;
+  function ciz(){
+    const q=B.q.toLocaleLowerCase("tr"); const l=V.one_cikan.filter(k=>(!B.tur||k.tur===B.tur)&&(!B.str.length||B.str.every(s=>k.strand.includes(s)))&&(!B.y1||(k.yil||0)>=+B.y1)&&(!B.y2||(k.yil||9999)<=+B.y2)&&(!q||(k.id+" "+k.baslik+" "+k.metin+" "+k.gazete).toLocaleLowerCase("tr").includes(q)));
+    const N=30, ss=Math.ceil(l.length/N); B.sayfa=Math.min(B.sayfa,Math.max(ss-1,0));
+    $("#bsay").textContent=`${l.length} kayıt`; $("#blist").innerHTML=l.slice(B.sayfa*N,(B.sayfa+1)*N).map(kayitKarti).join("");
+    $("#bsf").innerHTML=ss>1?`<button class="cip" id="bg">‹ Önceki</button><span class="kucuk">${B.sayfa+1} / ${ss}</span><button class="cip" id="bi">Sonraki ›</button>`:"";
+    if(ss>1){$("#bg").onclick=()=>{B.sayfa=Math.max(0,B.sayfa-1);ciz()};$("#bi").onclick=()=>{B.sayfa=Math.min(ss-1,B.sayfa+1);ciz()}}
+    $("#bstr").querySelectorAll("button").forEach(b=>b.classList.toggle("sec",B.str.includes(b.dataset.s)));
+  }
+  $("#bq").oninput=e=>{B.q=e.target.value;B.sayfa=0;ciz()}; $("#btur").onchange=e=>{B.tur=e.target.value;B.sayfa=0;ciz()};
+  $("#by1").oninput=e=>{B.y1=e.target.value;ciz()}; $("#by2").oninput=e=>{B.y2=e.target.value;ciz()};
+  $("#bstr").querySelectorAll("button").forEach(b=>b.onclick=()=>{const s=b.dataset.s;B.str=B.str.includes(s)?B.str.filter(x=>x!==s):[...B.str,s];B.sayfa=0;ciz()});
+  ciz();
+}
+function kayitaGit(id){ Object.assign(bulguDurum,{q:id,tur:"",str:[],y1:"",y2:"",sayfa:0}); if(location.hash==="#bulgular") git(); else location.hash="#bulgular"; }
+
+/* ---------------- Raporlar */
+function raporlar(el){
+  el.innerHTML=`<h2>Raporlar ve ara analizler</h2><p class="muted kucuk">Her rapor, ilgili kaynağın taranma yöntemi, öne çıkan kayıtları, gözlemleri ve sınırlılıklarıyla birlikte.</p>`;
+  altSekme(el,[["r01","01 · TBMM tutanakları",g=>g.append(md(V.md.r01))],["r02","02 · Dergiler ve basın",g=>g.append(md(V.md.r02))],["r03","03 · İngilizce basın",g=>g.append(md(V.md.r03))],["r04","04 · FVADC gazete penceresi",g=>g.append(md(V.md.r04))]],"sekme_rapor");
+}
+
+/* ---------------- Veri tabanı */
+function buyukTablo(g, satirlar, sutunlar, opts){
+  const d={q:"",str:"",puan:"",sayfa:0};
+  g.innerHTML=`<p class="muted kucuk">${esc(opts.aciklama)}</p><div class="filtre"><input type="search" placeholder="Ara"><select><option value="">Bütün strandlar</option>${Object.keys(STR).map(s=>`<option>${s}</option>`).join("")}</select>${opts.puan!=null?`<input placeholder="Puan ≥" size="6">`:""}</div><div class="muted kucuk sayac"></div><div class="kaydir"><table class="tbl"><thead><tr>${sutunlar.map(s=>`<th>${esc(s.ad)}</th>`).join("")}</tr></thead><tbody></tbody></table></div><div class="sayfalama"></div>`;
+  const [qi,si]=g.querySelectorAll(".filtre input[type=search], .filtre select"); const pi=g.querySelector(".filtre input:not([type=search])");
+  function ciz(){
+    const q=d.q.toLocaleLowerCase("tr");
+    const l=satirlar.filter(r=>(!d.str||String(r[opts.str]).includes(d.str))&&(!d.puan||+r[opts.puan]>=+d.puan)&&(!q||r.join(" ").toLocaleLowerCase("tr").includes(q)));
+    const N=50, ss=Math.ceil(l.length/N); d.sayfa=Math.min(d.sayfa,Math.max(ss-1,0));
+    g.querySelector(".sayac").textContent=`${l.length} satır`;
+    g.querySelector("tbody").innerHTML=l.slice(d.sayfa*N,(d.sayfa+1)*N).map(r=>`<tr>${sutunlar.map(s=>`<td>${s.link?(r[s.i]?`<a href="${esc(r[s.i])}" target="_blank" rel="noopener">aç</a>`:""):esc(r[s.i])}</td>`).join("")}</tr>`).join("");
+    const sf=g.querySelector(".sayfalama"); sf.innerHTML=ss>1?`<button class="cip">‹</button><span class="kucuk">${d.sayfa+1} / ${ss}</span><button class="cip">›</button>`:"";
+    if(ss>1){const [a,b]=sf.querySelectorAll("button");a.onclick=()=>{d.sayfa=Math.max(0,d.sayfa-1);ciz()};b.onclick=()=>{d.sayfa=Math.min(ss-1,d.sayfa+1);ciz()}}
+  }
+  qi.oninput=e=>{d.q=e.target.value;d.sayfa=0;ciz()}; si.onchange=e=>{d.str=e.target.value;d.sayfa=0;ciz()}; if(pi) pi.oninput=e=>{d.puan=e.target.value;d.sayfa=0;ciz()};
+  ciz();
+}
+function veri(el){
+  const T=V.tablolar; el.innerHTML="<h2>Veri tabanı</h2>";
+  altSekme(el,[
+    ["k",`Meclis görüşme kümeleri (${T.kumeler.length})`,g=>buyukTablo(g,T.kumeler,[{ad:"Tarih",i:0},{ad:"Kaynak",i:1},{ad:"PDF sayfa",i:2},{ad:"Puan",i:3},{ad:"Strand",i:4},{ad:"Terimler",i:5},{ad:"Gündem ipucu",i:6},{ad:"PDF",i:7,link:1}],{str:4,puan:3,aciklama:"TBMM tutanaklarında ardışık isabetli sayfalardan oluşan görüşme kümeleri (1923–1950). Puan: çekirdek terim 3, diğer 1, zayıf 0,3."})],
+    ["g",`Gazete sayfaları (${T.gazeteler.length})`,g=>buyukTablo(g,T.gazeteler,[{ad:"Gazete",i:0},{ad:"Tarih",i:1},{ad:"Sayı",i:2},{ad:"Sayfa",i:3},{ad:"Puan",i:4},{ad:"Strand",i:5},{ad:"Terimler",i:6},{ad:"Bağlam (OCR)",i:8},{ad:"PDF",i:7,link:1}],{str:5,puan:4,aciklama:"İBB Atatürk Kitaplığı gazetelerinin OCR taraması; puanı ≥3 sayfalar. OCR gürültülüdür, bağlamı PDF'ten kontrol edin."})],
+    ["d",`Dergi parçaları (${T.dergiler.length})`,g=>buyukTablo(g,T.dergiler,[{ad:"Platform",i:0},{ad:"Yayın",i:1},{ad:"Yıl",i:2},{ad:"Sayfa/parça",i:3},{ad:"Puan",i:4},{ad:"Strand",i:5},{ad:"Terimler",i:6},{ad:"Bağlam",i:8},{ad:"Kayıt",i:7,link:1}],{str:5,puan:4,aciklama:"TBMM Açık Erişim ve Internet Archive dergileri (ATBM, Ülkü, Ayın Tarihi, halkevi dergileri, Düstur…); puanı ≥3 parçalar."})],
+    ["o",`OCR'lanan dergiler (${T.ocr.length})`,g=>buyukTablo(g,T.ocr,[{ad:"Yayın",i:0},{ad:"Yıl",i:1},{ad:"Dosya",i:2},{ad:"PDF sayfa",i:3},{ad:"Puan",i:4},{ad:"Strand",i:5},{ad:"Terimler",i:6},{ad:"Bağlam",i:8},{ad:"Kayıt",i:7,link:1}],{str:5,puan:4,aciklama:"Metin katmanı olmayan halkevi dergileri ve monografiler (tesseract OCR)."})],
+    ["a",`ATBM makaleleri (${T.atbm.length})`,g=>buyukTablo(g,T.atbm,[{ad:"Yıl",i:0},{ad:"Sayılar",i:1},{ad:"Başlık (ham)",i:2},{ad:"Yazar ve unvan (ham)",i:3},{ad:"Strand",i:4},{ad:"Terimler",i:5}],{str:4,aciklama:"Askerî Tıbbî Baytarî Mecmuası 1929–1937: sezgisel başlık ve yazar çıkarımı (OCR gürültülü; görüntüden doğrulanmalı). Kaynak: archive.org/details/askeri-tibbi-baytari-mecmuasi"})],
+    ["b",`Beyoğlu, Fransızca (${T.beyoglu.length})`,g=>buyukTablo(g,T.beyoglu,[{ad:"Yayın",i:0},{ad:"Dosya",i:1},{ad:"Terimler",i:2},{ad:"Bağlam",i:3},{ad:"Kayıt",i:4,link:1}],{str:2,aciklama:"Beyoğlu gazetesi (1939–44), Fransızca terimlerle."})],
+  ],"sekme_veri");
+}
+
+/* ---------------- Zaman çizelgeleri */
+const zamanDurum={g:"hepsi",tur:""};
+function zaman(el){
+  el.innerHTML=`<h2>Zaman çizelgeleri</h2><p class="muted kucuk">Bütünsel çizelge bütün tarihli bulguları ve araştırma programının olay takvimini birleştirir; tematik çizelgeler strand'e göre süzer. Bir kayda tıklayınca ayrıntısı açılır.</p>
+  <div class="alttab" id="zsek">${[["hepsi","Bütünsel"],...Object.keys(STR).map(s=>[s,`${s} · ${STR[s]}`])].map(([k,a])=>`<button data-k="${k}">${a}</button>`).join("")}</div>
+  <div class="filtre"><select id="ztur"><option value="">Bütün kaynak türleri</option>${Object.entries(TUR).map(([k,v])=>`<option value="${k}">${v}</option>`).join("")}</select><span class="kucuk muted" id="zsay"></span></div><div id="zlist"></div>`;
+  function ciz(){
+    $("#zsek").querySelectorAll("button").forEach(b=>b.classList.toggle("sec",b.dataset.k===zamanDurum.g)); $("#ztur").value=zamanDurum.tur;
+    const l=V.zaman.filter(z=>(zamanDurum.g==="hepsi"||z.strand.includes(zamanDurum.g))&&(!zamanDurum.tur||z.tur===zamanDurum.tur));
+    $("#zsay").textContent=`${l.length} olay`; let y=null, h="";
+    l.forEach(z=>{ if(z.yil!==y){y=z.yil;h+=`<div class="zc-yil">${y||"?"}</div>`}
+      h+=`<div class="zc ${z.tur}"><div class="kucuk muted">${esc(z.tarih||z.tarih_metin||"")} · ${esc(TUR[z.tur]||z.tur)} · ${cipler(z.strand)}</div><div>${z.id?`<a href="#bulgular" data-id="${z.id}">${esc(z.baslik)}</a>`:esc(z.baslik)}</div><div class="kucuk muted">${esc(z.kaynak)}</div></div>`});
+    $("#zlist").innerHTML=h; $("#zlist").querySelectorAll("a[data-id]").forEach(a=>a.onclick=e=>{e.preventDefault();kayitaGit(a.dataset.id)});
+  }
+  $("#zsek").querySelectorAll("button").forEach(b=>b.onclick=()=>{zamanDurum.g=b.dataset.k;ciz()}); $("#ztur").onchange=e=>{zamanDurum.tur=e.target.value;ciz()};
+  ciz();
+}
+
+/* ---------------- Kişi–kurum ağı */
+function ag(el){
+  const A=V.ag; const byId=Object.fromEntries(V.one_cikan.map(k=>[k.id,k]));
+  el.innerHTML=`<h2>Kişi–kurum ağı</h2><p class="muted kucuk">Düğümler bulgularda geçen kişi ve kurumlar; bağlantı, ikisinin aynı kayıtta (rapor satırı, madde, ATBM makalesi) birlikte geçtiği anlamına gelir. Kalınlık birlikte geçme sayısıdır. Sözlük: <code>10_kisi_kurum.json</code>.</p>
+  <div class="filtre"><label class="kucuk">En az birlikte geçme: <input type="range" id="agw" min="1" max="6" value="1"> <span id="agwv">1</span></label><span class="cip" style="border-color:var(--accent);color:var(--accent)">● kişi</span><span class="cip" style="border-color:var(--s0);color:var(--s0)">● kurum / ülke</span></div>
+  <div class="ag-duzen"><div id="agkutu"></div><div class="kart" id="agpanel" style="max-height:620px;overflow:auto"><span class="muted kucuk">Bir düğüme tıklayın.</span></div></div>
+  <h3>En sık birlikte geçenler</h3><div class="kaydir"><table class="tbl"><thead><tr><th>Varlık 1</th><th>Varlık 2</th><th>Birlikte geçme</th></tr></thead><tbody>${[...A.kenarlar].sort((a,b)=>b.w-a.w).slice(0,30).map(k=>{const f=id=>A.dugumler.find(d=>d.id===id)?.ad||id;return `<tr><td>${esc(f(k.a))}</td><td>${esc(f(k.b))}</td><td>${k.w}</td></tr>`}).join("")}</tbody></table></div>`;
+  function panel(d){
+    $("#agpanel").innerHTML=`<h3 style="margin-top:0">${esc(d.ad)}</h3><div class="kucuk muted">${esc(d.tur)} · ${esc(d.rol)} · ${d.sayi} kayıt</div><ul class="kucuk">${d.kayitlar.map(id=>byId[id]?`<li><a href="#bulgular" data-id="${id}">${esc(byId[id].tarih||byId[id].yil||"")} ${esc(byId[id].baslik)}</a></li>`:"").join("")}</ul>`;
+    $("#agpanel").querySelectorAll("a[data-id]").forEach(a=>a.onclick=e=>{e.preventDefault();kayitaGit(a.dataset.id)});
+  }
+  if(!window.d3){$("#agkutu").innerHTML='<p class="muted" style="padding:12px">Ağ grafiği için internet bağlantısı gerekiyor (d3). Aşağıdaki tablo çevrimdışı da çalışır.</p>';return}
+  function ciz(minw){
+    const kutu=$("#agkutu"); kutu.innerHTML=""; const W=kutu.clientWidth||800, H=kutu.clientHeight||600;
+    const links=A.kenarlar.filter(k=>k.w>=minw).map(k=>({source:k.a,target:k.b,w:k.w}));
+    const ids=new Set(links.flatMap(l=>[l.source,l.target])); const nodes=A.dugumler.filter(d=>ids.has(d.id)).map(d=>({...d}));  // bağlantısız düğümler grafikte gösterilmez
+    const svg=d3.select(kutu).append("svg").attr("width",W).attr("height",H).attr("viewBox",[0,0,W,H]); const g=svg.append("g");
+    const zoom=d3.zoom().scaleExtent([.2,4]).on("zoom",e=>g.attr("transform",e.transform)); svg.call(zoom);
+    const sigdir=()=>{ const b=g.node().getBBox(); if(!b.width) return; const k=Math.min(2,.92*Math.min(W/b.width,H/b.height));
+      svg.transition().duration(400).call(zoom.transform,d3.zoomIdentity.translate(W/2-k*(b.x+b.width/2),H/2-k*(b.y+b.height/2)).scale(k)); };
+    const cs=getComputedStyle(document.documentElement); const renk=d=>d.tur==="kişi"?cs.getPropertyValue("--accent"):cs.getPropertyValue("--s0");
+    const sim=d3.forceSimulation(nodes).force("link",d3.forceLink(links).id(d=>d.id).distance(90).strength(l=>Math.min(1,.15+l.w/10))).force("charge",d3.forceManyBody().strength(-220)).force("center",d3.forceCenter(W/2,H/2)).force("x",d3.forceX(W/2).strength(.07)).force("y",d3.forceY(H/2).strength(.07)).force("col",d3.forceCollide(d=>8+Math.sqrt(d.sayi)*3));
+    const link=g.append("g").attr("stroke",cs.getPropertyValue("--line")).selectAll("line").data(links).join("line").attr("stroke-width",d=>Math.min(8,.6+d.w*.8)).attr("stroke-opacity",.8);
+    const node=g.append("g").selectAll("g").data(nodes).join("g").style("cursor","pointer").on("click",(e,d)=>panel(d)).call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.3).restart();d.fx=d.x;d.fy=d.y}).on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null}));
+    node.append("circle").attr("r",d=>5+Math.sqrt(d.sayi)*2.6).attr("fill",renk).attr("fill-opacity",.85).attr("stroke",cs.getPropertyValue("--panel")).attr("stroke-width",1.5);
+    node.append("text").text(d=>d.ad).attr("x",d=>8+Math.sqrt(d.sayi)*2.6).attr("y",4).attr("font-size",11).attr("fill",cs.getPropertyValue("--ink"));
+    node.append("title").text(d=>`${d.ad} (${d.sayi})`);
+    sim.on("tick",()=>{link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);node.attr("transform",d=>`translate(${d.x},${d.y})`)});
+    sim.on("end",sigdir); setTimeout(sigdir,1800);
+  }
+  $("#agw").oninput=e=>{$("#agwv").textContent=e.target.value;ciz(+e.target.value)}; ciz(1);
+}
+
+/* ---------------- Kaynaklar */
+function kaynaklar(el){
+  el.innerHTML="<h2>Kaynaklar</h2>";
+  const erisim=`## Hızlı bağlantılar\n\n| Kaynak | Bağlantı | Durum |\n|---|---|---|\n| TBMM tutanakları | [www5.tbmm.gov.tr tutanak dergisi](https://www5.tbmm.gov.tr/develop/owa/tutanak_dergisi_pdfler.meclis_donemleri?v_meclis=1) | Açık |\n| TBMM Kütüphanesi Açık Erişim | [acikerisim.tbmm.gov.tr](https://acikerisim.tbmm.gov.tr/) | Açık |\n| İBB Atatürk Kitaplığı (dijital gazeteler) | [katalog.ibb.gov.tr/yordam](https://katalog.ibb.gov.tr/yordam/) | Açık; PDF'ler OCR gerektirir |\n| Internet Archive | [archive.org](https://archive.org/) · [ATBM](https://archive.org/details/askeri-tibbi-baytari-mecmuasi) | Açık |\n| Gaste Arşivi | [gastearsivi.com](https://www.gastearsivi.com/) | Abonelik; Chrome oturumu bekleniyor |\n| Milletler Cemiyeti Antlaşmalar Dizisi | [treaties.un.org LNTS](https://treaties.un.org/pages/LONOnline.aspx) | Açık |\n| LONTAD | [archives.ungeneva.org](https://archives.ungeneva.org/) | Tarayıcı doğrulaması |\n| Papers Past | [paperspast.natlib.govt.nz](https://paperspast.natlib.govt.nz/) | API ile açık |\n| Tarım ve Orman Bakanlığı Kütüphanesi | [kutuphane.tarimorman.gov.tr](https://kutuphane.tarimorman.gov.tr/) | FVADC PDF'leri üye girişi ister |\n| Milli Kütüphane | [mkutup.gov.tr](https://www.mkutup.gov.tr/) | Yurt dışından yanıt yok |\n`;
+  altSekme(el,[["e","Erişim ve bağlantılar",g=>g.append(md(erisim))],["v","Kaynak envanteri",g=>g.append(md(V.md.envanter))],["b","Tohum bibliyografya",g=>g.append(md(V.md.bibliyografya))],["g","Gaste Arşivi sorgu planı",g=>g.append(md(V.md.gaste))],
+    ["a",`Arama günlüğü (${V.tablolar.arama.length-1})`,g=>{g.innerHTML=`<div class="kaydir"><table class="tbl"><thead><tr>${V.tablolar.arama[0].map(h=>`<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${V.tablolar.arama.slice(1).map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`}]],"sekme_kaynak");
+}
+
+/* ---------------- yönlendirme */
+const BOLUM={genel,program,ilerleme,gorevler,bulgular,raporlar,veri,zaman,ag,kaynaklar};
+const cizildi={};
+function git(){
+  const h=(location.hash||"#genel").slice(1); const k=BOLUM[h]?h:"genel";
+  document.querySelectorAll("section").forEach(s=>s.classList.toggle("aktif",s.id===k));
+  document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("aktif",a.getAttribute("href")==="#"+k));
+  if(!cizildi[k]||k==="bulgular"){ const el=document.getElementById(k); el.innerHTML=""; BOLUM[k](el); cizildi[k]=1; }
+  window.scrollTo(0,0);
+}
+$("#uretim").textContent="Son güncelleme: "+V.uretim;
+const tema=ls.get("tema",""); if(tema) document.documentElement.dataset.theme=tema; $("#tema").value=tema;
+$("#tema").onchange=e=>{ls.set("tema",e.target.value); if(e.target.value) document.documentElement.dataset.theme=e.target.value; else delete document.documentElement.dataset.theme; cizildi.ag=0; if(location.hash==="#ag") git();};
+window.addEventListener("hashchange",git); git();
+</script>
+</body>
+</html>
