@@ -1,162 +1,1664 @@
 {
-  "aciklama": "Uzmanlık ağı veritabanı (1923–1950). Her kişide eğitim, görevler (kurum + yıl), ilişkiler ve kaynaklar. 'dogrulanacak' işaretli bilgiler ikincil kaynakta tek geçen ya da çıkarımla eklenen bilgilerdir. Yayınlar ayrıca kataloglardan (tok_katalog.py, ATBM) otomatik eşleştirilir; 'yayinlar' alanı biyografide anılan eserlerdir. Kaynak kısaltmaları 'kaynaklar' listesinde.",
-  "kaynaklar": {
-    "GOKCEN": {"ad": "Hazım Gökçen, 'Meslek Büyükleri' biyografi dizisi (hazimgokcen.net)", "url": "https://www.hazimgokcen.net/category/meslek-buyukleri/"},
-    "GOZCU2018": {"ad": "Alev Gözcü, 'Atatürk Döneminde Türkiye'de Tarımın Gelişiminde Alman Etkisi', ÇTTAD XVIII/36 (2018), 107–137", "url": "https://ataturkilkeleri.deu.edu.tr/wp-content/uploads/2018/10/TURKIYE___DE-TARIMIN-GELISIMINDE-ALMAN-ETKISI.pdf"},
-    "CIFTCI2011": {"ad": "Cemalettin Yaşar Çiftçi, 'Ziraat Eğitimi Üzerine…', Cumhuriyet Bilim Teknik, 18 Şubat 2011, s. 17 (Gözcü 2018'den aktarma)", "url": ""},
-    "KADIOGLU": {"ad": "Sevtap Kadıoğlu, 'Ankara Yüksek Ziraat Enstitüsü'nde Mülteci Bilim Adamları', Osmanlı Bilimi Araştırmaları", "url": "https://dergipark.org.tr/tr/download/article-file/13236"},
-    "ATBM": {"ad": "Askerî Tıbbî Baytarî Mecmuası 1929–1937 (Internet Archive; rapor 02 ve atbm_makale_listesi.csv)", "url": "https://archive.org/details/askeri-tibbi-baytari-mecmuasi"},
-    "TBMM": {"ad": "TBMM tutanakları (rapor 01)", "url": ""},
-    "IBB": {"ad": "İBB Atatürk Kitaplığı kataloğu", "url": "https://katalog.ibb.gov.tr/yordam/"},
-    "TOK": {"ad": "Tarım ve Orman Bakanlığı Kütüphanesi kataloğu", "url": "https://kutuphane.tarimorman.gov.tr/vufind/"}
+ "aciklama": "Uzmanlık ağı veritabanı (1923–1950). Her kişide eğitim, görevler (kurum + yıl), ilişkiler ve kaynaklar. 'dogrulanacak' işaretli bilgiler ikincil kaynakta tek geçen ya da çıkarımla eklenen bilgilerdir. Yayınlar ayrıca kataloglardan (tok_katalog.py, ATBM) otomatik eşleştirilir; 'yayinlar' alanı biyografide anılan eserlerdir. Kaynak kısaltmaları 'kaynaklar' listesinde.",
+ "kaynaklar": {
+  "GOKCEN": {
+   "ad": "Hazım Gökçen, 'Meslek Büyükleri' biyografi dizisi (hazimgokcen.net)",
+   "url": "https://www.hazimgokcen.net/category/meslek-buyukleri/"
   },
-  "kurumlar": [
-    {"id": "mulkiye_baytar", "ad": "Mülkiye Baytar Mektebi (Halkalı / İstanbul)", "tur": "okul", "yer": "İstanbul", "ulke": "Türkiye", "yillar": "1889–1920"},
-    {"id": "askeri_baytar", "ad": "Askerî Baytar Mektebi", "tur": "okul", "yer": "İstanbul", "ulke": "Türkiye", "yillar": "–1920"},
-    {"id": "yuksek_baytar", "ad": "Baytar Mekteb-i Âlisi / Yüksek Baytar (Veteriner) Mektebi", "tur": "okul", "yer": "İstanbul", "ulke": "Türkiye", "yillar": "1920–1933"},
-    {"id": "halkali", "ad": "Halkalı Yüksek Ziraat Mektebi", "tur": "okul", "yer": "İstanbul", "ulke": "Türkiye", "yillar": "1891–1933"},
-    {"id": "yze", "ad": "Yüksek Ziraat Enstitüsü (YZE)", "tur": "üniversite", "yer": "Ankara", "ulke": "Türkiye", "yillar": "1933–1948"},
-    {"id": "auvf", "ad": "Ankara Üniversitesi Veteriner Fakültesi", "tur": "üniversite", "yer": "Ankara", "ulke": "Türkiye", "yillar": "1948–"},
-    {"id": "istanbul_uni", "ad": "Darülfünun / İstanbul Üniversitesi", "tur": "üniversite", "yer": "İstanbul", "ulke": "Türkiye"},
-    {"id": "askeri_baytar_tatbikat", "ad": "Askerî Baytar Tatbikat Mektebi ve Hastanesi (Askerî Veteriner Okulu)", "tur": "okul", "yer": "İstanbul (Haydarpaşa)", "ulke": "Türkiye"},
-    {"id": "mmv_veteriner", "ad": "Milli Müdafaa Vekâleti Baytar/Veteriner Dairesi", "tur": "kamu", "yer": "Ankara", "ulke": "Türkiye"},
-    {"id": "vet_genel", "ad": "Ziraat Vekâleti Baytarî (Veteriner) İşleri Umum Müdürlüğü", "tur": "kamu", "yer": "Ankara", "ulke": "Türkiye"},
-    {"id": "ziraat_vekaleti", "ad": "Ziraat Vekâleti", "tur": "kamu", "yer": "Ankara", "ulke": "Türkiye"},
-    {"id": "pendik", "ad": "Pendik Bakteriyolojihanesi / Bakteriyoloji Enstitüsü", "tur": "enstitü", "yer": "İstanbul", "ulke": "Türkiye"},
-    {"id": "etlik", "ad": "Etlik (Askerî) Bakteriyoloji, Serum ve Aşı Enstitüsü", "tur": "enstitü", "yer": "Ankara", "ulke": "Türkiye"},
-    {"id": "erzincan_serum", "ad": "Erzincan Serum Laboratuvarı", "tur": "enstitü", "yer": "Erzincan", "ulke": "Türkiye"},
-    {"id": "ankara_serum", "ad": "Ankara Serum ve Aşı Enstitüsü (Kurtuluş Savaşı dönemi)", "tur": "enstitü", "yer": "Ankara", "ulke": "Türkiye"},
-    {"id": "karaagac", "ad": "Karaağaç Mezbahası", "tur": "kamu", "yer": "İstanbul", "ulke": "Türkiye"},
-    {"id": "tbmm", "ad": "TBMM", "tur": "kamu", "yer": "Ankara", "ulke": "Türkiye"},
-    {"id": "tbc", "ad": "Türk Baytarlar Cemiyeti (Veteriner Hekimler Derneği)", "tur": "dernek", "yer": "İstanbul / Ankara", "ulke": "Türkiye", "yillar": "1930–"},
-    {"id": "berlin_vet", "ad": "Tierärztliche Hochschule Berlin", "tur": "yabancı üniversite", "yer": "Berlin", "ulke": "Almanya"},
-    {"id": "berlin_uni", "ad": "Berlin Üniversitesi (Ziraat / Felsefe fakülteleri)", "tur": "yabancı üniversite", "yer": "Berlin", "ulke": "Almanya"},
-    {"id": "berlin_hijyen", "ad": "Berlin Devlet Hıfzıssıhha Enstitüsü", "tur": "yabancı enstitü", "yer": "Berlin", "ulke": "Almanya"},
-    {"id": "hannover_vet", "ad": "Tierärztliche Hochschule Hannover", "tur": "yabancı üniversite", "yer": "Hannover", "ulke": "Almanya"},
-    {"id": "wien_vet", "ad": "Tierärztliche Hochschule Wien", "tur": "yabancı üniversite", "yer": "Viyana", "ulke": "Avusturya"},
-    {"id": "leipzig_uni", "ad": "Leipzig Üniversitesi", "tur": "yabancı üniversite", "yer": "Leipzig", "ulke": "Almanya"},
-    {"id": "pasteur", "ad": "Institut Pasteur", "tur": "yabancı enstitü", "yer": "Paris", "ulke": "Fransa"},
-    {"id": "alfort", "ad": "École vétérinaire d'Alfort", "tur": "yabancı üniversite", "yer": "Alfort", "ulke": "Fransa"},
-    {"id": "fransa", "ad": "Fransa (kurum belirtilmemiş uzmanlık)", "tur": "yabancı üniversite", "yer": "", "ulke": "Fransa"},
-    {"id": "almanya", "ad": "Almanya (kurum belirtilmemiş uzmanlık)", "tur": "yabancı üniversite", "yer": "", "ulke": "Almanya"}
-  ],
-  "kisiler": [
-    {"id": "bekman", "ad": "Muzaffer Bekman", "dogum": "1888", "olum": "1974", "dogum_yeri": "Dedeağaç", "milliyet": "Türk", "alan": "bakteriyoloji, hayvan sağlık zabıtası, veteriner tarihi", "strand": ["S3"],
-     "egitim": [{"kurum": "yuksek_baytar", "yil": "1911", "derece": "mezuniyet"}],
-     "gorevler": [{"kurum": "erzincan_serum", "gorev": "veteriner", "bas": "1920", "bit": "1923"}, {"kurum": "vet_genel", "gorev": "Bulaşıcı Hastalıklar ve Hayvan Sağlık Zabıtası Müdürlüğü", "bas": "1923"}, {"kurum": "erzincan_serum", "gorev": "müdür; ilk hayvan sağlığı okulunun kurucusu ve hocası", "bas": "1927"}, {"kurum": "vet_genel", "gorev": "fen müşaviri", "bas": "1929"}, {"kurum": "vet_genel", "gorev": "genel müdür yardımcısı", "bas": "1942"}, {"kurum": "pendik", "gorev": "müdür", "bas": "1944"}],
-     "yayinlar": ["Sığır Vebası Serumu Nasıl Hazırlanır (1925)", "Veteriner Tarihi (1940)", "Klasik Hayvan Sağlık Zabıtası (1950)"],
-     "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/hem-bakteriyolog-hem-veteriner-tarihcisi-bir-meslek-buyugumuz-muzaffer-bekman/"},
-    {"id": "akkerman", "ad": "Cevat Naki Akkerman", "dogum": "1891", "olum": "1986", "dogum_yeri": "Ankara", "milliyet": "Türk", "alan": "parazitoloji; veteriner idaresi", "strand": ["S3"],
-     "egitim": [{"kurum": "askeri_baytar", "yil": "1914", "derece": "mezuniyet"}, {"kurum": "berlin_vet", "derece": "parazitoloji ihtisası"}, {"kurum": "berlin_uni", "derece": "Felsefe Fakültesi mezuniyeti"}],
-     "gorevler": [{"kurum": "askeri_baytar_tatbikat", "gorev": "parazitoloji asistanı ve şefi"}, {"kurum": "mmv_veteriner", "gorev": "Fen Şubesi müdürü", "bas": "1920", "bit": "1927"}, {"kurum": "ziraat_vekaleti", "gorev": "mütehassıs müşavir", "bas": "1927", "bit": "1944"}, {"kurum": "vet_genel", "gorev": "genel müdür", "bas": "1927", "bit": "1944", "not": "biyografide müşavirlik ile birlikte 1927–44 olarak veriliyor; görev yılları doğrulanacak"}],
-     "not": "1910–1917 İttihat ve Terakki üyesi; Çanakkale Savaşı'na katıldı.", "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/siyasetci-ve-kizilay-gonullusu-bir-veteriner-hekim-cevat-naki-akkerman/"},
-    {"id": "yalki", "ad": "Selahattin Nejat Yalkı", "diger_adlar": ["Salâhattin Nejat"], "dogum": "1900", "olum": "1973", "dogum_yeri": "İstanbul", "milliyet": "Türk", "alan": "iç hastalıkları", "strand": ["S3"],
-     "egitim": [{"kurum": "berlin_vet", "yil": "1930", "derece": "mezuniyet"}, {"kurum": "berlin_vet", "yil": "1931", "derece": "doktora (iç hastalıkları)"}],
-     "gorevler": [{"kurum": "etlik", "gorev": "laboratuvar şefi", "bas": "1931"}, {"kurum": "yze", "gorev": "Veteriner Fakültesi İç Hastalıkları Kliniği şefi; doçent 1939, profesör 1941; dekan 1942–44", "bas": "1934", "bit": "1948"}, {"kurum": "auvf", "gorev": "İç Hastalıkları Kürsüsü başkanı; dekan 1946–50", "bas": "1948", "bit": "1970"}],
-     "kaynak": ["GOKCEN", "ATBM"], "not": "ATBM 1934 (sayı 121): 'Ankara Baytar Fakültesi Dahiliye şefi Dr. Salâhattin Nejat Bey hastalanmış…'", "url": "https://www.hazimgokcen.net/meslek-buyukleri/degerli-bir-hoca-gercek-bir-entellektuel-prof-dr-selahattin-nejat-yalki/"},
-    {"id": "akcay", "ad": "Ahmet Şevki Akçay", "dogum": "1888", "olum": "1959", "dogum_yeri": "İzmir", "milliyet": "Türk", "alan": "patoloji, histoloji, et muayenesi", "strand": ["S3"],
-     "egitim": [{"kurum": "askeri_baytar", "yil": "1912", "derece": "mezuniyet (birincilikle)"}, {"kurum": "berlin_vet", "yil": "1927", "derece": "Patoloji Enstitüsü'nde çalışma"}],
-     "gorevler": [{"kurum": "yuksek_baytar", "gorev": "histoloji, embriyoloji, patolojik anatomi ve et muayenesi öğretmeni; müderris 1925", "bit": "1933"}, {"kurum": "yze", "gorev": "doçent; profesör 1936/1939; ordinaryüs 1944; Patoloji Enstitüsü direktörü", "bas": "1933", "bit": "1948"}, {"kurum": "auvf", "gorev": "Patoloji Kürsüsü başkanı", "bas": "1948", "bit": "1958"}],
-     "iliskiler": [{"kisi": "yze_1933_diger", "tur": "aynı fakülte", "not": "'Alman hocalar yanında' genel patoloji dersleri"}],
-     "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/turkiyede-veteriner-patolojinin-kurucusu-ord-prof-dr-ahmet-sevki-akcay/"},
-    {"id": "tuzdil", "ad": "Nevzat Tüzdil", "dogum": "1900", "olum": "1965", "dogum_yeri": "Gelibolu", "milliyet": "Türk", "alan": "parazitoloji; veteriner tarihi", "strand": ["S3"],
-     "egitim": [{"kurum": "yuksek_baytar", "yil": "1920", "derece": "mezuniyet"}, {"kurum": "almanya", "yil": "1925", "derece": "ihtisas (Ziraat Vekâleti tarafından gönderildi)"}],
-     "gorevler": [{"kurum": "karaagac", "gorev": "mezbaha veteriner hekimi (Fatih, Tophane, Karaağaç)", "bit": "1925"}, {"kurum": "yuksek_baytar", "gorev": "parazitoloji ve tıbbi hayvanat öğretmen yardımcısı, laboratuvar şefi", "bas": "1929", "bit": "1933"}, {"kurum": "yze", "gorev": "Baytar Fakültesi Parazitoloji Enstitüsü şefi; doçent 1937; profesör 1943", "bas": "1933", "bit": "1948"}, {"kurum": "auvf", "gorev": "Parazitoloji; Veteriner Tarihi kürsüsü vekili 1950–60", "bas": "1948"}],
-     "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/hem-parazitolog-hem-veteriner-tarihcisi-bir-entellektuel-prof-dr-nevzat-tuzdil/"},
-    {"id": "argun", "ad": "Mehmet Turgut Argun", "diger_adlar": ["M. Turgut", "Dr. M. Turgut"], "dogum": "1900", "olum": "1982", "dogum_yeri": "Bursa", "milliyet": "Türk", "alan": "iç hastalıkları, salgın hastalıklar (ruam, mallein)", "strand": ["S3"],
-     "egitim": [{"kurum": "askeri_baytar", "yil": "1918", "derece": "mezuniyet"}, {"kurum": "berlin_vet", "yil": "1928–1931", "derece": "ihtisas"}, {"kurum": "wien_vet", "yil": "1928–1931", "derece": "doktora ('Kanatlı Hayvanlarda Kan Tablosu')"}],
-     "gorevler": [{"kurum": "askeri_baytar_tatbikat", "gorev": "İntani Hastalıklar muallimi (ATBM yazarı)", "bas": "1931", "bit": "1938"}, {"kurum": "vet_genel", "gorev": "uzman, danışman, genel müdür yardımcısı", "bas": "1938", "bit": "1951"}],
-     "yayinlar": ["Cüfni Mallein teamülü üzerinde tetkikler (ATBM 1934, sayı 120)", "Beygirde tüberkülos (ATBM 1929)"],
-     "not": "ATBM'deki 'M. Turgut' ile aynı kişi olduğu, Berlin–Viyana (1928–31) ve intani hastalıklar uzmanlığıyla örtüşüyor; kesinlik için doğrulanacak.",
-     "kaynak": ["GOKCEN", "ATBM"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/istiklal-savasi-gazisi-bir-askeri-veteriner-hekim-dr-mehmet-turgut-argun/"},
-    {"id": "aygun", "ad": "Süreyya Tahsin Aygün", "diger_adlar": ["Süreyya Tahsin", "Baytar Süreyya", "Süreyya Paşa"], "dogum": "1895", "olum": "1981", "dogum_yeri": "İstanbul", "milliyet": "Türk", "alan": "bakteriyoloji, viroloji, sığır vebası aşısı", "strand": ["S3"],
-     "egitim": [{"kurum": "berlin_hijyen", "yil": "1924", "derece": "bakteriyoloji, viroloji ihtisası"}, {"kurum": "berlin_vet", "yil": "1926", "derece": "doktora ('Pleura Pneumonia Contagiosa'nın Etyolojisi')"}],
-     "gorevler": [{"kurum": "ankara_serum", "gorev": "uzman ve müdür (Kurtuluş Savaşı)", "bit": "1924"}, {"kurum": "etlik", "gorev": "laboratuvar şefi ve müdür", "bas": "1927"}, {"kurum": "mmv_veteriner", "gorev": "3. Ordu Müfettişliği veteriner mütehassısı"}, {"kurum": "yze", "gorev": "Veteriner Fakültesi; doçent 1934, profesör 1937, ordinaryüs 1944", "bas": "1933", "bit": "1948"}, {"kurum": "auvf", "gorev": "öğretim üyesi", "bas": "1950"}],
-     "not": "TBMM 16 Haziran 1932: Eskişehir mebusunun 'Baytar Süreyya Bey'in icat ettiği veba-i bakarî aşısı' sualı (rapor 01). ATBM 1930: Almanya'daki doktorası üzerine yazı. Tuğgeneral 1946.",
-     "kaynak": ["GOKCEN", "TBMM", "ATBM"], "url": "https://www.hazimgokcen.net/guncel/veteriner-hekimi-tuggeneral-ord-prof-dr-sureyya-tahsin-aygun/"},
-    {"id": "aysoy", "ad": "Samuel Aysoy", "dogum": "1885", "olum": "1959", "dogum_yeri": "Gümülcine", "milliyet": "Türk", "alan": "iç hastalıkları", "strand": ["S3"],
-     "egitim": [{"kurum": "mulkiye_baytar", "yil": "1906", "derece": "mezuniyet"}, {"kurum": "fransa", "yil": "1910", "derece": "uzmanlık"}],
-     "gorevler": [{"kurum": "tbc", "gorev": "kurucu üye", "bas": "1930"}, {"kurum": "yze", "gorev": "Veteriner Fakültesi İç Hastalıkları doçenti; profesör 1936; ordinaryüs 1944", "bas": "1933", "bit": "1948"}, {"kurum": "auvf", "gorev": "İç Hastalıkları profesörü", "bas": "1948", "bit": "1955"}],
-     "yayinlar": ["Tıbbi radiesthesie – seroradiesthesie (Türk Baytarlar Cemiyeti, 1935)"],
-     "not": "ATBM 1936 (sayı 127): 'Baytar Fakültesi Doçentlerinden Bay Samuel Aysoy'.",
-     "kaynak": ["GOKCEN", "IBB", "ATBM"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/ord-prof-dr-samuel-aysoy/"},
-    {"id": "yegul", "ad": "Fazlı Faik Yeğül", "dogum": "1882", "olum": "1965", "dogum_yeri": "Selanik", "milliyet": "Türk", "alan": "veteriner kimya, adli tıp", "strand": ["S3"],
-     "egitim": [{"kurum": "mulkiye_baytar", "yil": "1903", "derece": "mezuniyet"}],
-     "gorevler": [{"kurum": "yuksek_baytar", "gorev": "hoca", "bit": "1933"}, {"kurum": "istanbul_uni", "gorev": "Darülfünun Fen Fakültesi hocası"}, {"kurum": "yze", "gorev": "Genel Sekreter; Adli Tıp ve Kimya profesörü 1936; ordinaryüs 1944", "bas": "1933", "bit": "1947"}],
-     "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/ord-prof-dr-fazli-faik-yegul/"},
-    {"id": "batu", "ad": "Selahattin Batu", "dogum": "1905", "olum": "1973", "dogum_yeri": "", "milliyet": "Türk", "alan": "zootekni", "strand": ["S1", "S2"],
-     "egitim": [{"kurum": "yuksek_baytar", "yil": "1925", "derece": "mezuniyet"}, {"kurum": "hannover_vet", "yil": "1927–1930", "derece": "ihtisas"}, {"kurum": "berlin_uni", "yil": "1930", "derece": "doktora (Ziraat Fakültesi)"}],
-     "gorevler": [{"kurum": "yuksek_baytar", "gorev": "asistan", "bas": "1926", "bit": "1927"}, {"kurum": "yze", "gorev": "Veteriner Fakültesi Zootekni Enstitüsü şefi; doçent 1936, profesör 1941; iki dönem dekan", "bas": "1933", "bit": "1948"}, {"kurum": "tbmm", "gorev": "Çanakkale milletvekili (7. dönem)", "bas": "1943", "bit": "1946"}, {"kurum": "auvf", "gorev": "Zootekni Kürsüsü başkanı", "bas": "1948", "bit": "1969"}],
-     "not": "31 kitap, 40'tan fazla makale; şair ve oyun yazarı. Doğum yılı biyografide yok (1905 civarı, doğrulanacak).",
-     "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/sair-operet-yazari-siyasetci-veteriner-hekimi-prof-dr-selahattin-batu/"},
-    {"id": "kolayli", "ad": "Şefik Kolaylı", "dogum": "", "olum": "1976", "milliyet": "Türk", "alan": "bakteriyoloji, sığır vebası", "strand": ["S3"],
-     "egitim": [{"kurum": "mulkiye_baytar", "yil": "1907", "derece": "mezuniyet"}, {"kurum": "pasteur", "yil": "1911–1912", "derece": "kurs"}],
-     "gorevler": [{"kurum": "pendik", "gorev": "bakteriyolog", "bas": "1907"}, {"kurum": "pendik", "gorev": "müdür", "bas": "1923", "bit": "1939", "not": "'İstiklal savaşının bitmesinden sonra' atandı"}],
-     "iliskiler": [{"kisi": "adil_can", "tur": "birlikte araştırma", "not": "Pendik'te sığır vebası araştırmaları"}],
-     "not": "Mehmet Akif Ersoy ile aynı evde kalan yakın arkadaşı.", "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/veteriner-hekim-bakteriyolog-sefik-kolayli-2/"},
-    {"id": "adil_can", "ad": "Mehmet Adil Can", "dogum": "1887", "olum": "", "dogum_yeri": "Dimetoka", "milliyet": "Türk", "alan": "sığır vebası, bakteriyoloji", "strand": ["S3"],
-     "egitim": [{"kurum": "mulkiye_baytar", "derece": "mezuniyet"}, {"kurum": "fransa", "derece": "sığır vebası çalışmaları"}],
-     "gorevler": [{"kurum": "pendik", "gorev": "bakteriyolog"}, {"kurum": "vet_genel", "gorev": "baytar müfettişi; Doğu Anadolu'da köy köy sığır vebası mücadelesi"}, {"kurum": "vet_genel", "gorev": "Umur-ı Baytariye Müfettiş-i Umumisi", "bas": "1922", "bit": "1923"}],
-     "iliskiler": [{"kisi": "kolayli", "tur": "birlikte araştırma"}], "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/meslegimizde-iz-birakan-bir-veteriner-hekim-mehmet-adil-can/"},
-    {"id": "celebi", "ad": "İsmail Hakkı Çelebi", "dogum": "1873", "olum": "1939", "dogum_yeri": "İstanbul", "milliyet": "Türk", "alan": "zootekni, tıbbi zooloji, parazitoloji", "strand": ["S1", "S3"],
-     "egitim": [{"kurum": "alfort", "derece": "bilgi ve deneyim (zootekni)"}],
-     "gorevler": [{"kurum": "mulkiye_baytar", "gorev": "tıbbi zooloji müderrisi", "bas": "1898"}, {"kurum": "istanbul_uni", "gorev": "Tıp Fakültesi tıbbi zooloji; ordinaryüs 1933", "bit": "1934"}],
-     "yayinlar": ["Zootekni (3 cilt, yazımı 1897, basımı 1906)", "İlm-i Hayvanat-ı Tıbbiye ve Ziraiye (3 cilt, 1912)", "Parazitoloji pratiği (1914)", "Fenn-i Feylat (1915)", "Tıbbi Parazitoloji (1928)"],
-     "not": "Bir süre Çifteler çiftliğinde veteriner hekim. 1934 üniversite düzenlemesinde açıkta bırakıldı.", "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/turkiyede-modern-zoolojinin-ve-parazitolojinin-kurucusu-ord-prof-dr-veteriner-hekim-ismail-hakki-celebi-2/"},
-    {"id": "kemal_cemil", "ad": "Kemal Cemil", "dogum": "1902", "olum": "1934", "milliyet": "Türk", "alan": "bakteriyoloji (ruam)", "strand": ["S3"],
-     "egitim": [{"kurum": "yuksek_baytar", "yil": "1925", "derece": "mezuniyet"}, {"kurum": "pasteur", "yil": "1930", "derece": "René Legroux'nun yanında araştırma"}],
-     "iliskiler": [{"kisi": "legroux", "tur": "hoca–öğrenci"}],
-     "not": "Ruam aşısı 'Anamorve'; kendisi ruamdan öldü. Legroux aşıyı 1947'de İran'da uyguladı.", "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/turk-veteriner-hekimliginin-kahraman-sehidi-yuzbasi-kemal-cemil-bey/"},
-    {"id": "legroux", "ad": "René Legroux", "milliyet": "Fransız", "alan": "bakteriyoloji", "strand": ["S3"], "gorevler": [{"kurum": "pasteur", "gorev": "profesör"}], "kaynak": ["GOKCEN"]},
-    {"id": "hudai", "ad": "Hüdai Bey", "dogum": "1898", "dogum_yeri": "İstanbul", "milliyet": "Türk", "alan": "bakteriyoloji (ruam)", "strand": ["S3"],
-     "egitim": [{"kurum": "yuksek_baytar", "yil": "1921", "derece": "mezuniyet"}],
-     "gorevler": [{"kurum": "askeri_baytar_tatbikat", "gorev": "bakteriyoloji asistanı", "bas": "1926"}],
-     "iliskiler": [{"kisi": "ahmet_bey", "tur": "birlikte araştırma", "not": "ruam çalışmaları"}], "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/sehit-bir-askeri-veteriner-hekim-hudai-bey/"},
-    {"id": "ahmet_bey", "ad": "Binbaşı Ahmet Bey (bakteriyolog)", "dogum": "1890", "dogum_yeri": "Konya", "milliyet": "Türk", "alan": "bakteriyoloji (ruam)", "strand": ["S3"],
-     "egitim": [{"kurum": "askeri_baytar", "yil": "1912", "derece": "mezuniyet"}],
-     "gorevler": [{"kurum": "askeri_baytar_tatbikat", "gorev": "bakteriyoloji asistanı 1914; laboratuvar şefi 1919", "bas": "1914"}], "kaynak": ["GOKCEN"], "url": "https://www.hazimgokcen.net/meslek-buyukleri/askeri-veteriner-hekimi-bakteriyolog-binbasi-ahmet-bey-2/"},
-    {"id": "mashar", "ad": "Üveis Mashar", "diger_adlar": ["Üveis Maskar"], "milliyet": "Türk", "alan": "patolojik anatomi (teşrih-i marazi)", "strand": ["S3"],
-     "gorevler": [{"kurum": "askeri_baytar_tatbikat", "gorev": "Teşrih-i Marazi başmuavini (1929–30), muallim; binbaşı (1936)", "bas": "1929", "bit": "1937"}],
-     "not": "ATBM'nin en sık yazan yazarlarından (1929–37). 1935: 'Baytar muallim Üveis Mashar professörün sütle geçen…' notu.", "kaynak": ["ATBM"]},
-    {"id": "refik_ahmet", "ad": "Refik Ahmet", "milliyet": "Türk", "alan": "bakteriyoloji (mallein, çiçek aşısı)", "strand": ["S3"],
-     "gorevler": [{"kurum": "askeri_baytar_tatbikat", "gorev": "bakteriyolog yüzbaşı", "bas": "1929"}], "yayinlar": ["Pasteur müessesesinde malleinin sureti ihzarı (ATBM 1929)", "Çiçek aşısı (Neuro Vaccin) (ATBM 1929)"], "kaynak": ["ATBM"]},
-    {"id": "pertev_hikmet", "ad": "Pertev Hikmet", "milliyet": "Türk", "alan": "iç hastalıkları", "strand": ["S3"],
-     "gorevler": [{"kurum": "askeri_baytar_tatbikat", "gorev": "baytar yüzbaşı doktor; 1. V. Hayvan Hastanesi dahiliye mütehassısı", "bas": "1929"}], "yayinlar": ["Kan muayeneleri (ATBM 1929)"], "kaynak": ["ATBM"]},
-    {"id": "necip_riza", "ad": "Necip Rıza", "milliyet": "Türk", "alan": "cerrahi", "strand": ["S3"],
-     "gorevler": [{"kurum": "askeri_baytar_tatbikat", "gorev": "cerrahi (binbaşı, 1930)", "bas": "1929"}], "yayinlar": ["Bir katırda adenokarsinom vak'ası (ATBM 1929)"], "kaynak": ["ATBM"]},
-    {"id": "mehmet_azmi", "ad": "Mehmet Azmi", "milliyet": "Türk", "alan": "et muayenesi, mezbaha hijyeni", "strand": ["S0", "S3"],
-     "gorevler": [{"kurum": "karaagac", "gorev": "muallim; mütekait baytar kaymakamı", "bas": "1931", "bit": "1933"}],
-     "yayinlar": ["Belediye salhaneleri küşadı için Fransa'da nizamat ve talimat (ATBM 1929)", "Tederrün ve etlerin sureti muayeneleri (ATBM 1933, sayı 114)"], "kaynak": ["ATBM"]},
-    {"id": "osman_zeki", "ad": "Osman Zeki", "milliyet": "Türk", "alan": "askerî veteriner hizmetleri, at ırkları", "strand": ["S1"],
-     "gorevler": [{"kurum": "askeri_baytar_tatbikat", "gorev": "baytari hidemat-ı sıhhiye muallimi, cerrahi mütehassısı (kaymakam)", "bas": "1930"}],
-     "yayinlar": ["Umumi harpte İngiliz ordusunun istihdam ettiği muhtelif at ırkları (ATBM 1932, sayı 113)", "Seferde İngiliz ordusu vezaif-i baytariyesi (ATBM 1930)"], "kaynak": ["ATBM"]},
-    {"id": "erkmen", "ad": "Muhlis Erkmen", "milliyet": "Türk", "alan": "zootekni; siyaset (Ziraat Vekili)", "strand": ["S0", "S1"],
-     "egitim": [{"kurum": "almanya", "derece": "öğrenim"}],
-     "gorevler": [{"kurum": "halkali", "gorev": "zootekni hocası"}, {"kurum": "ziraat_vekaleti", "gorev": "Ziraat Vekili", "not": "görev yılları doğrulanacak"}],
-     "iliskiler": [{"kisi": "falke", "tur": "davet eden", "not": "Falke ve Oldenburg heyetlerini Türkiye'ye davet etti"}, {"kisi": "oldenburg", "tur": "davet eden"}],
-     "kaynak": ["GOZCU2018", "TBMM"]},
-    {"id": "falke", "ad": "Friedrich Falke", "milliyet": "Alman", "alan": "ziraat (çayır-mera, 'yeşil ziraat')", "strand": ["S2"],
-     "gorevler": [{"kurum": "leipzig_uni", "gorev": "eski rektör (Geheimrat)"}, {"kurum": "yze", "gorev": "kurucu rektör", "bas": "1933", "bit": "1938"}],
-     "not": "1938'de geri çağrıldı. 'Yeşil ziraat işletme tetkik müessesesi' ve yeşil ziraatın geliştirilmesi üzerine çalıştı.", "kaynak": ["GOZCU2018", "CIFTCI2011"]},
-    {"id": "oldenburg", "ad": "Geheimrat Oldenburg", "milliyet": "Alman (Prusya)", "alan": "ziraat reformu", "strand": ["S0"],
-     "gorevler": [{"kurum": "ziraat_vekaleti", "gorev": "uzman heyeti başkanı; ziraat reformu raporu", "not": "1930 civarı, doğrulanacak"}], "kaynak": ["GOZCU2018"]},
-    {"id": "christiansen", "ad": "Friedrich Christiansen-Weniger", "milliyet": "Alman", "alan": "bitki ıslahı, tohum", "strand": ["S2"],
-     "gorevler": [{"kurum": "yze", "gorev": "ziraat bilimci; 1932'den itibaren Ankara'da", "bas": "1932"}], "kaynak": ["GOZCU2018"]},
-    {"id": "horn", "ad": "Julius Horn", "milliyet": "Alman", "alan": "hayvancılık", "strand": ["S1"],
-     "gorevler": [{"kurum": "ziraat_vekaleti", "gorev": "hayvancılık genel müfettişi (4 yıllık sözleşme, Berlin Büyükelçiliği aracılığıyla)", "bas": "1926", "bit": "1930"}],
-     "not": "Kaynakta 'Dr. Kral Julius Horn' diye geçiyor; adın doğru biçimi doğrulanacak (Erkan Dağlı 2013, s. 17).", "kaynak": ["GOZCU2018"]},
-    {"id": "spottel", "ad": "Walter Spöttel", "milliyet": "Alman", "alan": "zootekni", "strand": ["S1"],
-     "gorevler": [{"kurum": "yze", "gorev": "Zootekni Enstitüsü direktörü", "bas": "1933", "bit": "1939"}], "kaynak": ["CIFTCI2011"]},
-    {"id": "gebhardt", "ad": "Max Gebhardt", "milliyet": "Alman", "alan": "iç hastalıkları", "strand": ["S3"],
-     "gorevler": [{"kurum": "yze", "gorev": "Veteriner Fakültesi ilk dekanı", "bas": "1933", "bit": "1935"}], "kaynak": ["CIFTCI2011"]},
-    {"id": "seuffert", "ad": "Robert Seuffert", "milliyet": "Alman", "alan": "veteriner cerrahi, göz hastalıkları", "strand": ["S3"],
-     "gorevler": [{"kurum": "yze", "gorev": "Baytar Fakültesi cerrahi klinik kürsüsü profesörü", "bas": "1933"}], "kaynak": ["GOZCU2018", "CIFTCI2011"]},
-    {"id": "sprehn", "ad": "Curt Sprehn", "diger_adlar": ["Prof. Dr. Sprehn"], "milliyet": "Alman", "alan": "parazitoloji", "strand": ["S3"],
-     "gorevler": [{"kurum": "leipzig_uni", "gorev": "profesör"}, {"kurum": "yze", "gorev": "Baytar Fakültesi parazitoloji profesörlüğüne atandı", "bas": "1934"}],
-     "not": "ATBM'de 'Leipzig'den Prof. Dr. Sprehn' (rapor 02). Ön adı doğrulanacak.", "kaynak": ["ATBM"]},
-    {"id": "luy", "ad": "Dr. Luy", "milliyet": "Alman", "alan": "fizyoloji, farmakoloji", "strand": ["S3"],
-     "gorevler": [{"kurum": "hannover_vet", "gorev": "(Hannover)"}, {"kurum": "yze", "gorev": "Baytar Fakültesi fizyoloji ve farmakoloji profesörü", "bas": "1936"}], "kaynak": ["ATBM"]},
-    {"id": "yze_1933_diger", "ad": "YZE 1933–34 Alman öğretim üyeleri (fakültesi doğrulanacak): Richard v.d. Heide, Kurt Stüwe, Walter Gleisberg, Franz Heske, Richard Woltereck, Kurt Krause, Conrad Weigand, Hermann Zahn, Otto Gerngross, Hans Richter, Anton Kögel, Karl Beller, Reinhold Hoffmann", "milliyet": "Alman", "alan": "çeşitli", "strand": [],
-     "gorevler": [{"kurum": "yze", "gorev": "ordinaryüs profesör", "bas": "1933"}], "not": "Liste Çiftçi 2011'den (Gözcü 2018 aktarımı). Veteriner Fakültesi'nde 5 Alman profesör vardı; bunların Gebhardt, Seuffert ve listedeki Richter, Kögel, Beller, Hoffmann arasından hangileri olduğu doğrulanacak.", "kaynak": ["CIFTCI2011", "KADIOGLU"]}
-  ]
+  "GOZCU2018": {
+   "ad": "Alev Gözcü, 'Atatürk Döneminde Türkiye'de Tarımın Gelişiminde Alman Etkisi', ÇTTAD XVIII/36 (2018), 107–137",
+   "url": "https://ataturkilkeleri.deu.edu.tr/wp-content/uploads/2018/10/TURKIYE___DE-TARIMIN-GELISIMINDE-ALMAN-ETKISI.pdf"
+  },
+  "CIFTCI2011": {
+   "ad": "Cemalettin Yaşar Çiftçi, 'Ziraat Eğitimi Üzerine…', Cumhuriyet Bilim Teknik, 18 Şubat 2011, s. 17 (Gözcü 2018'den aktarma)",
+   "url": ""
+  },
+  "KADIOGLU": {
+   "ad": "Sevtap Kadıoğlu, 'Ankara Yüksek Ziraat Enstitüsü'nde Mülteci Bilim Adamları', Osmanlı Bilimi Araştırmaları",
+   "url": "https://dergipark.org.tr/tr/download/article-file/13236"
+  },
+  "ATBM": {
+   "ad": "Askerî Tıbbî Baytarî Mecmuası 1929–1937 (Internet Archive; rapor 02 ve atbm_makale_listesi.csv)",
+   "url": "https://archive.org/details/askeri-tibbi-baytari-mecmuasi"
+  },
+  "TBMM": {
+   "ad": "TBMM tutanakları (rapor 01)",
+   "url": ""
+  },
+  "IBB": {
+   "ad": "İBB Atatürk Kitaplığı kataloğu",
+   "url": "https://katalog.ibb.gov.tr/yordam/"
+  },
+  "TOK": {
+   "ad": "Tarım ve Orman Bakanlığı Kütüphanesi kataloğu",
+   "url": "https://kutuphane.tarimorman.gov.tr/vufind/"
+  },
+  "WEB_AKINCI": {
+   "ad": "Zootekni (Hayvansal Üretim) Bilim Tarihi, kitap bölümü (Akademisyen Kitabevi) ve Osmanlı Atları tanıtımı (web arama özeti; birincil kaynaktan doğrulanacak)",
+   "url": "https://www.kitapyurdu.com/kitap/osmanli-atlari/424511.html"
+  }
+ },
+ "kurumlar": [
+  {
+   "id": "mulkiye_baytar",
+   "ad": "Mülkiye Baytar Mektebi (Halkalı / İstanbul)",
+   "tur": "okul",
+   "yer": "İstanbul",
+   "ulke": "Türkiye",
+   "yillar": "1889–1920"
+  },
+  {
+   "id": "askeri_baytar",
+   "ad": "Askerî Baytar Mektebi",
+   "tur": "okul",
+   "yer": "İstanbul",
+   "ulke": "Türkiye",
+   "yillar": "–1920"
+  },
+  {
+   "id": "yuksek_baytar",
+   "ad": "Baytar Mekteb-i Âlisi / Yüksek Baytar (Veteriner) Mektebi",
+   "tur": "okul",
+   "yer": "İstanbul",
+   "ulke": "Türkiye",
+   "yillar": "1920–1933"
+  },
+  {
+   "id": "halkali",
+   "ad": "Halkalı Yüksek Ziraat Mektebi",
+   "tur": "okul",
+   "yer": "İstanbul",
+   "ulke": "Türkiye",
+   "yillar": "1891–1933"
+  },
+  {
+   "id": "yze",
+   "ad": "Yüksek Ziraat Enstitüsü (YZE)",
+   "tur": "üniversite",
+   "yer": "Ankara",
+   "ulke": "Türkiye",
+   "yillar": "1933–1948"
+  },
+  {
+   "id": "auvf",
+   "ad": "Ankara Üniversitesi Veteriner Fakültesi",
+   "tur": "üniversite",
+   "yer": "Ankara",
+   "ulke": "Türkiye",
+   "yillar": "1948–"
+  },
+  {
+   "id": "istanbul_uni",
+   "ad": "Darülfünun / İstanbul Üniversitesi",
+   "tur": "üniversite",
+   "yer": "İstanbul",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "askeri_baytar_tatbikat",
+   "ad": "Askerî Baytar Tatbikat Mektebi ve Hastanesi (Askerî Veteriner Okulu)",
+   "tur": "okul",
+   "yer": "İstanbul (Haydarpaşa)",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "mmv_veteriner",
+   "ad": "Milli Müdafaa Vekâleti Baytar/Veteriner Dairesi",
+   "tur": "kamu",
+   "yer": "Ankara",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "vet_genel",
+   "ad": "Ziraat Vekâleti Baytarî (Veteriner) İşleri Umum Müdürlüğü",
+   "tur": "kamu",
+   "yer": "Ankara",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "ziraat_vekaleti",
+   "ad": "Ziraat Vekâleti",
+   "tur": "kamu",
+   "yer": "Ankara",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "pendik",
+   "ad": "Pendik Bakteriyolojihanesi / Bakteriyoloji Enstitüsü",
+   "tur": "enstitü",
+   "yer": "İstanbul",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "etlik",
+   "ad": "Etlik (Askerî) Bakteriyoloji, Serum ve Aşı Enstitüsü",
+   "tur": "enstitü",
+   "yer": "Ankara",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "erzincan_serum",
+   "ad": "Erzincan Serum Laboratuvarı",
+   "tur": "enstitü",
+   "yer": "Erzincan",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "ankara_serum",
+   "ad": "Ankara Serum ve Aşı Enstitüsü (Kurtuluş Savaşı dönemi)",
+   "tur": "enstitü",
+   "yer": "Ankara",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "karaagac",
+   "ad": "Karaağaç Mezbahası",
+   "tur": "kamu",
+   "yer": "İstanbul",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "tbmm",
+   "ad": "TBMM",
+   "tur": "kamu",
+   "yer": "Ankara",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "tbc",
+   "ad": "Türk Baytarlar Cemiyeti (Veteriner Hekimler Derneği)",
+   "tur": "dernek",
+   "yer": "İstanbul / Ankara",
+   "ulke": "Türkiye",
+   "yillar": "1930–"
+  },
+  {
+   "id": "berlin_vet",
+   "ad": "Tierärztliche Hochschule Berlin",
+   "tur": "yabancı üniversite",
+   "yer": "Berlin",
+   "ulke": "Almanya"
+  },
+  {
+   "id": "berlin_uni",
+   "ad": "Berlin Üniversitesi (Ziraat / Felsefe fakülteleri)",
+   "tur": "yabancı üniversite",
+   "yer": "Berlin",
+   "ulke": "Almanya"
+  },
+  {
+   "id": "berlin_hijyen",
+   "ad": "Berlin Devlet Hıfzıssıhha Enstitüsü",
+   "tur": "yabancı enstitü",
+   "yer": "Berlin",
+   "ulke": "Almanya"
+  },
+  {
+   "id": "hannover_vet",
+   "ad": "Tierärztliche Hochschule Hannover",
+   "tur": "yabancı üniversite",
+   "yer": "Hannover",
+   "ulke": "Almanya"
+  },
+  {
+   "id": "wien_vet",
+   "ad": "Tierärztliche Hochschule Wien",
+   "tur": "yabancı üniversite",
+   "yer": "Viyana",
+   "ulke": "Avusturya"
+  },
+  {
+   "id": "leipzig_uni",
+   "ad": "Leipzig Üniversitesi",
+   "tur": "yabancı üniversite",
+   "yer": "Leipzig",
+   "ulke": "Almanya"
+  },
+  {
+   "id": "pasteur",
+   "ad": "Institut Pasteur",
+   "tur": "yabancı enstitü",
+   "yer": "Paris",
+   "ulke": "Fransa"
+  },
+  {
+   "id": "alfort",
+   "ad": "École vétérinaire d'Alfort",
+   "tur": "yabancı üniversite",
+   "yer": "Alfort",
+   "ulke": "Fransa"
+  },
+  {
+   "id": "fransa",
+   "ad": "Fransa (kurum belirtilmemiş uzmanlık)",
+   "tur": "yabancı üniversite",
+   "yer": "",
+   "ulke": "Fransa"
+  },
+  {
+   "id": "almanya",
+   "ad": "Almanya (kurum belirtilmemiş uzmanlık)",
+   "tur": "yabancı üniversite",
+   "yer": "",
+   "ulke": "Almanya"
+  }
+ ],
+ "kisiler": [
+  {
+   "id": "bekman",
+   "ad": "Muzaffer Bekman",
+   "dogum": "1888",
+   "olum": "1974",
+   "dogum_yeri": "Dedeağaç",
+   "milliyet": "Türk",
+   "alan": "bakteriyoloji, hayvan sağlık zabıtası, veteriner tarihi",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "yuksek_baytar",
+     "yil": "1911",
+     "derece": "mezuniyet"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "erzincan_serum",
+     "gorev": "veteriner",
+     "bas": "1920",
+     "bit": "1923"
+    },
+    {
+     "kurum": "vet_genel",
+     "gorev": "Bulaşıcı Hastalıklar ve Hayvan Sağlık Zabıtası Müdürlüğü",
+     "bas": "1923"
+    },
+    {
+     "kurum": "erzincan_serum",
+     "gorev": "müdür; ilk hayvan sağlığı okulunun kurucusu ve hocası",
+     "bas": "1927"
+    },
+    {
+     "kurum": "vet_genel",
+     "gorev": "fen müşaviri",
+     "bas": "1929"
+    },
+    {
+     "kurum": "vet_genel",
+     "gorev": "genel müdür yardımcısı",
+     "bas": "1942"
+    },
+    {
+     "kurum": "pendik",
+     "gorev": "müdür",
+     "bas": "1944"
+    }
+   ],
+   "yayinlar": [
+    "Sığır Vebası Serumu Nasıl Hazırlanır (1925)",
+    "Veteriner Tarihi (1940)",
+    "Klasik Hayvan Sağlık Zabıtası (1950)"
+   ],
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/hem-bakteriyolog-hem-veteriner-tarihcisi-bir-meslek-buyugumuz-muzaffer-bekman/"
+  },
+  {
+   "id": "akkerman",
+   "ad": "Cevat Naki Akkerman",
+   "dogum": "1891",
+   "olum": "1986",
+   "dogum_yeri": "Ankara",
+   "milliyet": "Türk",
+   "alan": "parazitoloji; veteriner idaresi",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "askeri_baytar",
+     "yil": "1914",
+     "derece": "mezuniyet"
+    },
+    {
+     "kurum": "berlin_vet",
+     "derece": "parazitoloji ihtisası"
+    },
+    {
+     "kurum": "berlin_uni",
+     "derece": "Felsefe Fakültesi mezuniyeti"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "askeri_baytar_tatbikat",
+     "gorev": "parazitoloji asistanı ve şefi"
+    },
+    {
+     "kurum": "mmv_veteriner",
+     "gorev": "Fen Şubesi müdürü",
+     "bas": "1920",
+     "bit": "1927"
+    },
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "mütehassıs müşavir",
+     "bas": "1927",
+     "bit": "1944"
+    },
+    {
+     "kurum": "vet_genel",
+     "gorev": "genel müdür",
+     "bas": "1927",
+     "bit": "1944",
+     "not": "biyografide müşavirlik ile birlikte 1927–44 olarak veriliyor; görev yılları doğrulanacak"
+    }
+   ],
+   "not": "1910–1917 İttihat ve Terakki üyesi; Çanakkale Savaşı'na katıldı.",
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/siyasetci-ve-kizilay-gonullusu-bir-veteriner-hekim-cevat-naki-akkerman/"
+  },
+  {
+   "id": "yalki",
+   "ad": "Selahattin Nejat Yalkı",
+   "diger_adlar": [
+    "Salâhattin Nejat"
+   ],
+   "dogum": "1900",
+   "olum": "1973",
+   "dogum_yeri": "İstanbul",
+   "milliyet": "Türk",
+   "alan": "iç hastalıkları",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "berlin_vet",
+     "yil": "1930",
+     "derece": "mezuniyet"
+    },
+    {
+     "kurum": "berlin_vet",
+     "yil": "1931",
+     "derece": "doktora (iç hastalıkları)"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "etlik",
+     "gorev": "laboratuvar şefi",
+     "bas": "1931"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "Veteriner Fakültesi İç Hastalıkları Kliniği şefi; doçent 1939, profesör 1941; dekan 1942–44",
+     "bas": "1934",
+     "bit": "1948"
+    },
+    {
+     "kurum": "auvf",
+     "gorev": "İç Hastalıkları Kürsüsü başkanı; dekan 1946–50",
+     "bas": "1948",
+     "bit": "1970"
+    }
+   ],
+   "kaynak": [
+    "GOKCEN",
+    "ATBM"
+   ],
+   "not": "ATBM 1934 (sayı 121): 'Ankara Baytar Fakültesi Dahiliye şefi Dr. Salâhattin Nejat Bey hastalanmış…'",
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/degerli-bir-hoca-gercek-bir-entellektuel-prof-dr-selahattin-nejat-yalki/"
+  },
+  {
+   "id": "akcay",
+   "ad": "Ahmet Şevki Akçay",
+   "dogum": "1888",
+   "olum": "1959",
+   "dogum_yeri": "İzmir",
+   "milliyet": "Türk",
+   "alan": "patoloji, histoloji, et muayenesi",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "askeri_baytar",
+     "yil": "1912",
+     "derece": "mezuniyet (birincilikle)"
+    },
+    {
+     "kurum": "berlin_vet",
+     "yil": "1927",
+     "derece": "Patoloji Enstitüsü'nde çalışma"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "yuksek_baytar",
+     "gorev": "histoloji, embriyoloji, patolojik anatomi ve et muayenesi öğretmeni; müderris 1925",
+     "bit": "1933"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "doçent; profesör 1936/1939; ordinaryüs 1944; Patoloji Enstitüsü direktörü",
+     "bas": "1933",
+     "bit": "1948"
+    },
+    {
+     "kurum": "auvf",
+     "gorev": "Patoloji Kürsüsü başkanı",
+     "bas": "1948",
+     "bit": "1958"
+    }
+   ],
+   "iliskiler": [
+    {
+     "kisi": "yze_1933_diger",
+     "tur": "aynı fakülte",
+     "not": "'Alman hocalar yanında' genel patoloji dersleri"
+    }
+   ],
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/turkiyede-veteriner-patolojinin-kurucusu-ord-prof-dr-ahmet-sevki-akcay/"
+  },
+  {
+   "id": "tuzdil",
+   "ad": "Nevzat Tüzdil",
+   "dogum": "1900",
+   "olum": "1965",
+   "dogum_yeri": "Gelibolu",
+   "milliyet": "Türk",
+   "alan": "parazitoloji; veteriner tarihi",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "yuksek_baytar",
+     "yil": "1920",
+     "derece": "mezuniyet"
+    },
+    {
+     "kurum": "almanya",
+     "yil": "1925",
+     "derece": "ihtisas (Ziraat Vekâleti tarafından gönderildi)"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "karaagac",
+     "gorev": "mezbaha veteriner hekimi (Fatih, Tophane, Karaağaç)",
+     "bit": "1925"
+    },
+    {
+     "kurum": "yuksek_baytar",
+     "gorev": "parazitoloji ve tıbbi hayvanat öğretmen yardımcısı, laboratuvar şefi",
+     "bas": "1929",
+     "bit": "1933"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "Baytar Fakültesi Parazitoloji Enstitüsü şefi; doçent 1937; profesör 1943",
+     "bas": "1933",
+     "bit": "1948"
+    },
+    {
+     "kurum": "auvf",
+     "gorev": "Parazitoloji; Veteriner Tarihi kürsüsü vekili 1950–60",
+     "bas": "1948"
+    }
+   ],
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/hem-parazitolog-hem-veteriner-tarihcisi-bir-entellektuel-prof-dr-nevzat-tuzdil/"
+  },
+  {
+   "id": "argun",
+   "ad": "Mehmet Turgut Argun",
+   "diger_adlar": [
+    "M. Turgut",
+    "Dr. M. Turgut"
+   ],
+   "dogum": "1900",
+   "olum": "1982",
+   "dogum_yeri": "Bursa",
+   "milliyet": "Türk",
+   "alan": "iç hastalıkları, salgın hastalıklar (ruam, mallein)",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "askeri_baytar",
+     "yil": "1918",
+     "derece": "mezuniyet"
+    },
+    {
+     "kurum": "berlin_vet",
+     "yil": "1928–1931",
+     "derece": "ihtisas"
+    },
+    {
+     "kurum": "wien_vet",
+     "yil": "1928–1931",
+     "derece": "doktora ('Kanatlı Hayvanlarda Kan Tablosu')"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "askeri_baytar_tatbikat",
+     "gorev": "İntani Hastalıklar muallimi (ATBM yazarı)",
+     "bas": "1931",
+     "bit": "1938"
+    },
+    {
+     "kurum": "vet_genel",
+     "gorev": "uzman, danışman, genel müdür yardımcısı",
+     "bas": "1938",
+     "bit": "1951"
+    }
+   ],
+   "yayinlar": [
+    "Cüfni Mallein teamülü üzerinde tetkikler (ATBM 1934, sayı 120)",
+    "Beygirde tüberkülos (ATBM 1929)"
+   ],
+   "not": "ATBM'deki 'M. Turgut' ile aynı kişi olduğu, Berlin–Viyana (1928–31) ve intani hastalıklar uzmanlığıyla örtüşüyor; kesinlik için doğrulanacak.",
+   "kaynak": [
+    "GOKCEN",
+    "ATBM"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/istiklal-savasi-gazisi-bir-askeri-veteriner-hekim-dr-mehmet-turgut-argun/"
+  },
+  {
+   "id": "aygun",
+   "ad": "Süreyya Tahsin Aygün",
+   "diger_adlar": [
+    "Süreyya Tahsin",
+    "Baytar Süreyya",
+    "Süreyya Paşa"
+   ],
+   "dogum": "1895",
+   "olum": "1981",
+   "dogum_yeri": "İstanbul",
+   "milliyet": "Türk",
+   "alan": "bakteriyoloji, viroloji, sığır vebası aşısı",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "berlin_hijyen",
+     "yil": "1924",
+     "derece": "bakteriyoloji, viroloji ihtisası"
+    },
+    {
+     "kurum": "berlin_vet",
+     "yil": "1926",
+     "derece": "doktora ('Pleura Pneumonia Contagiosa'nın Etyolojisi')"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "ankara_serum",
+     "gorev": "uzman ve müdür (Kurtuluş Savaşı)",
+     "bit": "1924"
+    },
+    {
+     "kurum": "etlik",
+     "gorev": "laboratuvar şefi ve müdür",
+     "bas": "1927"
+    },
+    {
+     "kurum": "mmv_veteriner",
+     "gorev": "3. Ordu Müfettişliği veteriner mütehassısı"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "Veteriner Fakültesi; doçent 1934, profesör 1937, ordinaryüs 1944",
+     "bas": "1933",
+     "bit": "1948"
+    },
+    {
+     "kurum": "auvf",
+     "gorev": "öğretim üyesi",
+     "bas": "1950"
+    }
+   ],
+   "not": "TBMM 16 Haziran 1932: Eskişehir mebusunun 'Baytar Süreyya Bey'in icat ettiği veba-i bakarî aşısı' sualı (rapor 01). ATBM 1930: Almanya'daki doktorası üzerine yazı. Tuğgeneral 1946.",
+   "kaynak": [
+    "GOKCEN",
+    "TBMM",
+    "ATBM"
+   ],
+   "url": "https://www.hazimgokcen.net/guncel/veteriner-hekimi-tuggeneral-ord-prof-dr-sureyya-tahsin-aygun/"
+  },
+  {
+   "id": "aysoy",
+   "ad": "Samuel Aysoy",
+   "dogum": "1885",
+   "olum": "1959",
+   "dogum_yeri": "Gümülcine",
+   "milliyet": "Türk",
+   "alan": "iç hastalıkları",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "mulkiye_baytar",
+     "yil": "1906",
+     "derece": "mezuniyet"
+    },
+    {
+     "kurum": "fransa",
+     "yil": "1910",
+     "derece": "uzmanlık"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "tbc",
+     "gorev": "kurucu üye",
+     "bas": "1930"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "Veteriner Fakültesi İç Hastalıkları doçenti; profesör 1936; ordinaryüs 1944",
+     "bas": "1933",
+     "bit": "1948"
+    },
+    {
+     "kurum": "auvf",
+     "gorev": "İç Hastalıkları profesörü",
+     "bas": "1948",
+     "bit": "1955"
+    }
+   ],
+   "yayinlar": [
+    "Tıbbi radiesthesie – seroradiesthesie (Türk Baytarlar Cemiyeti, 1935)"
+   ],
+   "not": "ATBM 1936 (sayı 127): 'Baytar Fakültesi Doçentlerinden Bay Samuel Aysoy'.",
+   "kaynak": [
+    "GOKCEN",
+    "IBB",
+    "ATBM"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/ord-prof-dr-samuel-aysoy/"
+  },
+  {
+   "id": "yegul",
+   "ad": "Fazlı Faik Yeğül",
+   "dogum": "1882",
+   "olum": "1965",
+   "dogum_yeri": "Selanik",
+   "milliyet": "Türk",
+   "alan": "veteriner kimya, adli tıp",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "mulkiye_baytar",
+     "yil": "1903",
+     "derece": "mezuniyet"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "yuksek_baytar",
+     "gorev": "hoca",
+     "bit": "1933"
+    },
+    {
+     "kurum": "istanbul_uni",
+     "gorev": "Darülfünun Fen Fakültesi hocası"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "Genel Sekreter; Adli Tıp ve Kimya profesörü 1936; ordinaryüs 1944",
+     "bas": "1933",
+     "bit": "1947"
+    }
+   ],
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/ord-prof-dr-fazli-faik-yegul/"
+  },
+  {
+   "id": "batu",
+   "ad": "Selahattin Batu",
+   "dogum": "1905",
+   "olum": "1973",
+   "dogum_yeri": "",
+   "milliyet": "Türk",
+   "alan": "zootekni",
+   "strand": [
+    "S1",
+    "S2"
+   ],
+   "egitim": [
+    {
+     "kurum": "yuksek_baytar",
+     "yil": "1925",
+     "derece": "mezuniyet"
+    },
+    {
+     "kurum": "hannover_vet",
+     "yil": "1927–1930",
+     "derece": "ihtisas"
+    },
+    {
+     "kurum": "berlin_uni",
+     "yil": "1930",
+     "derece": "doktora (Ziraat Fakültesi)"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "yuksek_baytar",
+     "gorev": "asistan",
+     "bas": "1926",
+     "bit": "1927"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "Veteriner Fakültesi Zootekni Enstitüsü şefi; doçent 1936, profesör 1941; iki dönem dekan",
+     "bas": "1933",
+     "bit": "1948"
+    },
+    {
+     "kurum": "tbmm",
+     "gorev": "Çanakkale milletvekili (7. dönem)",
+     "bas": "1943",
+     "bit": "1946"
+    },
+    {
+     "kurum": "auvf",
+     "gorev": "Zootekni Kürsüsü başkanı",
+     "bas": "1948",
+     "bit": "1969"
+    }
+   ],
+   "not": "31 kitap, 40'tan fazla makale; şair ve oyun yazarı. Doğum yılı biyografide yok (1905 civarı, doğrulanacak).",
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/sair-operet-yazari-siyasetci-veteriner-hekimi-prof-dr-selahattin-batu/"
+  },
+  {
+   "id": "kolayli",
+   "ad": "Şefik Kolaylı",
+   "dogum": "",
+   "olum": "1976",
+   "milliyet": "Türk",
+   "alan": "bakteriyoloji, sığır vebası",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "mulkiye_baytar",
+     "yil": "1907",
+     "derece": "mezuniyet"
+    },
+    {
+     "kurum": "pasteur",
+     "yil": "1911–1912",
+     "derece": "kurs"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "pendik",
+     "gorev": "bakteriyolog",
+     "bas": "1907"
+    },
+    {
+     "kurum": "pendik",
+     "gorev": "müdür",
+     "bas": "1923",
+     "bit": "1939",
+     "not": "'İstiklal savaşının bitmesinden sonra' atandı"
+    }
+   ],
+   "iliskiler": [
+    {
+     "kisi": "adil_can",
+     "tur": "birlikte araştırma",
+     "not": "Pendik'te sığır vebası araştırmaları"
+    }
+   ],
+   "not": "Mehmet Akif Ersoy ile aynı evde kalan yakın arkadaşı.",
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/veteriner-hekim-bakteriyolog-sefik-kolayli-2/"
+  },
+  {
+   "id": "adil_can",
+   "ad": "Mehmet Adil Can",
+   "dogum": "1887",
+   "olum": "",
+   "dogum_yeri": "Dimetoka",
+   "milliyet": "Türk",
+   "alan": "sığır vebası, bakteriyoloji",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "mulkiye_baytar",
+     "derece": "mezuniyet"
+    },
+    {
+     "kurum": "fransa",
+     "derece": "sığır vebası çalışmaları"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "pendik",
+     "gorev": "bakteriyolog"
+    },
+    {
+     "kurum": "vet_genel",
+     "gorev": "baytar müfettişi; Doğu Anadolu'da köy köy sığır vebası mücadelesi"
+    },
+    {
+     "kurum": "vet_genel",
+     "gorev": "Umur-ı Baytariye Müfettiş-i Umumisi",
+     "bas": "1922",
+     "bit": "1923"
+    }
+   ],
+   "iliskiler": [
+    {
+     "kisi": "kolayli",
+     "tur": "birlikte araştırma"
+    }
+   ],
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/meslegimizde-iz-birakan-bir-veteriner-hekim-mehmet-adil-can/"
+  },
+  {
+   "id": "celebi",
+   "ad": "İsmail Hakkı Çelebi",
+   "dogum": "1873",
+   "olum": "1939",
+   "dogum_yeri": "İstanbul",
+   "milliyet": "Türk",
+   "alan": "zootekni, tıbbi zooloji, parazitoloji",
+   "strand": [
+    "S1",
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "alfort",
+     "derece": "bilgi ve deneyim (zootekni)"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "mulkiye_baytar",
+     "gorev": "tıbbi zooloji müderrisi",
+     "bas": "1898"
+    },
+    {
+     "kurum": "istanbul_uni",
+     "gorev": "Tıp Fakültesi tıbbi zooloji; ordinaryüs 1933",
+     "bit": "1934"
+    }
+   ],
+   "yayinlar": [
+    "Zootekni (3 cilt, yazımı 1897, basımı 1906)",
+    "İlm-i Hayvanat-ı Tıbbiye ve Ziraiye (3 cilt, 1912)",
+    "Parazitoloji pratiği (1914)",
+    "Fenn-i Feylat (1915)",
+    "Tıbbi Parazitoloji (1928)"
+   ],
+   "not": "Bir süre Çifteler çiftliğinde veteriner hekim. 1934 üniversite düzenlemesinde açıkta bırakıldı.",
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/turkiyede-modern-zoolojinin-ve-parazitolojinin-kurucusu-ord-prof-dr-veteriner-hekim-ismail-hakki-celebi-2/"
+  },
+  {
+   "id": "kemal_cemil",
+   "ad": "Kemal Cemil",
+   "dogum": "1902",
+   "olum": "1934",
+   "milliyet": "Türk",
+   "alan": "bakteriyoloji (ruam)",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "yuksek_baytar",
+     "yil": "1925",
+     "derece": "mezuniyet"
+    },
+    {
+     "kurum": "pasteur",
+     "yil": "1930",
+     "derece": "René Legroux'nun yanında araştırma"
+    }
+   ],
+   "iliskiler": [
+    {
+     "kisi": "legroux",
+     "tur": "hoca–öğrenci"
+    }
+   ],
+   "not": "Ruam aşısı 'Anamorve'; kendisi ruamdan öldü. Legroux aşıyı 1947'de İran'da uyguladı.",
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/turk-veteriner-hekimliginin-kahraman-sehidi-yuzbasi-kemal-cemil-bey/"
+  },
+  {
+   "id": "legroux",
+   "ad": "René Legroux",
+   "milliyet": "Fransız",
+   "alan": "bakteriyoloji",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "pasteur",
+     "gorev": "profesör"
+    }
+   ],
+   "kaynak": [
+    "GOKCEN"
+   ]
+  },
+  {
+   "id": "hudai",
+   "ad": "Hüdai Bey",
+   "dogum": "1898",
+   "dogum_yeri": "İstanbul",
+   "milliyet": "Türk",
+   "alan": "bakteriyoloji (ruam)",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "yuksek_baytar",
+     "yil": "1921",
+     "derece": "mezuniyet"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "askeri_baytar_tatbikat",
+     "gorev": "bakteriyoloji asistanı",
+     "bas": "1926"
+    }
+   ],
+   "iliskiler": [
+    {
+     "kisi": "ahmet_bey",
+     "tur": "birlikte araştırma",
+     "not": "ruam çalışmaları"
+    }
+   ],
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/sehit-bir-askeri-veteriner-hekim-hudai-bey/"
+  },
+  {
+   "id": "ahmet_bey",
+   "ad": "Binbaşı Ahmet Bey (bakteriyolog)",
+   "dogum": "1890",
+   "dogum_yeri": "Konya",
+   "milliyet": "Türk",
+   "alan": "bakteriyoloji (ruam)",
+   "strand": [
+    "S3"
+   ],
+   "egitim": [
+    {
+     "kurum": "askeri_baytar",
+     "yil": "1912",
+     "derece": "mezuniyet"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "askeri_baytar_tatbikat",
+     "gorev": "bakteriyoloji asistanı 1914; laboratuvar şefi 1919",
+     "bas": "1914"
+    }
+   ],
+   "kaynak": [
+    "GOKCEN"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/askeri-veteriner-hekimi-bakteriyolog-binbasi-ahmet-bey-2/"
+  },
+  {
+   "id": "mashar",
+   "ad": "Üveis Mashar",
+   "diger_adlar": [
+    "Üveis Maskar"
+   ],
+   "milliyet": "Türk",
+   "alan": "patolojik anatomi (teşrih-i marazi)",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "askeri_baytar_tatbikat",
+     "gorev": "Teşrih-i Marazi başmuavini (1929–30), muallim; binbaşı (1936)",
+     "bas": "1929",
+     "bit": "1937"
+    }
+   ],
+   "not": "ATBM'nin en sık yazan yazarlarından (1929–37). 1935: 'Baytar muallim Üveis Mashar professörün sütle geçen…' notu.",
+   "kaynak": [
+    "ATBM"
+   ]
+  },
+  {
+   "id": "refik_ahmet",
+   "ad": "Refik Ahmet",
+   "milliyet": "Türk",
+   "alan": "bakteriyoloji (mallein, çiçek aşısı)",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "askeri_baytar_tatbikat",
+     "gorev": "bakteriyolog yüzbaşı",
+     "bas": "1929"
+    }
+   ],
+   "yayinlar": [
+    "Pasteur müessesesinde malleinin sureti ihzarı (ATBM 1929)",
+    "Çiçek aşısı (Neuro Vaccin) (ATBM 1929)"
+   ],
+   "kaynak": [
+    "ATBM"
+   ]
+  },
+  {
+   "id": "pertev_hikmet",
+   "ad": "Pertev Hikmet",
+   "milliyet": "Türk",
+   "alan": "iç hastalıkları",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "askeri_baytar_tatbikat",
+     "gorev": "baytar yüzbaşı doktor; 1. V. Hayvan Hastanesi dahiliye mütehassısı",
+     "bas": "1929"
+    }
+   ],
+   "yayinlar": [
+    "Kan muayeneleri (ATBM 1929)"
+   ],
+   "kaynak": [
+    "ATBM"
+   ]
+  },
+  {
+   "id": "necip_riza",
+   "ad": "Necip Rıza",
+   "milliyet": "Türk",
+   "alan": "cerrahi",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "askeri_baytar_tatbikat",
+     "gorev": "cerrahi (binbaşı, 1930)",
+     "bas": "1929"
+    }
+   ],
+   "yayinlar": [
+    "Bir katırda adenokarsinom vak'ası (ATBM 1929)"
+   ],
+   "kaynak": [
+    "ATBM"
+   ]
+  },
+  {
+   "id": "mehmet_azmi",
+   "ad": "Mehmet Azmi",
+   "milliyet": "Türk",
+   "alan": "et muayenesi, mezbaha hijyeni",
+   "strand": [
+    "S0",
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "karaagac",
+     "gorev": "muallim; mütekait baytar kaymakamı",
+     "bas": "1931",
+     "bit": "1933"
+    }
+   ],
+   "yayinlar": [
+    "Belediye salhaneleri küşadı için Fransa'da nizamat ve talimat (ATBM 1929)",
+    "Tederrün ve etlerin sureti muayeneleri (ATBM 1933, sayı 114)"
+   ],
+   "kaynak": [
+    "ATBM"
+   ]
+  },
+  {
+   "id": "osman_zeki",
+   "ad": "Osman Zeki",
+   "milliyet": "Türk",
+   "alan": "askerî veteriner hizmetleri, at ırkları",
+   "strand": [
+    "S1"
+   ],
+   "gorevler": [
+    {
+     "kurum": "askeri_baytar_tatbikat",
+     "gorev": "baytari hidemat-ı sıhhiye muallimi, cerrahi mütehassısı (kaymakam)",
+     "bas": "1930"
+    }
+   ],
+   "yayinlar": [
+    "Umumi harpte İngiliz ordusunun istihdam ettiği muhtelif at ırkları (ATBM 1932, sayı 113)",
+    "Seferde İngiliz ordusu vezaif-i baytariyesi (ATBM 1930)"
+   ],
+   "kaynak": [
+    "ATBM"
+   ]
+  },
+  {
+   "id": "erkmen",
+   "ad": "Muhlis Erkmen",
+   "milliyet": "Türk",
+   "alan": "zootekni; siyaset (Ziraat Vekili)",
+   "strand": [
+    "S0",
+    "S1"
+   ],
+   "egitim": [
+    {
+     "kurum": "almanya",
+     "derece": "öğrenim"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "halkali",
+     "gorev": "zootekni hocası"
+    },
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "Ziraat Vekili",
+     "not": "görev yılları doğrulanacak"
+    }
+   ],
+   "iliskiler": [
+    {
+     "kisi": "falke",
+     "tur": "davet eden",
+     "not": "Falke ve Oldenburg heyetlerini Türkiye'ye davet etti"
+    },
+    {
+     "kisi": "oldenburg",
+     "tur": "davet eden"
+    }
+   ],
+   "kaynak": [
+    "GOZCU2018",
+    "TBMM"
+   ]
+  },
+  {
+   "id": "falke",
+   "ad": "Friedrich Falke",
+   "milliyet": "Alman",
+   "alan": "ziraat (çayır-mera, 'yeşil ziraat')",
+   "strand": [
+    "S2"
+   ],
+   "gorevler": [
+    {
+     "kurum": "leipzig_uni",
+     "gorev": "eski rektör (Geheimrat)"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "kurucu rektör",
+     "bas": "1933",
+     "bit": "1938"
+    }
+   ],
+   "not": "1938'de geri çağrıldı. 'Yeşil ziraat işletme tetkik müessesesi' ve yeşil ziraatın geliştirilmesi üzerine çalıştı.",
+   "kaynak": [
+    "GOZCU2018",
+    "CIFTCI2011"
+   ]
+  },
+  {
+   "id": "oldenburg",
+   "ad": "Geheimrat Oldenburg",
+   "milliyet": "Alman (Prusya)",
+   "alan": "ziraat reformu",
+   "strand": [
+    "S0"
+   ],
+   "gorevler": [
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "uzman heyeti başkanı; ziraat reformu raporu",
+     "not": "1930 civarı, doğrulanacak"
+    }
+   ],
+   "kaynak": [
+    "GOZCU2018"
+   ]
+  },
+  {
+   "id": "christiansen",
+   "ad": "Friedrich Christiansen-Weniger",
+   "milliyet": "Alman",
+   "alan": "bitki ıslahı, tohum",
+   "strand": [
+    "S2"
+   ],
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "ziraat bilimci; 1932'den itibaren Ankara'da",
+     "bas": "1932"
+    }
+   ],
+   "kaynak": [
+    "GOZCU2018"
+   ]
+  },
+  {
+   "id": "horn",
+   "ad": "Julius Horn",
+   "milliyet": "Alman",
+   "alan": "hayvancılık",
+   "strand": [
+    "S1"
+   ],
+   "gorevler": [
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "hayvancılık genel müfettişi (4 yıllık sözleşme, Berlin Büyükelçiliği aracılığıyla)",
+     "bas": "1926",
+     "bit": "1930"
+    }
+   ],
+   "not": "Kaynakta 'Dr. Kral Julius Horn' diye geçiyor; adın doğru biçimi doğrulanacak (Erkan Dağlı 2013, s. 17).",
+   "kaynak": [
+    "GOZCU2018"
+   ]
+  },
+  {
+   "id": "spottel",
+   "ad": "Walter Spöttel",
+   "milliyet": "Alman",
+   "alan": "zootekni",
+   "strand": [
+    "S1"
+   ],
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "Zootekni Enstitüsü direktörü",
+     "bas": "1933",
+     "bit": "1939"
+    }
+   ],
+   "kaynak": [
+    "CIFTCI2011"
+   ]
+  },
+  {
+   "id": "gebhardt",
+   "ad": "Max Gebhardt",
+   "milliyet": "Alman",
+   "alan": "iç hastalıkları",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "Veteriner Fakültesi ilk dekanı",
+     "bas": "1933",
+     "bit": "1935"
+    }
+   ],
+   "kaynak": [
+    "CIFTCI2011"
+   ]
+  },
+  {
+   "id": "seuffert",
+   "ad": "Robert Seuffert",
+   "milliyet": "Alman",
+   "alan": "veteriner cerrahi, göz hastalıkları",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "Baytar Fakültesi cerrahi klinik kürsüsü profesörü",
+     "bas": "1933"
+    }
+   ],
+   "kaynak": [
+    "GOZCU2018",
+    "CIFTCI2011"
+   ]
+  },
+  {
+   "id": "sprehn",
+   "ad": "Curt Sprehn",
+   "diger_adlar": [
+    "Prof. Dr. Sprehn"
+   ],
+   "milliyet": "Alman",
+   "alan": "parazitoloji",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "leipzig_uni",
+     "gorev": "profesör"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "Baytar Fakültesi parazitoloji profesörlüğüne atandı",
+     "bas": "1934"
+    }
+   ],
+   "not": "ATBM'de 'Leipzig'den Prof. Dr. Sprehn' (rapor 02). Ön adı doğrulanacak.",
+   "kaynak": [
+    "ATBM"
+   ]
+  },
+  {
+   "id": "luy",
+   "ad": "Dr. Luy",
+   "milliyet": "Alman",
+   "alan": "fizyoloji, farmakoloji",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "hannover_vet",
+     "gorev": "(Hannover)"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "Baytar Fakültesi fizyoloji ve farmakoloji profesörü",
+     "bas": "1936"
+    }
+   ],
+   "kaynak": [
+    "ATBM"
+   ]
+  },
+  {
+   "id": "yze_1933_diger",
+   "ad": "YZE 1933–34 Alman öğretim üyeleri (fakültesi doğrulanacak): Richard v.d. Heide, Kurt Stüwe, Walter Gleisberg, Franz Heske, Richard Woltereck, Kurt Krause, Conrad Weigand, Hermann Zahn, Otto Gerngross, Hans Richter, Anton Kögel, Karl Beller, Reinhold Hoffmann",
+   "milliyet": "Alman",
+   "alan": "çeşitli",
+   "strand": [],
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "ordinaryüs profesör",
+     "bas": "1933"
+    }
+   ],
+   "not": "Liste Çiftçi 2011'den (Gözcü 2018 aktarımı). Veteriner Fakültesi'nde 5 Alman profesör vardı; bunların Gebhardt, Seuffert ve listedeki Richter, Kögel, Beller, Hoffmann arasından hangileri olduğu doğrulanacak.",
+   "kaynak": [
+    "CIFTCI2011",
+    "KADIOGLU"
+   ]
+  },
+  {
+   "id": "akinci",
+   "ad": "İhsan Abidin Akıncı",
+   "diger_adlar": [
+    "İhsan Abidin"
+   ],
+   "milliyet": "Türk",
+   "alan": "zootekni, hıfzıssıhha, at yetiştiriciliği; sığır ırkları",
+   "strand": [
+    "S1"
+   ],
+   "egitim": [
+    {
+     "kurum": "askeri_baytar",
+     "yil": "1904",
+     "derece": "mezuniyet"
+    }
+   ],
+   "gorevler": [
+    {
+     "kurum": "yuksek_baytar",
+     "gorev": "hıfzıssıhha ve zootekni muallimi",
+     "bas": "1921"
+    },
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "müsteşar; Yüksek Ziraat Enstitüsü, haralar ve depoların kuruluşunda rol",
+     "bas": "1927",
+     "bit": "1931"
+    }
+   ],
+   "yayinlar": [
+    "Osmanlı Atları",
+    "Hayvan yetiştiriciliği (1931)",
+    "Türkiye'de merinosçuluk (1940)",
+    "Türkiye sığır ırkları ve sığır yetiştirme bilgisi (1942)"
+   ],
+   "not": "On beşten fazla kitap; Avrupa'da yayımlanmış makaleler. Yıllar web özetinden, birincil kaynaktan doğrulanacak.",
+   "kaynak": [
+    "WEB_AKINCI",
+    "TOK"
+   ]
+  },
+  {
+   "id": "yarkin",
+   "ad": "İbrahim Arif Yarkın",
+   "milliyet": "Türk",
+   "alan": "zootekni: sığır ırkları, bakım ve yemleme",
+   "strand": [
+    "S1",
+    "S2"
+   ],
+   "gorevler": [],
+   "not": "Katalogdan: 'Orta Anadolu'da sığır ırkları, bakım, yemleme ve yetiştirme' (1939). Biyografi araştırılacak.",
+   "kaynak": [
+    "TOK"
+   ]
+  },
+  {
+   "id": "vhorn",
+   "ad": "Valentin Horn",
+   "milliyet": "Alman",
+   "alan": "hayvan beslemesi, yem değeri",
+   "strand": [
+    "S2"
+   ],
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "(katalogdaki YZE yayınlarından)",
+     "bas": "1938"
+    }
+   ],
+   "not": "Katalogdan: 'Ökse otunun yem değeri', 'Mısır samanı ve hazmolabilme kabiliyeti' (1938), Birinci Köy ve Ziraat Kalkınma Kongresi yayınları. 1926–30 hayvancılık genel müfettişi Julius Horn ile ilişkisi araştırılacak.",
+   "kaynak": [
+    "TOK"
+   ]
+  },
+  {
+   "id": "bilgemre",
+   "ad": "Kadri Bilgemre",
+   "diger_adlar": [
+    "Kadri Bilgiemre"
+   ],
+   "milliyet": "Türk",
+   "alan": "zootekni (kanatlı, koyunculuk, genel zootekni)",
+   "strand": [
+    "S1"
+   ],
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "(YZE Ders Kitabı serisinde 'Genel zootekni', 2. baskı 1945)",
+     "bas": "1935"
+    }
+   ],
+   "not": "Katalogdan 16 yayın (1935–1950). Biyografi araştırılacak.",
+   "kaynak": [
+    "TOK"
+   ]
+  },
+  {
+   "id": "kadaster",
+   "ad": "İsfendiyar Esat Kadaster",
+   "milliyet": "Türk",
+   "alan": "ziraat kimyası, hayvan beslemesinde protein",
+   "strand": [
+    "S2"
+   ],
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "(katalogdaki YZE yayınlarından)",
+     "bas": "1938"
+    }
+   ],
+   "not": "Katalogdan: 'Protein maddeleri ve bunların hayvan beslenmesindeki önemi' (1938). Biyografi araştırılacak.",
+   "kaynak": [
+    "TOK"
+   ]
+  },
+  {
+   "id": "karaesmen",
+   "ad": "Fikri Karaesmen",
+   "milliyet": "Türk",
+   "alan": "hayvan yetiştiriciliği, sütçülük, köy eğitmenleri",
+   "strand": [
+    "S1",
+    "S4"
+   ],
+   "gorevler": [],
+   "not": "Katalogdan: 'Hayvan yetiştiriciliği' (1931), 'Hayvancılık' (1940), 'Köy eğitmenleri için ameli sütçülük' (1943). Biyografi araştırılacak.",
+   "kaynak": [
+    "TOK"
+   ]
+  },
+  {
+   "id": "izmen",
+   "ad": "Ekrem Rüştü İzmen",
+   "milliyet": "Türk",
+   "alan": "süt ve süt ürünleri (peynir)",
+   "strand": [
+    "S1"
+   ],
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "(katalogdaki YZE yayınlarından)",
+     "bas": "1937"
+    }
+   ],
+   "not": "Katalogdan: kıvırcık koyunlarının süt verimi (1937), kaşar ve Mihaliç peyniri çalışmaları. Biyografi araştırılacak.",
+   "kaynak": [
+    "TOK"
+   ]
+  },
+  {
+   "id": "kansu",
+   "ad": "Sedat Kansu",
+   "milliyet": "Türk",
+   "alan": "yem değeri, bakliyat",
+   "strand": [
+    "S2"
+   ],
+   "gorevler": [],
+   "not": "Katalogdan: 'Türkiye bakliyatının terkipleri' (1936), 'Ankara civarında yetişen bazı mühim step nebatlarının hayvan tagdiyesi' (1943); V. Horn ve İ. E. Kadaster ile ortak yem değeri çalışmaları (1938). Biyografi araştırılacak.",
+   "kaynak": [
+    "TOK"
+   ],
+   "dogum": "1907"
+  },
+  {
+   "id": "oytun",
+   "ad": "Hasan Şükrü Oytun",
+   "diger_adlar": [
+    "H. Şükrü Oytun"
+   ],
+   "dogum_yeri": "Girit",
+   "milliyet": "Türk",
+   "alan": "parazitoloji",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "Veteriner Fakültesi parazitoloji (doğrulanacak)"
+    },
+    {
+     "kurum": "auvf",
+     "gorev": "parazitoloji; ayrıca AÜ Tıp Fakültesi Parazitoloji Enstitüsü kurucusu"
+    }
+   ],
+   "not": "Katalogdan: 'Türkiye'de iktisadi ehemmiyete malik parazitler' (1935), 'Anadolu koyunlarının endoparaziter hastalıkları' (1937), uyuz ve mücadelesi (1942).",
+   "kaynak": [
+    "GOKCEN",
+    "TOK"
+   ],
+   "url": "https://www.hazimgokcen.net/meslek-buyukleri/efsane-bir-hoca-prof-dr-hasan-sukru-oytun/"
+  },
+  {
+   "id": "ozbek_n",
+   "ad": "Nurinnisa Özbek",
+   "milliyet": "Türk",
+   "alan": "yem bitkileri, tütün",
+   "strand": [
+    "S2"
+   ],
+   "gorevler": [],
+   "not": "Katalogdan: 'Türkiye'de yetişen bazı önemli yem bitkileri' (1949). Dönemin az sayıdaki kadın ziraat uzmanlarından; biyografi araştırılacak.",
+   "kaynak": [
+    "TOK"
+   ]
+  }
+ ]
 }

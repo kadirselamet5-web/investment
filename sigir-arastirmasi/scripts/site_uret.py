@@ -264,7 +264,9 @@ def uzman_verisi(atbm):
     kisi_yayin = defaultdict(list)
     yazar_say = Counter()
     yazar_ornek = {}
+    ortak = defaultdict(list)  # (kisi1, kisi2) -> ortak yayın başlıkları
     for r in katalog:
+        bu_kayit = set()
         for y in r.get("yazarlar", []):
             if "," not in y:
                 continue  # kurumsal yazar
@@ -273,12 +275,19 @@ def uzman_verisi(atbm):
             kayit = {"baslik": r.get("baslik", ""), "yil": yil(r), "yayin": r.get("alanlar", {}).get("Published", ""),
                      "seri": r.get("alanlar", {}).get("Series", ""), "url": r.get("url", ""), "kaynak": "TOK"}
             if kid:
+                bu_kayit.add(kid)
                 if kayit["url"] not in {x["url"] for x in kisi_yayin[kid]}:
                     kisi_yayin[kid].append(kayit)
             else:
                 ad_tam = f"{ad} {soy}".strip()
                 yazar_say[ad_tam] += 1
                 yazar_ornek.setdefault(ad_tam, []).append(kayit)
+        bu_kayit = sorted(bu_kayit)
+        for i in range(len(bu_kayit)):
+            for j in range(i + 1, len(bu_kayit)):
+                b = f"{r.get('baslik', '')[:80]} ({yil(r)})"
+                if b not in ortak[(bu_kayit[i], bu_kayit[j])]:
+                    ortak[(bu_kayit[i], bu_kayit[j])].append(b)
     # ATBM makaleleri: yazar satırında soyadı geçiyorsa
     for r in atbm:
         yazar = _katla(r[3])
@@ -286,6 +295,10 @@ def uzman_verisi(atbm):
             if len(soy) > 3 and re.search(r"\b" + re.escape(soy) + r"\b", yazar):
                 kisi_yayin[kid].append({"baslik": r[2], "yil": r[0], "yayin": f"ATBM {r[1]}", "seri": "", "url":
                                         "https://archive.org/details/askeri-tibbi-baytari-mecmuasi", "kaynak": "ATBM"})
+    kisi_idx = {k["id"]: k for k in d["kisiler"]}
+    for (a, b), basliklar in ortak.items():  # katalogdan otomatik ortak yazarlık ilişkisi
+        not_ = "; ".join(basliklar[:3]) + (f" (+{len(basliklar) - 3})" if len(basliklar) > 3 else "")
+        kisi_idx[a].setdefault("iliskiler", []).append({"kisi": b, "tur": "ortak yayın (katalog)", "not": not_})
     for k in d["kisiler"]:
         k["katalog_yayinlari"] = sorted(kisi_yayin.get(k["id"], []), key=lambda x: x["yil"])
     aday = [{"ad": a, "sayi": n, "ornek": sorted(yazar_ornek[a], key=lambda x: x["yil"])[:8]}
