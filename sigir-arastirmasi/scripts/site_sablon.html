@@ -180,7 +180,8 @@ function metinGetir(anahtar){
   if(YUKLU[g]) return Promise.resolve(METIN[anahtar]);
   return new Promise(res=>{const s=document.createElement("script"); s.src="metin/"+g+".js"; s.onload=()=>res(METIN[anahtar]); s.onerror=()=>res(null); document.head.appendChild(s);});
 }
-const VURGU=/(s[ıi1l]?[gğ][ıi1l]r|inek|[öo]k[üu]z|bo[gğ]a|dana|d[üu]ve|buza[gğ][ıi]|manda|hayvan|baytar|veteriner|yem|yonca|mer['’]?a|otlak|ah[ıi]r|tezek|[şs]ap\b|veba|[şs]arbon|damızlık|damizlik|[ıi]slah|hara\b|s[üu]t|mezbaha|celep|a[şs][ıi]\b|serum|karantina|zootekni|g[üu]bre|kongre)/gi;
+const H="a-zçğıöşüâîû";
+const VURGU=new RegExp(`(?<![${H}])(s[ıi1l]?[gğ][ıi1l]r\\S*|inek\\S*|[öo]k[üu]z\\S*|bo[gğ]a(?:lar|ları|sı|si|ya|yı|nın)?(?![${H}])|dana(?:lar|sı|nın)?(?![${H}])|d[üu]ve\\S*|buza[gğ][ıi]\\S*|manda(?:lar|sı)?(?![${H}])|hayvan\\S*|baytar\\S*|veteriner\\S*|yem(?:ler|i|in|lik)?(?![${H}])|yonca\\S*|mer['’]?a(?:lar|sı|ları)?(?![${H}])|otlak\\S*|ah[ıi]r\\S*|tezek\\S*|[şs]ap(?:ın|a|ı|tan)?(?![${H}])|veba\\S*|[şs]arbon\\S*|dam[ıi]zl[ıi]k\\S*|[ıi]slah\\S*|hara(?:sı|ları|nın|da|ya)?(?![${H}])|s[üu]t(?:ü|ün|çü\\S*|lü)?(?![${H}])|mezbaha\\S*|salhane\\S*|celep\\S*|a[şs][ıi](?:la\\S*|sı|yı)?(?![${H}])|serum\\S*|karantina\\S*|zootekni\\S*|g[üu]bre\\S*|kongre\\S*)`,"gi");
 function vurgula(s){return esc(s).replace(VURGU,m=>`<mark>${m}</mark>`)}
 function oku(baslik, anahtarlar, pdf, ust){
   anahtarlar=(anahtarlar||[]).filter(Boolean); const ok=$("#okuyucu"); let i=0;

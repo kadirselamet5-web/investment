@@ -12,7 +12,7 @@ Doktora tezinin dört araştırma strandı için Türkçe ve İngilizce gazete i
 | `06_kaynak_envanteri.md` | Arşiv platformları ve süreli yayınlar, erişim durumu |
 | `07_tohum_bibliyografya.md` | Web aramasıyla yeri tespit edilen birincil ve ikincil kaynaklar |
 | `08_gaste_sorgu_plani.md` + `08_gaste_sorgu_listesi.csv` | Gaste Arşivi oturumu için sorgu protokolü ve 907 satırlık takip listesi (FVADC penceresi, olay pencereleri, ★ terim × yıl, adlar) |
-| `site/index.html` | **Araştırma takip sitesi** (tek dosya, çevrimdışı açılır): program, ilerleme ve eksikler, görevler, öne çıkan kayıtlar, raporlar, veri tabanı, zaman çizelgeleri, kişi–kurum ağı, kaynaklar. Güncelleme: `python3 scripts/site_uret.py` |
+| `site/` (index.html + metin/) | **Araştırma takip sitesi** (çevrimdışı açılır; `site_paket.zip` olarak dağıtılır, açıp index.html'e tıklayın). Tam metin okuyucu ve PDF bağlantılarıyla: program, ilerleme ve eksikler, görevler, öne çıkan kayıtlar, raporlar, veri tabanı, zaman çizelgeleri, kişi–kurum ağı, kaynaklar. Güncelleme: `python3 scripts/site_uret.py` |
 | `09_gorevler.json` | Görev listesi ve durumları (site bunu okur) |
 | `10_kisi_kurum.json` | Kişi–kurum ağı sözlüğü (site bunu okur) |
 | `bulgular/01_TBMM_tutanak_bulgulari.md` | TBMM tutanakları 1923–1950: strand bazında 77 kilit görüşme ve veteriner sözleşmeleri dizisi |

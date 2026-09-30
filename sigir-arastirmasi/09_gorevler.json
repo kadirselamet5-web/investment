@@ -333,6 +333,51 @@
       "baslik": "Bilkent tezi 'YZE'de 1933'ten 1948'e zootekni bilimi' ve Selman Yaşar kitabı (erişim gerekli)",
       "durum": "kullanici",
       "sorumlu": "Kullanıcı (kütüphane erişimi)"
+    },
+    {
+      "id": "W01",
+      "faz": "Site",
+      "baslik": "Metin okuyucu: önemli sayfaların tam metni site içinde (tutanak kümeleri puan ≥6, dergi birimleri puan ≥6, bütün OCR dergi ve gazete isabetleri)",
+      "durum": "bitti",
+      "sorumlu": "Claude",
+      "cikti": "site/metin/*.js"
+    },
+    {
+      "id": "W02",
+      "faz": "Site",
+      "baslik": "Her kayda PDF bağlantısı (TBMM ve İBB sayfa düzeyinde; TBMM Açık Erişim dosya düzeyinde; IA dosya PDF'i)",
+      "durum": "bitti",
+      "sorumlu": "Claude",
+      "cikti": "bulgular/pdf_baglantilari.json"
+    },
+    {
+      "id": "W03",
+      "faz": "Site",
+      "baslik": "Strand bazında sentez ve ara analiz raporu",
+      "durum": "bitti",
+      "sorumlu": "Claude",
+      "cikti": "bulgular/05_sentez_ara_analiz.md"
+    },
+    {
+      "id": "W04",
+      "faz": "Site",
+      "baslik": "Yıllara göre yoğunluk grafiği (strand küçük çokluları)",
+      "durum": "bitti",
+      "sorumlu": "Claude"
+    },
+    {
+      "id": "W05",
+      "faz": "Site",
+      "baslik": "Öne çıkan dergi kayıtlarına (rapor 02 maddeleri) metin birimi eşleştirmesi",
+      "durum": "sirada",
+      "sorumlu": "Claude"
+    },
+    {
+      "id": "W06",
+      "faz": "Site",
+      "baslik": "Olay pencerelerindeki gazete sayfalarının siteye eklenmesi (OCR bittikçe)",
+      "durum": "sirada",
+      "sorumlu": "Claude"
     }
   ]
 }
