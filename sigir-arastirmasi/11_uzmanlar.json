@@ -56,6 +56,14 @@
   "TOK_FVADC32": {
    "ad": "TOK kaydı 15413: FVADC Kongre yayını A serisi takım 32, 'Kendi topraklarımızdan yem: yeşil silo' (1938)",
    "url": "https://kutuphane.tarimorman.gov.tr/vufind/Record/15413"
+  },
+  "CUMH_KARAESMEN": {
+   "ad": "Cumhuriyet, 'Bilim, duygusal derinlik' (torun Fikri Karaesmen hakkında; dede 1895–1949)",
+   "url": "https://www.cumhuriyet.com.tr/haber/bilim-duygusal-derinlik-1572982"
+  },
+  "ATAM_MERINOS": {
+   "ad": "ATAM Dergisi, 'Cumhuriyet Dönemi'nde Hayvancılığın Sanayiye Tatbikine Bir Örnek: Merinos Yetiştiriciliği'",
+   "url": "https://atamdergi.gov.tr/eng/full-text/197/tur"
   }
  },
  "kurumlar": [
@@ -1684,7 +1692,7 @@
     {
      "kisi": "aygun",
      "tur": "ortak hazırlık",
-     "not": "Kendi topraklarımızdan yem: yeşil silo (FVADC A-32, 1938)"
+     "not": "Kendi topraklarımızdan yem: yeşil silo (FVADC A-32, 1938) — katalogdaki \"Aygün, Süreyya\" ile veteriner S. T. Aygün aynı kişi mi, doğrulanacak"
     },
     {
      "kisi": "ozbek_n",
@@ -1809,35 +1817,100 @@
    "id": "karaesmen",
    "ad": "Fikri Karaesmen",
    "milliyet": "Türk",
-   "alan": "hayvan yetiştiriciliği, sütçülük, köy eğitmenleri",
+   "alan": "hayvan yetiştiriciliği, merinos koyunculuğu, sütçülük, küçük hayvancılık; köy eğitmenleri için yayın",
    "strand": [
     "S1",
     "S4"
    ],
-   "gorevler": [],
-   "not": "Katalogdan: 'Hayvan yetiştiriciliği' (1931), 'Hayvancılık' (1940), 'Köy eğitmenleri için ameli sütçülük' (1943). Biyografi araştırılacak.",
+   "gorevler": [
+    {
+     "kurum": "trakya_um",
+     "gorev": "'Hayvan yetiştiriciliği' (1931) Birinci Umumi Müfettişlik ile Ziraat Vekâleti ortak yayını; yazarlar arasında",
+     "bas": "1931"
+    },
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "Neşriyat Müdürlüğü yayınlarının yazarı (Hayvancılık 1940, Ameli sütçülük 1943, Tavukçuluk 1944, Tavşan 1948, İpekböcekçiliği 1950)",
+     "bas": "1940",
+     "bit": "1949"
+    }
+   ],
+   "not": "'Mustafa Kemal kuşağından ziraat uzmanı'. Bursa merinos çalışmalarıyla bağlantılı (Karacabey). Köy eğitmenlerine yönelik 1943 kitabı, S1 ve S4'te ıslah bilgisinin köye eğitmen eliyle taşınmasının örneği. Torunu Koç Üniversitesi'nden aynı adlı mühendislik profesörü (karıştırılmamalı).",
    "kaynak": [
-    "TOK"
+    "TOK",
+    "CUMH_KARAESMEN",
+    "ATAM_MERINOS"
+   ],
+   "dogum": "1895",
+   "olum": "1949",
+   "egitim": [
+    {
+     "kurum": "halkali",
+     "yil": "",
+     "derece": "ziraat yüksek okulu mezunu (okulun adı kaynakta yok; Halkalı varsayımı doğrulanacak)"
+    }
+   ],
+   "iliskiler": [
+    {
+     "kisi": "akinci",
+     "tur": "ortak yayın",
+     "not": "Hayvan yetiştiriciliği (1931)"
+    },
+    {
+     "kisi": "batu",
+     "tur": "ortak yayın",
+     "not": "Hayvan yetiştiriciliği (1931)"
+    }
+   ],
+   "yayinlar": [
+    "Hayvan yetiştiriciliği (Akıncı, Uygur, Batu ile; Ziraat Vekâleti neşriyatı 47, 1931)",
+    "Merinos koyunculuğu ve Bursa vilâyeti (Uludağ, Bursa Halkevi dergisi, Ocak 1935)",
+    "Hayvancılık (1940)",
+    "Köy eğitmenleri için ameli sütçülük (Ziraat Vekâleti neşriyatı 577, 1943)",
+    "Tavukçuluk (1944)",
+    "Tavşan yetiştiriciliği ve kobay (1948)",
+    "İpekböcekçiliği (1950)"
    ]
   },
   {
    "id": "izmen",
    "ad": "Ekrem Rüştü İzmen",
    "milliyet": "Türk",
-   "alan": "süt ve süt ürünleri (peynir)",
+   "alan": "süt verimi ve süt bileşimi (manda, kıvırcık koyunu, kıl keçisi, boz ırk sığır); peynir teknolojisi",
    "strand": [
     "S1"
    ],
    "gorevler": [
     {
      "kurum": "yze",
-     "gorev": "(katalogdaki YZE yayınlarından)",
-     "bas": "1937"
+     "gorev": "Spöttel'in Zootekni Enstitüsü'nde süt verimi araştırmaları",
+     "bas": "1937",
+     "bit": "1940"
     }
    ],
-   "not": "Katalogdan: kıvırcık koyunlarının süt verimi (1937), kaşar ve Mihaliç peyniri çalışmaları. Biyografi araştırılacak.",
+   "not": "'Boz ırkın süt verimi' (1939), S1 için yerli ırkın verim ölçümüyle 'ıslaha değer mi' tartışmasının birincil verisi. Biyografik bilgi (doğum, öğrenim) bulunamadı.",
    "kaynak": [
     "TOK"
+   ],
+   "diger_adlar": [
+    "E. Rüştü İzmen",
+    "Rüştü İzmen"
+   ],
+   "iliskiler": [
+    {
+     "kisi": "spottel",
+     "tur": "ortak yayın",
+     "not": "Anadolu mandalarının süt verimi (YZE Heft 79, 1937; Almanca ve Türkçe)"
+    }
+   ],
+   "yayinlar": [
+    "Kaşar peynirinin yapılışı ve terkibi (YZE 36, 1937)",
+    "Anadolu mandalarının süt verimleri ile sütlerinin terkibi (Spöttel ile, 1937)",
+    "Kıvırcık koyunlarının süt verimleri ile sütlerinin terkibi (1937)",
+    "Türkiye Mihaliç, tulum ve beyaz peynirlerinin terkipleri (1938)",
+    "Boz ırkın süt verimi ile sütünün terkibi (1939)",
+    "Türkiye kıl keçilerinin süt verimleri (1940)",
+    "Sütçülük (İstanbul 1942)"
    ]
   },
   {
@@ -1888,7 +1961,7 @@
     {
      "kisi": "aygun",
      "tur": "ortak yayın",
-     "not": "Yeşil silo (FVADC A-32)"
+     "not": "Yeşil silo (FVADC A-32) — katalogdaki \"Aygün, Süreyya\" ile veteriner S. T. Aygün aynı kişi mi, doğrulanacak"
     }
    ],
    "yayinlar": [
@@ -1933,14 +2006,44 @@
    "id": "ozbek_n",
    "ad": "Nurinnisa Özbek",
    "milliyet": "Türk",
-   "alan": "yem bitkileri, tütün",
+   "alan": "bitki besleme, toprak verimliliği ve gübreleme; yem bitkilerinin su ihtiyacı",
    "strand": [
     "S2"
    ],
-   "gorevler": [],
-   "not": "Katalogdan: 'Türkiye'de yetişen bazı önemli yem bitkileri' (1949). Dönemin az sayıdaki kadın ziraat uzmanlarından; biyografi araştırılacak.",
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "Kongre yayını 'Yeşil silo' çevirisi (Kansu ile, 1938)",
+     "bas": "1938"
+    },
+    {
+     "kurum": "au_ziraat",
+     "gorev": "profesör; toprak verimliliği ve gübreler (1970'ler)",
+     "bas": "1948"
+    }
+   ],
+   "not": "Dönemin az sayıdaki kadın ziraat bilimcilerinden; sonradan Ankara Üniversitesi Ziraat Fakültesi profesörü. Doğum ve öğrenim bilgisi bulunamadı.",
    "kaynak": [
-    "TOK"
+    "TOK",
+    "TOK_FVADC32"
+   ],
+   "iliskiler": [
+    {
+     "kisi": "kansu",
+     "tur": "ortak çeviri",
+     "not": "Kendi topraklarımızdan yem: yeşil silo (FVADC A-32, 1938)"
+    },
+    {
+     "kisi": "vhorn",
+     "tur": "çeviri",
+     "not": "Horn'un hazırladığı yeşil silo broşürü"
+    }
+   ],
+   "yayinlar": [
+    "Yeni ameli tütün ziraatı: tütün gübrelenmesi (Ahmet Hamdi ile, katalog tarihi 1931, doğrulanacak)",
+    "Kendi topraklarımızdan yem: yeşil silo (çeviri, 1938)",
+    "Türkiye'de yetişen bazı önemli yem bitkilerinin su ihtiyaçları (AÜZF, 1949)",
+    "Toprak verimliliği ve gübreler I (1973)"
    ]
   },
   {
