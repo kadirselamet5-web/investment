@@ -2327,7 +2327,7 @@
     "H. Reşit Tankut"
    ],
    "milliyet": "Türk",
-   "alan": "köycülük ideolojisi, köy ekonomisi, tarih (Hitit)",
+   "alan": "köycülük ideolojisi, köy ekonomisi, tarih; eski kaymakam; profesör",
    "strand": [
     "S0",
     "S2"
@@ -2335,16 +2335,21 @@
    "gorevler": [
     {
      "kurum": "tbmm",
-     "gorev": "(mebusluğu ve görevleri doğrulanacak); Ulus'ta 'Köylerimiz/Köycülük' dizisi",
-     "bas": "1938",
-     "bit": "1939"
+     "gorev": "(mebusluğu doğrulanacak)",
+     "bas": "1938"
+    },
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "eski kaymakam (kazasına 13 damızlık sığır gönderilmiş; yer ve yıl doğrulanacak)",
+     "bas": "",
+     "bit": ""
     }
    ],
    "yayinlar": [
-    "Köylerimiz: Bugün nasıldır? Dün nasıldı? Yarın nasıl olmalıdır? (Ulus, dizi, XI 19.1.1939; XVI 10.2.1939; XIX 14.2.1939)",
+    "Köylerimiz: Bugün nasıldır? Dün nasıldı? Yarın nasıl olmalıdır? (Ulus, Aralık 1938 – Şubat 1939, en az XXI bölüm; XI 19.1, XIV 24.1, XV-1 8.2, XVI 10.2, XVIII 13.2, XIX 14.2, 'Gıda meselesi' 17.2)",
     "Köycülük XXI: Eti devrinde köy ekonomisi (Ulus 22.2.1939)"
    ],
-   "not": "Koyunu Anadolu'nun tarihsel ve iklimsel hayvanı olarak savunuyor: 'Anadolu'nun domuz hatta sığır yiyeceği gün belki hiç gelmiyecektir'. Kongrenin sığır ıslahı programıyla gerilimli bir köycülük söylemi.",
+   "not": "Ulus'ta 'Profesör'. Koyunu Anadolu'nun hayvanı sayıyor ('Anadolu'nun… sığır yiyeceği gün belki hiç gelmiyecektir'), ama aynı dizide ahırda beslenen sağmal ineği ideal köy evinin parçası yapıyor ve damızlık sığırın ahırsızlık ve yemsizlikten ölümünü anlatıyor. S1–S4 bağı için anahtar yazar.",
    "kaynak": [
     "GASTE_ULUS"
    ]
@@ -2359,6 +2364,20 @@
    ],
    "gorevler": [],
    "not": "Ulus 8.2.1939 Çankırı hayvancılık haberi.",
+   "kaynak": [
+    "GASTE_ULUS"
+   ]
+  },
+  {
+   "id": "unal_k",
+   "ad": "Kemal Ünal",
+   "milliyet": "Türk",
+   "alan": "malî konular (kongrenin malî dilekleri)",
+   "strand": [
+    "S0"
+   ],
+   "gorevler": [],
+   "not": "Ulus 6.1.1939: 'Ziraat ve köy kalkınmasında malî unsurlar'.",
    "kaynak": [
     "GASTE_ULUS"
    ]
