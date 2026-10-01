@@ -307,8 +307,9 @@
       "id": "U06",
       "faz": "Uzman",
       "baslik": "ATBM ve Türk Baytarlar Cemiyeti Mecmuası yazar–kurum dökümü (askerî baytarlar)",
-      "durum": "sirada",
-      "sorumlu": "Claude"
+      "durum": "suruyor",
+      "sorumlu": "Claude",
+      "not": "TBCM 1931 encümen ve heyet listesinden 3 kişi eklendi (Tevfik Süleyman, Hoffmeister, Mardin mebusu Nuri); aza listesi dökülecek"
     },
     {
       "id": "U07",
@@ -382,7 +383,7 @@
       "baslik": "Olay pencerelerindeki gazete sayfalarının siteye eklenmesi (OCR bittikçe)",
       "durum": "suruyor",
       "sorumlu": "Claude",
-      "not": "Olay penceresi ve TBCM sayfaları gazete tablosuna ve okuyucuya eklendi; Cumhuriyet olay OCR sürüyor"
+      "not": "Olay penceresi ve TBCM sayfaları okuyucuda; rapor 06 açıldı (Cumhuriyet 196 sayı, 1929–1936)"
     }
   ]
 }

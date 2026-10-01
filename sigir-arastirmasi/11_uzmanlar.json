@@ -64,6 +64,10 @@
   "ATAM_MERINOS": {
    "ad": "ATAM Dergisi, 'Cumhuriyet Dönemi'nde Hayvancılığın Sanayiye Tatbikine Bir Örnek: Merinos Yetiştiriciliği'",
    "url": "https://atamdergi.gov.tr/eng/full-text/197/tur"
+  },
+  "TBCM": {
+   "ad": "Türk Baytarlar Cemiyeti Mecmuası (1930–33), İBB Atatürk Kitaplığı dijital koleksiyonu; rapor 02 §6a",
+   "url": "https://katalog.ibb.gov.tr/yordam/"
   }
  },
  "kurumlar": [
@@ -304,6 +308,22 @@
   {
    "id": "ceylanpinar",
    "ad": "Ceylanpınar Devlet Üretme Çiftliği"
+  },
+  {
+   "id": "karacabey",
+   "ad": "Karacabey Harası"
+  },
+  {
+   "id": "tbc_cem",
+   "ad": "Türk Baytarlar Cemiyeti (1930)"
+  },
+  {
+   "id": "ziraat_kong_1931",
+   "ad": "Birinci Ziraat Kongresi (Şubat 1931), 16. Encümen (hayvancılık)"
+  },
+  {
+   "id": "iktisat_vek",
+   "ad": "İktisat Vekâleti (Zootekni şubesi)"
   }
  ],
  "kisiler": [
@@ -891,6 +911,11 @@
      "bas": "1923",
      "bit": "1939",
      "not": "'İstiklal savaşının bitmesinden sonra' atandı"
+    },
+    {
+     "kurum": "ziraat_kong_1931",
+     "gorev": "16. Encümen üyesi ('Pendik bakteriyoloji enstitüsü müdürü Şefik Bey')",
+     "bas": "1931"
     }
    ],
    "iliskiler": [
@@ -902,7 +927,8 @@
    ],
    "not": "Mehmet Akif Ersoy ile aynı evde kalan yakın arkadaşı.",
    "kaynak": [
-    "GOKCEN"
+    "GOKCEN",
+    "TBCM"
    ],
    "url": "https://www.hazimgokcen.net/meslek-buyukleri/veteriner-hekim-bakteriyolog-sefik-kolayli-2/"
   },
@@ -991,7 +1017,7 @@
     "Fenn-i Feylat (1915)",
     "Tıbbi Parazitoloji (1928)"
    ],
-   "not": "Bir süre Çifteler çiftliğinde veteriner hekim. 1934 üniversite düzenlemesinde açıkta bırakıldı.",
+   "not": "Bir süre Çifteler çiftliğinde veteriner hekim. 1934 üniversite düzenlemesinde açıkta bırakıldı. TBCM (1930–33) mesul müdürü 'İsmail Hakkı' ve 1931 Ziraat Kongresi 16. Encümen üyesi 'Yüksek Baytar Mektebi zootekni lâburatuvarı şefi İsmail Hakkı Bey' ile aynı kişi olması muhtemel; doğrulanacak.",
    "kaynak": [
     "GOKCEN"
    ],
@@ -2064,6 +2090,105 @@
    "not": "Son Posta 1939-01-29, s. 5 ('Erzincanda baytari çalışmalar'). Biyografi araştırılacak.",
    "kaynak": [
     "GAZETE"
+   ]
+  },
+  {
+   "id": "tevfik_suleyman",
+   "ad": "Tevfik Süleyman",
+   "milliyet": "Türk",
+   "alan": "zootekni, sığır yetiştirme (yerli ırk seleksiyonu)",
+   "strand": [
+    "S1",
+    "S2"
+   ],
+   "gorevler": [
+    {
+     "kurum": "karacabey",
+     "gorev": "hara şube mütehassısı (at, sığır, manda, koyun)",
+     "bas": "1930",
+     "bit": "1931"
+    },
+    {
+     "kurum": "ziraat_kong_1931",
+     "gorev": "16. Encümen mazbata muharriri",
+     "bas": "1931"
+    }
+   ],
+   "iliskiler": [
+    {
+     "kisi": "mardin_nuri",
+     "tur": "encümen",
+     "not": "1931 Ziraat Kongresi 16. Encümen"
+    },
+    {
+     "kisi": "kolayli",
+     "tur": "encümen",
+     "not": "aynı encümen"
+    }
+   ],
+   "yayinlar": [
+    "Yerli sığırlarımıza kıymet ve ehemmiyet verelim (TBCM sayı 3, 30.12.1930)",
+    "Birinci Ziraat Kongresi 16. Encümen kararları (TBCM sayı 4, 1931)"
+   ],
+   "not": "Hollanda ineklerinin ithaline karşı 'ahırlarımız, mera ve çayırlarımız müsait değildir' diyerek bakım, yem ve seleksiyonla yerli ırk ıslahını savunuyor. Soyadı ve biyografi araştırılacak.",
+   "kaynak": [
+    "TBCM"
+   ]
+  },
+  {
+   "id": "hoffmeister",
+   "ad": "Hoffmeister (ilk adı belirsiz)",
+   "milliyet": "Alman",
+   "alan": "salgın hayvan hastalıkları, sığır vebası",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "Ziraat Vekili Sabri Bey'in Almanya'dan getirttiği emraz-ı sariye mütehassısı; sığır vebası raporu",
+     "bas": "1925",
+     "bit": "1926"
+    }
+   ],
+   "yayinlar": [
+    "Sığır vebası raporu (serum + virüslü kan 'usul-i muhtelit' önerisi)",
+    "Türkiye'de Baytarlık (TBCM sayı 4, 1931)"
+   ],
+   "not": "Raporu üzerine 1926'da baytarî ilmî içtima toplandı, muhtelit usul reddedildi ve yalnızca tecrübesine karar verildi. Tarih ve ilk adı doğrulanacak (Ziraat Vekâleti 1924–26 kayıtları, TBMM bütçe görüşmeleri).",
+   "kaynak": [
+    "TBCM"
+   ]
+  },
+  {
+   "id": "mardin_nuri",
+   "ad": "Muallim (Mehmet) Nuri",
+   "milliyet": "Türk",
+   "alan": "baytarlık (muallim), meclis",
+   "strand": [
+    "S0",
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "tbmm",
+     "gorev": "Mardin mebusu",
+     "bas": "1930"
+    },
+    {
+     "kurum": "tbc_cem",
+     "gorev": "heyet-i idare üyesi",
+     "bas": "1930"
+    },
+    {
+     "kurum": "ziraat_kong_1931",
+     "gorev": "16. Encümen reisi",
+     "bas": "1931"
+    }
+   ],
+   "not": "TBCM heyet-i idare listesinde 'Muallim Mehmet Nuri B., Mardin mebusu'. Soyadı ve TBMM albümü kaydı araştırılacak.",
+   "kaynak": [
+    "TBCM"
    ]
   }
  ]

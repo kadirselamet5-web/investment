@@ -337,7 +337,8 @@ def main():
     one_cikan = (rapor_kayitlari("bulgular/01_TBMM_tutanak_bulgulari.md", "meclis", gazete_url) +
                  madde_kayitlari("bulgular/02_dergi_ve_basin_bulgulari.md", "dergi") +
                  rapor_kayitlari("bulgular/03_ingilizce_basin_bulgulari.md", "ingilizce", gazete_url) +
-                 rapor_kayitlari("bulgular/04_FVADC_gazete_penceresi.md", "gazete", gazete_url))
+                 rapor_kayitlari("bulgular/04_FVADC_gazete_penceresi.md", "gazete", gazete_url) +
+                 rapor_kayitlari("bulgular/06_olay_pencereleri.md", "gazete", gazete_url))
     # rapor 01'deki sözleşme tablosu ve LNTS satırı "antlaşma" türü
     for k in one_cikan:
         if k["rapor"].startswith("01_") and "sözleşme" in k["bolum"].lower():
@@ -461,7 +462,7 @@ def main():
             "gaste": oku("08_gaste_sorgu_plani.md"), "readme": oku("README.md"),
             "r01": oku("bulgular/01_TBMM_tutanak_bulgulari.md"), "r02": oku("bulgular/02_dergi_ve_basin_bulgulari.md"),
             "r03": oku("bulgular/03_ingilizce_basin_bulgulari.md"), "r04": oku("bulgular/04_FVADC_gazete_penceresi.md"),
-            "r05": oku("bulgular/05_sentez_ara_analiz.md"),
+            "r05": oku("bulgular/05_sentez_ara_analiz.md"), "r06": oku("bulgular/06_olay_pencereleri.md"),
         },
         "yogunluk": yogunluk(kume_satir),
         "one_cikan": one_cikan, "zaman": zaman, "ag": ag, "uzman": uzman, "metin_dizin": pk.dizin,

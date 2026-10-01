@@ -287,7 +287,7 @@ function kayitaGit(id){ Object.assign(bulguDurum,{q:id,tur:"",str:[],y1:"",y2:""
 /* ---------------- Raporlar */
 function raporlar(el){
   el.innerHTML=`<h2>Raporlar ve ara analizler</h2><p class="muted kucuk">Her rapor, ilgili kaynağın taranma yöntemi, öne çıkan kayıtları, gözlemleri ve sınırlılıklarıyla birlikte.</p>`;
-  altSekme(el,[["r05","Sentez · ara analiz",g=>g.append(md(V.md.r05))],["r01","01 · TBMM tutanakları",g=>g.append(md(V.md.r01))],["r02","02 · Dergiler ve basın",g=>g.append(md(V.md.r02))],["r03","03 · İngilizce basın",g=>g.append(md(V.md.r03))],["r04","04 · FVADC gazete penceresi",g=>g.append(md(V.md.r04))]],"sekme_rapor");
+  altSekme(el,[["r05","Sentez · ara analiz",g=>g.append(md(V.md.r05))],["r01","01 · TBMM tutanakları",g=>g.append(md(V.md.r01))],["r02","02 · Dergiler ve basın",g=>g.append(md(V.md.r02))],["r03","03 · İngilizce basın",g=>g.append(md(V.md.r03))],["r04","04 · FVADC gazete penceresi",g=>g.append(md(V.md.r04))],["r06","06 · Olay pencereleri",g=>g.append(md(V.md.r06||""))]],"sekme_rapor");
 }
 
 /* ---------------- Veri tabanı */
