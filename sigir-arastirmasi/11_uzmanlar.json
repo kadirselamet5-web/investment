@@ -72,6 +72,10 @@
   "CUMH_1939_05_30": {
    "ad": "Cumhuriyet 30.5.1939, s. 9: TBMM Ziraat Vekâleti 1939 bütçesi görüşmesi (rapor 06)",
    "url": "https://katalog.ibb.gov.tr/yordam/"
+  },
+  "ESK_HALKEVI": {
+   "ad": "Eskişehir Halkevi Mecmuası (1941–46), TBMM Açık Erişim (handle 11543/4312); rapor 02 §3a",
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4312"
   }
  },
  "kurumlar": [
@@ -2245,6 +2249,26 @@
    "not": "1939 bütçesinde: uzman raporları bütçe yokluğundan uygulanamıyor; 'Ziraat Enstitülerinde idare işleri ecnebilere verilmesin… ecnebiler hoca olarak kalmalıdır'.",
    "kaynak": [
     "CUMH_1939_05_30"
+   ]
+  },
+  {
+   "id": "adaoglu",
+   "ad": "Ahsen Adaoğlu",
+   "milliyet": "Türk",
+   "alan": "veteriner hekim; zoonozlar (kist hidatik), halk eğitimi",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Eskişehir'de veteriner ('Veterinerimiz söylüyor' köşesi, Eskişehir Halkevi Mecmuası)",
+     "bas": "1943"
+    }
+   ],
+   "not": "Halkevi dergisinde etten insana geçen paraziter hastalıklar üzerine popüler yazılar. Görev unvanı doğrulanacak.",
+   "kaynak": [
+    "ESK_HALKEVI"
    ]
   }
  ]

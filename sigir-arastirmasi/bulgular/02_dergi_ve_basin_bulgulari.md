@@ -101,6 +101,21 @@ Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4086) 
 - ***Burdur Halkevi Dergisi* (1941), S4:** Köy odası şiiri: "Sağında bir ahır, solda samanlık" ([11543/3939](https://acikerisim.tbmm.gov.tr/handle/11543/3939)).
 - ***Uludağ* (Bursa Halkevi):** Merinos koyunculuğu ve Karacabey (1935); Karacabey sel felaketi (1940).
 
+### 3a. *Eskişehir Halkevi Mecmuası* (1941–1946) ve *Çorumlu* (1938–1940): TBMM Açık Erişim OCR, Ekim 2026
+
+- **S1 × S3, Eskişehir Vilâyeti Veteriner Müdürlüğü raporu (1944, sayı 78–80, s. 11–13):**
+  - **Hayvan sayımı (1926 → 1944):** sığır 59.708 → 52.176 (1943'te 84.070). Manda 7.990 → 5.225. At 8.316 → 30.677. Savaş yıllarında ("fevkalâde vaziyetler") koyunda ve "pek az olarak" sığırda düşüş var.
+  - **Teşkilatın iki ekseni:** "hayvanların ıslahı" ve "salgın hayvan hastalıklarıyla mücadele".
+  - **Sığırcılık:** vilâyetin sığırları "büyük bir ekseriyetle **boz ırka** mensup, az bir kısmı ise yerli kara sığırlarından". Her yıl **Çifteler Harası'ndan boz ırk boğası** ucuz fiyatla alınıp köylere dağıtılıyor: "Şimdiye kadar vilâyetimizde **73 köye 114 boğa** verilmiş". Haranın damızlık inek kadrosu artırılacak.
+  - **Eneme (iğdiş):** "köylüye bedeli mukabilinde verilen damızlık boğalardan lâyıkıyla istifade için" önümüzdeki sonbaharda "damızlığa elverişli olmayan bilumum aygır, tay, boğa ve **boğalık evsafını taşımayan danalar** enemeye tabi tutulacaklardır". Ziraat Vekâleti'nin gönderdiği ve vilâyetin kendi veteriner ve sağlık memurlarından **on ekip** kurulacak. Trakya, Muğla ve Bursa'daki iğdişin 1944'te vilâyet çapında **toplu bir kampanyaya** dönüştüğünü gösteriyor (rapor 04, 06).
+  - **Atçılık:** il özel idaresi ve köy bütçeleriyle 20 aşım durağı. Aygır ve sıfat istatistikleri: 1939'da 97 aygır ve 3.676 kısrak, 1943'te 188 aygır ve 4.422 kısrak.
+  - **Sergiler:** Mahmudiye'de at, sığır ve keçi sergisi (2.000 lira ikramiye), ayrıca Kaymaz, Beylikahır ve Seyitgazi'de sergiler. "Sergiler ayrıca mektep vazifesini görmektedir."
+  - Rapor, Çifteler Harası'nın çevresindeki köylerin ıslahın merkez–çevre ilişkisini izlemek için seçkin bir yer olduğunu gösteriyor. Eskişehir, Trakya ve Muğla'dan sonra **üçüncü vaka adayı**.
+- **S2, "Yoncanın memleket ziraatindeki büyük değeri"** (yüksek ziraat mühendisinin konferans özeti; sayı 51, 1941): yonca bir "at yemi" (Farsça *esbist*) olarak tanıtılıyor, yem ve gübre döngüsü anlatılıyor. 1945 tarihli bir yazıda (sayı 85) köylünün "bahçeye, hayvana, ineğe heves"i ve yonca ve korunga ekimi.
+- **S0 × S1, "Çifteler çevresi köylü işletmeleri"** (1946, sayı 93–96): çiftçi aileleri üzerine işletme etüdü (irad hayvanları, ekim alanları, öküz). Ayrıca okunacak.
+- **S3, "Veterinerimiz söylüyor"** (Ahsen Adaoğlu, 1943, sayı 63–64): et yoluyla insana geçen paraziter hastalık (kist hidatik). *Son Posta*'daki "Veteriner diyor ki" dizisiyle (1938–39) aynı tür.
+- ***Çorumlu*** (1940): "büyük bir ziraat istasyonu veya devlet çiftliği tesisi zaruridir"; 1939 sayısında Osmanlı ağıl resmi (*resm-i ağıl*) ve âdet-i ağnam üzerine tarih yazıları (S0 ve S2'nin vergi arka planı).
+
 ## 4. Resmî metinler: *Düstur* (3. tertip) ve kanun metinleri
 
 Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4088). Tutanaklarda görüşülen kanunların yürürlükteki metinleri.
