@@ -39,6 +39,16 @@ Pencereler: Emin Draman'ın muhacir ahır ve samanlıkları sorusu (Kasım 1936)
 | 1937-06-28 | *Cumhuriyet* 2 (Köyler ve köylüler) | **Bahri Turgud Okaygün, "Şarkî Anadolu'da köy evleri"** | **S4, S2** | Ev sahibiyle diyalog: yazar "daha geniş pencereli ve camlı" ev ve ayrı odalar öneriyor, köylü maliyeti ve kışı gerekçe gösteriyor. Ev damı "hem mutfak hem salon, hem yatak odası ve hem de kiler". **"Muş, Erzurum, Van ve Bitlis'in bir kısım köylerinde kış odaları vardır. Bunlar öküz, inek, katır, at ahırının bir tarafında yapılmış geniş ocaklı ve tahtaperde veya yarım kerpiç duvar… ile ayrılmış yerlerdir. Hem sıcak olurlar."** Ormansız ovada "ot, tezek ve saman yakarlar". Tezek: "hayvan gübreleri samanla karıştırılarak kalıp halinde yapılır ve güneşte kurutularak yığılır ve kışın yakılır." Hayvanlar meradan toplanan ot ve samanla besleniyor, ağır kışta "açlıklarından telef olup gider". Öneri: mera ve kışlağa önem verilmesi. "Şarkî Anadolu köylerinin en kıymetli varlıkları: Sığırlar" (ara başlık). **S4 için şimdiye kadarki en ayrıntılı basın tanıklığı: ahırla aynı mekânı paylaşan "kış odası", gübre yakacağı ve bunun yem ve kışla ilişkisi** |
 | 1937-06-30 | *Cumhuriyet* 2 (aynı dizi, 7) | Şark vilâyetlerinde kışlak göçü | **S2** | Büyük sürüler "Mardin, Urfa ve Seruç havalisinin cenubundaki kışlaklara" (Berrî) gönderiliyor. Ağır kışta "çoban… köye eli boş, yüzü kara bir halde döner". Sürülerin kışlakta tek yiyeceği ovaların kurumuş otları. Köylüye sonbaharda meteoroloji bülteni gönderilmesi önerisi |
 
+### Üçüncü parti (Mart–Nisan 1938)
+
+Pencere: Hayvanlar Vergisi değişikliği (kaçakçılık, damızlık boğa; Mart 1938).
+
+| Tarih | Gazete, sayfa | Başlık / konu | Strand | Not |
+|---|---|---|---|---|
+| 1938-03-17 | *Cumhuriyet* 2 (Şehir işleri) | "Mezbahada kesilen hayvanlar" (bir aylık) | S0 | 20.348 karaman, 16.949 kuzu… **1.365 öküz, 95 inek**, 240 malak, 217 manda, 25 boğa, 449 dana. Öküzün inekten 14 kat fazla kesilmesi, 1934 Mayıs verisindeki örüntüyü (1.860'a 209) tekrarlıyor |
+| 1938-03-18 | *Cumhuriyet* 1 (Ankara, telefonla) | **"Büyük ziraat kongresi 18 Nisanda toplanıyor"** | **S0** | **FVADC'nin öncülü ya da ertelenmiş ilk biçimi.** Katılımcılar: Meclis ziraat ve iktisat encümeni üyeleri, Ziraat Vekâleti ve enstitülerinin mütehassıs, profesör ve doçentleri, haralar, fidanlıklar, "bakteriyolojihane" müdürleri, her vilâyet ziraat odasının seçeceği birer çiftçi ve "hayvan yetiştiricilerden mümessiller". Orman kongre dışında. Ruznamede "baytariye ve ziraate aid meseleler", pamuk, **silo** ve buğday var. Aynı haberde memleketin ziraat mıntakalarına ayrıldığı ve buralarda zirai istasyonlar kurulacağı bildiriliyor (sayı OCR'da okunmuyor). Kongrenin Nisan'dan Aralık 1938'e neden kaydığı (Atatürk'ün hastalığı? Celâl Bayar hükümetinin programı?) araştırılmalı: Mart–Nisan 1938 *Ayın Tarihi* ve TBMM tutanakları |
+| 1938-04-10 | *Cumhuriyet* 4 | Küçük hikâye "Sarı Hüseyin" | S0, S3 | Köy meydanında çocuklar, eşeğe binip önüne birkaç sığır katmış bir adamın arkasından "kaçakçı, kaçakçı!" diye bağırıyor. Hayvan kaçakçılığı (vergi ve sınır) edebî metinde de figür olmuş. Aynı pencerede Hayvanlar Vergisi değişikliği kaçakçılığı hedefliyor |
+
 ## Ara değerlendirme
 
 - **Muğla dizisi (1933, 1936, 1939) ıslahın yerelde nasıl kurulduğunu izlemeye imkân veriyor.**

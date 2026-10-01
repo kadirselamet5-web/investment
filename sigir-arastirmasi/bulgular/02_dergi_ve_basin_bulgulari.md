@@ -179,6 +179,10 @@ Toplam 140 kayıt; tam liste `beyoglu_fransizca_isabetler.csv` dosyasında. Öne
   - İstanbul mezbahasında görevli bir meslektaşın koltuk altındaki lenf bezinde "bakarî menşeli" tüberküloz bulunmuş.
   - "Mezbaha memleket hayvanatının… bilhassa hastalıklarını gösteren aynadır." Sütün "ölüm nakili olmaktan" kurtarılması çağrısı.
   - Zoonoz ve çocuk sütü üzerinden S3'ü insan sağlığına bağlayan bir metin. *Son Posta*'daki "Veteriner diyor ki" dizisinin (1938–39) öncülü.
+- **S3 ve uzmanlık ağı, taşra baytar kadrosu (sayı 4, 1931, s. 97, "Haberler"):**
+  - Askere sevk edilecek 13 genç baytarın görev yerleri listelenmiş: Havza, Trabzon merkez, Balya, Maraş, Daday ve Ordu hükümet baytarları; Etlik Müessesesi bakteriyoloji asistanları (Cevdet Nuri, Selâhattin Azizi); Sivas ve Çifteler aygır deposu baytarları; Erzurum "mücadele baytarı"; Karacabey Harası asistan baytarı.
+  - Bunların bir kısmı "vebayi bakari dolayısıyla memuriyeti asliyeleri başında bulunmayıp uzak şark vilâyetlerinde mücadelede" bulunuyor. Sığır vebası, taşra baytarlarını görev yerlerinden doğuya kaydırıyor.
+  - Trabzon İdare-i Hususiyesi dört baytar istihdam ediyor (biri zootekni mütehassısı) ve 1931'de damızlık hayvan alımına 8.000 lira ayırmış.
 - Ayrıca okunacak yazılar:
   - Hoffmeister, "Türkiye'de Baytarlık" (sayı 4).
   - "Sığır vebası ve bir mülakat" (İsmail Hakkı) ve "Veba-i bakar" (Mustafa Fehmi) (sayı 3).
