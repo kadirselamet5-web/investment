@@ -111,9 +111,9 @@
       "id": "G14",
       "faz": "2A–2B",
       "baslik": "TBMM olay pencereleri × Cumhuriyet 1929–1942 (24 olay, 820 sayı): OCR ve okuma",
-      "durum": "sirada",
+      "durum": "bitti",
       "sorumlu": "Claude",
-      "not": "Liste hazır; OCR kuyrukta"
+      "not": "OCR ve okuma bitti (1929–1942; 1931 ve 1940-06 yok); rapor 06 beş parti"
     },
     {
       "id": "G15",
@@ -126,8 +126,9 @@
       "id": "G16",
       "faz": "2A–2B",
       "baslik": "Olay pencerelerinin öteki İBB gazetelerinde taranması (Tan, Akşam, Son Posta…)",
-      "durum": "sirada",
-      "sorumlu": "Claude"
+      "durum": "suruyor",
+      "sorumlu": "Claude",
+      "not": "Akşam, Tan, Son Posta pencere listeleri hazırlanıyor; kuyruk adım 5"
     },
     {
       "id": "G17",
@@ -201,7 +202,7 @@
       "baslik": "Halkevi dergileri OCR kuyruğu (49 kayıt; 6'sı bitti)",
       "durum": "suruyor",
       "sorumlu": "Claude",
-      "not": "Eskişehir Halkevi Mecmuası (1941–46), Çorumlu (1938–40), Hatay Resmî Gazetesi OCR ve tarandı; rapor 02 §3a"
+      "not": "Eskişehir, Çorumlu, Erciyes, Görüşler, Hatay Resmî Gazetesi işlendi (rapor 02 §3a); kuyruk sürüyor"
     },
     {
       "id": "G27",
@@ -257,9 +258,9 @@
       "id": "G34",
       "faz": "–",
       "baslik": "GitHub bağlantısı (commit'ler yerelde, push 403)",
-      "durum": "kullanici",
+      "durum": "bitti",
       "sorumlu": "Kullanıcı",
-      "not": "claude.ai/connect-github"
+      "not": "Push çalışıyor (her tur commit + push)"
     },
     {
       "id": "G35",
