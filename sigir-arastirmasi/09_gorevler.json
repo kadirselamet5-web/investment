@@ -20,7 +20,7 @@
       "id": "G02",
       "faz": "0",
       "baslik": "Gaste Arşivi pilot testi (1938, 20 çekirdek terim) ve tezaurus v1.1",
-      "durum": "kullanici",
+      "durum": "suruyor",
       "sorumlu": "Kullanıcı + Claude",
       "not": "Chrome bağlantısı bekleniyor"
     },
@@ -96,8 +96,9 @@
       "id": "G12",
       "faz": "2C",
       "baslik": "FVADC penceresi: Ulus (İBB'de yok)",
-      "durum": "kullanici",
-      "sorumlu": "Gaste Arşivi oturumu"
+      "durum": "bitti",
+      "sorumlu": "Gaste Arşivi oturumu",
+      "not": "Gaste (Chrome yan paneli): Ulus Ocak–Şubat 1939, 12 kayıt; Aralık 1938 Gaste'de yok; rapor 04 yedinci parti"
     },
     {
       "id": "G13",
@@ -142,7 +143,7 @@
       "id": "G18",
       "faz": "2A–2B",
       "baslik": "Gaste Arşivi: Ulus (1934–50) ve 1944–1950 bütün gazeteler (907 satırlık sorgu listesi)",
-      "durum": "kullanici",
+      "durum": "suruyor",
       "sorumlu": "Kullanıcı Chrome bağlantısı",
       "cikti": "08_gaste_sorgu_plani.md"
     },

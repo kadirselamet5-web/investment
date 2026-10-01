@@ -392,6 +392,8 @@ def main():
         return {**r, "baglam": kisalt(r["baglam"])}
     beyoglu = tablo("bulgular/beyoglu_fransizca_isabetler.csv",
                     ["yayin", "dosya(yil_sayi)", "terimler", "baglam", "handle_url"], dergi)
+    gaste = tablo("bulgular/gaste/gaste_kayitlari.csv",
+                  ["yayin_adi", "tarih", "sayfa", "baslik", "yazar", "strand", "ilgi_derecesi", "ozet", "kisa_alinti", "erisim_yeri", "not"])
     atbm = tablo("bulgular/atbm_makale_listesi.csv", ["yil", "sayilar", "baslik", "yazar_ve_unvan_ham", "strandlar", "terimler"])
     gazeteler, gazete_tarih_anahtar = [], defaultdict(list)
     for r in gazete_isabet:
@@ -467,7 +469,7 @@ def main():
         "yogunluk": yogunluk(kume_satir),
         "one_cikan": one_cikan, "zaman": zaman, "ag": ag, "uzman": uzman, "metin_dizin": pk.dizin,
         "tablolar": {
-            "kumeler": kumeler, "dergiler": dergiler, "ocr": ocr, "beyoglu": beyoglu, "atbm": atbm,
+            "kumeler": kumeler, "dergiler": dergiler, "ocr": ocr, "beyoglu": beyoglu, "gaste": gaste, "atbm": atbm,
             "gazeteler": gazeteler, "arama": arama,
         },
     }

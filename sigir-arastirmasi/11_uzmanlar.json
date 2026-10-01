@@ -80,6 +80,10 @@
   "HALKEVI_OCR": {
    "ad": "Halkevi dergileri (Çorumlu, Erciyes, Görüşler), TBMM Açık Erişim OCR; rapor 02 §3a",
    "url": "https://acikerisim.tbmm.gov.tr/"
+  },
+  "GASTE_ULUS": {
+   "ad": "Ulus (Gaste Arşivi), Ocak–Şubat 1939; bulgular/gaste/gaste_kayitlari.csv",
+   "url": "https://www.gastearsivi.com/"
   }
  },
  "kurumlar": [
@@ -2314,6 +2318,49 @@
    "not": "Sarımbey köy etüdü: 'insanla hayvan aynı kapıdan girip çıkıyor'.",
    "kaynak": [
     "HALKEVI_OCR"
+   ]
+  },
+  {
+   "id": "tankut",
+   "ad": "Hasan Reşit Tankut",
+   "diger_adlar": [
+    "H. Reşit Tankut"
+   ],
+   "milliyet": "Türk",
+   "alan": "köycülük ideolojisi, köy ekonomisi, tarih (Hitit)",
+   "strand": [
+    "S0",
+    "S2"
+   ],
+   "gorevler": [
+    {
+     "kurum": "tbmm",
+     "gorev": "(mebusluğu ve görevleri doğrulanacak); Ulus'ta 'Köylerimiz/Köycülük' dizisi",
+     "bas": "1938",
+     "bit": "1939"
+    }
+   ],
+   "yayinlar": [
+    "Köylerimiz: Bugün nasıldır? Dün nasıldı? Yarın nasıl olmalıdır? (Ulus, dizi, XI 19.1.1939; XVI 10.2.1939; XIX 14.2.1939)",
+    "Köycülük XXI: Eti devrinde köy ekonomisi (Ulus 22.2.1939)"
+   ],
+   "not": "Koyunu Anadolu'nun tarihsel ve iklimsel hayvanı olarak savunuyor: 'Anadolu'nun domuz hatta sığır yiyeceği gün belki hiç gelmiyecektir'. Kongrenin sığır ıslahı programıyla gerilimli bir köycülük söylemi.",
+   "kaynak": [
+    "GASTE_ULUS"
+   ]
+  },
+  {
+   "id": "korman",
+   "ad": "Kadri Korman",
+   "milliyet": "Türk",
+   "alan": "muhabir (Çankırı hayvancılığı)",
+   "strand": [
+    "S1"
+   ],
+   "gorevler": [],
+   "not": "Ulus 8.2.1939 Çankırı hayvancılık haberi.",
+   "kaynak": [
+    "GASTE_ULUS"
    ]
   }
  ]
