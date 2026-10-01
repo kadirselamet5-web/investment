@@ -2413,6 +2413,48 @@
    "kaynak": [
     "GASTE_ULUS"
    ]
+  },
+  {
+   "id": "atalay_b",
+   "ad": "Besim Atalay",
+   "milliyet": "Türk",
+   "alan": "mebus; dil ve kültür (Kütahya mebusu)",
+   "strand": [
+    "S0",
+    "S2"
+   ],
+   "gorevler": [
+    {
+     "kurum": "tbmm",
+     "gorev": "mebus",
+     "bas": "1931"
+    }
+   ],
+   "not": "1931 hayvan vergisi görüşmesinde kıl keçisini 'zararlı bir hayvan' sayıp vergisinin artırılmasını istedi (Son Posta 1.7.1931).",
+   "kaynak": [
+    "GASTE_ULUS"
+   ]
+  },
+  {
+   "id": "oral_c",
+   "ad": "Cavit Oral",
+   "milliyet": "Türk",
+   "alan": "Tarım Bakanı",
+   "strand": [
+    "S1"
+   ],
+   "gorevler": [
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "Tarım Bakanı",
+     "bas": "1948",
+     "bit": "1950"
+    }
+   ],
+   "not": "1949 Devlet Örnek ve Üretme Çiftlikleri tasarısını Meclis'te savundu (Ulus 4.6.1949).",
+   "kaynak": [
+    "GASTE_ULUS"
+   ]
   }
  ]
 }
