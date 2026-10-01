@@ -57,6 +57,13 @@ git push origin claude/charming-hawking-ggi8hy
 
 Yalnızca yukarıdaki dosyalara yaz. Öteki dosyaları (raporlar, site, scripts) bulut oturumu günceller; çakışma olmasın.
 
+## 4a. Yerel oturum yoksa: yalnız Claude in Chrome yan paneli
+
+Git kullanılamaz. Sonuçlar iki yoldan biriyle buluta ulaşır:
+
+- **(a) Kullanıcı aracılığıyla:** her 10–20 kayıtta bir, kayıtları `gaste_kayitlari.csv` başlığıyla **CSV metni** olarak ver. Kullanıcı bunu bulut oturumuna yapıştırır ya da `.csv` dosyası olarak yükler.
+- **(b) GitHub web arayüzü** (kullanıcı Chrome'da GitHub'a girişliyse): `github.com/kadirselamet5-web/investment/tree/claude/charming-hawking-ggi8hy/sigir-arastirmasi/bulgular/gaste` altında `gaste_kayitlari.csv` dosyasını oluştur ya da düzenle (satır ekle) ve aynı dala commit et. Başka dosyaya dokunma.
+
 ## 5. Kısa başlangıç komutu (kullanıcı yerel oturuma yapıştırır)
 
 > `sigir-arastirmasi/GASTE_TALIMAT.md` dosyasını oku ve uygula. Chrome'da Gaste Arşivi oturumum açık. Envanterle başla, sonra Ulus'un kongre dönemine geç. Her saat başı commit ve push yap.
