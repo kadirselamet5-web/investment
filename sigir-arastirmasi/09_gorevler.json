@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-09-30",
+  "guncelleme": "2026-10-01",
   "durumlar": {
     "bitti": "Bitti",
     "suruyor": "Sürüyor",
@@ -72,9 +72,9 @@
       "id": "G09",
       "faz": "2C",
       "baslik": "FVADC penceresi: Akşam OCR ve okuma",
-      "durum": "suruyor",
+      "durum": "bitti",
       "sorumlu": "Claude",
-      "not": "OCR bitti; okuma kısmen yapıldı"
+      "not": "OCR ve okuma bitti (rapor 04, üçüncü parti)"
     },
     {
       "id": "G10",
@@ -87,8 +87,9 @@
       "id": "G11",
       "faz": "2C",
       "baslik": "FVADC penceresi: Son Posta, Yeni Sabah, Haber OCR ve okuma",
-      "durum": "sirada",
-      "sorumlu": "Claude"
+      "durum": "suruyor",
+      "sorumlu": "Claude",
+      "not": "Son Posta bitti (103 sayı, rapor 04 dördüncü parti); Yeni Sabah 85/103; Haber kuyrukta"
     },
     {
       "id": "G12",
@@ -289,8 +290,9 @@
       "id": "U04",
       "faz": "Uzman",
       "baslik": "Aday uzmanların (katalogda çok yayını olanlar) biyografik araştırması ve ağa eklenmesi",
-      "durum": "sirada",
-      "sorumlu": "Claude"
+      "durum": "suruyor",
+      "sorumlu": "Claude",
+      "not": "Biyografisi işlenenler: Özceben, V. Horn, Bilgemre, Yarkın (1 Ekim 2026). Sırada: Kadaster, Karaesmen, İzmen, Kansu, Özbek"
     },
     {
       "id": "U05",

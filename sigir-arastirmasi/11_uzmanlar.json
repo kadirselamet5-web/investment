@@ -36,6 +36,22 @@
   "WEB_AKINCI": {
    "ad": "Zootekni (Hayvansal Üretim) Bilim Tarihi, kitap bölümü (Akademisyen Kitabevi) ve Osmanlı Atları tanıtımı (web arama özeti; birincil kaynaktan doğrulanacak)",
    "url": "https://www.kitapyurdu.com/kitap/osmanli-atlari/424511.html"
+  },
+  "GAZETE": {
+   "ad": "İBB gazete OCR taraması (rapor 04)",
+   "url": ""
+  },
+  "WIKI_DE": {
+   "ad": "Wikipedia (de), 'Valentin Horn' maddesi (Heiber'e atıfla)",
+   "url": "https://de.wikipedia.org/wiki/Valentin_Horn"
+  },
+  "ULUDAG_ZOOT": {
+   "ad": "Uludağ Zootekni Derneği, 'Zootekninin Tarihçesi'",
+   "url": "https://www.uludagzootekni.org.tr/?page_id=108"
+  },
+  "ERTUGRUL_GAK": {
+   "ad": "Okan Ertuğrul vd., Ceylanpınar G.A.K. sığırları makalesi (DergiPark; Yarkın vd. 1954–63 verisine atıf)",
+   "url": "https://dergipark.org.tr/tr/download/article-file/543712"
   }
  },
  "kurumlar": [
@@ -241,6 +257,41 @@
    "tur": "yabancı üniversite",
    "yer": "",
    "ulke": "Almanya"
+  },
+  {
+   "id": "trakya_um",
+   "ad": "Trakya Umumi Müfettişliği (köy bürosu; boğa ve tay büyütme çiftlikleri)",
+   "tur": "kamu",
+   "yer": "Edirne",
+   "ulke": "Türkiye",
+   "yillar": "1934–1948"
+  },
+  {
+   "id": "erzincan_seroloji",
+   "ad": "Erzincan Seroloji Müessesesi",
+   "tur": "enstitü",
+   "yer": "Erzincan",
+   "ulke": "Türkiye"
+  },
+  {
+   "id": "giessen",
+   "ad": "Ludwigs-Universität Gießen (Justus-Liebig-Universität)"
+  },
+  {
+   "id": "gottingen",
+   "ad": "Universität Göttingen"
+  },
+  {
+   "id": "pulawy",
+   "ad": "Puławy tarım araştırma kurumu (Generalgouvernement), Hayvan Beslemesi Enstitüsü"
+  },
+  {
+   "id": "au_ziraat",
+   "ad": "Ankara Üniversitesi Ziraat Fakültesi (1948 sonrası)"
+  },
+  {
+   "id": "ceylanpinar",
+   "ad": "Ceylanpınar Devlet Üretme Çiftliği"
   }
  ],
  "kisiler": [
@@ -1493,36 +1544,140 @@
    "id": "yarkin",
    "ad": "İbrahim Arif Yarkın",
    "milliyet": "Türk",
-   "alan": "zootekni: sığır ırkları, bakım ve yemleme",
+   "alan": "zootekni: sığır ırkları, bakım, yemleme ve yetiştirme; sığırcılık",
    "strand": [
     "S1",
     "S2"
    ],
-   "gorevler": [],
-   "not": "Katalogdan: 'Orta Anadolu'da sığır ırkları, bakım, yemleme ve yetiştirme' (1939). Biyografi araştırılacak.",
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "Zootekni Enstitüsü'nün ilk Türk öğretim elemanlarından",
+     "bas": "1933",
+     "bit": "1948"
+    },
+    {
+     "kurum": "au_ziraat",
+     "gorev": "sığırcılık dersi ('Sığırcılık', AÜZF yayını 16, 1950)",
+     "bas": "1948",
+     "bit": ""
+    },
+    {
+     "kurum": "ceylanpinar",
+     "gorev": "G.A.K. sığırları üzerine araştırma (1954–63 verisi; 'Yarkın ve ark.')",
+     "bas": "1954",
+     "bit": "1963"
+    }
+   ],
+   "not": "1939 monografisi S1 ve S2'nin kesiştiği yerde birincil kaynak: Orta Anadolu'da ırk, ahır bakımı ve yemleme pratiğini saha gözlemiyle veriyor; tam metni TOK'ta 'Tam Metin Erişim' ile olabilir, okunacak. Doğum, öğrenim ve ölüm bilgisi bulunamadı.",
    "kaynak": [
-    "TOK"
+    "TOK",
+    "ULUDAG_ZOOT",
+    "ERTUGRUL_GAK"
+   ],
+   "diger_adlar": [
+    "İbrahim Yarkın"
+   ],
+   "iliskiler": [
+    {
+     "kisi": "spottel",
+     "tur": "enstitü",
+     "not": "Zootekni Enstitüsü müdürü Spöttel döneminde"
+    },
+    {
+     "kisi": "bilgemre",
+     "tur": "meslektaş",
+     "not": "YZE Zootekni Enstitüsü"
+    },
+    {
+     "kisi": "batu",
+     "tur": "meslektaş",
+     "not": "YZE Zootekni Enstitüsü"
+    }
+   ],
+   "yayinlar": [
+    "Orta Anadolu'da sığır ırkları, bakım, yemleme ve yetiştirme vaziyeti (YZE sayı 95, 1939)",
+    "Sığırcılık (AÜZF yayını 16, 1950)",
+    "Ceylanpınar G.A.K. sığırlarında verim (ortak, 1954–63 verisi)"
    ]
   },
   {
    "id": "vhorn",
    "ad": "Valentin Horn",
    "milliyet": "Alman",
-   "alan": "hayvan beslemesi, yem değeri",
+   "alan": "hayvan beslemesi, tarım kimyası, veteriner fizyolojisi",
    "strand": [
     "S2"
    ],
    "gorevler": [
     {
+     "kurum": "giessen",
+     "gorev": "tarım kimyası enstitüsü asistanı",
+     "bas": "1928",
+     "bit": "1935"
+    },
+    {
      "kurum": "yze",
-     "gorev": "(katalogdaki YZE yayınlarından)",
-     "bas": "1938"
+     "gorev": "ordinaryüs profesör, tarım kimyası ve veteriner fizyolojisi; hayvan beslemesi dersleri",
+     "bas": "1936",
+     "bit": "1940"
+    },
+    {
+     "kurum": "pulawy",
+     "gorev": "Hayvan Beslemesi Enstitüsü müdürü (işgal altındaki Polonya)",
+     "bas": "1940",
+     "bit": ""
+    },
+    {
+     "kurum": "giessen",
+     "gorev": "veteriner fizyolojisi ordinaryüsü; rektör 1953–55; Deutsch-Türkische Gesellschaft Gießen kurucu başkanı",
+     "bas": "1951",
+     "bit": "1970"
     }
    ],
-   "not": "Katalogdan: 'Ökse otunun yem değeri', 'Mısır samanı ve hazmolabilme kabiliyeti' (1938), Birinci Köy ve Ziraat Kalkınma Kongresi yayınları. 1926–30 hayvancılık genel müfettişi Julius Horn ile ilişkisi araştırılacak.",
+   "not": "Heiber'e göre Gießen'de profesörlüğe atanması bir Nazi öğretim üyesi liderince ideolojik gerekçeyle engellenince Ankara'ya geçti. 1940'ta Puławy'de işgal yönetiminin kurumunda görev aldı (savaş dönemi rolü ayrıca incelenmeli). 1979'da Ankara Üniversitesi fahri doktorası. Katalogda FVADC yayınları arasında 'Ökse otunun yem değeri' ve 'Mısır samanı…' (1938).",
    "kaynak": [
-    "TOK"
-   ]
+    "TOK",
+    "WIKI_DE"
+   ],
+   "dogum": "1901-04-02",
+   "olum": "1992-02-20",
+   "dogum_yeri": "Steinbach (Hadamar), Limburg",
+   "egitim": [
+    {
+     "kurum": "gottingen",
+     "yil": "",
+     "derece": "ziraat öğrenimi"
+    },
+    {
+     "kurum": "giessen",
+     "yil": "1928",
+     "derece": "Dr. phil. (hayvan beslemesi)"
+    },
+    {
+     "kurum": "giessen",
+     "yil": "1935",
+     "derece": "habilitasyon (tarım kimyası, W. Kleberger yanında); ayrıca veteriner hekimlik öğrenimi"
+    }
+   ],
+   "iliskiler": [
+    {
+     "kisi": "kadaster",
+     "tur": "ortak yayın",
+     "not": "'Mısır samanı ve hazmolabilme kabiliyeti' (YZE sayı 81, 1938)"
+    },
+    {
+     "kisi": "kansu",
+     "tur": "ortak yayın",
+     "not": "aynı eser"
+    },
+    {
+     "kisi": "horn",
+     "tur": "ad benzerliği",
+     "not": "1926–30 Ziraat Vekâleti müfettişi Julius Horn ile akrabalık kaydı bulunamadı; ayrı kişiler"
+    }
+   ],
+   "url": "https://de.wikipedia.org/wiki/Valentin_Horn"
   },
   {
    "id": "bilgemre",
@@ -1531,20 +1686,52 @@
     "Kadri Bilgiemre"
    ],
    "milliyet": "Türk",
-   "alan": "zootekni (kanatlı, koyunculuk, genel zootekni)",
+   "alan": "zootekni: genel zootekni, tavukçuluk, koyunculuk, at ve sığır yetiştirme, akrabalı yetiştirme",
    "strand": [
     "S1"
    ],
    "gorevler": [
     {
      "kurum": "yze",
-     "gorev": "(YZE Ders Kitabı serisinde 'Genel zootekni', 2. baskı 1945)",
-     "bas": "1935"
+     "gorev": "Zootekni Enstitüsü'nün ilk Türk öğretim elemanlarından (Spöttel yönetiminde, 1933–39)",
+     "bas": "1933",
+     "bit": "1948"
+    },
+    {
+     "kurum": "au_ziraat",
+     "gorev": "zootekni profesörü; ders kitapları (Genel Zootekni 1950, Özel Zootekni II–III 1949–50, Koyun yetiştirmek 1950)",
+     "bas": "1948",
+     "bit": ""
     }
    ],
-   "not": "Katalogdan 16 yayın (1935–1950). Biyografi araştırılacak.",
+   "not": "Doğum yeri ve öğrenim bilgisi bulunamadı (yurtdışı öğrenimli olup olmadığı açık). Katalogda 16 kayıt (1935–1950). 'Sığır yetiştirmek' (1946) S1 için birincil ders metni.",
    "kaynak": [
-    "TOK"
+    "TOK",
+    "ULUDAG_ZOOT"
+   ],
+   "iliskiler": [
+    {
+     "kisi": "spottel",
+     "tur": "ortak yayın / enstitü",
+     "not": "'Türkiye koyunculuğu hakkında etüdler' (YZE sayı 47, 1937)"
+    },
+    {
+     "kisi": "batu",
+     "tur": "meslektaş",
+     "not": "Fakülteler ayrılırken ikisi de kendi fakültelerinde ayrı zootekni bölümleri kurdu (Uludağ Zootekni Derneği tarihçesi)"
+    }
+   ],
+   "yayinlar": [
+    "Leghorn, Rodayland ve yerli tavuklarda büyüme… (YZE sayı 6, 1935)",
+    "Türkiye koyunculuğu hakkında etüdler (Spöttel ile, YZE sayı 47, 1937)",
+    "Yumurta hasılatı… (YZE sayı 52, 1937)",
+    "Modern tavukçuluk (1939)",
+    "Hayvancılık ve akrabalar arasında yetiştirme (1944)",
+    "Genel zootekni (1944; 2. bs. YZE ders kitabı 25, 1945; AÜZF 1950)",
+    "Sığır yetiştirmek (TYZMB, 1946)",
+    "Özel zootekni II: At yetiştirmek (1949)",
+    "Özel zootekni III: Tavuk yetiştirme (1950)",
+    "Koyun yetiştirmek (1950)"
    ]
   },
   {
@@ -1565,6 +1752,13 @@
    "not": "Katalogdan: 'Protein maddeleri ve bunların hayvan beslenmesindeki önemi' (1938). Biyografi araştırılacak.",
    "kaynak": [
     "TOK"
+   ],
+   "iliskiler": [
+    {
+     "kisi": "vhorn",
+     "tur": "ortak yayın",
+     "not": "Mısır samanı… (YZE 81, 1938)"
+    }
    ]
   },
   {
@@ -1615,7 +1809,14 @@
    "kaynak": [
     "TOK"
    ],
-   "dogum": "1907"
+   "dogum": "1907",
+   "iliskiler": [
+    {
+     "kisi": "vhorn",
+     "tur": "ortak yayın",
+     "not": "Mısır samanı… (YZE 81, 1938)"
+    }
+   ]
   },
   {
    "id": "oytun",
@@ -1658,6 +1859,26 @@
    "not": "Katalogdan: 'Türkiye'de yetişen bazı önemli yem bitkileri' (1949). Dönemin az sayıdaki kadın ziraat uzmanlarından; biyografi araştırılacak.",
    "kaynak": [
     "TOK"
+   ]
+  },
+  {
+   "id": "ozceben",
+   "ad": "İlhami Özceben",
+   "milliyet": "Türk",
+   "alan": "bakteriyoloji, sığır verem teşhisi",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "erzincan_seroloji",
+     "gorev": "müdür (bakteriyolog veteriner); 'tablet tüberkülin' geliştirdi",
+     "bas": "1938"
+    }
+   ],
+   "not": "Son Posta 1939-01-29, s. 5 ('Erzincanda baytari çalışmalar'). Biyografi araştırılacak.",
+   "kaynak": [
+    "GAZETE"
    ]
   }
  ]

@@ -5,7 +5,7 @@
 - **Kaynak:** İBB Atatürk Kitaplığı dijital süreli yayın koleksiyonu (açık erişim, `katalog.ibb.gov.tr/yordam`). Yedi İstanbul gündelik gazetesi: *Cumhuriyet*, *Tan*, *Akşam*, *Kurun/Vakit*, *Son Posta*, *Yeni Sabah*, *Haber Akşam Postası*. Pencerede gazete başına yaklaşık 103 sayı, toplam yaklaşık 720 sayı.
 - **Yöntem:** PDF'ler (metin katmanı yok) 250 dpi gri tonlamayla tesseract `tur` ile OCR'landı (`scripts/ibb_gazete.py`). Metinler tezaurus v1.0 ile tarandı (`scripts/tara.py`). Puanı ≥6 olan sayfalar tek tek okundu.
 - **Katalog tarih hatası:** İBB kataloğunda gazetelerin Kasım 1938 sayıları dosya adlarında "Nisan 1938" olarak kayıtlı. Örneğin *Cumhuriyet* 5202–5226 numaralı sayıların gerçek tarihi 6–30 Kasım 1938. Tarihler sayı numarasından yeniden hesaplandı (`scripts/ibb_tarih_duzelt.py`) ve OCR metnindeki gazete başlığından doğrulanacak.
-- **Durum:** *Cumhuriyet* (103 sayı) ve *Tan* (102 sayı) bitti. *Akşam*'ın 65 sayısı bitti. *Kurun/Vakit*, *Son Posta*, *Yeni Sabah* ve *Haber* OCR kuyruğunda.
+- **Durum:** *Cumhuriyet*, *Tan*, *Akşam*, *Son Posta* (her biri 102–103 sayı) ve *Vakit*'in 1939 sayıları (56) bitti. *Yeni Sabah* 85/103. *Haber* ve *Kurun* (Kasım–Aralık 1938) OCR kuyruğunda.
 - *Ulus* (Ankara) bu koleksiyonda yok; Gaste Arşivi oturumunda taranacak.
 
 ## *Cumhuriyet*: öne çıkan haberler
@@ -72,6 +72,25 @@
 | 1939-02-08 | *Tan* 10 | **"Yediğimiz Etin Hikâyesi"** (dizi) | S0, **S2** | Toptancılar ve mezbaha kabzımalları fiyatı tutmak için hayvanları mezbahadan uzakta tutuyor. Sürüler Karadeniz'deki Malus burnundan Çiftealan, Akpınar, Kısrakalan, Pirinççiköy ve Belgrad ormanları–Istranca dağlarına kadar uzanan köylerin **mer'alarında** gezdiriliyor. Anadolu ve Rumeli'den gelen hayvanlar yolda zayıflayıp kilo kaybediyor. Dizinin bütün bölümleri toplanacak |
 | 1939-02-25 | *Tan* 6 | "Pazarcık'taki göçebe halk yerleştirilecek" (Gaziantep) | S3 | Göçebelerin iskânı |
 | 1939-02-05 | *Tan* 2 | Osmanlı hayvan vergileri tarihi | S0 | "Ağnam adeti resmi… ağıl resmi, çit parası, otlak–yaylak–kışlak resimleri" |
+
+## Ek: *Son Posta* (15 Kasım 1938 – 28 Şubat 1939) ve *Yeni Sabah* (dördüncü parti)
+
+| Tarih | Gazete, sayfa | Başlık / konu | Strand | Not |
+|---|---|---|---|---|
+| 1938-11-28 | *Son Posta* 4 | "Ziraat kongresi hazırlıkları sona erdi"; Romanya ve Bulgaristan'dan bu yıl 20 bin göçmen | S0, S3 | — |
+| 1938-12-10 | *Son Posta* 5 | "Trakyaya 3026 göçmen daha yerleşti" (İpsala) | S3, S1 | Romanya'dan gelen 145 hane (565 kişi) yanında "61 at, 65 öküz, 53 inek, 7 buzağı, 149 koyun" ve 10 pulluk getirdi; İbriktepe, Hacıköy, Kozköy, Pazardere ve Sultan köylerine yerleştirildi |
+| 1938-12-14 | *Son Posta* 11 | İnönü'nün Kastamonu köylüleriyle konuşmaları | **S4, S2** | Köylü Şuayib Dikmeci: beş kardeş, "37 kişi bir evde"; **"İki senedir gübremizi yakıyoruz."** Ardından selektör ve pulluk tartışması: makineler köylere dağıtılmamış, "ambarda duruyor" |
+| 1938-12-23, 12-31; 1939-01-29 | *Son Posta* 8, 10, 6 | **"Veteriner diyor ki…"** köşe yazısı dizisi | **S3, S4** | Hayvandan insana geçen hastalıklar: Malta humması, verem, deriyi bozan hastalıklar. Okura hitap eden örnekler arasında **"atının yanıbaşında yatan köylü"**. Veteriner hekimliğinin popüler basında halk sağlığı diliyle konuşmaya başladığını gösteriyor; dizinin bütün bölümleri toplanacak |
+| 1939-01-01 | *Son Posta* 5 | "Trakyada boğa büyütme çiftliği" | **S1** | Trakya Umumi Müfettişliği'nin tay ve boğa büyütme çiftliği iki yıldır çalışıyor. **"Boz ırkın ıslahında"** kullanılacak boğalar Ulaş köyünde toplanıp köylüye damızlık olarak dağıtılacak |
+| 1939-01-13 | *Son Posta* 3, 5 | **"Trakyada hayvancılık inkişaf ediyor"** (Edirne) ve "Trakyanın en çok hayvan yetiştiren bir nahiyesi: Evreşe" | **S1, S3** | Bir yılda **665.974 hayvan şarbondan "kurtarıldı"**. **Boğa tevziatı:** Bulgaristan'dan 24, Çifteler'den 43, İnanlı'dan 57, Karacabey'den 5, Trakya Boğa Çiftliği'nden 155, köylerden 6, **toplam 290 boğa**; 1938 için 100 dana Ohlaş çiftliğinde. **Yetiştirici bölgeler:** Çorlu, Babaeski, İpsala ve Biga'da seçilen köylerde sığır ve atlar **"tasnif ve damgalanarak şecere defterlerine geçirilmişler ve damızlık evsafı göstermiyenler enenmişlerdir"**; bu köyler "damızlık yetiştiren birer çiftlik haline" sokulacak. Eneme (iğdiş) işleri ilk ve sonbaharda yapılıyor. Kanaraların (mezbaha) fennî hale getirilmesi; at yarışları, sergiler, panayırlar |
+| 1939-01-13 | *Son Posta* 11 | Celepler ve toptancı kasaplar | S0 | DZİK celeplerden daha ucuza kasaplık hayvan satıyor; toptancılar celeplerden almayı kesti |
+| 1939-01-22 | *Son Posta* 3 | Ziraat Vekâleti raporu (bkz. *Tan* 1939-01-23) | S1, S3 | Aynı rapor |
+| 1939-01-29 | *Son Posta* 5 | **"Erzincanda baytari çalışmalar"** | **S3** | "Şark vilâyetlerimizde tek bir sığır vebası hastalığı kalmamak üzere" bütün salgınların önüne geçilmiş. Seroloji Müessesesi müdürü bakteriyolog veteriner **İlhami Özceben** sığır vereminin teşhisi için **"tablet tüberkülin"** geliştirmiş: göz kapağına konan tablet ile 28 saatte teşhis |
+| 1939-02-03 | *Son Posta* 11 | "Trakyada hayvancılık inkişaf ediyor" (devamı) | **S1** | Aşım durakları 18 tane daha yapılıp 41 merkeze çıkacak; **en az 6 merkezde veterinerlere sun'i tohumlama** yaptırılacak. Müfettişliğin boğa ve tay büyütme çiftlikleri en az 350 baş damızlık verdi. "Eneme mıntıkaları" dördüncü yıl programında |
+| 1939-02-17 | *Son Posta* 5 (ve *Yeni Sabah* 1939-02-19, s. 7) | "Edirnede yapılan fennî ağıllardan biri" (fotoğraflı) | **S4**, S3 | "Ağıllar fennî şekilde ve ucuz tarzda yaptırılarak eski ağılların yerine geçiyor." Koyunculara 250.000 lira kredi; Trakya'da koyun ve keçi 1,5 milyonu aşıyor; şarbon aşısı beş yıllık programla, yılda 300.000 |
+| 1939-02-11 | *Yeni Sabah* 6 | İzmir'de et fiyatları yükseliyor | S0 | Koyun eti 50'den 60 kuruşa; çevreden az hayvan gelmesi |
+
+**Değerlendirme (Trakya örneği):** Trakya Umumi Müfettişliği, sığır ıslahını kayıt (şecere defteri), işaretleme (damga), ayıklama (iğdiş), merkezî üretim (boğa büyütme çiftliği) ve dağıtım (aşım durakları, sun'i tohumlama) zincirinin bütün halkalarıyla bölgesel ölçekte uyguluyor. Bu, rapor 05'teki S1 hipotezini ("boğa dağıtımı ıslahın köye inen yüzü") güçlendiriyor. Ayrıca devletin üremeyi denetlemesinin bir **kayıt rejimi** olarak da kurulduğunu gösteriyor. Müfettişlik arşivleri ve "Trakya Umumi Müfettişliği köy bürosu neşriyatı" (*Son Posta* 1938-12-31) ayrıca aranmalı.
 
 Tam liste (puan ≥3, 252 sayfa, OCR bağlam parçalarıyla) bütün gazeteler bitince `fvadc_gazete_isabetleri.csv` olarak eklenecek. Gürültü örnekleri: tefrika romanlarda "yabani öküz", "su aygırı", "boğa(z)"; ilan ve tarihî yazılar.
 
