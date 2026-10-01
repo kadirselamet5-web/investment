@@ -52,6 +52,10 @@
   "ERTUGRUL_GAK": {
    "ad": "Okan Ertuğrul vd., Ceylanpınar G.A.K. sığırları makalesi (DergiPark; Yarkın vd. 1954–63 verisine atıf)",
    "url": "https://dergipark.org.tr/tr/download/article-file/543712"
+  },
+  "TOK_FVADC32": {
+   "ad": "TOK kaydı 15413: FVADC Kongre yayını A serisi takım 32, 'Kendi topraklarımızdan yem: yeşil silo' (1938)",
+   "url": "https://kutuphane.tarimorman.gov.tr/vufind/Record/15413"
   }
  },
  "kurumlar": [
@@ -1638,7 +1642,8 @@
    "not": "Heiber'e göre Gießen'de profesörlüğe atanması bir Nazi öğretim üyesi liderince ideolojik gerekçeyle engellenince Ankara'ya geçti. 1940'ta Puławy'de işgal yönetiminin kurumunda görev aldı (savaş dönemi rolü ayrıca incelenmeli). 1979'da Ankara Üniversitesi fahri doktorası. Katalogda FVADC yayınları arasında 'Ökse otunun yem değeri' ve 'Mısır samanı…' (1938).",
    "kaynak": [
     "TOK",
-    "WIKI_DE"
+    "WIKI_DE",
+    "TOK_FVADC32"
    ],
    "dogum": "1901-04-02",
    "olum": "1992-02-20",
@@ -1675,6 +1680,16 @@
      "kisi": "horn",
      "tur": "ad benzerliği",
      "not": "1926–30 Ziraat Vekâleti müfettişi Julius Horn ile akrabalık kaydı bulunamadı; ayrı kişiler"
+    },
+    {
+     "kisi": "aygun",
+     "tur": "ortak hazırlık",
+     "not": "Kendi topraklarımızdan yem: yeşil silo (FVADC A-32, 1938)"
+    },
+    {
+     "kisi": "ozbek_n",
+     "tur": "çeviri",
+     "not": "Yeşil silo, Özbek ve Kansu çevirisi"
     }
    ],
    "url": "https://de.wikipedia.org/wiki/Valentin_Horn"
@@ -1738,27 +1753,56 @@
    "id": "kadaster",
    "ad": "İsfendiyar Esat Kadaster",
    "milliyet": "Türk",
-   "alan": "ziraat kimyası, hayvan beslemesinde protein",
+   "alan": "ziraat kimyası, hayvan beslemesi, yem analizi (protein, zeytin küspesi, Orta Anadolu yemleri)",
    "strand": [
     "S2"
    ],
    "gorevler": [
     {
      "kurum": "yze",
-     "gorev": "(katalogdaki YZE yayınlarından)",
-     "bas": "1938"
+     "gorev": "Zootekni Enstitüsü'nün ilk Türk öğretim elemanlarından; ziraat kimyası ve hayvan beslemesi (V. Horn'un çalışma grubunda)",
+     "bas": "1933",
+     "bit": "1948"
+    },
+    {
+     "kurum": "au_ziraat",
+     "gorev": "ziraat kimyası (Hayvan besleme bilgisi I, 1949; Yem analizleri, 1960)",
+     "bas": "1948",
+     "bit": ""
     }
    ],
-   "not": "Katalogdan: 'Protein maddeleri ve bunların hayvan beslenmesindeki önemi' (1938). Biyografi araştırılacak.",
+   "not": "Doğum yılı 1904 katalog otorite kaydından. S2 (yem) için Horn grubunun ana Türk yazarı: 1938'de 'yerli yem' kaynaklarının (ökse otu, mısır samanı, zeytin küspesi) kimyasal değerlendirmesi. Öğrenim yeri bulunamadı.",
    "kaynak": [
-    "TOK"
+    "TOK",
+    "ULUDAG_ZOOT"
    ],
    "iliskiler": [
     {
      "kisi": "vhorn",
      "tur": "ortak yayın",
-     "not": "Mısır samanı… (YZE 81, 1938)"
+     "not": "Mısır samanı (YZE 81) ve Ökse otu (1938)"
+    },
+    {
+     "kisi": "kansu",
+     "tur": "ortak yayın",
+     "not": "aynı eserler"
     }
+   ],
+   "diger_adlar": [
+    "İsfendiyar Esat-Kadaster",
+    "İsfendiyar Esat Kadester"
+   ],
+   "dogum": "1904",
+   "yayinlar": [
+    "Metabolismede biyolojik faktörler (YZE sayı 17, 1938)",
+    "Ziraat kimyası ve bu ilmin ziraatta ehemmiyeti (1938)",
+    "Protein maddeleri ve bunların hayvan beslenmesindeki ehemmiyeti… (YZE sayı 83, 1938)",
+    "Hayvan yemi bakımından zeytin küspesi üzerinde araştırmalar (1938)",
+    "Mısır samanı ve hazmolabilme kabiliyeti (Horn ve Kansu ile, YZE 81, 1938)",
+    "Ökse otunun yem değeri: Orta Anadolu hayvan yemleri (Horn ve Kansu ile, 1938)",
+    "Orta Anadolu hayvan yemleri (1940)",
+    "Zirai kimya: hayvan besleme bilgisi I. Besi maddeleri (1949)",
+    "Ziraikimya tatbikatı I: yem analizleri (1960)"
    ]
   },
   {
@@ -1800,22 +1844,60 @@
    "id": "kansu",
    "ad": "Sedat Kansu",
    "milliyet": "Türk",
-   "alan": "yem değeri, bakliyat",
+   "alan": "hayvan beslemesi, yem değeri, step bitkileri, bakliyat",
    "strand": [
     "S2"
    ],
-   "gorevler": [],
-   "not": "Katalogdan: 'Türkiye bakliyatının terkipleri' (1936), 'Ankara civarında yetişen bazı mühim step nebatlarının hayvan tagdiyesi' (1943); V. Horn ve İ. E. Kadaster ile ortak yem değeri çalışmaları (1938). Biyografi araştırılacak.",
+   "gorevler": [
+    {
+     "kurum": "yze",
+     "gorev": "Zootekni Enstitüsü'nün ilk Türk öğretim elemanlarından; hayvan beslemesi",
+     "bas": "1933",
+     "bit": "1948"
+    },
+    {
+     "kurum": "au_ziraat",
+     "gorev": "hayvan beslemesi profesörü ('Besin maddeleri ve hayvan besleme bilgisi', AÜZF 1973)",
+     "bas": "1948",
+     "bit": ""
+    }
+   ],
+   "not": "Doğum yılı 1907 katalog otorite kaydından. 1938 FVADC'ye sunulan 'yeşil silo' broşürünün çevirmeni: S2'de yem kıtlığına Alman beslenme biliminin 'yerli kaynak' cevabının Türkçeye aktarılması. 1943 step bitkileri çalışması mera sorunuyla (S2) doğrudan ilgili.",
    "kaynak": [
-    "TOK"
+    "TOK",
+    "ULUDAG_ZOOT",
+    "TOK_FVADC32"
    ],
    "dogum": "1907",
    "iliskiler": [
     {
      "kisi": "vhorn",
+     "tur": "ortak yayın / çeviri",
+     "not": "Mısır samanı, Ökse otu, Yeşil silo (1938)"
+    },
+    {
+     "kisi": "kadaster",
      "tur": "ortak yayın",
-     "not": "Mısır samanı… (YZE 81, 1938)"
+     "not": "1938"
+    },
+    {
+     "kisi": "ozbek_n",
+     "tur": "ortak çeviri",
+     "not": "Yeşil silo (FVADC A-32)"
+    },
+    {
+     "kisi": "aygun",
+     "tur": "ortak yayın",
+     "not": "Yeşil silo (FVADC A-32)"
     }
+   ],
+   "yayinlar": [
+    "Türkiye bakliyatının terkipleri ve gıda olarak kullanılışları (1936)",
+    "Mısır samanı ve hazmolabilme kabiliyeti (Horn ve Kadaster ile, YZE 81, 1938)",
+    "Ökse otunun yem değeri (1938)",
+    "Kendi topraklarımızdan yem: yeşil silo (FVADC Kongre yayını A-32, 1938; V. Horn ve S. Aygün hazırladı, Kansu ve N. Özbek çevirdi)",
+    "Ankara civarında yetişen bazı mühim step nebatlarının hayvan tagdiyesi bakımından değeri (1943)",
+    "Besin maddeleri ve hayvan besleme bilgisi (AÜZF, 1973)"
    ]
   },
   {

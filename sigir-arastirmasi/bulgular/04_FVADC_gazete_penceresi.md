@@ -5,7 +5,7 @@
 - **Kaynak:** İBB Atatürk Kitaplığı dijital süreli yayın koleksiyonu (açık erişim, `katalog.ibb.gov.tr/yordam`). Yedi İstanbul gündelik gazetesi: *Cumhuriyet*, *Tan*, *Akşam*, *Kurun/Vakit*, *Son Posta*, *Yeni Sabah*, *Haber Akşam Postası*. Pencerede gazete başına yaklaşık 103 sayı, toplam yaklaşık 720 sayı.
 - **Yöntem:** PDF'ler (metin katmanı yok) 250 dpi gri tonlamayla tesseract `tur` ile OCR'landı (`scripts/ibb_gazete.py`). Metinler tezaurus v1.0 ile tarandı (`scripts/tara.py`). Puanı ≥6 olan sayfalar tek tek okundu.
 - **Katalog tarih hatası:** İBB kataloğunda gazetelerin Kasım 1938 sayıları dosya adlarında "Nisan 1938" olarak kayıtlı. Örneğin *Cumhuriyet* 5202–5226 numaralı sayıların gerçek tarihi 6–30 Kasım 1938. Tarihler sayı numarasından yeniden hesaplandı (`scripts/ibb_tarih_duzelt.py`) ve OCR metnindeki gazete başlığından doğrulanacak.
-- **Durum:** *Cumhuriyet*, *Tan*, *Akşam*, *Son Posta* (her biri 102–103 sayı) ve *Vakit*'in 1939 sayıları (56) bitti. *Yeni Sabah* 85/103. *Haber* ve *Kurun* (Kasım–Aralık 1938) OCR kuyruğunda.
+- **Durum:** *Cumhuriyet*, *Tan*, *Akşam*, *Son Posta* (her biri 102–103 sayı) ve *Vakit*'in 1939 sayıları (56) bitti. *Yeni Sabah* (103) bitti. *Haber Akşam Postası* 79/102 (OCR sürüyor). *Kurun* (Kasım–Aralık 1938) OCR kuyruğunda.
 - *Ulus* (Ankara) bu koleksiyonda yok; Gaste Arşivi oturumunda taranacak.
 
 ## *Cumhuriyet*: öne çıkan haberler
@@ -91,6 +91,23 @@
 | 1939-02-11 | *Yeni Sabah* 6 | İzmir'de et fiyatları yükseliyor | S0 | Koyun eti 50'den 60 kuruşa; çevreden az hayvan gelmesi |
 
 **Değerlendirme (Trakya örneği):** Trakya Umumi Müfettişliği, sığır ıslahını kayıt (şecere defteri), işaretleme (damga), ayıklama (iğdiş), merkezî üretim (boğa büyütme çiftliği) ve dağıtım (aşım durakları, sun'i tohumlama) zincirinin bütün halkalarıyla bölgesel ölçekte uyguluyor. Bu, rapor 05'teki S1 hipotezini ("boğa dağıtımı ıslahın köye inen yüzü") güçlendiriyor. Ayrıca devletin üremeyi denetlemesinin bir **kayıt rejimi** olarak da kurulduğunu gösteriyor. Müfettişlik arşivleri ve "Trakya Umumi Müfettişliği köy bürosu neşriyatı" (*Son Posta* 1938-12-31) ayrıca aranmalı.
+
+## Ek: *Haber Akşam Postası* (79/102 sayı) ve *Yeni Sabah* (son 18 sayı) (beşinci parti)
+
+| Tarih | Gazete, sayfa | Başlık / konu | Strand | Not |
+|---|---|---|---|---|
+| 1938-12-13 | *Haber* 5 (1. sayfadan devam) | **"Et meselesini devlet eline aldı"** | **S0, S2** | Belediye ile Kasaplar Şirketi arasındaki et anlaşması uzatılmadı. Ziraat Vekâleti "et piyasasında nâzım rolünü" Ziraat Kurumu'na verdi. Gerekçe: kesim hayvanları taşınırken "itinasızlık" yüzünden zayıflıyor, et değer kaybediyor ve fiyat artıyor. Kurum önce kesilmiş hayvan toptancılığı yapacak, sonra Anadolu ve Trakya'dan kesimlik hayvan getirecek. Gerekirse perakendeye de girecek. Mezbaha müdürü, Kasaplar Şirketi reisi Ahmet Kara ve bir celeple görüşmeler var |
+| 1938-12-14 | *Haber* 7 | "Narh ne olursa olsun bildiğini okuyan esnaf kimlerdir?" | S0 | "Kasaplık, celeplik Türkiye'nin en velûd ve en güvenli işidir." Eski bir kasap, mezbaha damgasının etin türünü (ör. keçi eti) parçalanınca nasıl gizlediğini anlatıyor. İstanbul en çok et tüketen vilâyet |
+| 1938-12-16 | *Haber* 2 | Et fiyatları yeniden tespit edildi | S0 | Anadolu ve Karadeniz'den çok kasaplık hayvan geldi; Karadeniz'den kesilmiş hayvan getirilmesi |
+| 1938-12-18 | *Haber* 2 (A.A.) | Romanya'dan 400 göçmen Sincan köyüne yerleşti | S1, S4 | 98 hane: "bir damızlık boğa, 129 inek, manda, buzağı, 333 kıvırcık koyun, 91 araba, dört pulluk". Önceki Sincan haberini (*Cumhuriyet*) doğruluyor |
+| 1938-12-18 | *Haber* 10 | Kongre programı (Ziraat Vekâleti tebliği) | S0 | 11 komisyon; aralarında "hayvan yemi" ve "hayvanat" |
+| 1938-12-19 | *Yeni Sabah* 6 | **Bilecik'te zirai vaziyet** (muhabir mektubu) | **S1**, S3 | Geçen yıl **Boz ırktan 39 boğa** alınıp köylere dağıtıldı; bu yıl aynı ırktan damızlık almak için **köy bütçelerine tahsisat** kondu. Aygır deposunda bir yılda 150 kısrak aşıldı. **250 koyuna Merinos sun'i tohumlaması** yapıldı ve uygulama genişletilecek. Salgınlar "hükümet teşkilâtımız derhal yetişerek" söndürülüyor |
+| 1939-01-21 | *Yeni Sabah* 7 | **"İzmirde adam başına senede 23 kilo et düşüyor"** | S0, S2 | 1938'de İzmir mezbahasında **20.857 sığır**, 1.024 dana, 217 manda, 58.913 koyun, 60.057 kuzu vb. kesildi. 170.853 nüfusa günde 64 gram et düşüyor. Mezbaha zebhiye geliri 219.404 lira |
+| 1939-02-12 | *Haber* 2 | "Trakyada hayvancılık gittikçe inkişaf ediyor" | **S1**, S2 | *Son Posta* 1939-02-03 haberinin geniş metni. Ek bilgiler: kongre kararıyla İnanlı aygır deposunun at ve inek kadrosu artacak, bir tay büyütme çiftliği açılacak. "**Boğalar bu mıntaka köylerince tercih ediliyor.**" Hayvan gıdası ve özellikle **yonca** yetiştirmeye önem veriliyor. Hayvan sergilerine bu yıl yetişmiş esterler de alınacak |
+| 1939-02-26 | *Haber* 10 | **"Muğlada geniş, plânlı bir köy kalkınması"** (seyahat notları; Vali Recai Güreli) | **S1** | 50 köy "örnek" seçildi. Bu köylere **34 Boz Plevne ırkı boğa** getirilip dağıtıldı ve resmî haralara bu yıl için **142 boğa daha sipariş** edildi. **"Örnek ittihaz edilen köylerin yerli ırk boğaları tamamen enemelenmiştir."** 34 boğadan 398 erkek ve 441 dişi yavru alındı. İki aygır deposu kuruldu (10 Arap aygırı, 5 Kıbrıs merkep aygırı); köylerdeki yerli aygırların iğdişi sürüyor |
+| 1939-02-28 | *Haber* 10 | "Midyat doğuda büyük bir şehir oluyor" | S0 | 1938 sayımında 12.000 kara sığır, 20.000 koyun, 75.000 tiftik keçisi. Sade yağ (200 ton), canlı hayvan, bağırsak ve ham deri ihracı |
+
+**Değerlendirme:** Muğla ve Bilecik haberleri, Trakya'daki zincirin (seçilmiş köy → ithal/devlet boğası → yerli boğanın iğdişi → yavru sayımı) başka vilâyetlerde de uygulandığını gösteriyor. Bu, **S1 için Trakya'ya özgü olmayan bir rejim** demek. Muğla verisinde ilk kez "dağıtılan boğa başına yavru" (839 yavru / 34 boğa) gibi bir başarı ölçütü görülüyor. Bilecik'te boğa alımının köy bütçesine yüklenmesi ise ıslahın maliyetinin köye aktarıldığını gösteriyor. 13 Aralık 1938 tarihli "et meselesini devlet eline aldı" haberi, kongreden iki hafta önce sığırın **kent et arzı** tarafının da (S0/S2: taşıma kaybı, zayıflama, celep) devlet müdahalesine konu olduğunu gösteriyor. Haberde adı geçen "Ziraat Kurumu"nun hangi kurum olduğu (Ziraat Bankası mı, başka bir kurum mu) doğrulanacak.
 
 Tam liste (puan ≥3, 252 sayfa, OCR bağlam parçalarıyla) bütün gazeteler bitince `fvadc_gazete_isabetleri.csv` olarak eklenecek. Gürültü örnekleri: tefrika romanlarda "yabani öküz", "su aygırı", "boğa(z)"; ilan ve tarihî yazılar.
 

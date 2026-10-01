@@ -89,7 +89,7 @@
       "baslik": "FVADC penceresi: Son Posta, Yeni Sabah, Haber OCR ve okuma",
       "durum": "suruyor",
       "sorumlu": "Claude",
-      "not": "Son Posta bitti (103 sayı, rapor 04 dördüncü parti); Yeni Sabah 85/103; Haber kuyrukta"
+      "not": "Son Posta ve Yeni Sabah bitti (103+103; rapor 04 dördüncü ve beşinci parti); Haber 79/102 okundu, OCR sürüyor"
     },
     {
       "id": "G12",
@@ -292,7 +292,7 @@
       "baslik": "Aday uzmanların (katalogda çok yayını olanlar) biyografik araştırması ve ağa eklenmesi",
       "durum": "suruyor",
       "sorumlu": "Claude",
-      "not": "Biyografisi işlenenler: Özceben, V. Horn, Bilgemre, Yarkın (1 Ekim 2026). Sırada: Kadaster, Karaesmen, İzmen, Kansu, Özbek"
+      "not": "Biyografisi işlenenler: Özceben, V. Horn, Bilgemre, Yarkın, Kadaster, Kansu (1 Ekim 2026). Sırada: Karaesmen, İzmen, N. Özbek, aday listesi"
     },
     {
       "id": "U05",
