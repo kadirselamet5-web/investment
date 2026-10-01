@@ -76,6 +76,10 @@
   "ESK_HALKEVI": {
    "ad": "Eskişehir Halkevi Mecmuası (1941–46), TBMM Açık Erişim (handle 11543/4312); rapor 02 §3a",
    "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4312"
+  },
+  "HALKEVI_OCR": {
+   "ad": "Halkevi dergileri (Çorumlu, Erciyes, Görüşler), TBMM Açık Erişim OCR; rapor 02 §3a",
+   "url": "https://acikerisim.tbmm.gov.tr/"
   }
  },
  "kurumlar": [
@@ -2269,6 +2273,47 @@
    "not": "Halkevi dergisinde etten insana geçen paraziter hastalıklar üzerine popüler yazılar. Görev unvanı doğrulanacak.",
    "kaynak": [
     "ESK_HALKEVI"
+   ]
+  },
+  {
+   "id": "gozubuyuk",
+   "ad": "Kadir Gözübüyük",
+   "milliyet": "Türk",
+   "alan": "ziraat; hayvan yemleri (Kayseri)",
+   "strand": [
+    "S2"
+   ],
+   "gorevler": [
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "Kayseri'de ziraatçı (unvan doğrulanacak); Erciyes dergisinde 'Ziraat köşesi'",
+     "bas": "1945"
+    }
+   ],
+   "not": "Saman merkezli yemlemeyi eleştiriyor: 'safi sellülozdur'; arpanın şehir araba atlarına gitmesi.",
+   "kaynak": [
+    "HALKEVI_OCR"
+   ]
+  },
+  {
+   "id": "ertuzun",
+   "ad": "Enver Ertüzün",
+   "milliyet": "Türk",
+   "alan": "yüksek ziraat mühendisi; köy etüdleri (Çorum)",
+   "strand": [
+    "S4",
+    "S0"
+   ],
+   "gorevler": [
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "Y. Z. Mühendisi, Çorum (Çorumlu dergisinde köy etüdleri)",
+     "bas": "1944"
+    }
+   ],
+   "not": "Sarımbey köy etüdü: 'insanla hayvan aynı kapıdan girip çıkıyor'.",
+   "kaynak": [
+    "HALKEVI_OCR"
    ]
   }
  ]

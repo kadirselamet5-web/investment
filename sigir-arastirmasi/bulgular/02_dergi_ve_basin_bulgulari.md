@@ -101,7 +101,7 @@ Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4086) 
 - ***Burdur Halkevi Dergisi* (1941), S4:** Köy odası şiiri: "Sağında bir ahır, solda samanlık" ([11543/3939](https://acikerisim.tbmm.gov.tr/handle/11543/3939)).
 - ***Uludağ* (Bursa Halkevi):** Merinos koyunculuğu ve Karacabey (1935); Karacabey sel felaketi (1940).
 
-### 3a. *Eskişehir Halkevi Mecmuası* (1941–1946) ve *Çorumlu* (1938–1940): TBMM Açık Erişim OCR, Ekim 2026
+### 3a. Halkevi dergileri, ikinci tur (*Eskişehir Halkevi Mecmuası* 1941–46, *Çorumlu* 1938–46, *Erciyes* 1938–45, *Görüşler* 1939–45): TBMM Açık Erişim OCR, Ekim 2026
 
 - **S1 × S3, Eskişehir Vilâyeti Veteriner Müdürlüğü raporu (1944, sayı 78–80, s. 11–13):**
   - **Hayvan sayımı (1926 → 1944):** sığır 59.708 → 52.176 (1943'te 84.070). Manda 7.990 → 5.225. At 8.316 → 30.677. Savaş yıllarında ("fevkalâde vaziyetler") koyunda ve "pek az olarak" sığırda düşüş var.
@@ -115,6 +115,12 @@ Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4086) 
 - **S0 × S1, "Çifteler çevresi köylü işletmeleri"** (1946, sayı 93–96): çiftçi aileleri üzerine işletme etüdü (irad hayvanları, ekim alanları, öküz). Ayrıca okunacak.
 - **S3, "Veterinerimiz söylüyor"** (Ahsen Adaoğlu, 1943, sayı 63–64): et yoluyla insana geçen paraziter hastalık (kist hidatik). *Son Posta*'daki "Veteriner diyor ki" dizisiyle (1938–39) aynı tür.
 - ***Çorumlu*** (1940): "büyük bir ziraat istasyonu veya devlet çiftliği tesisi zaruridir"; 1939 sayısında Osmanlı ağıl resmi (*resm-i ağıl*) ve âdet-i ağnam üzerine tarih yazıları (S0 ve S2'nin vergi arka planı).
+
+- **S4, *Çorumlu*, "Köy etüdleri: Sarımbey" (Y. Z. Mühendisi Enver Ertüzün, Mayıs 1944, s. 1379 vd.):** "Hemen hemen bütün evlerin ahır ve ağılları avlu içinde, **insanla hayvan aynı kapıdan girip çıkıyor**. Bundan dolayı evlerdeki her temizliği bir pislik kovalıyor." Sokaklarda biriktirilmiş gübre, "idrarlı ve kokulu pis sular". Köyün kökeni Kuyumcu aşiretinin iskânına dayanıyor (deve ve koyun, Eğerci dağında yayla). 140 hane, 900 nüfus. 1924 duvarı normunun ziraat mühendisi gözüyle 20 yıl sonraki denetimi.
+- **S2 × S4, *Çorumlu*, orman tahribi yazısı (1944, sayı 46, s. 1382):** Çorum'un evleri ve "kanatlı kapuları bu ormanı yiyerek kurulmuştur". Sobasız uzun kışlar yüzünden köylüler "odunsuzluk yüzünden **tarlaya dökecekleri gübreyi sulandırarak** çoluk çocuk **tezek çamuru** yoğuruyor". Ormansızlaşma, tezek ve gübresiz tarla zinciri (Erzurum 1944 ve Okaygün 1937 tanıklıklarıyla birlikte, rapor 06).
+- **S2, *Erciyes* (Kayseri Halkevi), Kadir Gözübüyük, "Ziraat köşesi: Kayseride hayvan yemleri ve istifade imkânları" (1945, sayı 25):** "Hayvan yemi denince neden acaba ilk aklımıza gelen şey samandır?… Samanda sevilecek hiçbir şeyin olmadığını göstermektedir. O, safi sellülozdur… yüzde yarım… proteinli madde." Hayvanlar "karınları doymuş görünsün diye işkembelerini tıka basa samanla dolduruyor". Arpa ziraat hayvanına değil şehirdeki "payton arabası atlarına" gidiyor: "ziraat hayvanı işliyor, araba atları dişliyor". Yem çeşitleri listesi (burçak, fiğ, yonca, pancar, korunga, üçgül, yem turşusu). "Hayvansız ziraata sömürgecilik, ziraatsız hayvancılığa da arabacılık demek lâzımdır." **S2'nin saman merkezli kış yemlemesi eleştirisinin yerel uzman ağzından en açık ifadesi.**
+- ***Erciyes*, "Hayvancılık ve hayvancılığın askerî, iktisadî, ziraî, sıhhî cepheden tetkiki ile baytarlığın rolü"** (1938, sayı 1–2, iki bölüm; zootekni otoritesi olarak "Profesör Krenhar"a atıf): 93 Harbi'nde dışarıdan at alma zorunluluğu; "istibdat idaresinde ölen hayvancılığımız"; baytarlığın halk sağlığını koruma rolü (şarbon, veba, serum). Yazarı OCR'da okunmuyor, PDF'ten bakılacak.
+- ***Görüşler*** (Adana Halkevi, 1939–45): çiftliklerin ortakçılıkla işletilmesi ve öküz paylaşımı; Mansurlu'nun iktisadî durumu (aşiret, ahır, gübre). Ayrıca okunacak.
 
 ## 4. Resmî metinler: *Düstur* (3. tertip) ve kanun metinleri
 
