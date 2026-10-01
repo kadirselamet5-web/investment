@@ -340,6 +340,10 @@
   {
    "id": "iktisat_vek",
    "ad": "İktisat Vekâleti (Zootekni şubesi)"
+  },
+  {
+   "id": "dzik",
+   "ad": "Devlet Ziraat İşletmeleri Kurumu (1938)"
   }
  ],
  "kisiler": [
@@ -885,11 +889,18 @@
      "gorev": "Zootekni Kürsüsü başkanı",
      "bas": "1948",
      "bit": "1969"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "YZE Ziraat Fakültesi doçenti olarak anılıyor (1939; Çukurova gezisi) — Veteriner Fakültesi görevleriyle ilişkisi doğrulanacak",
+     "bas": "1939",
+     "not": "Ulus 26.2.1939 (GA0036)"
     }
    ],
    "not": "31 kitap, 40'tan fazla makale; şair ve oyun yazarı. Doğum yılı biyografide yok (1905 civarı, doğrulanacak).",
    "kaynak": [
-    "GOKCEN"
+    "GOKCEN",
+    "GASTE_ULUS"
    ],
    "url": "https://www.hazimgokcen.net/meslek-buyukleri/sair-operet-yazari-siyasetci-veteriner-hekimi-prof-dr-selahattin-batu/"
   },
@@ -1687,13 +1698,20 @@
      "gorev": "veteriner fizyolojisi ordinaryüsü; rektör 1953–55; Deutsch-Türkische Gesellschaft Gießen kurucu başkanı",
      "bas": "1951",
      "bit": "1970"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "YZE profesörü olarak 1939 Şubat Çukurova tetkik gezisinde",
+     "bas": "1939",
+     "not": "Ulus 26.2.1939 (GA0036)"
     }
    ],
    "not": "Heiber'e göre Gießen'de profesörlüğe atanması bir Nazi öğretim üyesi liderince ideolojik gerekçeyle engellenince Ankara'ya geçti. 1940'ta Puławy'de işgal yönetiminin kurumunda görev aldı (savaş dönemi rolü ayrıca incelenmeli). 1979'da Ankara Üniversitesi fahri doktorası. Katalogda FVADC yayınları arasında 'Ökse otunun yem değeri' ve 'Mısır samanı…' (1938).",
    "kaynak": [
     "TOK",
     "WIKI_DE",
-    "TOK_FVADC32"
+    "TOK_FVADC32",
+    "GASTE_ULUS"
    ],
    "dogum": "1901-04-02",
    "olum": "1992-02-20",
@@ -1928,11 +1946,18 @@
      "gorev": "Spöttel'in Zootekni Enstitüsü'nde süt verimi araştırmaları",
      "bas": "1937",
      "bit": "1940"
+    },
+    {
+     "kurum": "yze",
+     "gorev": "YZE Ziraat Fakültesi doçenti (1939; Çukurova tetkik gezisi)",
+     "bas": "1939",
+     "not": "Ulus 26.2.1939 (GA0036)"
     }
    ],
    "not": "'Boz ırkın süt verimi' (1939), S1 için yerli ırkın verim ölçümüyle 'ıslaha değer mi' tartışmasının birincil verisi. Biyografik bilgi (doğum, öğrenim) bulunamadı.",
    "kaynak": [
-    "TOK"
+    "TOK",
+    "GASTE_ULUS"
    ],
    "diger_adlar": [
     "E. Rüştü İzmen",
@@ -2346,7 +2371,7 @@
     }
    ],
    "yayinlar": [
-    "Köylerimiz: Bugün nasıldır? Dün nasıldı? Yarın nasıl olmalıdır? (Ulus, Aralık 1938 – Şubat 1939, en az XXI bölüm; XI 19.1, XIV 24.1, XV-1 8.2, XVI 10.2, XVIII 13.2, XIX 14.2, 'Gıda meselesi' 17.2)",
+    "Köylerimiz: Bugün nasıldır? Dün nasıldı? Yarın nasıl olmalıdır? (Ulus, Aralık 1938 – Şubat 1939; VI 13.1, VIII 14.1, IX 16.1, X 17.1, XI 19.1, XII–XIII 22–23.1, XIV 24.1, XV-1 8.2, XVI 10.2, XVII 12.2, XVIII 13.2, XIX 14.2, 'Gıda meselesi' 17.2, 'Netice' 19.2)",
     "Köycülük XXI: Eti devrinde köy ekonomisi (Ulus 22.2.1939)"
    ],
    "not": "Ulus'ta 'Profesör'. Koyunu Anadolu'nun hayvanı sayıyor ('Anadolu'nun… sığır yiyeceği gün belki hiç gelmiyecektir'), ama aynı dizide ahırda beslenen sağmal ineği ideal köy evinin parçası yapıyor ve damızlık sığırın ahırsızlık ve yemsizlikten ölümünü anlatıyor. S1–S4 bağı için anahtar yazar.",
