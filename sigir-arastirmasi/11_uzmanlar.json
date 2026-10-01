@@ -68,6 +68,10 @@
   "TBCM": {
    "ad": "Türk Baytarlar Cemiyeti Mecmuası (1930–33), İBB Atatürk Kitaplığı dijital koleksiyonu; rapor 02 §6a",
    "url": "https://katalog.ibb.gov.tr/yordam/"
+  },
+  "CUMH_1939_05_30": {
+   "ad": "Cumhuriyet 30.5.1939, s. 9: TBMM Ziraat Vekâleti 1939 bütçesi görüşmesi (rapor 06)",
+   "url": "https://katalog.ibb.gov.tr/yordam/"
   }
  },
  "kurumlar": [
@@ -2193,6 +2197,54 @@
    "not": "TBCM heyet-i idare listesinde 'Muallim Mehmet Nuri B., Mardin mebusu'. Soyadı ve TBMM albümü kaydı araştırılacak.",
    "kaynak": [
     "TBCM"
+   ]
+  },
+  {
+   "id": "atli",
+   "ad": "Fikret Atlı",
+   "milliyet": "Türk",
+   "alan": "çiftçi mebus; ziraat kredisi, merinos ıslahı eleştirisi",
+   "strand": [
+    "S0",
+    "S1"
+   ],
+   "gorevler": [
+    {
+     "kurum": "tbmm",
+     "gorev": "mebus (İstanbul?; Bakırköy yakınında çiftçi)",
+     "bas": "1939"
+    }
+   ],
+   "iliskiler": [
+    {
+     "kisi": "erkmen",
+     "tur": "Meclis'te eleştiri",
+     "not": "1939 bütçe görüşmesi"
+    }
+   ],
+   "not": "1939 bütçesinde Karacabey merinos ve Alman merinosu politikasını maliyet hesabıyla eleştirdi (kuzu başına 34 lira); tarım kooperatifi kredisinde fiilî %25 faiz. Seçim bölgesi doğrulanacak.",
+   "kaynak": [
+    "CUMH_1939_05_30"
+   ]
+  },
+  {
+   "id": "kaplan_r",
+   "ad": "Rasih Kaplan",
+   "milliyet": "Türk",
+   "alan": "mebus (Antalya)",
+   "strand": [
+    "S0"
+   ],
+   "gorevler": [
+    {
+     "kurum": "tbmm",
+     "gorev": "Antalya mebusu",
+     "bas": "1939"
+    }
+   ],
+   "not": "1939 bütçesinde: uzman raporları bütçe yokluğundan uygulanamıyor; 'Ziraat Enstitülerinde idare işleri ecnebilere verilmesin… ecnebiler hoca olarak kalmalıdır'.",
+   "kaynak": [
+    "CUMH_1939_05_30"
    ]
   }
  ]
