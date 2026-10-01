@@ -18,6 +18,11 @@ Bu belge, raporlar 01–04 ve uzmanlık ağındaki bulguları strand strand birl
 
 ---
 
+**Ek (1 Ekim 2026, Gaste doğrulamaları):**
+- **Kongrenin takvimi:** 18 Nisan 1938'e planlandı. 13 Nisan'da ertelendi (bakan Kesebir Viyana'da, "daha geniş hazırlık"). 14 Nisan'da bakan değişti (Faik Kurdoğlu). Mayıs'ta sonbahara kaydı, 27 Aralık 1938'de toplandı (rapor 06, altıncı parti). Kongre bir "Kurdoğlu kongresi"dir. Hazırlığı taşra teşkilatından görüş toplamaya dayanıyor.
+- **1942 kesim yasağı:** çift ve koşum sığır ve mandasında 10, dişi sığır ve mandada 8 yaşa kadar kasaplık alım, satım ve kesim yasak (Millî Korunma md. 21, 9 Ocak 1942). Gerekçeler arasında **deri fiyatı** var. Kasaplar hayvanın yaşını gizlemek için **dişlerini söküyor** (*Haber* 15.1, *Vakit* 16.1.1942). Sığırın eti, derisi ve çift gücü savaş ekonomisinde çatışıyor. Devlet yaşı dişten okuyor, hile de aynı yüzeyi kullanıyor.
+- **Vergi ile ıslah:** 1931 Davar ve Ehlî Hayvanlar Vergisi belgeli damızlık boğayı ve tek çift öküzlü köylünün koşum hayvanını vergiden muaf tutuyor. 1938'de vergi yarı yarıya indirildi (*Ulus* 1939-01-06).
+
 ## S1. Yerli ırkların ıslahı ve üremenin devletçe düzenlenmesi
 
 **Belgelenmiş örüntüler**

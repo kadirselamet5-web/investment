@@ -120,8 +120,9 @@
       "id": "G15",
       "faz": "2A–2B",
       "baslik": "1931 olayları (Cumhuriyet 1931 İBB'de yok): Milliyet ya da Gaste Arşivi",
-      "durum": "sirada",
-      "sorumlu": "Claude / Gaste"
+      "durum": "suruyor",
+      "sorumlu": "Claude / Gaste",
+      "not": "Milliyet 1931 (Gaste): Islah-ı Hayvanat 4. madde ve hayvan vergisi encümen haberleri bulundu (rapor 06 altıncı parti); Temmuz 1931 kanunlaşma sayıları açılacak"
     },
     {
       "id": "G16",
@@ -145,7 +146,8 @@
       "baslik": "Gaste Arşivi: Ulus (1934–50) ve 1944–1950 bütün gazeteler (907 satırlık sorgu listesi)",
       "durum": "suruyor",
       "sorumlu": "Kullanıcı Chrome bağlantısı",
-      "cikti": "08_gaste_sorgu_plani.md"
+      "cikti": "08_gaste_sorgu_plani.md",
+      "not": "Gaste yan paneli: 49 kayıt (Ulus 1938–39, 1947, 1949; Tan, Haber, Vakit, Cumhuriyet, Milliyet, Yeni Asır); rapor 04, 06, 07"
     },
     {
       "id": "G19",
