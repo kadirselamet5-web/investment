@@ -95,7 +95,7 @@ OLAYLAR = [
     ("1940-06-10", "Suriye mukavelenamesi, baytarî rejim protokolü", "S3", "Suriye; baytarî; hudut; sığır vebası"),
     ("1941-04-14", "Irak veteriner mukavelenamesi", "S3", "Irak; veteriner mukavele"),
     ("1941-05-09", "Çiftçi Mallarının Korunması Kanunu", "S2", "çiftçi mallarının korunması; mera; bekçi"),
-    ("1942-01-15", "Millî Korunma: çift öküzü ve inek kesim yasağı (tarih doğrulanacak)", "S1;S2", "kesim yasağı; Millî Korunma; öküz; inek; et"),
+    ("1942-01-09", "Millî Korunma koordinasyon kararı: çift ve koşum sığırı ile damızlık dişi sığır ve mandanın kasaplık alım satımı yasak (yürürlük 9.1.1942; Cumhuriyet)", "S1;S2", "kesim yasağı; Millî Korunma; öküz; inek; et"),
     ("1945-05-18", "Çiftçiyi Topraklandırma Kanunu (mera, çift hayvanı)", "S2", "toprak kanunu; mera; çift hayvanı"),
     ("1945-06-08", "At vebası, hayvan öldürme ve tazminat", "S3", "at vebası; tazminat"),
     ("1945-12-27", "Tarım Bakanlığı 1946 bütçesi (hayvan kırımı)", "S2", "hayvan kırımı; hayvan zayiatı; yem"),
