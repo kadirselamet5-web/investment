@@ -155,6 +155,40 @@ Toplam 140 kayıt; tam liste `beyoglu_fransizca_isabetler.csv` dosyasında. Öne
 - **S3 (1940):** İstanbul veteriner müdürlüğünün salgınlarla mücadele istatistikleri (şehir içinde 5.780, dışında 116.284 hayvan muayenesi); Karağaç mezbahasında hastalıklı hayvanlar.
 - **S1 (1940):** Tarım Bakanı Muhlis Erkmen'in Karacabey Harası'nı ziyareti; Tarım Bakanlığı'nın köylülere yönelik mandıra ve hayvan bakımı kursları (Hatay dahil).
 
+## 6a. *Türk Baytarlar Cemiyeti Mecmuası* (İstanbul, 1930–1933; İBB'de 8 sayı OCR'landı)
+
+İlmî ve meslekî, gayrimuntazam yayımlanan bir dergi. Cemiyet 5 (veya 6) Şubat 1930'da, dergi 1 Teşrinievvel 1930'da kuruldu. Mesul müdürü İsmail Hakkı; heyeti idarede Mardin mebusu muallim Mehmet Nuri. İBB'deki sayılar: 1, 3, 4, 6, 7, 8, 9, 10 (toplam 585 sayfa; 157 sayfa puan ≥6). **Tarih uyarısı:** katalog ve kapakta 4. sayının tarihi "15 Nisan 1930" görünüyor. Oysa 1. sayı Ekim 1930'da çıktı ve bu sayı Şubat 1931'deki Birinci Ziraat Kongresi'nin encümen kararlarını yayımlıyor. Doğru tarih **15 Nisan 1931** olmalı.
+
+- **S3, sığır vebası ve "usul-i basit"/"usul-i muhtelit" tartışması (sayı 4, 1931, s. 6–8; İsmail Hakkı, "Memleketimizde Sığır Vebası ve Baytarlık"):**
+  - Sığır vebası "yarım asırdanberi" Rusya ve İran'dan doğu vilâyetlerine giriyor ve oradan bütün ülkeye yayılıyor.
+  - Cemiyet heyeti idaresi durumu İktisat Vekili Mustafa Şeref'e arz etti. Vekil, sığır vebası ve "ıslahı hayvanat" usullerini belirleyecek bir **baytarî kongre** toplanmasını uygun buldu.
+  - Eski Ziraat Vekili Sabri Bey'in Almanya'dan getirttiği salgın hastalıklar uzmanı **Hoffmeister**, raporunda yalnız serumla yapılan mücadelenin ("usul-i basit") yetersiz olduğunu yazdı. Hoffmeister, serumla birlikte virüslü kan zerkini ("usul-i muhtelit") önerdi.
+  - Sabri Bey 1926'da baytarlarla bir ilmî içtima yaptırdı, ama burada "tarafgirlik ve hissiyat galebe çaldı". "Hocamız Doktor Refik Bey" ve başka baytarlar muhtelit usulü savunduğu halde usul kabul edilmedi, yalnız tecrübesine karar verildi.
+  - Yazara göre sonuç: "Sığır Vebası bu sene de… memlekette baştanbaşa sirayet, yüz binlerce hayvan" telef.
+  - S3'te dış sınırdan giren salgın ile meslek içi bilgi çatışmasının kesiştiği birincil tanıklık. TBMM tutanaklarındaki sığır vebası tartışmalarıyla karşılaştırılmalı (rapor 01).
+- **S1 × S2 × S0, Birinci Ziraat Kongresi (Şubat 1931) 16. Encümen (hayvancılık) mazbatası (sayı 4, s. 36–46; mazbata muharriri Tevfik Süleyman, Karacabey Harası):**
+  - Encümen reisi Mardin mebusu muallim Nuri Bey. Üyeler arasında Pendik Bakteriyoloji Enstitüsü müdürü Şefik, İktisat Vekâleti Zootekni şubesi müdürü Nureddin, sütçülük laboratuvarı şefi Ekrem, Yüksek Baytar Mektebi zootekni laboratuvarı şefi İsmail Hakkı, tavuk enstitüsü müdürü Kadri, sütçülük mütehassısı Servet, Karacabey Harası ziraat mütehassısı Kemal ve vilâyetlerden yetiştiriciler var.
+  - Mazbatadaki tespitler: "İneklerimiz senede 300–600 kilo süt, 60–150 kilo et veriyorlar". "Son istatistikler memleketimizde 5 milyondan fazla sığır olduğunu göstermektedir". "Türkiye'de süt Avrupa'nın en pahalı memleketlerinden daha yüksek bir fiyatla satılır". Hayvanlar ve ürünleri dünya piyasasına arz edilmek zorunda.
+  - Bu mazbata, 1938 FVADC Hayvan İşleri Komisyonu'nun yedi yıl önceki öncülü. Tam metni ayrıca okunup karşılaştırılmalı.
+- **S1 × S2 × S4, Tevfik Süleyman (Karacabey Harası), "Yerli sığırlarımıza kıymet ve ehemmiyet verelim" (sayı 3, 30 Aralık 1930, s. 12 vd.):**
+  - "Hollanda'nın senede 10 bin kilo süt veren ineklerini memleketimize getirip dağıtmak ve bunlardan aynı miktarda süt almak kabil değildir. Yetiştiricilerimizin kabiliyetleri, ziraat vaziyetimiz, **ahırlarımız, mera ve çayırlarımız** bu gibi yüksek hasılat veren hayvanları… yetiştirmeğe müsait değildir."
+  - Yerli ırk "yalnız bakımsızlık, gıdasızlık yüzünden dejenere" olmuş. "İyi bir bakım, bol bir gıda, esaslı bir seleksiyonla" birinci derecede süt, sonra et ve koşum hayvanı olabilir.
+  - **S1 için kilit metin:** ithal ırk ile yerli ırkın seleksiyonu tartışmasında, ahır (S4) ve yem/mera (S2) koşullarını ıslahın ön şartı sayan erken bir "yerli ırk" savunusu. Rapor 05'teki S1 hipotezine eklenmeli.
+- **S3 × S4, Zeynelâbidin, "İstanbul Mezbahasında tederrün vekayii" (sayı 4, s. 76–78):**
+  - Yabancı istatistiklerle (Park ve Krumwiede; Fransa) sığır kaynaklı insan tüberkülozunu tartışıyor.
+  - İstanbul mezbahasında görevli bir meslektaşın koltuk altındaki lenf bezinde "bakarî menşeli" tüberküloz bulunmuş.
+  - "Mezbaha memleket hayvanatının… bilhassa hastalıklarını gösteren aynadır." Sütün "ölüm nakili olmaktan" kurtarılması çağrısı.
+  - Zoonoz ve çocuk sütü üzerinden S3'ü insan sağlığına bağlayan bir metin. *Son Posta*'daki "Veteriner diyor ki" dizisinin (1938–39) öncülü.
+- Ayrıca okunacak yazılar:
+  - Hoffmeister, "Türkiye'de Baytarlık" (sayı 4).
+  - "Sığır vebası ve bir mülakat" (İsmail Hakkı) ve "Veba-i bakar" (Mustafa Fehmi) (sayı 3).
+  - "Basit mi? Muhtelit mi?" (Hüsamettin, sayı 3).
+  - "Sun'i ilkah" ve "Beygir piroplazmozu" (sayı 4).
+  - "Lüleburgaz hayvan sergisi" (sayı 1).
+  - "Haranın tarihçesi (Karacabey Harası)" ve "Ziraat Vekâletinin bir tekzibi" (sayı 8).
+  - "Konya Nümune Baytarlık kursları" (sayı 9).
+  - Aza listesi (sayı 4): uzmanlık ağı için tam üye listesi.
+
 ## 7. Göz taraması gereken kaynaklar (OCR yok veya kullanılamaz)
 
 | Yayın | Yıllar | Kayıt | Neden |

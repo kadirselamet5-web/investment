@@ -171,11 +171,16 @@ def ibb_verisi():
         ilerleme.append({"is": "Halkevi dergileri ve yerel gazeteler (TBMM Açık Erişim OCR)",
                          "bitti": len([d for d in os.listdir(ocr_dizin) if d.startswith("11543_")]), "hedef": 49})
     # gazete sayfa isabetleri
-    isabet = os.path.join(CALISMA, "ibb", "isabet.csv")
+    isabetler = [os.path.join(CALISMA, "ibb", k, "isabet.csv") for k in ("", "olay", "dergi")]
+    isabetler = [i for i in isabetler if os.path.exists(i)]
     kalici_isabet = os.path.join(KOK, "bulgular", "fvadc_gazete_isabetleri.csv")
     satirlar = []
-    if os.path.exists(isabet):
-        for r in csv.DictReader(open(isabet, encoding="utf-8")):
+    if isabetler:
+        gorulen = set()
+        for r in (r for i in isabetler for r in csv.DictReader(open(i, encoding="utf-8"))):
+            if (r["kaynak"], r["dosya"], r["sayfa"]) in gorulen:
+                continue
+            gorulen.add((r["kaynak"], r["dosya"], r["sayfa"]))
             if float(r["puan"]) < 3:
                 continue
             gazete = r["kaynak"].replace("İBB Atatürk Kitaplığı: ", "")

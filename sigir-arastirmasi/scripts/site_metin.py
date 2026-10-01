@@ -179,7 +179,8 @@ class Paket:
 
     def gazete(self, gazete, tarih, sayi, sayfa, pdf_url):
         dizin = re.sub(r"\W+", "_", gazete).strip("_")
-        for kok in (os.path.join(self.calisma, "ibb", "metin"), os.path.join(self.calisma, "ibb", "olay", "metin")):
+        for kok in (os.path.join(self.calisma, "ibb", "metin"), os.path.join(self.calisma, "ibb", "olay", "metin"),
+                    os.path.join(self.calisma, "ibb", "dergi", "metin")):
             ham = self.dosya(os.path.join(kok, dizin, f"{tarih}_{sayi}.txt"))
             if ham:
                 break

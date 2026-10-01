@@ -80,16 +80,17 @@
       "id": "G10",
       "faz": "2C",
       "baslik": "FVADC penceresi: Kurun/Vakit OCR ve okuma",
-      "durum": "suruyor",
-      "sorumlu": "Claude"
+      "durum": "bitti",
+      "sorumlu": "Claude",
+      "not": "Kurun 47 + Vakit 56 sayı; rapor 04 altıncı parti"
     },
     {
       "id": "G11",
       "faz": "2C",
       "baslik": "FVADC penceresi: Son Posta, Yeni Sabah, Haber OCR ve okuma",
-      "durum": "suruyor",
+      "durum": "bitti",
       "sorumlu": "Claude",
-      "not": "Son Posta ve Yeni Sabah bitti (103+103; rapor 04 dördüncü ve beşinci parti); Haber 79/102 okundu, OCR sürüyor"
+      "not": "Son Posta, Yeni Sabah, Haber (103+103+102); rapor 04 dördüncü ve beşinci parti"
     },
     {
       "id": "G12",
@@ -102,8 +103,9 @@
       "id": "G13",
       "faz": "2C",
       "baslik": "FVADC penceresi: tam isabet listesi (CSV) ve nihai rapor",
-      "durum": "sirada",
-      "sorumlu": "Claude"
+      "durum": "suruyor",
+      "sorumlu": "Claude",
+      "not": "Yedi gazetenin OCR ve okuması bitti; isabet CSV sitede; nihai rapor yazılacak"
     },
     {
       "id": "G14",
@@ -168,9 +170,9 @@
       "id": "G22",
       "faz": "3",
       "baslik": "Türk Baytarlar Cemiyeti Mecmuası 1930–33 (İBB, 8 sayı): OCR ve okuma",
-      "durum": "sirada",
+      "durum": "bitti",
       "sorumlu": "Claude",
-      "not": "Kuyrukta"
+      "not": "8 sayı OCR; rapor 02 §6a"
     },
     {
       "id": "G23",
@@ -292,7 +294,7 @@
       "baslik": "Aday uzmanların (katalogda çok yayını olanlar) biyografik araştırması ve ağa eklenmesi",
       "durum": "suruyor",
       "sorumlu": "Claude",
-      "not": "Biyografisi işlenenler: Özceben, V. Horn, Bilgemre, Yarkın, Kadaster, Kansu (1 Ekim 2026). Sırada: Karaesmen, İzmen, N. Özbek, aday listesi"
+      "not": "Biyografisi işlenenler: Özceben, V. Horn, Bilgemre, Yarkın, Kadaster, Kansu, Karaesmen, İzmen, N. Özbek (1 Ekim 2026)"
     },
     {
       "id": "U05",
@@ -378,8 +380,9 @@
       "id": "W06",
       "faz": "Site",
       "baslik": "Olay pencerelerindeki gazete sayfalarının siteye eklenmesi (OCR bittikçe)",
-      "durum": "sirada",
-      "sorumlu": "Claude"
+      "durum": "suruyor",
+      "sorumlu": "Claude",
+      "not": "Olay penceresi ve TBCM sayfaları gazete tablosuna ve okuyucuya eklendi; Cumhuriyet olay OCR sürüyor"
     }
   ]
 }

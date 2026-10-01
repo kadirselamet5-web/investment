@@ -5,7 +5,7 @@
 - **Kaynak:** İBB Atatürk Kitaplığı dijital süreli yayın koleksiyonu (açık erişim, `katalog.ibb.gov.tr/yordam`). Yedi İstanbul gündelik gazetesi: *Cumhuriyet*, *Tan*, *Akşam*, *Kurun/Vakit*, *Son Posta*, *Yeni Sabah*, *Haber Akşam Postası*. Pencerede gazete başına yaklaşık 103 sayı, toplam yaklaşık 720 sayı.
 - **Yöntem:** PDF'ler (metin katmanı yok) 250 dpi gri tonlamayla tesseract `tur` ile OCR'landı (`scripts/ibb_gazete.py`). Metinler tezaurus v1.0 ile tarandı (`scripts/tara.py`). Puanı ≥6 olan sayfalar tek tek okundu.
 - **Katalog tarih hatası:** İBB kataloğunda gazetelerin Kasım 1938 sayıları dosya adlarında "Nisan 1938" olarak kayıtlı. Örneğin *Cumhuriyet* 5202–5226 numaralı sayıların gerçek tarihi 6–30 Kasım 1938. Tarihler sayı numarasından yeniden hesaplandı (`scripts/ibb_tarih_duzelt.py`) ve OCR metnindeki gazete başlığından doğrulanacak.
-- **Durum:** *Cumhuriyet*, *Tan*, *Akşam*, *Son Posta* (her biri 102–103 sayı) ve *Vakit*'in 1939 sayıları (56) bitti. *Yeni Sabah* (103) bitti. *Haber Akşam Postası* 79/102 (OCR sürüyor). *Kurun* (Kasım–Aralık 1938) OCR kuyruğunda.
+- **Durum:** *Cumhuriyet*, *Tan*, *Akşam*, *Son Posta* (her biri 102–103 sayı) ve *Vakit*'in 1939 sayıları (56) bitti. *Yeni Sabah* (103), *Haber Akşam Postası* (102) ve *Kurun* (Kasım–Aralık 1938, 47 sayı) bitti. **Yedi gazetenin hepsinin OCR'ı tamam (yaklaşık 720 sayı).** Kalan: *Ulus* (Gaste Arşivi).
 - *Ulus* (Ankara) bu koleksiyonda yok; Gaste Arşivi oturumunda taranacak.
 
 ## *Cumhuriyet*: öne çıkan haberler
@@ -108,6 +108,16 @@
 | 1939-02-28 | *Haber* 10 | "Midyat doğuda büyük bir şehir oluyor" | S0 | 1938 sayımında 12.000 kara sığır, 20.000 koyun, 75.000 tiftik keçisi. Sade yağ (200 ton), canlı hayvan, bağırsak ve ham deri ihracı |
 
 **Değerlendirme:** Muğla ve Bilecik haberleri, Trakya'daki zincirin (seçilmiş köy → ithal/devlet boğası → yerli boğanın iğdişi → yavru sayımı) başka vilâyetlerde de uygulandığını gösteriyor. Bu, **S1 için Trakya'ya özgü olmayan bir rejim** demek. Muğla verisinde ilk kez "dağıtılan boğa başına yavru" (839 yavru / 34 boğa) gibi bir başarı ölçütü görülüyor. Bilecik'te boğa alımının köy bütçesine yüklenmesi ise ıslahın maliyetinin köye aktarıldığını gösteriyor. 13 Aralık 1938 tarihli "et meselesini devlet eline aldı" haberi, kongreden iki hafta önce sığırın **kent et arzı** tarafının da (S0/S2: taşıma kaybı, zayıflama, celep) devlet müdahalesine konu olduğunu gösteriyor. Haberde adı geçen "Ziraat Kurumu"nun hangi kurum olduğu (Ziraat Bankası mı, başka bir kurum mu) doğrulanacak.
+
+## Ek: *Kurun* (Kasım–Aralık 1938) (altıncı parti)
+
+| Tarih | Gazete, sayfa | Başlık / konu | Strand | Not |
+|---|---|---|---|---|
+| 1938-12-28 | *Kurun* 8 | Başvekil Celâl Bayar'ın kongreyi açış nutku (A.A.) | S0 | Tam metin |
+| 1938-12-29 | *Kurun* 9 | **"Ziraat kongresi komisyonları dün…"** (Ankara, telefonla) | **S1, S2, S4** | Komisyon kararlarının en ayrıntılı gazete özeti. **Sığırcılık Komisyonu:** "memlekette mevcut dört mahallî sığır ırkının et ve süt verimlerinin artırılması"; büyük şehirlerin ve batı bölgesinin süt ve et ihtiyacı için **Montafon ırkının yetiştirilmesine devam**; boğa ihtiyacı için yeterli sayıda **devlet damızlık yetiştirme müessesesi**; sığırcılığı ilerlemiş bölgelerde ıslah organizasyonları; "köylüye mal etmek için **örnek köy ve örnek yetiştiriciler**"; ıslah için **mera ve çayırların ıslahı**. **Tarla Ziraati Komisyonu:** **"hayvan gübrelerinin mahrukat olarak kullanılmaması"**, gübrenin iyi muhafazası. Bu karar, İnönü'nün Kastamonu'da duyduğu "İki senedir gübremizi yakıyoruz" sözünün (*Son Posta* 1938-12-14) kongredeki karşılığı (S2 × S4: tezek). **Atçılık Komisyonu:** ıslah-ı hayvanat kanununun yeniden düzenlenmesi; köylere hayvan bakımı kursları; yetiştiricilere "**fennî bir ahır** yapmaları için orman idaresince katiyata müsaade edilmesi ve kereste verilmesi" (S4). **Koyunculuk ve Tiftik Komisyonu:** sayım vergisinin indirilmesi; hayvanları kışın yağmur ve çamurdan korumak için **"ağıl kanununun tadili"** ile köylünün kolayca ağıl sahibi olması (S4); tuzun taksitle verilmesi |
+| 1938-12-31 | *Kurun* 3 | Asım Us, kongrenin kapanışı üzerine | S0 | Köylünün banka kredisi için şehre inip "on, on beş gün uğraşması" |
+
+**Değerlendirme:** Sığırcılık Komisyonu'nun kararları, gazetelerdeki Trakya, Muğla ve Bilecik uygulamalarıyla birebir örtüşüyor: devlet boğası, örnek köy, ıslah organizasyonu. Yani kongre yeni bir program kurmaktan çok, sahada 1935'ten beri uygulanan modeli ulusal ölçeğe taşıyor. "Gübrenin yakılmaması" ve "ağıl kanunu" kararları ise yakıt, ev ve ahır meselelerini (S4) kongre gündemine bağlıyor. Ağıl kanunu araştırılacak (tezaurusa eklenmeli; TBMM tutanakları ve Düstur).
 
 Tam liste (puan ≥3, 252 sayfa, OCR bağlam parçalarıyla) bütün gazeteler bitince `fvadc_gazete_isabetleri.csv` olarak eklenecek. Gürültü örnekleri: tefrika romanlarda "yabani öküz", "su aygırı", "boğa(z)"; ilan ve tarihî yazılar.
 
