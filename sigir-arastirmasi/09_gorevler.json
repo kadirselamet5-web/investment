@@ -1,394 +1,394 @@
 {
-  "guncelleme": "2026-10-01",
-  "durumlar": {
-    "bitti": "Bitti",
-    "suruyor": "Sürüyor",
-    "sirada": "Sırada",
-    "engel": "Erişim engeli",
-    "kullanici": "Sizden bekleniyor"
+ "guncelleme": "2026-10-01",
+ "durumlar": {
+  "bitti": "Bitti",
+  "suruyor": "Sürüyor",
+  "sirada": "Sırada",
+  "engel": "Erişim engeli",
+  "kullanici": "Sizden bekleniyor"
+ },
+ "gorevler": [
+  {
+   "id": "G01",
+   "faz": "0",
+   "baslik": "Tezaurus v1.0'ın makinece aranır hale getirilmesi (89 terim grubu, gürültü testleri)",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "cikti": "scripts/terimler.py"
   },
-  "gorevler": [
-    {
-      "id": "G01",
-      "faz": "0",
-      "baslik": "Tezaurus v1.0'ın makinece aranır hale getirilmesi (89 terim grubu, gürültü testleri)",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "cikti": "scripts/terimler.py"
-    },
-    {
-      "id": "G02",
-      "faz": "0",
-      "baslik": "Gaste Arşivi pilot testi (1938, 20 çekirdek terim) ve tezaurus v1.1",
-      "durum": "suruyor",
-      "sorumlu": "Kullanıcı + Claude",
-      "not": "Chrome bağlantısı bekleniyor"
-    },
-    {
-      "id": "G03",
-      "faz": "1",
-      "baslik": "TBMM tutanakları 1923–1950: indirme, tarama, kilit görüşmelerin okunması",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "cikti": "bulgular/01_TBMM_tutanak_bulgulari.md"
-    },
-    {
-      "id": "G04",
-      "faz": "1",
-      "baslik": "Tutanaklarda bozuk OCR'lı 1935–37 dosyalarının katlanmış terimlerle yeniden taranması",
-      "durum": "bitti",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "G05",
-      "faz": "1",
-      "baslik": "TBMM eski harfli asıl tutanaklar (Latin çevriyazısı eksik birleşimler)",
-      "durum": "kullanici",
-      "sorumlu": "Kullanıcı (göz taraması)"
-    },
-    {
-      "id": "G06",
-      "faz": "1",
-      "baslik": "Düstur 3. tertip taraması",
-      "durum": "bitti",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "G07",
-      "faz": "2C",
-      "baslik": "FVADC penceresi (15.11.1938–28.2.1939): Cumhuriyet OCR ve okuma",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "cikti": "bulgular/04_FVADC_gazete_penceresi.md"
-    },
-    {
-      "id": "G08",
-      "faz": "2C",
-      "baslik": "FVADC penceresi: Tan OCR ve okuma",
-      "durum": "bitti",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "G09",
-      "faz": "2C",
-      "baslik": "FVADC penceresi: Akşam OCR ve okuma",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "not": "OCR ve okuma bitti (rapor 04, üçüncü parti)"
-    },
-    {
-      "id": "G10",
-      "faz": "2C",
-      "baslik": "FVADC penceresi: Kurun/Vakit OCR ve okuma",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "not": "Kurun 47 + Vakit 56 sayı; rapor 04 altıncı parti"
-    },
-    {
-      "id": "G11",
-      "faz": "2C",
-      "baslik": "FVADC penceresi: Son Posta, Yeni Sabah, Haber OCR ve okuma",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "not": "Son Posta, Yeni Sabah, Haber (103+103+102); rapor 04 dördüncü ve beşinci parti"
-    },
-    {
-      "id": "G12",
-      "faz": "2C",
-      "baslik": "FVADC penceresi: Ulus (İBB'de yok)",
-      "durum": "bitti",
-      "sorumlu": "Gaste Arşivi oturumu",
-      "not": "Gaste (Chrome yan paneli): Ulus Ocak–Şubat 1939, 12 kayıt; Aralık 1938 Gaste'de yok; rapor 04 yedinci parti"
-    },
-    {
-      "id": "G13",
-      "faz": "2C",
-      "baslik": "FVADC penceresi: tam isabet listesi (CSV) ve nihai rapor",
-      "durum": "suruyor",
-      "sorumlu": "Claude",
-      "not": "Yedi gazetenin OCR ve okuması bitti; isabet CSV sitede; nihai rapor yazılacak"
-    },
-    {
-      "id": "G14",
-      "faz": "2A–2B",
-      "baslik": "TBMM olay pencereleri × Cumhuriyet 1929–1942 (24 olay, 820 sayı): OCR ve okuma",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "not": "OCR ve okuma bitti (1929–1942; 1931 ve 1940-06 yok); rapor 06 beş parti"
-    },
-    {
-      "id": "G15",
-      "faz": "2A–2B",
-      "baslik": "1931 olayları (Cumhuriyet 1931 İBB'de yok): Milliyet ya da Gaste Arşivi",
-      "durum": "suruyor",
-      "sorumlu": "Claude / Gaste",
-      "not": "Milliyet 1931 (Gaste): Islah-ı Hayvanat 4. madde ve hayvan vergisi encümen haberleri bulundu (rapor 06 altıncı parti); Temmuz 1931 kanunlaşma sayıları açılacak"
-    },
-    {
-      "id": "G16",
-      "faz": "2A–2B",
-      "baslik": "Olay pencerelerinin öteki İBB gazetelerinde taranması (Tan, Akşam, Son Posta…)",
-      "durum": "suruyor",
-      "sorumlu": "Claude",
-      "not": "Akşam, Tan, Son Posta pencere listeleri hazırlanıyor; kuyruk adım 5"
-    },
-    {
-      "id": "G17",
-      "faz": "2A–2B",
-      "baslik": "İBB gazetelerinin tam yıl anahtar kelime taraması (1929–1943)",
-      "durum": "sirada",
-      "sorumlu": "Claude",
-      "not": "En büyük kalem; önceliklendirilerek"
-    },
-    {
-      "id": "G18",
-      "faz": "2A–2B",
-      "baslik": "Gaste Arşivi: Ulus (1934–50) ve 1944–1950 bütün gazeteler (907 satırlık sorgu listesi)",
-      "durum": "suruyor",
-      "sorumlu": "Kullanıcı Chrome bağlantısı",
-      "cikti": "08_gaste_sorgu_plani.md",
-      "not": "Gaste yan paneli: 49 kayıt (Ulus 1938–39, 1947, 1949; Tan, Haber, Vakit, Cumhuriyet, Milliyet, Yeni Asır); rapor 04, 06, 07"
-    },
-    {
-      "id": "G19",
-      "faz": "2A–2B",
-      "baslik": "1923–1928 Arap harfli gazete olay pencereleri (göz taraması)",
-      "durum": "kullanici",
-      "sorumlu": "Kullanıcı"
-    },
-    {
-      "id": "G20",
-      "faz": "3",
-      "baslik": "Askerî Tıbbî Baytarî Mecmuası 1929–37 taraması",
-      "durum": "bitti",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "G21",
-      "faz": "3",
-      "baslik": "ATBM makale listesinin görüntüden doğrulanması (204 aday)",
-      "durum": "sirada",
-      "sorumlu": "Claude / Kullanıcı"
-    },
-    {
-      "id": "G22",
-      "faz": "3",
-      "baslik": "Türk Baytarlar Cemiyeti Mecmuası 1930–33 (İBB, 8 sayı): OCR ve okuma",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "not": "8 sayı OCR; rapor 02 §6a"
-    },
-    {
-      "id": "G23",
-      "faz": "3",
-      "baslik": "Ziraat Vekâleti Mecmuası 1924–25 (Arap harfli)",
-      "durum": "kullanici",
-      "sorumlu": "Kullanıcı (göz taraması)"
-    },
-    {
-      "id": "G24",
-      "faz": "2C",
-      "baslik": "FVADC kongre yayınları (51 PDF, Tarım ve Orman Bakanlığı Kütüphanesi)",
-      "durum": "kullanici",
-      "sorumlu": "Kullanıcı girişi"
-    },
-    {
-      "id": "G25",
-      "faz": "4",
-      "baslik": "Ülkü ve halkevi dergileri (metinli kayıtlar) taraması",
-      "durum": "bitti",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "G26",
-      "faz": "4",
-      "baslik": "Halkevi dergileri OCR kuyruğu (49 kayıt; 6'sı bitti)",
-      "durum": "suruyor",
-      "sorumlu": "Claude",
-      "not": "Eskişehir, Çorumlu, Erciyes, Görüşler, Hatay Resmî Gazetesi (rapor 02 §3a); Samsun On Dokuz Mayıs (§3b); Balıkesir Kaynak, Trabzon İnan, Antalya Türk Akdeniz, Niksar Ülker (§3c, 93 sayfa okundu) işlendi; kuyruk sürüyor"
-    },
-    {
-      "id": "G27",
-      "faz": "4",
-      "baslik": "Ülkü içindekiler dökümü",
-      "durum": "sirada",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "G28",
-      "faz": "5",
-      "baslik": "Yerel gazeteler 1938–50 (TBMM Açık Erişim OCR kuyruğu)",
-      "durum": "suruyor",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "G29",
-      "faz": "5",
-      "baslik": "Milli Kütüphane mikrofilmleri (yurt dışından erişilemiyor)",
-      "durum": "engel",
-      "sorumlu": "Kullanıcı"
-    },
-    {
-      "id": "G30",
-      "faz": "6",
-      "baslik": "Papers Past (Yeni Zelanda) taraması",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "cikti": "bulgular/03_ingilizce_basin_bulgulari.md"
-    },
-    {
-      "id": "G31",
-      "faz": "6",
-      "baslik": "The Times, Near East and India, Commerce Reports, HathiTrust, JSTOR",
-      "durum": "kullanici",
-      "sorumlu": "Kurumsal erişim"
-    },
-    {
-      "id": "G32",
-      "faz": "7",
-      "baslik": "Milletler Cemiyeti Antlaşmalar Dizisi (LNTS 1923–46) taraması",
-      "durum": "bitti",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "G33",
-      "faz": "7",
-      "baslik": "LONTAD arşiv dosyaları (tarayıcı doğrulaması)",
-      "durum": "engel",
-      "sorumlu": "Kullanıcı (Chrome)"
-    },
-    {
-      "id": "G34",
-      "faz": "–",
-      "baslik": "GitHub bağlantısı (commit'ler yerelde, push 403)",
-      "durum": "bitti",
-      "sorumlu": "Kullanıcı",
-      "not": "Push çalışıyor (her tur commit + push)"
-    },
-    {
-      "id": "G35",
-      "faz": "–",
-      "baslik": "Takip sitesinin (site/index.html) her turda güncellenmesi",
-      "durum": "suruyor",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "U01",
-      "faz": "Uzman",
-      "baslik": "Uzmanlık ağı veri yapısı (11_uzmanlar.json) ve sitede 'Uzmanlık ağı' bölümü",
-      "durum": "bitti",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "U02",
-      "faz": "Uzman",
-      "baslik": "Veteriner biyografileri (Gökçen, 43 yazı) → 20 kişi",
-      "durum": "bitti",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "U03",
-      "faz": "Uzman",
-      "baslik": "Tarım ve Orman Bakanlığı Kütüphanesi kataloğundan 1923–1950 yayınlarının toplanması (40 sorgu)",
-      "durum": "suruyor",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "U04",
-      "faz": "Uzman",
-      "baslik": "Aday uzmanların (katalogda çok yayını olanlar) biyografik araştırması ve ağa eklenmesi",
-      "durum": "suruyor",
-      "sorumlu": "Claude",
-      "not": "Biyografisi işlenenler: Özceben, V. Horn, Bilgemre, Yarkın, Kadaster, Kansu, Karaesmen, İzmen, N. Özbek (1 Ekim 2026). Katalogda en çok yayını olan kalan yazarlar (İyriboz, Oraman, Gökgöl, Çağlar, Hatipoğlu…) sığır/yem dışı; sığırla ilgili adaylar artık TBCM, ATBM ve gazetelerden çıkarılacak"
-    },
-    {
-      "id": "U05",
-      "faz": "Uzman",
-      "baslik": "YZE Alman öğretim üyelerinin fakülte, geliş–dönüş yılı ve Alman üniversiteleri (Kadıoğlu, Alman kaynakları)",
-      "durum": "sirada",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "U06",
-      "faz": "Uzman",
-      "baslik": "ATBM ve Türk Baytarlar Cemiyeti Mecmuası yazar–kurum dökümü (askerî baytarlar)",
-      "durum": "suruyor",
-      "sorumlu": "Claude",
-      "not": "TBCM: 1931 encümeni ve heyet (3 kişi) eklendi; 1931 taşra baytar listesi rapor 02 §6a; tam aza listesi dökülecek"
-    },
-    {
-      "id": "U07",
-      "faz": "Uzman",
-      "baslik": "Ziraat Vekâleti ve Veteriner İşleri Umum Müdürlüğü yöneticileri listesi (vekiller, genel müdürler, yıllarıyla)",
-      "durum": "sirada",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "U08",
-      "faz": "Uzman",
-      "baslik": "Yurt dışına gönderilen öğrenciler (1923–1933 Almanya grupları) ve dönüşte görev yerleri",
-      "durum": "sirada",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "U09",
-      "faz": "Uzman",
-      "baslik": "Ziraatçı ve zootekniciler (Halkalı / YZE Ziraat Fakültesi; yem, mera, hara uzmanları)",
-      "durum": "sirada",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "U10",
-      "faz": "Uzman",
-      "baslik": "Bilkent tezi 'YZE'de 1933'ten 1948'e zootekni bilimi' ve Selman Yaşar kitabı (erişim gerekli)",
-      "durum": "kullanici",
-      "sorumlu": "Kullanıcı (kütüphane erişimi)"
-    },
-    {
-      "id": "W01",
-      "faz": "Site",
-      "baslik": "Metin okuyucu: önemli sayfaların tam metni site içinde (tutanak kümeleri puan ≥6, dergi birimleri puan ≥6, bütün OCR dergi ve gazete isabetleri)",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "cikti": "site/metin/*.js"
-    },
-    {
-      "id": "W02",
-      "faz": "Site",
-      "baslik": "Her kayda PDF bağlantısı (TBMM ve İBB sayfa düzeyinde; TBMM Açık Erişim dosya düzeyinde; IA dosya PDF'i)",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "cikti": "bulgular/pdf_baglantilari.json"
-    },
-    {
-      "id": "W03",
-      "faz": "Site",
-      "baslik": "Strand bazında sentez ve ara analiz raporu",
-      "durum": "bitti",
-      "sorumlu": "Claude",
-      "cikti": "bulgular/05_sentez_ara_analiz.md"
-    },
-    {
-      "id": "W04",
-      "faz": "Site",
-      "baslik": "Yıllara göre yoğunluk grafiği (strand küçük çokluları)",
-      "durum": "bitti",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "W05",
-      "faz": "Site",
-      "baslik": "Öne çıkan dergi kayıtlarına (rapor 02 maddeleri) metin birimi eşleştirmesi",
-      "durum": "sirada",
-      "sorumlu": "Claude"
-    },
-    {
-      "id": "W06",
-      "faz": "Site",
-      "baslik": "Olay pencerelerindeki gazete sayfalarının siteye eklenmesi (OCR bittikçe)",
-      "durum": "suruyor",
-      "sorumlu": "Claude",
-      "not": "Cumhuriyet olay pencereleri tamam (1929–1942, rapor 06 beş parti); öteki gazetelerin pencereleri kuyruk bitince"
-    }
-  ]
+  {
+   "id": "G02",
+   "faz": "0",
+   "baslik": "Gaste Arşivi pilot testi (1938, 20 çekirdek terim) ve tezaurus v1.1",
+   "durum": "suruyor",
+   "sorumlu": "Kullanıcı + Claude",
+   "not": "Chrome bağlantısı bekleniyor"
+  },
+  {
+   "id": "G03",
+   "faz": "1",
+   "baslik": "TBMM tutanakları 1923–1950: indirme, tarama, kilit görüşmelerin okunması",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "cikti": "bulgular/01_TBMM_tutanak_bulgulari.md"
+  },
+  {
+   "id": "G04",
+   "faz": "1",
+   "baslik": "Tutanaklarda bozuk OCR'lı 1935–37 dosyalarının katlanmış terimlerle yeniden taranması",
+   "durum": "bitti",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "G05",
+   "faz": "1",
+   "baslik": "TBMM eski harfli asıl tutanaklar (Latin çevriyazısı eksik birleşimler)",
+   "durum": "kullanici",
+   "sorumlu": "Kullanıcı (göz taraması)"
+  },
+  {
+   "id": "G06",
+   "faz": "1",
+   "baslik": "Düstur 3. tertip taraması",
+   "durum": "bitti",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "G07",
+   "faz": "2C",
+   "baslik": "FVADC penceresi (15.11.1938–28.2.1939): Cumhuriyet OCR ve okuma",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "cikti": "bulgular/04_FVADC_gazete_penceresi.md"
+  },
+  {
+   "id": "G08",
+   "faz": "2C",
+   "baslik": "FVADC penceresi: Tan OCR ve okuma",
+   "durum": "bitti",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "G09",
+   "faz": "2C",
+   "baslik": "FVADC penceresi: Akşam OCR ve okuma",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "not": "OCR ve okuma bitti (rapor 04, üçüncü parti)"
+  },
+  {
+   "id": "G10",
+   "faz": "2C",
+   "baslik": "FVADC penceresi: Kurun/Vakit OCR ve okuma",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "not": "Kurun 47 + Vakit 56 sayı; rapor 04 altıncı parti"
+  },
+  {
+   "id": "G11",
+   "faz": "2C",
+   "baslik": "FVADC penceresi: Son Posta, Yeni Sabah, Haber OCR ve okuma",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "not": "Son Posta, Yeni Sabah, Haber (103+103+102); rapor 04 dördüncü ve beşinci parti"
+  },
+  {
+   "id": "G12",
+   "faz": "2C",
+   "baslik": "FVADC penceresi: Ulus (İBB'de yok)",
+   "durum": "bitti",
+   "sorumlu": "Gaste Arşivi oturumu",
+   "not": "Gaste (Chrome yan paneli): Ulus Ocak–Şubat 1939, 12 kayıt; Aralık 1938 Gaste'de yok; rapor 04 yedinci parti"
+  },
+  {
+   "id": "G13",
+   "faz": "2C",
+   "baslik": "FVADC penceresi: tam isabet listesi (CSV) ve nihai rapor",
+   "durum": "suruyor",
+   "sorumlu": "Claude",
+   "not": "Yedi gazetenin OCR ve okuması bitti; isabet CSV sitede; nihai rapor yazılacak"
+  },
+  {
+   "id": "G14",
+   "faz": "2A–2B",
+   "baslik": "TBMM olay pencereleri × Cumhuriyet 1929–1942 (24 olay, 820 sayı): OCR ve okuma",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "not": "OCR ve okuma bitti (1929–1942; 1931 ve 1940-06 yok); rapor 06 beş parti"
+  },
+  {
+   "id": "G15",
+   "faz": "2A–2B",
+   "baslik": "1931 olayları (Cumhuriyet 1931 İBB'de yok): Milliyet ya da Gaste Arşivi",
+   "durum": "suruyor",
+   "sorumlu": "Claude / Gaste",
+   "not": "Milliyet 1931 (Gaste): Islah-ı Hayvanat 4. madde ve hayvan vergisi encümen haberleri bulundu (rapor 06 altıncı parti); Temmuz 1931 kanunlaşma sayıları açılacak"
+  },
+  {
+   "id": "G16",
+   "faz": "2A–2B",
+   "baslik": "Olay pencerelerinin öteki İBB gazetelerinde taranması (Tan, Akşam, Son Posta…)",
+   "durum": "suruyor",
+   "sorumlu": "Claude",
+   "not": "Akşam, Tan, Son Posta pencere listeleri hazırlanıyor; kuyruk adım 5"
+  },
+  {
+   "id": "G17",
+   "faz": "2A–2B",
+   "baslik": "İBB gazetelerinin tam yıl anahtar kelime taraması (1929–1943)",
+   "durum": "sirada",
+   "sorumlu": "Claude",
+   "not": "En büyük kalem; önceliklendirilerek"
+  },
+  {
+   "id": "G18",
+   "faz": "2A–2B",
+   "baslik": "Gaste Arşivi: Ulus (1934–50) ve 1944–1950 bütün gazeteler (907 satırlık sorgu listesi)",
+   "durum": "suruyor",
+   "sorumlu": "Kullanıcı Chrome bağlantısı",
+   "cikti": "08_gaste_sorgu_plani.md",
+   "not": "Gaste yan paneli: 49 kayıt (Ulus 1938–39, 1947, 1949; Tan, Haber, Vakit, Cumhuriyet, Milliyet, Yeni Asır); rapor 04, 06, 07"
+  },
+  {
+   "id": "G19",
+   "faz": "2A–2B",
+   "baslik": "1923–1928 Arap harfli gazete olay pencereleri (göz taraması)",
+   "durum": "kullanici",
+   "sorumlu": "Kullanıcı"
+  },
+  {
+   "id": "G20",
+   "faz": "3",
+   "baslik": "Askerî Tıbbî Baytarî Mecmuası 1929–37 taraması",
+   "durum": "bitti",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "G21",
+   "faz": "3",
+   "baslik": "ATBM makale listesinin görüntüden doğrulanması (204 aday)",
+   "durum": "sirada",
+   "sorumlu": "Claude / Kullanıcı"
+  },
+  {
+   "id": "G22",
+   "faz": "3",
+   "baslik": "Türk Baytarlar Cemiyeti Mecmuası 1930–33 (İBB, 8 sayı): OCR ve okuma",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "not": "8 sayı OCR; rapor 02 §6a"
+  },
+  {
+   "id": "G23",
+   "faz": "3",
+   "baslik": "Ziraat Vekâleti Mecmuası 1924–25 (Arap harfli)",
+   "durum": "kullanici",
+   "sorumlu": "Kullanıcı (göz taraması)"
+  },
+  {
+   "id": "G24",
+   "faz": "2C",
+   "baslik": "FVADC kongre yayınları (51 PDF, Tarım ve Orman Bakanlığı Kütüphanesi)",
+   "durum": "kullanici",
+   "sorumlu": "Kullanıcı girişi"
+  },
+  {
+   "id": "G25",
+   "faz": "4",
+   "baslik": "Ülkü ve halkevi dergileri (metinli kayıtlar) taraması",
+   "durum": "bitti",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "G26",
+   "faz": "4",
+   "baslik": "Halkevi dergileri OCR kuyruğu (49 kayıt; 6'sı bitti)",
+   "durum": "suruyor",
+   "sorumlu": "Claude",
+   "not": "Eskişehir, Çorumlu, Erciyes, Görüşler, Hatay Resmî Gazetesi (rapor 02 §3a); Samsun On Dokuz Mayıs (§3b); Balıkesir Kaynak, Trabzon İnan, Antalya Türk Akdeniz, Niksar Ülker (§3c, 93 sayfa okundu); Ses (Adana), Çorum gazetesi 1946, İnan 1948, Ordu, Abant (§3d, 34 sayfa) işlendi; kuyruk sürüyor"
+  },
+  {
+   "id": "G27",
+   "faz": "4",
+   "baslik": "Ülkü içindekiler dökümü",
+   "durum": "sirada",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "G28",
+   "faz": "5",
+   "baslik": "Yerel gazeteler 1938–50 (TBMM Açık Erişim OCR kuyruğu)",
+   "durum": "suruyor",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "G29",
+   "faz": "5",
+   "baslik": "Milli Kütüphane mikrofilmleri (yurt dışından erişilemiyor)",
+   "durum": "engel",
+   "sorumlu": "Kullanıcı"
+  },
+  {
+   "id": "G30",
+   "faz": "6",
+   "baslik": "Papers Past (Yeni Zelanda) taraması",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "cikti": "bulgular/03_ingilizce_basin_bulgulari.md"
+  },
+  {
+   "id": "G31",
+   "faz": "6",
+   "baslik": "The Times, Near East and India, Commerce Reports, HathiTrust, JSTOR",
+   "durum": "kullanici",
+   "sorumlu": "Kurumsal erişim"
+  },
+  {
+   "id": "G32",
+   "faz": "7",
+   "baslik": "Milletler Cemiyeti Antlaşmalar Dizisi (LNTS 1923–46) taraması",
+   "durum": "bitti",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "G33",
+   "faz": "7",
+   "baslik": "LONTAD arşiv dosyaları (tarayıcı doğrulaması)",
+   "durum": "engel",
+   "sorumlu": "Kullanıcı (Chrome)"
+  },
+  {
+   "id": "G34",
+   "faz": "–",
+   "baslik": "GitHub bağlantısı (commit'ler yerelde, push 403)",
+   "durum": "bitti",
+   "sorumlu": "Kullanıcı",
+   "not": "Push çalışıyor (her tur commit + push)"
+  },
+  {
+   "id": "G35",
+   "faz": "–",
+   "baslik": "Takip sitesinin (site/index.html) her turda güncellenmesi",
+   "durum": "suruyor",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "U01",
+   "faz": "Uzman",
+   "baslik": "Uzmanlık ağı veri yapısı (11_uzmanlar.json) ve sitede 'Uzmanlık ağı' bölümü",
+   "durum": "bitti",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "U02",
+   "faz": "Uzman",
+   "baslik": "Veteriner biyografileri (Gökçen, 43 yazı) → 20 kişi",
+   "durum": "bitti",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "U03",
+   "faz": "Uzman",
+   "baslik": "Tarım ve Orman Bakanlığı Kütüphanesi kataloğundan 1923–1950 yayınlarının toplanması (40 sorgu)",
+   "durum": "suruyor",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "U04",
+   "faz": "Uzman",
+   "baslik": "Aday uzmanların (katalogda çok yayını olanlar) biyografik araştırması ve ağa eklenmesi",
+   "durum": "suruyor",
+   "sorumlu": "Claude",
+   "not": "Biyografisi işlenenler: Özceben, V. Horn, Bilgemre, Yarkın, Kadaster, Kansu, Karaesmen, İzmen, N. Özbek (1 Ekim 2026). Katalogda en çok yayını olan kalan yazarlar (İyriboz, Oraman, Gökgöl, Çağlar, Hatipoğlu…) sığır/yem dışı; sığırla ilgili adaylar artık TBCM, ATBM ve gazetelerden çıkarılacak"
+  },
+  {
+   "id": "U05",
+   "faz": "Uzman",
+   "baslik": "YZE Alman öğretim üyelerinin fakülte, geliş–dönüş yılı ve Alman üniversiteleri (Kadıoğlu, Alman kaynakları)",
+   "durum": "sirada",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "U06",
+   "faz": "Uzman",
+   "baslik": "ATBM ve Türk Baytarlar Cemiyeti Mecmuası yazar–kurum dökümü (askerî baytarlar)",
+   "durum": "suruyor",
+   "sorumlu": "Claude",
+   "not": "TBCM: 1931 encümeni ve heyet (3 kişi) eklendi; 1931 taşra baytar listesi rapor 02 §6a; tam aza listesi dökülecek"
+  },
+  {
+   "id": "U07",
+   "faz": "Uzman",
+   "baslik": "Ziraat Vekâleti ve Veteriner İşleri Umum Müdürlüğü yöneticileri listesi (vekiller, genel müdürler, yıllarıyla)",
+   "durum": "sirada",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "U08",
+   "faz": "Uzman",
+   "baslik": "Yurt dışına gönderilen öğrenciler (1923–1933 Almanya grupları) ve dönüşte görev yerleri",
+   "durum": "sirada",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "U09",
+   "faz": "Uzman",
+   "baslik": "Ziraatçı ve zootekniciler (Halkalı / YZE Ziraat Fakültesi; yem, mera, hara uzmanları)",
+   "durum": "sirada",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "U10",
+   "faz": "Uzman",
+   "baslik": "Bilkent tezi 'YZE'de 1933'ten 1948'e zootekni bilimi' ve Selman Yaşar kitabı (erişim gerekli)",
+   "durum": "kullanici",
+   "sorumlu": "Kullanıcı (kütüphane erişimi)"
+  },
+  {
+   "id": "W01",
+   "faz": "Site",
+   "baslik": "Metin okuyucu: önemli sayfaların tam metni site içinde (tutanak kümeleri puan ≥6, dergi birimleri puan ≥6, bütün OCR dergi ve gazete isabetleri)",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "cikti": "site/metin/*.js"
+  },
+  {
+   "id": "W02",
+   "faz": "Site",
+   "baslik": "Her kayda PDF bağlantısı (TBMM ve İBB sayfa düzeyinde; TBMM Açık Erişim dosya düzeyinde; IA dosya PDF'i)",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "cikti": "bulgular/pdf_baglantilari.json"
+  },
+  {
+   "id": "W03",
+   "faz": "Site",
+   "baslik": "Strand bazında sentez ve ara analiz raporu",
+   "durum": "bitti",
+   "sorumlu": "Claude",
+   "cikti": "bulgular/05_sentez_ara_analiz.md"
+  },
+  {
+   "id": "W04",
+   "faz": "Site",
+   "baslik": "Yıllara göre yoğunluk grafiği (strand küçük çokluları)",
+   "durum": "bitti",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "W05",
+   "faz": "Site",
+   "baslik": "Öne çıkan dergi kayıtlarına (rapor 02 maddeleri) metin birimi eşleştirmesi",
+   "durum": "sirada",
+   "sorumlu": "Claude"
+  },
+  {
+   "id": "W06",
+   "faz": "Site",
+   "baslik": "Olay pencerelerindeki gazete sayfalarının siteye eklenmesi (OCR bittikçe)",
+   "durum": "suruyor",
+   "sorumlu": "Claude",
+   "not": "Cumhuriyet olay pencereleri tamam (1929–1942, rapor 06 beş parti); öteki gazetelerin pencereleri kuyruk bitince"
+  }
+ ]
 }

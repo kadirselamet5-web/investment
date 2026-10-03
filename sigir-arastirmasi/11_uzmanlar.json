@@ -100,6 +100,14 @@
   "ANTALYA_HALKEVI": {
    "ad": "Türk Akdeniz (Antalya Halkevi Dergisi), TBMM Açık Erişim",
    "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4313"
+  },
+  "CORUM_GAZ": {
+   "ad": "Çorum gazetesi (1946, 1948), TBMM Açık Erişim",
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4192"
+  },
+  "ULKU_S2": {
+   "ad": "Ülkü Millî Kültür Dergisi, Seri 2 (Internet Archive)",
+   "url": "https://archive.org/details/ulku_milli_kultur_dergisi_seri_2"
   }
  },
  "kurumlar": [
@@ -2555,13 +2563,19 @@
    "gorevler": [
     {
      "kurum": "vet_genel",
+     "gorev": "Veteriner hekim, İzmit [?]",
+     "bas": "1942"
+    },
+    {
+     "kurum": "vet_genel",
      "gorev": "Veteriner hekim, Balıkesir",
      "bas": "1946"
     }
    ],
-   "not": "Kaynak 1946: 'Yurdumuzda Sığırcılık' (Balıkesir İli Sığır Yetiştirme Birliği; Balya-Gönen boz ırk, Manyas Montafon boğa durakları; şarbon 'mera hastalığı') ve 'Merinosçuluğumuz' (Karacabey Harası).",
+   "not": "Kaynak 1946: 'Yurdumuzda Sığırcılık' (Balıkesir İli Sığır Yetiştirme Birliği; Balya-Gönen boz ırk, Manyas Montafon boğa durakları; şarbon 'mera hastalığı') ve 'Merinosçuluğumuz' (Karacabey Harası). Ülkü (Seri 2) basın özetinde 'Kuzu kesilmesi meselesi' (İzmit, Türk Yolu, 19 Şubat 1942): Ziraat Vekâleti tamimiyle kuzuların vaktinden önce kesilmemesi, dişi kuzuların damızlık saklanması.",
    "kaynak": [
-    "BALIKESIR_HALKEVI"
+    "BALIKESIR_HALKEVI",
+    "ULKU_S2"
    ],
    "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4306"
   },
@@ -2675,11 +2689,35 @@
      "bas": "1938"
     }
    ],
-   "not": "Türk Akdeniz 1939 'Antalya'nın yüksek tahsil mezunları' biyografisi; 1305 (1889) İbradı doğumlu, baba İbrahim Hakkı, İstanbul Yüksek Baytar. Ad OCR sütun karışması nedeniyle kesin değil, PDF'ten doğrulanacak.",
+   "not": "Türk Akdeniz 1939 'Antalya'nın yüksek tahsil mezunları' biyografisi; 1305 (1889) İbradı doğumlu, baba İbrahim Hakkı, İstanbul Yüksek Baytar. Ad OCR sütun karışması nedeniyle kesin değil, PDF'ten doğrulanacak. Ülkü (Seri 2, 'Dergiler arasında', Köy Postası/Edirne tanıtımı) aynı adla 'Hayvanlarda sıtma ve genelerle savaş' başlıklı bir yazı anıyor: Kâmil Onat adının bir veteriner yazara ait olduğunu destekliyor.",
    "kaynak": [
-    "ANTALYA_HALKEVI"
+    "ANTALYA_HALKEVI",
+    "ULKU_S2"
    ],
    "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4313"
+  },
+  {
+   "id": "can_enver",
+   "ad": "Enver Can",
+   "milliyet": "Türk",
+   "alan": "veteriner (Çorum Veteriner Müdürü)",
+   "strand": [
+    "S1",
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Çorum Veteriner Müdürü",
+     "bas": "1946",
+     "bit": "1948"
+    }
+   ],
+   "not": "Çorum gazetesi Ekim 1946 'Cumhuriyette Gelişen Hayvancılık' (1945'e dek 1.333.029 erkek hayvan enenmiş; 5 hara, 7 aygır deposu, 4 inekhane, 4 sığır ıslah istasyonu); 24.11.1946 Ehli Hayvan Sergisi'ni açtı; 1948'de veteriner hekimlik öğretiminin '105. yıl'ı yazısı.",
+   "kaynak": [
+    "CORUM_GAZ"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4192"
   }
  ]
 }

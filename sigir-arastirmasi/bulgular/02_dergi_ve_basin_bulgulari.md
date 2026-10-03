@@ -263,6 +263,36 @@ Kaynak: https://acikerisim.tbmm.gov.tr/handle/11543/4306 (*Kaynak*), …/11543/4
 
 Ahır ısısının köylünün gözünde bir değer olduğu ilk kez açıkça yazılı. Trabzon'da ise yemek artıklarıyla beslenen inek ve tavuğun **aynı ahırda** tutulması tüberküloz bulaşmasına bağlanıyor.
 
+### 3d. *Ses* (Adana, 1938–1939), *Çorum* gazetesi (1946), *İnan* 1948, Ordu halkevi dergileri ve *Abant*: TBMM Açık Erişim OCR, Ekim 2026 (ikinci tur)
+
+Kaynak: https://acikerisim.tbmm.gov.tr/handle/11543/4332 (*Ses*), …/11543/4192 (*Çorum*), …/11543/4309 (*İnan*), …/11543/4300 ve …/11543/4308 (Ordu), …/11543/3922 (*Abant*). Bu turda 99 yeni isabet çıktı; okuma eşiğini geçen 34 sayfa okundu.
+
+- **S1, Halikarnas Balıkçısı, "Olağan İşler" (*Ses*, 1939, sayı 1; PDF 1029_1939_0001 s. 3 ve 20; "Şaka" köşesi):**
+  - Bir hiciv. "Cenup Anadolusuna giden bir vali" arıcılık, tavukçuluk, narenciye ile "oranın yerli **sığır sıpasını** ıslah" etmeyi tasarlıyor.
+  - Son model büyük arı kovanları kuraklıkta işe yaramıyor. Leghorn tavukları yerli tavuk kadar yumurtlamıyor ve avcı kuşlara yem oluyor; köylülere çifte dağıtılıyor.
+  - Sığır için: "**büyük Kırım boğalarının getirtilmesi tensip edildi.** Bu boğalar yerli boğalar ve inekler gibi az buçuk yiyecekle doymuyorlardı. Köylüler onlara habire paspal, kepek, arpa taşımak mecburiyetinde kaldılar. Fakat iş burada bitmedi. **Küçük anadolu inekleri, ekspres lokomotifi gibi koskocaman Kırım boğalarına çektirilince, yükü kaldıramıyorlar, ve bel kemikleri kırılıyordu.**"
+  - **S1 için:** kongreden bir yıl sonra ithal ırkla ıslaha yöneltilmiş edebî bir eleştiri. Uyumsuzluğun iki ekseni de var: yem (S2) ve beden ölçüsü (aşım ve doğum). Rapor 05 S1 hipotez 5 ("ıslahın darboğazı yem ve ahır") ile birebir örtüşüyor; Tankut'un 13 damızlık sığır anısının bir taşra karşılığı.
+- **S1 × S3, Veteriner Müdürü Enver Can, "Cumhuriyette Gelişen Hayvancılık" (*Çorum*, Ekim 1946, sayı 1355–1364; PDF s. 9 ve 11–12):**
+  - Hayvancılığın üç ayağı: "iyi vasıflı damızlıklar, rasyonel yemleme ve fenni barınaklar."
+  - Cumhuriyet devrinde 5 hara, 7 aygır deposu, 4 inekhane, 4 sığır ıslah istasyonu, 1 merinos çiftliği, 2 numune ağılı kurulmuş. 1945'te haralarda damızlık sığır 1.342 baş.
+  - "1945 yılına kadar fena vasıflı ve damızlığa elverişsiz (**1.333.029**) baş erkek hayvan enenmiştir." Enemenin ulusal ölçeği için şimdiye kadarki tek toplam rakam.
+  - 1945'te Cenup ve Uzunyayla bölgelerinde 28.032 kısrağa 43.355 aşım. Hayvan varlığı "54 milyon". Pendik ve Etlik müesseseleri.
+  - Aynı sayılardaki bir başka yazı (s. 7): köylünün hayvanları "ancak kara sapanı müşkilatla çekebilecek durumda", "her türlü zirai kalkınmayı evvela hayvan enerjisile yapmak zorundayız."
+  - Enver Can 24 Kasım 1946'da İl Aygır Deposu'nda Ehli Hayvan Sergisi'ni açıyor (s. 23).
+- **S3, *Çorum* gazetesinde "Çıkan ve söndürülen hayvan hastalığı" ilanları (1946; s. 4, 34, 37):** il daimi komisyonu her sayıda köy köy salgın listesi yayımlıyor.
+  - Sungurlu, Keskin, Polatlı, Kırıkkale, Alaca ve Merzifon köylerinde sığır ve mandada şap ve antraks; Sulusaray'da yanıkara.
+  - "**Orman Çiftliği sığırlarında antraks hastalığı çıktığı**", yani model kurumun kendi sürüsünde antraks.
+  - Mezbahası olmayan yerlerde kesim resmi: dana 45, sığır 65, deve ve manda 100 kuruş (s. 17).
+  - Bu ilanlar 1940'ların S3 coğrafyasını (salgın haritası) kurmak için **sistematik bir seri**. Diğer il gazetelerinde de aranmalı (G17'ye not).
+- **S1 × S4, *İnan* 1948, "Veteriner Bahisleri" (ttk_0000_1948_0036 s. 3–4; yazar okunmuyor):**
+  - 1947 mali sayımı: Trabzon'da 154.975 sığır, bunun 151.490'ı inek, yalnız 3.485'i öküz.
+  - Kronacher'e atıfla "Her hayvan kendi toprağının mahsulüdür". Seleksiyon ve "Doğu kırmızı" ile ıslah önerisi; inekhane ve dana büyütme depolarıyla yılda 80–100 boğa.
+  - "Burada bakım, besleme ve **hayvan meskenleri çok iptidai ve basittir.**" "Saldım çayıra, Mevlâ kayıra olmamalıdır." "Kışa zayıf ve mukavemetsiz giren hayvan ölüme mahkûmdur."
+- **S2 × S4, Ordu Halkevi Mecmuası 1945, "Tarlalarımızın gübrelenmesinde yeşil gübre" (TTK_2115_1945_0006 s. 10):** sahil köylerinde "müsait mer'a ve çayır bulunmadığından fazla hayvan beslenememekte". Hayvanların çoğu da "yazın dört beş ay otlatılmak üzere yaylalara gönderildiğinden bunlardan pek az gübre alınabilmektedir." Kimyevi gübreye köylü "Avrupa gübresi" diyor. Yaylacılık ile ova gübresi arasındaki çatışma: S2 ve S4'ü (gübre) birbirine bağlıyor.
+- **S3, Ordu Halkevi Mecmuası 1944, "Şarbon (Dalak)" (TTK_2115_1944_0005 s. 9):** halka yönelik anlatım. Hayvanlarda bulaşma "ekseriyetle otlarla"; yüzeysel gömülen leşin yerinde yetişen otları yiyen hayvanlar hastalanıyor ("şarbon evvelden beri çobanlarca da malumdur"). Samsun 1945'teki "mes'um tarla" ile aynı bilgi.
+- **Kültürel temsiller (S0):** *Ses* 1938'de "Kasap" şiiri (imza OCR'da belirsiz): "Öküzler vapurdan çıkıyor. Öküzler salhaneye gidiyor… celep gülüyor… Öküzler, köfte olacaklar." İstanbul et arzının (deniz yoluyla gelen öküz) bir imgesi (S3 sevkiyat ile bağlantılı). *Ses* 1939'da köy romanı eleştirisinde "kara sabanı ve ihtiyar öküzü ile çorak toprağın bağrından bir avuç refah koparan" köylü tipi.
+- Düşük ilgili: *Abant* (1945–47) anı ve gezi yazıları ("Vebai bakari zuhur etmiş"; Bolu'nun "geniş meraları yoktur"), *Yeşil Ordu* 1949 (yaylalarda ormanların koyun, keçi ve sığırla tahribi), Karaelmas 1938 (kelebek hastalığı).
+
 ## 4. Resmî metinler: *Düstur* (3. tertip) ve kanun metinleri
 
 Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4088). Tutanaklarda görüşülen kanunların yürürlükteki metinleri.
