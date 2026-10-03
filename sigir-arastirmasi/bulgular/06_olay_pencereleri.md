@@ -101,6 +101,27 @@ Kaynak: Gaste Arşivi (Claude in Chrome yan paneli), kayıtlar GA0038–GA0047 (
 - **Hayvan vergisinin malî ağırlığı:** 1931 bütçesinde ehlî hayvanlar vergisi 13 milyon lira (arazi vergisinin iki katından fazla). Meclis tartışması tarifeler üzerinden yürüyor (tiftik, kıl keçisi). Besim Atalay kıl keçisini "zararlı hayvan" diye daha ağır vergilendirmek istiyor: vergi bir **tür politikası** aracı.
 - **1931 vergi muafiyeti ıslahın mali aracı:** belgeli damızlık boğanın vergiden muaf tutulması 1926 Islah-ı Hayvanat Kanunu'nun boğa muayenesi ve belgesi rejimini vergiyle birleştiriyor (S1). Tek çift öküzlü köylünün muafiyeti çift hayvanını koruyor (S0); bu, 1942 yasağının da öncülü.
 
+### Yedinci parti: *Akşam* olay pencereleri (Haziran–Temmuz 1932, Ocak 1936), İBB OCR, Ekim 2026
+
+Kaynak: İBB Atatürk Kitaplığı, *Akşam* (kuyruk adım 5). 46 sayı OCR'landı; 283 isabetten puanı ≥4 olanlar okundu.
+
+| Tarih | Gazete, sayfa | Başlık / konu | Strand | Not |
+|---|---|---|---|---|
+| 1932-06-12 | *Akşam* 6 | Ankara süt laboratuvarı şefi **Ekrem Rüştü** [İzmen]'in yerli kara sığır deneyi | S1, S2 | Ayrıntı aşağıda. |
+| 1932-06-24 | *Akşam* 3 | "İnekçiler eski ahırlarının kapatılmamasını istiyorlar" | S4, S2 | İstanbul Belediyesi şehir içindeki eski ahırları kaldırmış, inek sahiplerine "muntazam ve sıhhi ahır" yapma mecburiyeti getirmiş. Süresi içinde ahır yaptırmayanların ahırları kapatılıyor. Topçular, Alibey, Topkapı ve Rami köylüleri fırkaya başvuruyor: "Bu sene mahsul az idrak edilmiştir. Köylü samanını bile hariçten tedarik ederek hayvanını yedirmiştir… bin beş yüz iki bin lira sarfederek yeni ahır yapmağa imkân yoktur." Kent çevresi sütçülüğünde sağlık mevzuatı ile yem kıtlığının çatışması. |
+| 1936-01-12 | *Akşam* 5 | Cide, Siroz köyü: yaşlı bir kadın ve iki torunu yandı | S4 | Muhtar sobayı yakıp uyumuş, "sobadan bir kıvılcım sıçrayarak harap olan odanın **alt kısmındaki ahırda kuru ot yığınlarını** tutuşturmuş". Ev-ahır bitişikliğinin (ahır ve ot deposu yaşanan odanın altında) yangın riski; Karadeniz kıyısından rapor 02 §3b (Samsun "evlerin altında") ile örtüşüyor. |
+| 1936-01-11 | *Akşam* 5 | "Merinoslar çoğalıyor" | S1 | Ziraat Müsteşarı Atıf: Almanya'dan getirilen 500 merinos Karacabey'de üç ayda 850'ye çıkmış; Macar merinosları 6.000. Sığır için yalnız dolaylı. |
+
+- **Ekrem Rüştü'nün kara sığır deneyi (*Akşam*, 12 Haziran 1932, s. 6):**
+  - Ankara Ziraat Enstitüsü süt laboratuvarı, pazardan seçilmeden 40–50 liraya birkaç yerli kara inek almış. Hiçbirinin boyu bir metreyi geçmiyor, renkleri "düz siyah".
+  - Kuru ot ve saman verildiğinde ineklerin "otu bırakıp samanı yemeye" başladığı görülmüş, yani köydeki yemlemeye alışkınlar. Bir yıl boyunca "hiç yem verilmemiş", "Ankaranın çıplak sırtlarında" bırakılmışlar; "Aç kaldıkları da olmuştur". Her gün sağılıp sütleri ölçülmüş.
+  - Sonuç: 7 yaşında, 1,09 m boyundaki bir inek 246 günde **1.033,2 kg** süt vermiş (günde 4,2 kg, %3,74 yağ, 45 kg yağ). Öbürleri 882,5, 802,1, 660,3 ve 395,9 kg vermiş.
+  - Ertesi yıl iyi yemlemeyle günde en çok 3,75 kg veren bir inek 9 kg'a çıkmış.
+  - Yazarın sonucu: "yüzlerce, ve hatta bazıları binlerce lira vererek yabancı hayvanları getirenler, ve onlara 'gak' dedikçe kepek, 'guk' dedikçe ot vermek mecburiyetinde kalanlar, hangisinin daha iktisadi olduğunu hesap etsinler… **kendi hayvanlarımız Avrupadakilere nazaran çok daha randımanlı**."
+  - **S1 için:** 1932'de ithal ırk siyasetine karşı laboratuvar verisiyle yapılmış bir "yerli ırk" savunusu. Halikarnas Balıkçısı'nın 1939 hicvi (rapor 02 §3d) ile Baysoy'un 1947'de Trabzon'da savunduğu yerel seçim (§3c) arasında bir halka.
+  - **S2 için:** "aç kalan" ve samana alışmış yerli ineğin dayanıklılığı, yem kıtlığı rejimine biyolojik uyumun kaydı.
+  - Ekrem Rüştü İzmen uzman ağında var (zootekni ve süt); bu yazı ağdaki kaydına eklenmeli.
+
 ## Ara değerlendirme
 
 - **Muğla dizisi (1933, 1936, 1939) ıslahın yerelde nasıl kurulduğunu izlemeye imkân veriyor.**
