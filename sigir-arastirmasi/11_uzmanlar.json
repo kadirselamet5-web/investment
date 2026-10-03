@@ -108,6 +108,14 @@
   "ULKU_S2": {
    "ad": "Ülkü Millî Kültür Dergisi, Seri 2 (Internet Archive)",
    "url": "https://archive.org/details/ulku_milli_kultur_dergisi_seri_2"
+  },
+  "ESKISEHIR_HURMILLET": {
+   "ad": "Hür Millet (Eskişehir), TBMM Açık Erişim",
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4349"
+  },
+  "MARAS_ENGIZEK": {
+   "ad": "Engizek (Kahramanmaraş), TBMM Açık Erişim",
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4223"
   }
  },
  "kurumlar": [
@@ -2718,6 +2726,91 @@
     "CORUM_GAZ"
    ],
    "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4192"
+  },
+  {
+   "id": "akay_razi",
+   "ad": "Razi Akay",
+   "milliyet": "Türk",
+   "alan": "veteriner (İskilip Veterineri)",
+   "strand": [
+    "S1"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "İskilip (Çorum) Veterineri",
+     "bas": "1949"
+    }
+   ],
+   "not": "Çorum 1949 'Boğa Aşım Durakları ve Sonucu' (imza 'İskilip Veterineri'; ad aynı sayıdaki terfi haberinden): köylü sığırı 90–100 cm, 120–140 kg, günde 1–1,5 kg süt; ıslah hedefi 130–150 cm, 200–250 kg, 10–15 kg; duraklara yerel itiraz. Yazar kimliği çıkarımla.",
+   "kaynak": [
+    "CORUM_GAZ"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4192"
+  },
+  {
+   "id": "okay_nazim",
+   "ad": "M. Nazım Okay",
+   "milliyet": "Türk",
+   "alan": "veteriner (Çorum Merkez Veterineri)",
+   "strand": [
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Çorum Merkez Veterineri",
+     "bas": "1946",
+     "bit": "1950"
+    }
+   ],
+   "not": "Çorum gazetesi 1946 ve 1949'da teşekkür ve tayin haberlerinde; 1950 'Sığırlarda Tüberküloz' yazısı; 1949'da geçici olarak ilden ayrılıyor.",
+   "kaynak": [
+    "CORUM_GAZ"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4192"
+  },
+  {
+   "id": "oner_nevzat",
+   "ad": "Nevzat Öner [? OCR'da bir yerde 'Önen']",
+   "milliyet": "Türk",
+   "alan": "veteriner (sığırcılık yönetimi)",
+   "strand": [
+    "S1"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Tarım Bakanlığı Veteriner Umum Müdürlüğü Sığırcılık Şubesi Müdürü",
+     "bas": "1950"
+    }
+   ],
+   "not": "Çorum 1950: il sığırcılığını incelemek üzere Ankara'dan gelip İskilip ve Alaca boğa aşım ve bakım duraklarını teftiş etti. Merkezde ayrı bir 'Sığırcılık Şubesi' bulunduğunun kaydı.",
+   "kaynak": [
+    "CORUM_GAZ"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4192"
+  },
+  {
+   "id": "renda_necmi",
+   "ad": "B. Necmi Renda",
+   "milliyet": "Türk",
+   "alan": "veteriner (Maraş Veteriner Müdürü)",
+   "strand": [
+    "S1"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Maraş merkez Veteriner Müdürü",
+     "bas": "1949"
+    }
+   ],
+   "not": "Engizek 1949: Antalya Boztepe Devlet İnekhanesi'nden yedi 'Güney sarı, kırmızı' boğanın getirilmesine nezaret için Antalya'ya gitti.",
+   "kaynak": [
+    "MARAS_ENGIZEK"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4223"
   }
  ]
 }

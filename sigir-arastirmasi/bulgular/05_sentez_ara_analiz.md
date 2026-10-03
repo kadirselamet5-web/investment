@@ -48,6 +48,9 @@ Bu belge, raporlar 01–04 ve uzmanlık ağındaki bulguları strand strand birl
 
 **Hipotezler (sınanacak)**
 1. **Boğa dağıtımı, ıslahın "köye inen" yüzüdür.** Devlet üremeyi doğrudan kontrol etmek yerine boğa (erkek hat) üzerinden denetliyor. İğdiş, "damızlığa yaramayan" erkeklerin ayıklanmasıyla bunun tamamlayıcısı. 1926 kanunundan 1939 kolektif aşım duraklarına kadar süreklilik aranmalı.
+   - **Ek (rapor 02 §3e):** Çorum'da iki-üç boğa aşım ve bakım durağı var (1949). İskilip veterinerine göre köylünün sığırı 90–100 cm, 120–140 kg ve günde 1–1,5 kg süt.
+   - Duraklara yerel itiraz var: "bu işi köylü eline bırakmak". Ankara'dan Sığırcılık Şubesi müdürü teftişe geliyor (1950).
+   - Boğa dağıtımı 1940'ların sonunda **yerinde tutulan devlet boğası** (durak) modeline geçiyor. Maraş'ta Halk Bankası kumbara ikramiyesi ve belediye piyangosu bile damızlık ile öküz dağıtımına aracı oluyor.
 2. **"Yerli–ecnebi" ikiliği hastalıkla birlikte kuruluyor.** Ülkü (Seri 1, p7247), yavru atma ve meme iltihabı gibi hastalıkların "yabancı memleketlerden getirttiğimiz kültür ırklar vasıtasıyla" girdiğini yazıyor. Aynı dönemde vebaya "hassas" ecnebi ırklar deney hayvanı olarak kullanılıyor. Islah ile hastalık (S1 × S3), ırkların dayanıklılık üzerinden tartıldığı ortak bir alan olabilir.
 3. **Doğu Anadolu kırmızısı ve Erzurum boğaları iç kaynaklı bir ıslah damarıdır.** Kayseri örneği, yabancı ırk ithalinin yanında yurt içi bir ırk hiyerarşisine işaret ediyor. Rapor 01'deki Kars ve Göle kayıtlarıyla birlikte izlenmeli.
    - **Ek (rapor 02 §3c):** Trabzon'da Becan (1946) "doğu kırmızısı veçhesinde" ıslahı yürütüyor. Baysoy (1947) ise doğudan boğa getirmeyi bile bırakıp yerel ineklerin erkek yavrularıyla **mahallî seleksiyon** savunuyor; Trabzon istasyon ineklerinin 1.100 kg süt verdiğini, Çifteler'deki kara sığırın 743 kg verdiğini bildiriyor.
@@ -92,6 +95,8 @@ Bu belge, raporlar 01–04 ve uzmanlık ağındaki bulguları strand strand birl
    - Halk dili de aynı yapıyı taşıyor: Trabzon'daki "usul olmuş dana" deyimi kış boyu saman yiyen danayı anlatıyor; atasözü "Samanın varsa marta koy yoksa koca öküzün derisini arda koy" diyor.
    - Balıkesir'de iki köy arasındaki "bitip tükenmez" mera kavgası (1937) S2 hipotez 2 için ek kanıt.
 2. **Mera, 1940'larda tarla genişlemesine feda ediliyor ve bu S2 krizini derinleştiriyor.** Savaş yıllarındaki "meraları sürme" ile 1945 kırımı arasındaki ilişki, bölgesel veriyle (Konya, Eskişehir, Polatlı, Aksaray) sınanmalı.
+   - **Ek (rapor 02 §3e):** *Hür Millet* (Eskişehir, Aralık 1949) kasaplık hayvan kıtlığının birinci sebebini "çayır ve otlakların tarla haline getirilmesi" olarak sayıyor. 1948–49 kışında hayvanlar "98 gündenberi ağıllarında kapalı" kalıyor; Ziraat Bankası yem kredisi bir yılda üç katına çıkıyor.
+   - Yani 1949'da hipotez taşra basınında bir teşhis olarak dolaşımda. Kriz kışlama (S2 H1) ile mera kaybının (H2) birleşimi.
 3. **Yem bilgisi Alman zootekni ve ziraat biliminden (Falke'nin "yeşil ziraat"i, silaj) gelip köy pratiğine direnç gösteriyor.** Yonca diyaloğu bu direncin bir örneği.
 
 ---

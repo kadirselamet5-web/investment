@@ -293,6 +293,57 @@ Kaynak: https://acikerisim.tbmm.gov.tr/handle/11543/4332 (*Ses*), …/11543/4192
 - **Kültürel temsiller (S0):** *Ses* 1938'de "Kasap" şiiri (imza OCR'da belirsiz): "Öküzler vapurdan çıkıyor. Öküzler salhaneye gidiyor… celep gülüyor… Öküzler, köfte olacaklar." İstanbul et arzının (deniz yoluyla gelen öküz) bir imgesi (S3 sevkiyat ile bağlantılı). *Ses* 1939'da köy romanı eleştirisinde "kara sabanı ve ihtiyar öküzü ile çorak toprağın bağrından bir avuç refah koparan" köylü tipi.
 - Düşük ilgili: *Abant* (1945–47) anı ve gezi yazıları ("Vebai bakari zuhur etmiş"; Bolu'nun "geniş meraları yoktur"), *Yeşil Ordu* 1949 (yaylalarda ormanların koyun, keçi ve sığırla tahribi), Karaelmas 1938 (kelebek hastalığı).
 
+### 3e. İl gazeteleri, 1947–1950 (*Çorum*, *Hür Millet*/Eskişehir, *Engizek*/Maraş, *Güney Postası*/Adana-Antep, *Dirlik*, *Hakikat*): TBMM Açık Erişim OCR, Ekim 2026 (üçüncü tur)
+
+Kaynak: https://acikerisim.tbmm.gov.tr/handle/11543/4192 (*Çorum*), …/11543/4349 (*Hür Millet*), …/11543/4223 (*Engizek*), …/11543/4346 (*Güney Postası*), …/11543/4363 (*Dirlik*), …/11543/4195 (*Hakikat*). Bu turda 839 yeni isabet çıktı; okuma eşiğini geçen 294 sayfanın hepsi tarandı, yaklaşık 40'ı derin okundu. *Hakikat* 1950'nin OCR'ı çok bozuk, PDF'ten göz taraması gerekiyor. Bu gazeteler, rapor 06'daki büyük gazetelerin göremediği **1947–50 taşra** tablosunu veriyor.
+
+**S2: 1948–49 kışı ve yem**
+- **"Kasaplar haksız değildirler" (*Hür Millet*, Eskişehir, Şubat 1949):**
+  - "Bütün iri ve ufak baş hayvanlar tamam **98 gündenberi ağıllarında kapalı durmakta, otlağa çıkamamakta**, arpa ve yulaf gibi pahalı yemlerle beslenmektedir."
+  - Önerilen çare: "Toprak Mahsulleri Ofisinden sürü sahiplerine ucuz yem satmak, hatta ödünç vermek lâzımdır. Aksi takdirde… et buhranı iki misli artacak ve hayvan nesli mahvolmak…"
+  - Ziraat Bankası Eskişehir şubesi kışın "tahminden çok şiddetli ve sürekli" olması üzerine çiftçiye 177.000 liralık yem yardımı yapmış, geçen yılın üç katı (*Hür Millet*, Nisan 1949).
+- **"Köylerimizde Hayvancılık ve Otlaklar" (*Hür Millet*, Aralık 1949):**
+  - Büyük şehirlerde bile "kasaplık hayvan kıtlığı" var. Birinci sebep: "Hayvanlar için ayrılmış olan **çayır ve otlakların tarla haline getirilmesinden otlaklarımızın azalması**."
+  - Öbür sebepler: hastalıklar, kurak yıllarda yem eksikliği, ıslahsız "küçük cüsseli ve cılız" ırk, bakım bilgisizliği.
+  - Öneri: yonca ve korunga ile köyde numune yoncalığı.
+  - Rapor 05 S2 hipotez 2 (mera tarlaya feda ediliyor) için 1949 taşrasından doğrudan bir tanıklık.
+- **Yem bilgisi (*Çorum*, 1950, "Tarım köşesi"):** "yalnız saman yedirilen bir hayvandan herhangi bir verim veya iş beklemek doğru değil"; saman "hayvanın karnını şişirerek" hazmı sağlar, "başka bir fayda temin etmez". Kesif yem, silo ("yem turşusu") ve yonca dizisi.
+- **Mera kavgası ve Marshall:** *Çorum* 1950 Marshall planı ülkelerinin "meralar meselesi" toplantısını aktarıyor ("Meralara iyi bak, inekler kendi kendini…"); *Dirlik* 1949–50'de meraların geliştirilmesi. Eskişehir Ziraat Odası'nın bakana listesinde "mera davası" (Rıza Tarım, Eylül 1948): "Türkiyede hayvancılık ve hayvan üretme işi inhitat hâlindedir."
+- **Kültürel izler:**
+  - "Yem borusu" deyiminin açıklaması (*Güney Postası* 1948): Sarıkamış'ta aç atları yemsiz yem borusuyla oyalayan onbaşı.
+  - Eskişehir'de bir hiciv şiiri (1949): "Aç yatarken ahırda benim kakavan öküz… Lâfla pilav pişerse deniz kadar yağ benden!"
+
+**S1: boğa durakları ve ıslahın taşradaki ölçüsü**
+- **İskilip Veterineri [Razi Akay], "Boğa Aşım Durakları ve Sonucu" (*Çorum*, 1949):**
+  - İlde iki aşım ve bakım durağı var (merkez Bozboğa, İskilip Akkaya); üçüncüsü Alaca'da kuruluyor.
+  - "Köylünün elindeki sığırlar vasatî **90–100 cm yükseklikte, 120–140 kilo ağırlığında**. Bir günde **1–1,5** [OCR "gr"] süt vermektedirler."
+  - Islahla hedef 130–150 cm, 200–250 kg ve 10–15 kg süt; 150 liralık hayvan 200–250 lira edecek.
+  - Duraklara yerel itiraz var: "bugün verimi yok diye bu yeni teşekkülü bozmak ve dağıtmak, eskiye rücu ile bu işi köylü eline bırakmak çok hatalı."
+  - Köylünün sığırına dair şimdiye kadarki **en somut ölçüler**; kongrenin "soysuzlaşma" teşhisinin sayısal karşılığı.
+- **Veteriner Umum Müdürlüğü Sığırcılık Şubesi Müdürü Nevzat Öner** (*Çorum*, 1950) İskilip ve Alaca duraklarını teftiş ediyor: merkezin sığır ıslahını il il izlediğini gösteriyor.
+- *Çorum* il daimi komisyonu: Ağustos–Aralık 1948'de "Damızlığa yaramıyan **2298** erkek hayvan enenmiştir" (bkz. §3d'deki ulusal 1.333.029).
+- **Eskişehir:** Çifteler Harası "senelerdenberi yüzlerce **boz ırk boğa**" dağıtmış (*Hür Millet*, Nisan 1948); hara 400–500 kg'lık "**Plevne ırkı boz inek**" satıyor (Haziran 1948).
+  - Beylikahır hayvan sergisinde Montafon yavrulu inekler gösteriliyor (Ekim–Kasım 1949, Veteriner Başmüdürü Şevki Bey); Bozöyük'te boğa sergisi (Haziran 1949).
+  - Çifteler'de "süt tayı tavlasının ağıla tahvili" ihalesi (Mayıs 1948): hara at yetiştirmeden koyun ve sığıra kayıyor.
+- **Maraş (*Engizek*, 1949):** Veteriner müdürü B. Necmi Renda, Antalya Boztepe Devlet İnekhanesi'nden yedi baş "Güney sarı, kırmızı" boğa getirmeye gidiyor. Halk Bankası kumbara çekilişiyle de boğa ikramiyesi veriliyor. Belediye piyangosunun ikramiyeleri arasında "bir çift manda öküzü", "bir çift karasığır öküzü", "inek" var.
+
+**S3: tüberküloz ve sığır**
+- *Çorum*'da Veteriner Müdürü [Enver Can], "Verem Hayvandan İnsanlara Nasıl Bulaşır" (1948).
+- İl veteriner teşkilatı 1949'da merkez, İskilip ve Sungurlu ile ikişer köyde **sığır ve mandalarda tüberküloz taraması** başlatıyor.
+- Merkez Veterineri M. Nazım Okay, "Sığırlarda Tüberküloz" (1950).
+- Aynı yıl bir tüccar 100 inek alacak "fenni bir ahırla bir fenni süt evi" kurmak için başvuruyor (1948).
+- S3'te verem, 1940'ların sonunda insan verem savaşına (Verem Savaş Dernekleri) bağlanan yeni bir sığır sorunu olarak öne çıkıyor.
+
+**S4 ve S0: ortak sürü, gübre, siyaset**
+- **Engizek 1949, mizahi diyalog:**
+  - Belediyenin "Çiftçi Mallarını Koruma" bekçileri bağ ve bostan kıyısında yakaladıkları hayvanları "tutsak pazarındaki deposuna" dolduruyor; ceza "D.P.liden beş, C.P.liden iki buçuk lira".
+  - "Sabah sabah mallarını **nahırcıya** teslim edenler…"; başıboş hayvan cezasını "sığırtmacın aylığından" kesme önerisi.
+  - Kasabada ortak sürü (nahır) düzeni ve 1946 sonrası çok partili siyaset aynı sahnede.
+- **Kent içinde ahır ve gübre:** Nizip'te jandarma konağının altındaki ahırın gübresi her gün cadde kenarına yığılıyor (*Güney Postası*, 1947). Maraş'ta köylü tasvirinde "ahırların nemli tezeklerinden… havalanan kara sinekler" (*Engizek*, 1949).
+- **Aşiret:** "mevcudu 10 binleri bulan Aydınlı aşireti" Engizek, Toros ve Binboğa yaylalarından iniyor; bir oba üyesi "göçüp konmaktan bıktıklarını" ve yerleştirilmeyi beklediklerini anlatıyor (*Engizek*, 1949).
+- **Siyasal mecaz (*Engizek*, 1948, piyes):** "memleketimizi… bir **manda** yapmak istiyorlar… Güya biz süt veren bir inekten başka bir şey olmayacağız… Biz ise kuru ot yiyerek onları besleyeceğiz." Sağılan hayvan bir bağımlılık (manda/mandate) imgesi olarak kullanılıyor.
+- **Canlı hayvan ihracı (*Hür Millet*, Eylül 1948):** Ticaret Bakanı Cemil Barlas'ın ihracat kararı İstanbul basınında "yaygara"ya yol açmış. Yazara göre ihraç "Erzurum için hayati bir iştir"; yasaklanırsa "kaçakçılık başlıyacakdır". S3 ve sınır ile et fiyatı çatışması.
+
 ## 4. Resmî metinler: *Düstur* (3. tertip) ve kanun metinleri
 
 Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4088). Tutanaklarda görüşülen kanunların yürürlükteki metinleri.
