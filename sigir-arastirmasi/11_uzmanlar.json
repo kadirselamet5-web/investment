@@ -84,6 +84,10 @@
   "GASTE_ULUS": {
    "ad": "Ulus (Gaste Arşivi), Ocak–Şubat 1939; bulgular/gaste/gaste_kayitlari.csv",
    "url": "https://www.gastearsivi.com/"
+  },
+  "SAMSUN_HALKEVI": {
+   "ad": "On Dokuz Mayıs (Samsun Halkevi Dergisi), TBMM Açık Erişim OCR; rapor 02 §3b",
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4304"
   }
  },
  "kurumlar": [
@@ -735,11 +739,12 @@
      "bas": "1950"
     }
    ],
-   "not": "TBMM 16 Haziran 1932: Eskişehir mebusunun 'Baytar Süreyya Bey'in icat ettiği veba-i bakarî aşısı' sualı (rapor 01). ATBM 1930: Almanya'daki doktorası üzerine yazı. Tuğgeneral 1946.",
+   "not": "TBMM 16 Haziran 1932: Eskişehir mebusunun 'Baytar Süreyya Bey'in icat ettiği veba-i bakarî aşısı' sualı (rapor 01). ATBM 1930: Almanya'daki doktorası üzerine yazı. Tuğgeneral 1946. Samsun Halkevi dergisinde (1945, sayı 70) taşradan bir veteriner yazısı, 'profesörümüz Süreya Aygün'ün Pastör'ün şarbon aşısını tadil edip pratik hale getirdiğini, aşının yurtta bolca yapılıp dışarıya da gittiğini yazıyor.",
    "kaynak": [
     "GOKCEN",
     "TBMM",
-    "ATBM"
+    "ATBM",
+    "SAMSUN_HALKEVI"
    ],
    "url": "https://www.hazimgokcen.net/guncel/veteriner-hekimi-tuggeneral-ord-prof-dr-sureyya-tahsin-aygun/"
   },
@@ -2454,6 +2459,53 @@
    "not": "1949 Devlet Örnek ve Üretme Çiftlikleri tasarısını Meclis'te savundu (Ulus 4.6.1949).",
    "kaynak": [
     "GASTE_ULUS"
+   ]
+  },
+  {
+   "id": "unal_mumtaz",
+   "ad": "Mümtaz Ünal",
+   "milliyet": "Türk",
+   "alan": "veteriner (Samsun Veteriner Müdürü)",
+   "strand": [
+    "S1",
+    "S2"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Samsun Veteriner Müdürü",
+     "bas": "1942"
+    }
+   ],
+   "not": "\"Samsunun iktisadi varlıkları\" (On Dokuz Mayıs, 1942, sayı 59): Samsun 'Türkiye'nin Mezopotamyası'; Osmanlı haraları ve soysuzlaşmış Canik atları.",
+   "kaynak": [
+    "SAMSUN_HALKEVI"
+   ]
+  },
+  {
+   "id": "cetiner_mithat",
+   "ad": "Mithat Çetiner",
+   "milliyet": "Türk",
+   "alan": "hayvancılık (Samsun)",
+   "strand": [
+    "S2"
+   ],
+   "not": "\"Samsun'un hayvan durumuna toplu bir bakış\" (On Dokuz Mayıs, 1946, sayı 73): ova, tütün kuşağı ve Havza-Lâdik bölgelemesi; ovada sığır ve manda. Mesleği doğrulanacak.",
+   "kaynak": [
+    "SAMSUN_HALKEVI"
+   ]
+  },
+  {
+   "id": "kunter_kamil",
+   "ad": "Kâmil Kunter",
+   "milliyet": "Türk",
+   "alan": "hekim (köy sağlığı)",
+   "strand": [
+    "S4"
+   ],
+   "not": "\"Köy Evleri\" (On Dokuz Mayıs, 1941): ahırların evlerin altında olduğunu, ahır kokusunun odaya girdiğini yazıyor; ahırın evin yanına ya da karşısına taşınmasını öneriyor.",
+   "kaynak": [
+    "SAMSUN_HALKEVI"
    ]
   }
  ]

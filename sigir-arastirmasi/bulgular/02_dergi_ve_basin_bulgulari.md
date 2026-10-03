@@ -133,6 +133,41 @@ Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4086) 
   - Kaynak olarak "İhsan Abidin, Anadolu'da ziraat ve yetiştirme, s. 614" anılıyor. Bu, İhsan Abidin Akıncı'nın TOK'taki "Anadolu Ziraat ve Yetiştirme Vaziyeti" eseri; uzman ağında Akıncı'nın etkisinin yerel yazıya ulaştığını gösteriyor.
 - ***Taşpınar*** (Afyon Halkevi, 1934–46): Osmanlı terekeleri ve narh defterlerinde *lahm-i bakar* (sığır eti) fiyatları (1936); yayla ve göç şiirleri (1941). Tarihsel arka plan için ayrıca okunacak.
 
+### 3b. *On Dokuz Mayıs* (Samsun Halkevi Dergisi, 1935–1949): TBMM Açık Erişim OCR, Ekim 2026
+
+Kaynak: https://acikerisim.tbmm.gov.tr/handle/11543/4304. Halkevi OCR taramasının bu turunda 189 yeni isabet çıktı, çoğu bu dergiden. Puanı yüksek sayfalar okundu. Karadeniz kıyı ovası (Bafra, Çarşamba, Terme) için iç Anadolu ve Doğu tanıklıklarına karşılık gelen bir **nemli ova, mısır-tütün ve manda** profili veriyor.
+
+- **S4, Dr. Kâmil Kunter, "Köy Evleri" (1941, İkincikânun–Şubat sayısı, s. 28–29; PDF s. 16–17):**
+  - Sağlık gözüyle bir köy evi eleştirisi. İlk madde: "Umumiyetle **hayvanlarının ahırları barındıkları evlerin ve odaların altındadır.** Bunu… sıhhi bir hale koymak için mümkün olabildiği derecede **evlerinin altından ahırları çıkartıp evlerinin yanlarında veya karşı taraflarında yaptırılması** sıhhatlerince muvafık ve münasiptir."
+  - Pencereler "otuz santim kutrunda birer delik"; "Her zaman hava mahsur kaldığı gibi **altından ahır kokusu da inzimam etmektedir.**"
+  - Ahır için öneriler: "Ahırlarda **hayvanı bütün gübreleri içerisinde yatırdıklarından**… bu ahırların toprak kısmı kaldırım olmalı; ve hayvanı soğuktan korumak için üzerine kuru ot veya saman dökmelidir." Ahırın içi görülecek bir pencere olmalı.
+  - Ayak yolu yatılan odanın yanında; hamamcık, kerevet yok.
+  - **S4 için:** Karadeniz'de sığırın evin **alt katında** barınması (Gediz'deki "dam", Çorum'daki "aynı kapı" ve Doğu'nun "kış odası" ile karşılaştır). Hekimin önerisi 1924 Köy Kanunu'nun ev-ahır ayırma ilkesini tekrarlıyor; öneri yatay ayırma, yani ahırı yana ya da karşıya taşımak. Ahırın gübresi aynı metinde hem bir hijyen sorunu hem de yataklık meselesi olarak görünüyor.
+- **S1 × S2, Mümtaz Ünal (Veteriner Müdürü), "Samsunun iktisadi varlıkları" (1942, sayı 59, PDF s. 6):** Samsun'u "Türkiye'nin Mezopotamyası" diye tanıtıyor. Hayvancılık faslı Osmanlı haralarına (III. Selim döneminde 135) ve Çarşamba ile Lâdik'te soysuzlaşmış "Canik atları"na dayanıyor. Bölgenin veteriner müdürü yerel ıslah anlatısını at üzerinden kuruyor.
+- **S2, Mithat Çetiner, "Samsun'un hayvan durumuna toplu bir bakış" (1946, sayı 73, PDF s. 15):**
+  - Üç kuşak: Bafra, Çarşamba ve Terme'nin mısır-tütün ovası, yukarı tütün kuşağı ve Havza-Lâdik.
+  - Ovada mevcut yemle beslenen başlıca hayvanlar sığır ve manda.
+  - Yem rejimi tarım ürününe (mısır) bağlanıyor.
+- **S1, Samsun'da kurulması planlanan devlet çiftliğinin programı (1944, sayı 68, PDF s. 4):**
+  - Köylüye **koşum öküzü** sağlamak; öküz yerine at koşumunu yaymak.
+  - "**Mıntaka kara sığırlarımız bilhassa dejenere olmuş, süt verim kabiliyetleri pek azalmış**"; sade yağ başka illerden getiriliyor.
+  - Domuz, kümes ve mandıracılık (krema makinesi: OCR'da "ekremüz" [?], yayık) öğretimi.
+  - Kongrenin (1938) "yerli ırk soysuzlaştı" teşhisinin taşrada altı yıl sonra yerel bir kurum programına dönüştüğü görülüyor (S1 hipotez 4, rapor 05).
+- **S3, şarbon ve mezbaha yazısı (1945, sayı 70, PDF s. 14–16; yazar OCR'da okunmuyor, PDF'ten bakılacak):**
+  - "**Samsun bölgesi bu hastalığın en çok bulunduğu mıntakalardan biridir.**"
+  - Leşlerin gömülmemesi yüzünden sporlar yayılmış; köylü şarbonlu tarlaya "**Mes'um tarla**" diyor ve oradaki merada hayvan otlatmıyor; hastalığın halk adı "**Dalak**".
+  - Samsun Gazi caddesindeki köylü ayakkabısı yapan kunduracılar arasında şarbon sık görülüyor, ölenler var.
+  - Önerilen tedbirler: ihbar; leşi açmadan, derisiyle 3 m derine gömmek ya da yakmak; yıllık aşı.
+  - "Değerli bilginimiz ve profesörümüz **Süreya Aygün**" Pastör'ün şarbon aşısını "epiyi tadil etmiş", aşı yurtta bolca yapılıyor ve dışarıya da gidiyor. Bu, Aygün'ün şarbon aşısının taşra veteriner yazısında anıldığını gösteriyor (uzman ağı, `aygun`).
+  - Mezbaha belediyenin "varidat menbaı" değil "sıhhat müessesesi" olmalı; fazla resim eti fakire pahalılaştırıyor.
+  - Et buhranında Sivas, Kayseri ve Kars'tan getirilen kasaplık sığırlarda **silâhsız tenya** ("abdest bozan").
+  - **S3 için:** halk bilgisi (mes'um tarla, dalak) ile laboratuvar aşısı aynı metinde. Sığır ticaretinin (doğudan sevk) parazit taşıdığı anlatılıyor.
+- **S2, Çarşamba ilçe monografisi (1949, sayı 103, PDF s. 12):**
+  - Çarşamba ovasında "zengin çayır ve otlaklar"; ova Caniğin koyun sürülerine kışlak.
+  - "Ovanın geniş ormanlarında başı boş dolaşan ve **yılgı** denilen at sürüleri ile mandalar". Bu yarı yabani sürü düzeni Gediz'deki Yunt dağı korularıyla karşılaştırılmalı.
+  - Sayılar: öküz 15.000, inek 17.000, manda 5.000, at 3.000; koyun yalnız 3.000.
+  - Ürün: yılda 200.000 kg yağ, 1.000.000 kg yoğurt, 50.000 kg peynir. Çarşamba ve Terme ilçeleri hayvan ürünlerinde başta.
+
 ## 4. Resmî metinler: *Düstur* (3. tertip) ve kanun metinleri
 
 Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4088). Tutanaklarda görüşülen kanunların yürürlükteki metinleri.
