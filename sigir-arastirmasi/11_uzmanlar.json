@@ -88,6 +88,18 @@
   "SAMSUN_HALKEVI": {
    "ad": "On Dokuz Mayıs (Samsun Halkevi Dergisi), TBMM Açık Erişim OCR; rapor 02 §3b",
    "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4304"
+  },
+  "BALIKESIR_HALKEVI": {
+   "ad": "Kaynak (Balıkesir Halkevi Mecmuası), TBMM Açık Erişim",
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4306"
+  },
+  "TRABZON_HALKEVI": {
+   "ad": "İnan (Trabzon Halkevi Dergisi), TBMM Açık Erişim",
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4309"
+  },
+  "ANTALYA_HALKEVI": {
+   "ad": "Türk Akdeniz (Antalya Halkevi Dergisi), TBMM Açık Erişim",
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4313"
   }
  },
  "kurumlar": [
@@ -2507,6 +2519,167 @@
    "kaynak": [
     "SAMSUN_HALKEVI"
    ]
+  },
+  {
+   "id": "tuncay_b",
+   "ad": "B. Tunçay",
+   "milliyet": "Türk",
+   "alan": "veteriner (Balıkesir Baytar Müdürü)",
+   "strand": [
+    "S1",
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Balıkesir Baytar Müdürü",
+     "bas": "1933",
+     "bit": "1935"
+    }
+   ],
+   "not": "Kaynak 1935: 1933 il raporu (şarbon 5 köy, şap 56 köy, 771 sığıra dalak aşısı; 882 tosun enenmiş; Balya boz ırkı Plevne boğalarıyla; Ağıllar Kanunu: 42 yeni, 237 ıslah ağıl); 'Hayvanlarda verem', sütten kesme yazıları. Adının açılımı bilinmiyor.",
+   "kaynak": [
+    "BALIKESIR_HALKEVI"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4306"
+  },
+  {
+   "id": "turker_hasanali",
+   "ad": "Hasan Âli Türker",
+   "milliyet": "Türk",
+   "alan": "veteriner hekim (Balıkesir)",
+   "strand": [
+    "S1",
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Veteriner hekim, Balıkesir",
+     "bas": "1946"
+    }
+   ],
+   "not": "Kaynak 1946: 'Yurdumuzda Sığırcılık' (Balıkesir İli Sığır Yetiştirme Birliği; Balya-Gönen boz ırk, Manyas Montafon boğa durakları; şarbon 'mera hastalığı') ve 'Merinosçuluğumuz' (Karacabey Harası).",
+   "kaynak": [
+    "BALIKESIR_HALKEVI"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4306"
+  },
+  {
+   "id": "uluer_ziya",
+   "ad": "Ziya Uluer",
+   "milliyet": "Türk",
+   "alan": "veteriner (Antalya Veteriner Müdürü)",
+   "strand": [
+    "S1",
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Antalya Veteriner Müdürü",
+     "bas": "1938"
+    }
+   ],
+   "not": "Türk Akdeniz 1938 'Veteriner İşleri': Balıkesir'den 70 kara sığır damızlık, 4.500 tosun enenmiş, 17 numune köyü, öküz kıranının kaldırılması, 10 Montafon boğası, ihracat için tahaffuzhane.",
+   "kaynak": [
+    "ANTALYA_HALKEVI"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4313"
+  },
+  {
+   "id": "becan_yahya",
+   "ad": "Yahya Becan",
+   "milliyet": "Türk",
+   "alan": "veteriner (Trabzon Veteriner Müdürü)",
+   "strand": [
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Trabzon Veteriner Müdürü",
+     "bas": "1946",
+     "bit": "1947"
+    }
+   ],
+   "not": "İnan 1946 'Trabzon sığırcılığı üzerinde çalışmalar' (148.544 inek; doğu kırmızısı veçhesinde ıslah; Değirmendere Boğa Yetiştirme İstasyonu); İnan 1947 'Tüberküloz Savaşı' (ahırda inek-tavuk birlikte, yemek artıklarıyla besleme).",
+   "kaynak": [
+    "TRABZON_HALKEVI"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4309"
+  },
+  {
+   "id": "baysoy_fehmi",
+   "ad": "Fehmi Baysoy",
+   "milliyet": "Türk",
+   "alan": "veteriner (Trabzon)",
+   "strand": [
+    "S1"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Veteriner, Trabzon (Değirmendere istasyonu çevresi)",
+     "bas": "1947"
+    }
+   ],
+   "not": "İnan 1947 'Trabzon Sığırlarının İnkişaf Yolları ve Verim Kabiliyetleri': doğudan boğa getirmeye karşı yerel ineklerin erkek yavrularıyla mahallî seleksiyon; süt verimi karşılaştırması (yerli kara 374 kg, Çifteler'de 743 kg, Trabzon istasyonu 1.100 kg).",
+   "kaynak": [
+    "TRABZON_HALKEVI"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4309"
+  },
+  {
+   "id": "onat_kamil",
+   "ad": "Kâmil Onat [?]",
+   "milliyet": "Türk",
+   "alan": "veteriner (hara, veba-yı bakarî mücadelesi)",
+   "strand": [
+    "S1",
+    "S3"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "Konya Hayvanat Deposu Müdürü",
+     "bit": "1919"
+    },
+    {
+     "kurum": "vet_genel",
+     "gorev": "Konya Veteriner Müfettişi",
+     "bas": "1919",
+     "bit": "1924"
+    },
+    {
+     "kurum": "vet_genel",
+     "gorev": "Cebelibereket veba-yı bakarî mücadelesi grup reisi",
+     "bas": "1927",
+     "bit": "1928"
+    },
+    {
+     "kurum": "vet_genel",
+     "gorev": "Uzunyayla ıslah ve teksir-i hayvanat mıntıka müfettişi",
+     "bas": "1929"
+    },
+    {
+     "kurum": "vet_genel",
+     "gorev": "Sultansuyu Harası müdürü; Cenup mıntıkası mücadele reisi",
+     "bas": "1931"
+    },
+    {
+     "kurum": "ziraat_vekaleti",
+     "gorev": "Veteriner İşleri U.M. idare ve müessesat şubesi müdürü; Adana Veteriner Başmüdürü",
+     "bas": "1938"
+    }
+   ],
+   "not": "Türk Akdeniz 1939 'Antalya'nın yüksek tahsil mezunları' biyografisi; 1305 (1889) İbradı doğumlu, baba İbrahim Hakkı, İstanbul Yüksek Baytar. Ad OCR sütun karışması nedeniyle kesin değil, PDF'ten doğrulanacak.",
+   "kaynak": [
+    "ANTALYA_HALKEVI"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4313"
   }
  ]
 }

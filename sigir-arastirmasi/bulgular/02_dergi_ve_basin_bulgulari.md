@@ -168,6 +168,101 @@ Kaynak: https://acikerisim.tbmm.gov.tr/handle/11543/4304. Halkevi OCR taramasın
   - Sayılar: öküz 15.000, inek 17.000, manda 5.000, at 3.000; koyun yalnız 3.000.
   - Ürün: yılda 200.000 kg yağ, 1.000.000 kg yoğurt, 50.000 kg peynir. Çarşamba ve Terme ilçeleri hayvan ürünlerinde başta.
 
+### 3c. *Kaynak* (Balıkesir Halkevi, 1933–1946), *İnan* (Trabzon Halkevi, 1938–1947), *Türk Akdeniz* (Antalya Halkevi, 1937–1939) ve *Ülker* (Niksar, 1936): TBMM Açık Erişim OCR, Ekim 2026
+
+Kaynak: https://acikerisim.tbmm.gov.tr/handle/11543/4306 (*Kaynak*), …/11543/4309 (*İnan*), …/11543/4313 (*Türk Akdeniz*), …/11543/4299 (*Ülker*). Bu turda 309 yeni isabet çıktı. Puanı ≥6 olan sayfaların hepsi ve puanı 4–5 olup sığır, ahır, tezek, yem, mera ya da veteriner terimi taşıyan sayfalar (toplam 93) okundu. Balıkesir dergisi S4 için şimdiye kadarki en zengin halkevi kaynağı: köy yapısı, ateş inançları ve yerel söz derlemeleri aynı dergide il veteriner müdürünün raporlarıyla yan yana.
+
+**Balıkesir (*Kaynak*)**
+
+- **S4, A. Osman Balkır, "Balıkesir Köylerinde Yapı İşleri" (Ağustos 1935 ve devamı; PDF ttk_0235_1935_0031 s. 8–9, 0032 s. 12–13):**
+  - Ahırın öbür adı "**hayvan-öküz damı**". Penceresiz ve alçak kapılı; ışık yalnız 50–60 cm'lik "**gübre deliği**"nden giriyor, "Burası da ışık için değil, hayvanların ahırda biriken gübrelerini dışa atmak içindir."
+  - "Köylü, **hayvan damına yatıp kalktığı odasından daha çok özenir.** Kendi odasını süpürüp temizlemeden ahırını temizler."
+  - Ev tek katlıysa ahır ve samanlık bitişikte, iki katlıysa birinci katta: "**Yani ahır ve samanlık asıl yapıdan ayrı değildir.**" Devamında: "birinci katlar genellikle hayvan ahırıdır. Aşağıda hayvanlar oturur, üstünde eviyesi."
+  - Avlu kapısı ("koca kapı") sap yüklü bir öküz arabası geçecek kadar geniş.
+  - Dış sıva "**Manda, Öküz pisliği veya At ve Merkep gübresi (fışkı) ile karıştırılmış çamurla**" yapılıyor: gübre bir yapı malzemesi.
+  - Saman tepme imecesi; yapının temeli atılırken dana, koyun, kuzu ya da horoz kesilmesi.
+- **S4, "Köylerimiz ve köycülüğümüz" (1935; ttk_0235_1935_0030 s. 12; yazar okunmuyor):** dağ köylerinde iki katlı evde "Alt kat hemen umumiyetle ahır ve samanlıkdır. **Ahırın gübre neşriyatı odaya siner ve bu pis neşriyat sıcak tutar itibarile hoşda görülür.**" Helâ yok; gübrelikler ve ahır kenarı kullanılıyor. Bu, ahır ısısının **köylünün gözünden olumlu** karşılandığını reformcu dilin içinden kaydeden ender bir tanıklık.
+- **S3 × S0, A. Osman Balkır, "Balıkesir Köylerinde Ateş Üzerinde İnanmalar" (İlkteşrin 1935 ve sonraki sayı; ttk_0235_1935_0033 s. 15–16, 0034 s. 12):**
+  - "**Kara yanık**" "yalnız sığır hayvanlarına gelen bir hastalık"; iyi edilmesinde "ateşin büyüsel gücünden yardım beklenir."
+  - Köy sınırında, dağ eteğinde bir hayvan geçecek kadar tünel kazılıyor. Köy kâhyası akşamdan "Yarın büyük ateş yakılacak, evlerin hiç birinde ateş kalmıyacak" diye bildiriyor; bütün ocaklar söndürülüyor.
+  - Adları köyde başkasında olmayan iki çıplak kişi fındık dallarını sürterek, kibritsiz ateş çıkarıyor. "Köyün **bütün sığırları sahipleri ile birlikte ateşin tünelden geçer**"; alevli odunlar hayvanlara, bazen sahiplerine değdiriliyor.
+  - Avrupa'daki "need-fire" (Notfeuer) ritüeliyle birebir koşut [karşılaştırma bizim].
+  - **Aynı sayıda** (s. 32–33) il baytar müdürlüğü 71.942 baş hayvana antraks aşısı yapıldığını ve 15 köyde şarbonla mücadeleyi bildiriyor. Halk sağaltımı ile devlet aşısı aynı dergide yan yana: S3'ün "iki bilgi rejimi" teması için doğrudan kanıt.
+  - İkinci bölüm (0034 s. 12): tezek "fırın kızdırmak ve yemek pişirmek içindir", odun ve kömür oda ısıtır; "Sivri sinekleri yok etmek için de tezekle tütsü yapılmaktadır"; kül gübre yığınına, oradan tarlaya gider (S4).
+- **S1 × S3, Baytar Müdürü B. Tunçay'ın raporları (1935; ttk_0235_1935_0028 s. 24, 0033 s. 32):**
+  - 1933'te 5 köyde şarbon, 56 köyde şap (15.659 hayvan parasız ilaçla tedavi), 771 sığıra dalak aşısı.
+  - 882 tosun ve 8 boğa enenmiş; 118 boğaya "muvakkat damızlık vesikası". 12 yılda 255 köy için 265 tipik boğa; 1.057 at, boğa ve tosun enenmiş.
+  - "Vilâyetimiz **boz ırk mıntakası** olarak tayin ve kabul edildiğinden" Balya boz ırkı, **Bulgaristan'ın Plevne vilâyetinden getirilen** damızlık boğalarla ıslah ediliyor.
+  - **Ağıllar Kanunu tatbikatı:** 42 ağıl yeniden yapılmış, 237 ağıl kanuna uygun ıslah edilmiş. 1929 kanununun taşrada uygulandığına dair sayısal kayıt (Gaste'deki "ağıl kanunu" doğrulamasıyla birleştirilmeli).
+  - Tunçay ayrıca sütten kesme (dana iki aylıkta) ve "Hayvanlarda verem" yazıları yazmış: mütederrin ineğin sütü "katiyen" içilmemeli, 90–100 dereceye ısıtılmalı.
+- **S3, Balıkesir belediye mezbahası (1933; ttk_0235_1933_0008_0009 s. 13):** on yılda 16.463 sığır, 3.064 dana, 3.149 manda kesilmiş; tüberküloz nedeniyle 49 sığır imha; 400 hayvana tüberkülin.
+- **S1 × S2, Vet. Hekim Hasan Âli Türker, "Yurdumuzda Sığırcılık" (1946; ttk_0235_1946_0157 s. 6):**
+  - Yerli ırklar: Kara, Boz, Doğu Kırmızısı, Güney Anadolu, Kilis, Çukurova, Dörtyol. Kara ve Boz "bakımsızlık" yüzünden günde 3–4 kg süt veriyor.
+  - "Bu gün elinde bir iki sağılır ineği olmayan köylümüzün evi, **suyu kesilmiş bir çeşmeden farksızdır.**"
+  - **Balıkesir İli Sığır Yetiştirme Birliği** (özel idare, belediyeler ve köy sandıkları ortaklığı) ve beş yıllık program: Balya ve Gönen'de boz ırk, Manyas'ta **Montafon** boğa üretme durakları; Susurluk-Demirkapı boz ırk boğa istasyonu güçlendirilecek. Boğalar dokuz ay köyde, kışın durakta bakılacak.
+  - Savaş yıllarında dişi sığır ve mandaların kesimi "son günlere kadar yasak edilmiştir".
+  - Şarbon "adeta bir **mera hastalığı**dır".
+  - Aynı yazar "Merinosçuluğumuz" (1946) ile Karacabey Harası ve merinos çiftliğini de anlatıyor.
+- **S4 × S2, Karacalar köyü (Savaştepe yöresi) monografisi (1946; ttk_0235_1946_0158–0161):**
+  - Köy, Hardal aşiretinin birkaç obasının yurtlandırılmasıyla kurulmuş.
+  - Varlık: 2.001 koyun, 300 inek, 60 öküz, 120 manda; bazı yıllar mandıra kuruluyor.
+  - "**Hayvan ahırları çoğunlukla oturdukları evlerden ayrı yerlerdedir. Hanay evlerde hayvanlar alt odalarda yatarlar.**"
+  - Gübre öküz damlarının yanına yığılıyor; "Sokaklar, her vakit gübrelerle kirli"; verem köyde salgın.
+- **S2, "Kuraklığın Gelecek Seneye Zararları" (1945; ttk_0235_1945_0151 s. 5; yazar okunmuyor):**
+  - "Yurdumuzda çiftçilik hayvan kuvvetine dayanır… Hayvanların kuvvetli ise ancak yem istihsaline dayanır… başta saman ve ot gelir."
+  - "**Bu yıl kuraklık yüzünden ot ve saman çok kıttır.**" İlk tedbir çiftçiye yem dağıtmak.
+  - "İlimizin iki yıl yağışlı gitse mutlak üçüncü sene kuraktır. **Sulamamız hiç yok.**" Çare: binalarda daha çok saman ve ot depolamak; aksi halde "hayvanlar iş görmez halde bahara çıkmaz."
+- **S2 × S4, Karalar köyü gezisi (1937; ttk_0235_1937_0055 s. 9):** iki köy arasında "**mera ve sınır kavgası hiç bitip tükenmez**… Bir tutam ot için, bir karış toprak için yirmi yıllık bir ömrü feda etmek"; çamurlu, gübreli sokaklar; "Koyunların üzerinden atlayarak odamıza girdik."
+- **Kültürel temsiller (S0):**
+  - İbrahim Şevki Işıkman'ın şiirleri. "Kara Sığır" (1935, Kepsüt yolu): yaylımdan dönen sürü, "Çoğu düşmüş aç gibi bir kavram ot peşine". "Harmandan Dönüş" (1933): "Ocağının temelidir bir sapanla bir öküz!"
+  - Halk şiiri "Kart öküz destanı" (1937): "Bu meralar senin inekler senin / Ömrün varı kadar yaşa kart öküz."
+  - Yerel söz derlemesi (1933): "TEZEK — Hayvan tersinin yakılmak üzere kurudulmuşu"; "SIĞIRTMAÇ — Sığır çobanı".
+  - Atasözleri: "Samanın varsa marta koy yoksa koca öküzün derisini arda koy" (S2, kış sonu yem darlığı).
+
+**Trabzon (*İnan*)**
+
+- **S1, Yahya Becan (Veteriner Müdürü), "Trabzon sığırcılığı üzerinde çalışmalar" (1946; ttk_0000_1946_0025 s. 13):**
+  - 1946 sayımında il genelinde 148.544 inek, 3.015 öküz, 131.173 koyun: "inek sayısı en başta gelmektedir. **Bu vaziyet Trabzona mahsus bir durumdur.**" Yılda yaklaşık 90 milyon kg süt ve 20 milyon TL'lik yağ.
+  - Trabzon doğudan gelen hayvanların "transit iskeleliğini" yaptığı için ırklar karışmış. Köylerde "**âdeta keçi gibi küçük**" ve günde yarım-bir kilo süt veren inekler var.
+  - Islah "doğu kırmızısı veçhesinde" yürüyor: **Değirmendere Boğa Yetiştirme İstasyonu**; her köyde en az 50 inek için bir iyi boğa; kötü damızlıklar enenecek.
+- **S1, Veteriner Fehmi Baysoy, "Trabzon Sığırlarının İnkişaf Yolları ve Verim Kabiliyetleri" (1947; ttk_0000_1947_0030 s. 6):**
+  - Doğudan boğa getirme politikasını eleştiriyor: ıslah "esasen mıntıkamızda mevcut iyi cins ineklerin erkek yavruları" ile yapılmalı. Değirmendere istasyonu ve İnekhane 1946'da açıldı.
+  - Süt verimi karşılaştırması: yerli kara 374 kg/202 gün; aynı ırk Devlet İktisadi İşletmeleri'nde ve **Çifteler Harası**'nda düzenli yemlemeyle 743 kg/227 gün; Batı Anadolu boz ırkı 650–800 kg; Doğu illeri 1.000 kg; Trabzon istasyon inekleri 1.100 kg.
+  - "Trabzonlu da sığırını kasaplık için değil sütü için besler."
+  - **S1 için:** Ankara merkezli "ithal boğa ile ıslah" çizgisine karşı yerel bir veterinerin "mahallî seleksiyon" savunusu. Aynı çatışma kongrede de vardı (rapor 05, S1 hipotezleri).
+- **S3 × S4, Yahya Becan, "Tüberküloz Savaşı" (1947; ttk_0000_1947_0029 s. 6–7):**
+  - "Bir çok yerlerde **sığır ahırlarında tavuklar da beslendiğinden** birinde olan hastalık kolayca diğerine de intikal edebilir."
+  - "Trabzonda her nevi **yemek artıkları inek ve tavuklara verilmekte**" ve bu bulaşma yolu oluyor.
+  - Trabzon 1944'te 56 milyon kg inek sütüyle Kars'tan sonra ikinci, ama "tahşiş edilmemiş iyi bir süt bulmanın imkânı yoktur."
+  - Beşerî ve veteriner tababetin iş birliği çağrısı.
+- **S4, Eyüb Sabri Lermioğlu, Karadağ yaylası gezisi (1944; ttk_0000_1944_0014_0015 s. 14):** "İnek, inek… **Köy kadınının evlât gibi sevdiği** munis hayvanlar… Çocuksuz ev bir virane ise, **ineksiz ahır bir faciadır** buralarda…" (kadın-inek bakım ilişkisi).
+- **S2, M. Kemal Yanbeğ'in deyim derlemesi (1945; ttk_0000_1945_0018 s. 7):** "(Usul olmuş dana) kışın boyuna saman yiyen dişleri ezilmiş biçare yavru dana; ilk bahar gelmiş yeşile salıyorlar fakat usul olmuştur. Yeşil otları arzu ediyor fakat dişleri kamaşıyor yiyemiyor." Kış açlığının dile yerleşmiş bir izi.
+- **S2, yonca yazısı (1945; ttk_0000_1945_0017 s. 21):** "bir kuru yonca onbeş kilo saman yerini tutar. Kuru yonca en iyi ve en kuvvetli bir kış yemidir."
+- **S2 × S4, Kemal Kefeli ve İhsan Ural (Y. Z. Mühendisi), ekonomik yazılar (1947; ttk_0000_1947_0031 s. 4–5):** "Trabzon yağının bugünkü feci durumu". Köy aile bütçesinde iki sağılır inek (her biri 500 kg süt), hayvan yemi (arpa; mısır sapı bağı 15 kuruş) ve çiftlik gübresi.
+
+**Antalya (*Türk Akdeniz*) ve Niksar (*Ülker*)**
+
+- **S1 × S3, Veteriner Müdürü Ziya Uluer, "Veteriner İşleri" (1938; TTK_1938_0011_0012 s. 65–66):**
+  - Cumhuriyetin ilk on yılında Balıkesir'den 70 kara sığır damızlık olarak taksitle dağıtılmış. Kara sığır cinsini bozacak 4.500 tosun ve dana enenmiş.
+  - 17 numune köyü kurulmuş; buralardaki damızlık boğalar ihtiyar heyetlerince baktırılıyor.
+  - "**Öküz kıranı** denilen hastalık tamamen ortadan kaldırılmış". Antraks aşısı veriliyor.
+  - 1923–33: 223 köyde 118.449 baş hayvan, 19.009 hasta, 4.338 ölü.
+  - Son beş yılda 10 **Montafon** boğası (Çirkinoba, Kemer, Kundu, Bozova); 165 köyde 3.416 ölü.
+  - Dışarıya 157.638 baş hayvan (857.935 TL) satılmış; ihraç için **tahaffuzhane** yapılıyor.
+- **Uzman ağı, "Antalya'nın yüksek tahsil mezunları" (1939; TTK_1939_0014 s. 15):** bir veterinerin meslek dökümü. Ad OCR'da sütun karışması yüzünden kesin değil; büyük olasılıkla **Kâmil Onat** (baba İbrahim Hakkı, 1305 İbradı doğumlu) [?, PDF'ten doğrulanacak].
+  - 1335'e (1919) dek Konya Hayvanat Deposu Müdürü; 1335–40 Konya Veteriner Müfettişi; 1340–1927 Konya merkez sıhhiye veterineri.
+  - **1927–28 Cebelibereket veba-yı bakarî mücadelesi grup reisi.**
+  - 1929 Uzunyayla ıslah ve teksir-i hayvanat mıntıka müfettişi; 1931 Sultansuyu Harası müdürü; 1931 Cenup mıntıkası mücadele reisi.
+  - 1938 Ziraat Vekâleti Veteriner İşleri U. M. idare ve müessesat şubesi müdürü, aynı yıl Adana Veteriner Başmüdürü.
+- **S0 × S2, aşar destanı (1939; TTK_1939_0013 s. 13):** "Fükarada kalmadı koşmaya öküz… İltizamcı gelir, harman gezerek / Tohum öküz varmış sanki müşterek / Darı koymaz uşur yemlik diyerek."
+- **S2, Niksar (*Ülker* 1936, ttk_0000_1936_0002–0003):** köylü "tarlalarına usulü dairesinde gübre vermemekte ve… hayvanlarına çok fena bakmaktadır"; ovada kışın binlerce hayvan kışlıyor; Bığırman yaylaları; panayıra köylüler "önünde boğası, elinde kovası" geliyor.
+
+**Bu turun S4 tipolojisine katkısı (rapor 05):** Balıkesir aynı il içinde iki geometri veriyor:
+- dağ köylerinde **alt kat ahır**: Balkır ve "Köylerimiz", "gübre neşriyatı… sıcak tutar itibarile hoşda görülür";
+- ova köylerinde, Karacalar'da **evden ayrı ahır**, ama "hanay" evlerde yine alt oda.
+
+Ahır ısısının köylünün gözünde bir değer olduğu ilk kez açıkça yazılı. Trabzon'da ise yemek artıklarıyla beslenen inek ve tavuğun **aynı ahırda** tutulması tüberküloz bulaşmasına bağlanıyor.
+
 ## 4. Resmî metinler: *Düstur* (3. tertip) ve kanun metinleri
 
 Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4088). Tutanaklarda görüşülen kanunların yürürlükteki metinleri.
