@@ -344,6 +344,51 @@ Kaynak: https://acikerisim.tbmm.gov.tr/handle/11543/4192 (*Çorum*), …/11543/4
 - **Siyasal mecaz (*Engizek*, 1948, piyes):** "memleketimizi… bir **manda** yapmak istiyorlar… Güya biz süt veren bir inekten başka bir şey olmayacağız… Biz ise kuru ot yiyerek onları besleyeceğiz." Sağılan hayvan bir bağımlılık (manda/mandate) imgesi olarak kullanılıyor.
 - **Canlı hayvan ihracı (*Hür Millet*, Eylül 1948):** Ticaret Bakanı Cemil Barlas'ın ihracat kararı İstanbul basınında "yaygara"ya yol açmış. Yazara göre ihraç "Erzurum için hayati bir iştir"; yasaklanırsa "kaçakçılık başlıyacakdır". S3 ve sınır ile et fiyatı çatışması.
 
+### 3f. *Buç* (Kırklareli, 1935–36), *Çorum* 1947, *Türk Yolu* (İzmit, 1930–32), *Gazi Yolu* (Bursa, 1931–33), *Milli Ticaret*, *İstanbul Postası*, *Dirlik*: TBMM Açık Erişim OCR, Ekim 2026 (dördüncü tur)
+
+Kaynak: https://acikerisim.tbmm.gov.tr/handle/11543/4221 (*Buç*), …/11543/4192 (*Çorum*), …/11543/4196 (*Türk Yolu*), …/11543/4224 (*Gazi Yolu*), …/11543/4318 (*Milli Ticaret*), …/11543/4366 (*İstanbul Postası*), …/11543/4363 (*Dirlik*), …/11543/4355 (*Serbest Cumhuriyet*). Bu turda 910 yeni isabet çıktı; eşiği geçen 349 sayfanın hepsi tarandı.
+- *İleri Gazetesi* 1944'ün (139 sayfa) OCR'ı büyük ölçüde okunamaz durumda; seçilebilen içerik et fiyatı, mezbaha kesim sayısı ve hileli süt şikâyeti.
+
+**S4 ve S2: Trakya'da tezek, gübre ve zorunlu yoncalık (*Buç*, Kırklareli Halkevi)**
+- **Trakya Umumi Müfettişi General [Kâzım] Dirik ile söyleşi (1935; PDF 0186_1935_651-666 s. 38, 42):**
+  - "Trakya için hayvancılık büyük zenginlik kaynaklarından biri. Buradan kaçanlar giderken yüzbinlerce koyun götürmüşler; götürülenler yerine yenileri beş-on yıl içinde yerden fışkırır gibi çoğalmış."
+  - Beş yıllık plana göre her köy bir koruluk yapmaya mecbur. Gerekçe: "**Köylünün tezek kullanması gübresini toprağında kullanmaması demektir ki bu durum çiftçi için acı ve sıkıntılıdır.**"
+  - **S4 için:** tezek ile gübre arasındaki çatışma, bir umumi müfettişin kalkınma planında yakıt politikasına (köy korusu) dönüşüyor. Rapor 05'teki "tezek ekonomisi" hipotezinin devlet tarafındaki karşılığı.
+- **Trakya beş yıllık programı (1936; 0186_1936_668-714 s. 50):**
+  - Yoncalık ve çayır tohumu (Kayseri ve Yeşilköy'e siparişler); "Ot ve çayır yetiştirmeye ve balya makineleriyle bunları toplamaya dikkat edilecek ve makineler kredi ile alınacaktır."
+  - "Her köyün manevi şahsiyeti adına en az 5–15 dönüm ektirilmek ve bunları köy kurulunun mecburi ödevleri arasına aldırmak işleri bitmiş gibidir. **Bu köylerin sayısı binden aşağı değildir.**"
+  - S2 için kongre öncesi (1936) bölgesel bir **zorunlu yem ekimi** rejimi.
+- **Göçmen iskânı ve kış yemi (1936; s. 5):**
+  - Göçmenlere hayvan ve pulluk verilmiş; ilkbahar için 10.000 pulluk daha alınıyor ve "ilkbaharda yeniden öküz" alınacak.
+  - "Göçmenlerin büyük baş hayvanları için ilkbahara kadar geçindirecek ot ve saman alınmasının Sıhhiye Vekâletince kararlaştırılması" ile hayvanlar korunuyor. S2 ve S0 kesişimi: iskânın bir parçası olarak devletin sağladığı kış yemi.
+- **Damızlık ve sayım (1936; s. 106, 110):**
+  - Trakya'ya atlar Karacabey'den, boğalar "[yurt] dışından satın alınarak" getirilmiş; baytar olan yerlerde aşım durakları kuruluyor.
+  - Kırklareli sayımı: Şubat 1936 su baskınına rağmen sığır 85.745'ten 89.847'ye, manda 9.543'ten 10.256'ya çıkmış.
+- **Trakya ağılları (*İstanbul Postası*, 1939–40):** "(4700)'ü bulan sıhhi ağıllar"; bir buçuk milyon koyun; koyunculara 300.000 liralık avans. Rapor 02 §3c'deki Balıkesir Ağıllar Kanunu verisiyle birlikte okunmalı.
+
+**S4 ve S2: Çorum köylerinde ahır (Nazım Okay, 1947)**
+- **"Veteriner Öğütleri: Verim Üzerine Tesir Eden Bakım ve Yemleme" (*Çorum*, 15 Ocak 1947; yazan Nazım Okay, Merkez Veteriner Hekimi):**
+  - "Temas ettiğim köylerdeki hayvan barınakları hiç de sıhhi değildir. **Ahırlar umumiyetle binanın zemin katını teşkil etmektedir.** Yaz ve kış rutubetini muhafaza eden duvarları, **kışın sıcak olsun diye zeminde bırakılan gübre** … durumunu bir kat daha güçleştirmektedir. Gübreden çıkan amonyak ve rutubet…"
+  - "Kapalı ve ışık görmeyen barınaklardan çıkarılan hayvanlar evvela hareketsiz durmakta ve bilâhare sallantılı bir yürüyüşle… **bir müddet görmedikleri** tesbit edilmiştir."
+  - "Yaz ve kış nasibini meradan almak mecburiyetinde kalan hayvanlarımız kışı büyük bir zafiyet ve dermansızlık içinde [geçiriyor]."
+  - "**Köylümüz hayvanlarını feleğin kesesinden geçindirmeğe alışmış**… saman vermek dahi bir külfet ve fuzuli masraf olduğu ileri sürülmektedir. **Yemleme ancak ziraat hayvanlarına inhisar etmekte**."
+  - **S4 için:** Balıkesir 1935'teki "sıcak tutar itibarile hoşda görülür" (§3c) Çorum 1947'de veteriner gözünden tekrar ediyor: gübre, ahır ısısı için bilerek bırakılıyor.
+  - **S2 için:** yem yalnız koşum hayvanına veriliyor, öbürleri meraya bırakılıyor. Bu, kışlama krizinin (S2 H1) hane içindeki bir hiyerarşi olduğunu gösteriyor.
+- **DDT ve ahır sayısı (*Dirlik*, 1948–49):** Sıtma Savaşı ilaçlamasında ilçede "520 ev, 1560 oda, 35 cami, **1200 ahır**, 670 samanlık ve 550 kümes"e DDT sıkılmış. Ev başına iki ahırdan fazla düşüyor; ahırlar sıtma savaşının da hedefi.
+
+**S3: hastalıkta köy protokolü**
+- **"Korunma çareleri" (*Türk Yolu*, İzmit, 1931):**
+  - Bulaşıcı hastalıkta hayvan sahibi muhtara, muhtar hükümete haber verir. Hasta hayvan ahırdan çıkarılmaz, yemi ve suyu ahırda verilir.
+  - "Baytar gelinceye kadar herkes sabahleyin **hayvanını sığırtmaca vermemeli**, ahırında beslemeli veyahut çocuğuyla ayrı bir mer'ada… otlatmalıdır." Ahırlara kireç dökülmeli; ölen hayvan derisi yüzülmeden derin bir hendeğe gömülmeli.
+  - "Köyünüzde çıkan hastalığı hemen civar köylere bildiriniz ve **mer'asını derhal değiştiriniz**."
+  - Karantinanın köy düzeyindeki aracı ortak sürüden (sığırtmaç) çekilmek. S3 ile S4'ü ortak sürü düzeni üzerinden bağlıyor.
+- *Gazi Yolu* (Bursa, 1932), "Köylüye faydalı bilgiler: Dalak hastalığı": çobanlar hayvanın burnunu sıkıp "kan işerse dalak olduğunu anlarlar" (halk teşhisi).
+
+**S1 ve S0**
+- *Gazi Yolu* 1933: Alıcılar'daki hayvan sergisi, "Hayvan ırkının Bursa vilâyetinde ıslahına sarfedilen büyük emekler boşa gitmemiştir." Aynı sayfada "Beyaz Irk: Bugünkü Almanya'nın Dayandığı Kuvvet" (Rosenberg alıntısı). Hayvan ıslahı ile ırk söylemi aynı sayfada yan yana; S1 hipotezlerinde "ırk" kavramının çift kullanımı için not.
+- *Serbest Cumhuriyet* (1930): Ziraat Vekâleti İnanlı, Karacabey, Çifteler ve Konya inekhaneleri için **205 inek** satın alıyor.
+- *Milli Ticaret* (1930–33): İstanbul'un "süt meselesi". Çevrede "mebzul" temiz süt üretildiği halde şehir "mağşuş sütten başka bir şey bulamamaktadır"; süt işi bir ara bir şirkete verilmiş, sonuç alınamamış.
+
 ## 4. Resmî metinler: *Düstur* (3. tertip) ve kanun metinleri
 
 Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4088). Tutanaklarda görüşülen kanunların yürürlükteki metinleri.

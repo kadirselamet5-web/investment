@@ -116,6 +116,10 @@
   "MARAS_ENGIZEK": {
    "ad": "Engizek (Kahramanmaraş), TBMM Açık Erişim",
    "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4223"
+  },
+  "KIRKLARELI_BUC": {
+   "ad": "Buç (Kırklareli Halkevi), TBMM Açık Erişim",
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4221"
   }
  },
  "kurumlar": [
@@ -2754,7 +2758,9 @@
    "milliyet": "Türk",
    "alan": "veteriner (Çorum Merkez Veterineri)",
    "strand": [
-    "S3"
+    "S2",
+    "S3",
+    "S4"
    ],
    "gorevler": [
     {
@@ -2764,7 +2770,7 @@
      "bit": "1950"
     }
    ],
-   "not": "Çorum gazetesi 1946 ve 1949'da teşekkür ve tayin haberlerinde; 1950 'Sığırlarda Tüberküloz' yazısı; 1949'da geçici olarak ilden ayrılıyor.",
+   "not": "Çorum gazetesi 1946 ve 1949'da teşekkür ve tayin haberlerinde; 1950 'Sığırlarda Tüberküloz' yazısı; 1949'da geçici olarak ilden ayrılıyor. Çorum 15.1.1947 'Veteriner Öğütleri: Verim Üzerine Tesir Eden Bakım ve Yemleme': ahırlar binanın zemin katında, kışın sıcak olsun diye gübre zeminde bırakılıyor; yemleme yalnız ziraat (koşum) hayvanlarına; 'köylümüz hayvanlarını feleğin kesesinden geçindirmeğe alışmış'.",
    "kaynak": [
     "CORUM_GAZ"
    ],
@@ -2811,6 +2817,30 @@
     "MARAS_ENGIZEK"
    ],
    "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4223"
+  },
+  {
+   "id": "dirik_kazim",
+   "ad": "Kâzım Dirik",
+   "milliyet": "Türk",
+   "alan": "asker-idareci (Trakya Umumi Müfettişi); hayvancılık ve yem politikası",
+   "strand": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "gorevler": [
+    {
+     "kurum": "trakya_um",
+     "gorev": "Trakya Umumi Müfettişi",
+     "bas": "1935",
+     "bit": "1941"
+    }
+   ],
+   "not": "Buç 1935 söyleşisi: Trakya'da hayvancılık 'büyük zenginlik kaynağı'; beş yıllık planda köy koruluğu zorunlu, çünkü 'köylünün tezek kullanması gübresini toprağında kullanmaması demektir'. 1936 programı: binden fazla köyde köy kuruluna zorunlu 5–15 dönüm yonca/çayır ekimi, kredili ot balya makineleri. Görev tarihleri genel bilgiye dayanıyor, doğrulanacak.",
+   "kaynak": [
+    "KIRKLARELI_BUC"
+   ],
+   "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4221"
   }
  ]
 }
