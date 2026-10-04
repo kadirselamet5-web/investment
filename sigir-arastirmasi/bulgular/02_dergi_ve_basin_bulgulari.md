@@ -389,6 +389,17 @@ Kaynak: https://acikerisim.tbmm.gov.tr/handle/11543/4221 (*Buç*), …/11543/419
 - *Serbest Cumhuriyet* (1930): Ziraat Vekâleti İnanlı, Karacabey, Çifteler ve Konya inekhaneleri için **205 inek** satın alıyor.
 - *Milli Ticaret* (1930–33): İstanbul'un "süt meselesi". Çevrede "mebzul" temiz süt üretildiği halde şehir "mağşuş sütten başka bir şey bulamamaktadır"; süt işi bir ara bir şirkete verilmiş, sonuç alınamamış.
 
+### 3g. *Tosyada Dilek* (Tosya, 1930–1933): TBMM Açık Erişim OCR, Ekim 2026 (beşinci tur)
+
+Kaynak: https://acikerisim.tbmm.gov.tr/handle/11543/4358. 16 isabetli sayfa okundu.
+
+- **S3, "Köylerin Baytarlık Vazifeleri" (PDF 0183_1930-1933 s. 35):** Köy heyetleri ve kâtipleri için Hayvan Sağlık Zabıtası, Islah-ı Hayvanat ve Ağıllar kanunlarından bilinmesi gereken maddeler.
+  - İhbarı mecburi hastalıklar: sığır vebası, şap, dalak, sığır "yanıkarası", verem vb.
+  - İhbar yükümlüleri uzun bir liste: "hayvan sahipleri, celepler, hayvanlara bakanlar, köylerde muhtarlar, kâhya, çiftçibaşı, sürü sahipleri, bekçiler, çobanlar, baytarlar, nalbantlar".
+  - 1930'ların başında hastalık bildiriminin köyün bütün hayvan emeği zincirine dağıtılmış bir yükümlülük olarak tanımlandığını gösteriyor (bkz. *Türk Yolu* 1931 köy protokolü, §3f).
+- **S1, "Boğalar geldi" (s. 12):** "Köyler namına **Balya'dan** alınan 13 boğa on gün evvel şehrimize getirilmiştir. Bu danalar ekseriyetle iki yaşlıdır." Balıkesir boz ırkının (Balya; §3c) 1930'ların başında Kastamonu köylerine damızlık olarak dağıtılması.
+- Diğer: şarbon, hayvan parazitleri ve köy bütçelerinde "sığırtmaç masrafı" kalemleri.
+
 ## 4. Resmî metinler: *Düstur* (3. tertip) ve kanun metinleri
 
 Kaynak: [TBMM Açık Erişim](https://acikerisim.tbmm.gov.tr/handle/11543/4088). Tutanaklarda görüşülen kanunların yürürlükteki metinleri.

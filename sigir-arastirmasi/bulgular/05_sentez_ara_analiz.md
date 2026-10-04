@@ -144,6 +144,7 @@ Bu belge, raporlar 01–04 ve uzmanlık ağındaki bulguları strand strand birl
    - Samsun 1945'te de "mes'um tarla" ve "dalak" adları Aygün'ün aşısıyla aynı metinde.
    - Hipotez: halkevi dergileri, halk veteriner bilgisini "folklor" olarak kaydederek **arşivleyip geçmişe iten** bir araç. Devlet bilgisi ise aynı sayfada "bugün" olarak sunuluyor.
 5. **Belgeleme ve izlenebilirlik: sığıra "nüfus kâğıdı".** Baytar Umum Müdürlüğü 1938'den itibaren inek, öküz ve manda için de atlardaki "ruam cüzdanı" benzeri bir cüzdan getirmeye karar veriyor (*Akşam*, 16 Mayıs 1937). Cüzdansız hayvan satılamayacak ve şehirden şehre götürülemeyecek; amaç hırsızlık ve hasta hayvanın kasaba satılması. Karantina rejimi evrak ve kimlik üzerinden bireysel hayvana iniyor. Uygulamanın izini sürmek gerek.
+6. **Serum kıtlığı ve "hastalık cetveli".** Zara'dan bir çiftçi (*Tan*, 26 Aralık 1938) şöyle anlatıyor: yerli serum yetmiyor, "hariçten de getirtmek yasaktır". 1937'de çiftliği "hastalık cetvelinden çıkarıldığı" için şarbon serumu verilmemiş ve 25 sığırı ölmüş. Devlet aşı ve serum tekeli, idari bir listeye (cetvel) bağlı bir dağıtım rejimi kurmuş; arz yetmeyince kayıp köylüye kalıyor. S3'te "devlet bilgisi" tek başına koruma sağlamıyor, dağıtımı da var.
 
 ---
 

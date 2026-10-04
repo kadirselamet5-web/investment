@@ -185,6 +185,15 @@ Kaynak: Gaste Arşivi, kullanıcının oturumu. Kayıtlar `bulgular/gaste/gaste_
 
 Tam liste (puan ≥3, 252 sayfa, OCR bağlam parçalarıyla) bütün gazeteler bitince `fvadc_gazete_isabetleri.csv` olarak eklenecek. Gürültü örnekleri: tefrika romanlarda "yabani öküz", "su aygırı", "boğa(z)"; ilan ve tarihî yazılar.
 
+## Ek: *Tan* "Köylü ve çiftçi kongreden ne bekliyor?" dizisinin öbür bölümleri (sekizinci parti, Ekim 2026)
+
+Kaynak: İBB, *Tan* (olay penceresi OCR'ı, kuyruk adım 5). Dizinin 22 Aralık bölümü yukarıda; bu turda 26 ve 27 Aralık bölümleri okundu.
+
+| Tarih | Sayfa | Konu | Strand | Not |
+|---|---|---|---|---|
+| 1938-12-26 | 7 | "Hayvan Hastalıklarına Çare İsteriz": Zara'dan çiftçi Abdullah Halis | S3 | "Bizim taraflarda her sene yurdumuzda istihsal edilen seromlar kâfi gelmiyor. **Hariçten de getirtmek yasaktır.** 934, 935, 938 senelerinde hayvanlarımızı aşıladık. 937 senesinde bizim çiftlik hastalık cetvelinden çıkarılmış… O sene şarbon seromu yapmadılar. Yalvardım, yakardım, vilâyet teşebbüsatta bulundu. Cevap alamadık ve maalesef **25 baş sığırım öldü**. 938 senesinde yine hastalık başladı. Yine serom yok." Kongreden "çok büyük ümitler" bekliyor. Devlet serum tekelinin (Pendik/Etlik) arz darlığına köylünün gözünden somut bir tanıklık. Serum dağıtımının "hastalık cetveli"ne bağlı olduğu da görülüyor. |
+| 1938-12-27 | 7 | "Köylü, köyünü bırakıp niçin başka yerlerde iş arar?": Ilgaz Kese köyünden Muharrem Tasmacı (Kazlıçeşme fabrikası işçisi) | S0, S2 | 400 haneli köyde iki yüz hanenin hiç toprağı yok; erkekler fabrikalarda, Ankara'da, Kırıkkale'de çalışıyor. "**Davar, sığır besliyemiyoruz**, ancak köyde 50 çift öküz vardır, o da yevmiye ile onun bunun bir iki dönümlük yerini sürer." Topraksızlık sığır sahipliğini de bitiriyor: öküz bir ücret aracı. Aynı sayfada kongre komisyonları (hayvan yemi, hayvanat, "çift hayvanlarının ıslahında daha titiz davranmalıdır"). |
+
 ## Ara değerlendirme
 
 - Kongre haberleri (18, 30, 31 Aralık) gazetede Anadolu Ajansı tebliği biçiminde, kısa çıkıyor. Hayvan İşleri Komisyonu'nun iki talebi (sayım vergisinin kaldırılması ve boğa temini), TBMM'deki Komisyonlar Mazbatası ile aynı (rapor 02 §5).

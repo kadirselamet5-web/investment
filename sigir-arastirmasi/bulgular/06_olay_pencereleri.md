@@ -144,6 +144,27 @@ Kaynak: İBB Atatürk Kitaplığı, *Akşam* (312 sayı) ve *Tan* (45 sayı). 27
 
 - Diğer: İstanbul mezbahasının aylık kesim sayıları (örn. Aralık 1935'te 1.860 öküz, 209 inek, 445 manda; Ocak 1937'de 1.643 öküz, 119 inek, 379 manda). Rapor 05'teki et arzı hesapları için bir seri. Ayrıca ölü inek eti satanlar ve çiğ sütten zehirlenme (Çatalca, 1938) haberleri var.
 
+### Dokuzuncu parti: *Tan* olay pencereleri (1937–1942), İBB OCR, Ekim 2026
+
+Kaynak: İBB, *Tan* (340 sayı) ve *Son Posta* (20 sayı, Haziran 1932). Bu turda 330 isabetli sayfa tarandı, ilgili olanlar okundu. Kongre penceresindeki (Aralık 1938) bölümler rapor 04'e işlendi.
+
+| Tarih | Sayfa | Konu | Strand | Not |
+|---|---|---|---|---|
+| 1937-01-25 | 5 | "Ziraatte Kalkınma Programımız": zootekni ve hayvancılık planı | S1 | Karacabey, Çifteler, Konya ve Çukurova haraları genişletilecek, şarkta üç yeni hara kurulacak. Ankara'da merkez laboratuvar ve "sıhhi tohumlama teşkilâtı" kurulacak. Trakya ve Uzunyayla yetiştirme örgütü bütün ülkeye yayılacak. **Sığırcılık:** mevcut altı inekhaneye ek olarak 1937'de Tokat, Yozgat, Sivas ve Erzurum'da, 1938'de Aydın ve Samsun'da, 1940–41'de Muş ve Diyarbakır'da inekhane açılacak; hususi muhasebe inekhaneleri takviye edilecek. Kongreden iki yıl önce sığır ıslahının kurumsal haritası. |
+| 1937-06-13 | 7 | Atatürk çiftliklerinin hazineye devrinin envanteri | S1 | Orman Çiftliği, Yalova ve Silifke Tekir çiftlikleri. "443 baş sığır: Simental, Hollanda, Kırım, Jersey, Görensey, Halep, yerli ırklarile bunların melezleri, **yeni üretilen Orman ve Tekir cinsleri**". Ankara ve Yalova'da günde 15.000 litre pastörize süt işleyen iki süt fabrikası, Aydos ve Toros yaylalarında altı mandıra, 2.650 dönüm çayır ve yoncalık. Model çiftliklerde ithal ırk çeşitliliği ve "yeni cins" iddiası. |
+| 1937-06-20 | 2 | "Hayvanlar Hisleri İptal Edilip Öyle Kesilecek" | S3, S0 | İstanbul Baytar Müdürlüğü, mezbahada bıçakla kesimin "medeni bir şekil olarak telâkki edilmediği"ni yazıp hayvanların "hisleri iptal edildikten sonra" (bayıltılarak) kesilmesini öneren bir rapor vermiş; karar belediyede. Kesimin "medenileştirilmesi". Aynı sayfada Mayıs 1937 mezbaha sayıları: 1.077 öküz, 190 inek, 181 manda, 308 dana, 49 boğa. |
+| 1937-05-24 | 8 | "Trakya'da hayvan sağlığı için esaslı tedbirler alınıyor" | S3 | Trakya Umumi Müfettişliği: baytarlar ve fen memurları eneme ve şarbon savaşı yapıyor (bkz. *Akşam* 1937-06-24, sekizinci parti). |
+| 1938-03-29 | 8 | "Sıvaslılar bolluk istiyor": il dilekleri | S1, S0 | Kara sabana karşı Ziraat Bankası'ndan pulluk; "**Kağnı arabaları hem fena olduğu ve hem de öküz neslini bozduğu cihetle dört tekerlekli arabalar verilmesi**". Taşıma aracı ile ırk ıslahı arasında kurulan bağ dikkat çekici. |
+| 1938-04-10 / 12-11 | 8 / 9 | Develi'de idare-i hususiye köylere 25 damızlık boğa dağıttı; Kayseri'de "Her köye boğa alınıyor" | S1 | Kayseri'de il düzeyinde köy başına boğa (rapor 05 S1 hipotez 3: Kayseri örneği). |
+| 1939-05-15 | 11 | "Bozöyük'te hayvan ıslahatı" | S1 | Kazanın otuz beş köyüne önceden verilen boğaların yavruları alınmaya başlandı; öbür köylere de verilecek. |
+| 1941-05-06 | 4 | Diyarbakır röportajı | S0, S1 | "Köylüler düveni bilmiyorlar! Harmanı, küme halinde bağladıkları hayvanları (öküz, merkep, beygir) mahsulün üstünde gezdirerek yapıyorlar." Ziraat Vekâleti köylere düven dağıtıyor. Harmanın hayvan ayağıyla yapılması: sığırın bir başka emek biçimi. |
+| 1941-05-29 | 5 | TBMM bütçe görüşmesi: Fikret Atlı | S2 | Vekâletin "hayvan yemi yetiştirilmesi hususunda gösterdiği ihmal". Ülkede "56 milyon hayvan" var, bakımsızlıktan telefat çok. "Memleketimizdeki mevcut meralarda bilhesap elli altı milyon değil **dört yüz milyon** hayvan beslenebileceğini" söylüyor. Mera potansiyeline dair abartılı ama tipik bir iyimserlik. |
+| 1942-01-08 | 1 | "Koordinasyon heyetinin yeni kararları: Manda ve sığırların alım, satım ve kesimi hakkında bir takım kayıtlar konuluyor" | S0, S1 | **Yasağın gerekçesi:** "Deri fiyatlarının artması üzerine, ziraat ve koşum işlerinde kullanılan sığır hayvanlarının **derisinden faydalanılmak üzere kesilmekte olduğu** görülmüştür." Milli Korunma Kanunu m. 21'e dayanarak erkek manda ve sığır çift ve koşum hayvanlarında 10 yaşa, dişilerde 8 yaşa kadar kasaplık kesim yasak. Altıncı partideki "dişleri sökülüyor" haberinin (Ocak 1942) arka planı: **yaş sınırı diş muayenesiyle belirlendiği için** dişler sökülüyor. Kesimin itici gücü et değil deri fiyatı. |
+| 1942-01-04 / 01-12 / 01-22 | 2 | İstanbul'da sığır eti bulunmuyor; narh ve yem fiyatları; "Şehrin et işi düzene konuluyor" | S2, S0 | Yem fiyatlarının yüksekliği yüzünden sürü sahipleri kasaplık hayvanı elden çıkarmak istiyor. "Birçok bölgelerde köylüler, aralarında anlaşarak ellerindeki ziraat hayvanlarını, sapan ve pullukları **imece usuliyle** kullanmakta". 48 celep ve toptancıya bir "mutemet": canlı hayvan bir elden satılacak. |
+| 1942-01-08 | 3 | Evliya otu | S2 | "Anadolu yaylası için evliya otu misli bulunmaz bir hayvan yemidir"; Erzincan'dan tohum. |
+| 1938-03-27 | 8 | Giresun | S2, S4 | Köylüler "tarlalarını gübrelemek imkânını bulamamaktadırlar. Bunun sebebi, az miktarda hayvan beslenmekte olmasıdır" (bkz. Ordu 1945, rapor 02 §3d). |
+| 1942-01-08 | 2 | Kartal, Soğanlık köyünde kar altında ahır ve ağıl çöktü; hayvanlar öldü | S4 | Kış afeti ve barınak. |
+
 ## Ara değerlendirme
 
 - **Muğla dizisi (1933, 1936, 1939) ıslahın yerelde nasıl kurulduğunu izlemeye imkân veriyor.**
