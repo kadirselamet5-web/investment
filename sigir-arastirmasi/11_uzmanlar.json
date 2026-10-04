@@ -120,6 +120,10 @@
   "KIRKLARELI_BUC": {
    "ad": "Buç (Kırklareli Halkevi), TBMM Açık Erişim",
    "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4221"
+  },
+  "AKSAM_IBB": {
+   "ad": "Akşam gazetesi, İBB Atatürk Kitaplığı dijital arşivi",
+   "url": "https://katalog.ibb.gov.tr"
   }
  },
  "kurumlar": [
@@ -2841,6 +2845,51 @@
     "KIRKLARELI_BUC"
    ],
    "url": "https://acikerisim.tbmm.gov.tr/handle/11543/4221"
+  },
+  {
+   "id": "etem_ist_baytar",
+   "ad": "Etem [soyadı ?]",
+   "milliyet": "Türk",
+   "alan": "veteriner (İstanbul Vilâyeti Baytar Müdürü)",
+   "strand": [
+    "S3",
+    "S4"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "İstanbul Vilâyeti Baytar Müdürü",
+     "bas": "1938",
+     "bit": "1939"
+    }
+   ],
+   "not": "Akşam 24.12.1938 (kongre İstanbul hazırlık komisyonunda 'İstanbul baytar müdürü B. Etem') ve 16.6.1939 (süt ve inek ahırları komisyonu: şehirdeki 5.000 ineği bir 'ahırlar semti'nde toplama; Edirnekapı dışı). Soyadı bulunamadı, doğrulanacak.",
+   "kaynak": [
+    "AKSAM_IBB"
+   ],
+   "url": "https://katalog.ibb.gov.tr"
+  },
+  {
+   "id": "esad_ist_bel_baytar",
+   "ad": "Esad [soyadı ?]",
+   "milliyet": "Türk",
+   "alan": "veteriner (İstanbul Belediyesi Baytar Müdürü)",
+   "strand": [
+    "S3",
+    "S4"
+   ],
+   "gorevler": [
+    {
+     "kurum": "vet_genel",
+     "gorev": "İstanbul Belediyesi Baytar Müdürü",
+     "bas": "1939"
+    }
+   ],
+   "not": "Akşam 16.6.1939: süt ve inek ahırları komisyonu üyesi. 1940'ta ahırların şehir dışına çıkarılması kararının teknik zemini. Soyadı bulunamadı, doğrulanacak.",
+   "kaynak": [
+    "AKSAM_IBB"
+   ],
+   "url": "https://katalog.ibb.gov.tr"
   }
  ]
 }
